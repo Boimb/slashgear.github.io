@@ -1,0 +1,1689 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https:/slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Apr 2020 18:50:15 GMT</lastBuildDate><item><title><![CDATA[How to boost the speed of your webpack build?]]></title><description><![CDATA[How did I cut in half my project’s webpack build time ? Who never complained about the infinite duration of a webpack build on a project ?
+I…]]></description><link>https:/slashgear.github.io/hunting-webpack-performances/</link><guid isPermaLink="false">https:/slashgear.github.io/hunting-webpack-performances/</guid><pubDate>Sun, 01 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;How did I cut in half my project’s webpack build time ?&lt;/h2&gt;
+&lt;p&gt;Who never complained about the infinite duration of a webpack build on a project ?
+I’m currently working on a big web application coded in React/Redux with server side rendering.
+The application exists since 2015 and it has evolved a lot since then (&lt;a href=&quot;https://tech.m6web.fr/&quot;&gt;M6web tech blog&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/92aa0670116677da859844a5c9ec387a/a878e/6play.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAAEAUlEQVQ4yy2U2W9UZRjGz3Q6c+acMxtdpp2ls7SdpdN29tN9lu4dOi1daUFaFCwIspuqGMISUoy0SQFFpCYgCRpNFEO4kBhjTExMTNQbEhK98S/wRv+Anx/Gi/fq+/L7nvd9n+eTNGMYrTqCYmjB5Uj+VxZDK06tA6scw2puQ89Ok0yWkaQAdiWCUw2jmlrZVavjcKaRLW0o5iiWqhCSKmCqKYpiimFTO7Fak8haCsWhi+rGpHWyWFnhxuVNlmcP4fOmMBhqqTbUoNnD1Cb30JSbI9AxgidS+B8oVChqAtmaxuzsQq7PIzcMItWVSOX388tXj/jn9z/469lzvr75IYVSBcmoCcUK8cpxelcv0FlZ5fRb1wRQqFMt7ai2NIqAKXUDKK4SqndMAAcpTKzx4P0dfv3mO+7e+pjN8xusHz+PJ6oLoEogOcHRd+5QnHuVz+58gqTJbdjtaew13dhceTT3MJbGIaGyD4M1Qzg1zdLBczx58AVnT1/kyLGL3L56k/G9R+kfXMRY38Hn959wf/suO1t3kGyWONnsLOXKa0Q653BHZ3D6BbQmiyTHyQws8+z7n/j58bf89vQH/n7+JxfOXmbh0DrlwjRVrgTr797j01v3eSo6kFRzjGCgRKG4QmHoMCl9gaboGGbXANXuIrbEPF/uPGTn6g3ubX7Ejw8fMbf3dRri/chVqmjbTG9hho0r2zy+/gGSU+2gOVgkGi0TaduNx9eLPzKKNzlPk76P2vQUI0N7uP3mdW6/vc32xS0y4wcw7ApjEDDJVIcvrHPi1AUOLB1B2iX8tn/vSU4ev8SBl86QyU5S3r3GwtI6s/OnxAyHkSw+VhcPsXH+PbqHFvH2zWBxhARQQ3ZnUKN9uBIjeEVJDmHKSCBPe3iQOmcnrYF+BnKzDGSm6YyIlj0Z5Jo4krmJUHqcjsFl/HoFo/Cg0dyI2dqMXNuG7NPFMnOiZSXOxNB+Qr4eAUyQi4/SFRumKOxQ1KfwhXqQ1Raq5RY8rXm6S0uExZlPGLkh0I1RcmI0uLA0iDA0ZF/MMM6VS1tkU2XcrixOezvBRp3e5G7y2SlC/m4sWhiL0opii5HJVBjNL9OlzxBsHsAkN2OzR0lmythdabFlo7go8mySmsVrARHBMP76HBF/Py1iQa6aJFZHHFWLIguVje4uuhKTJGKjuD0iVeYQHlcSb6AXzdaOZDVFiAXz9Ijw96QnSbeP0ZeZYqy0j97cNGZDiGoReovkF496kA1BvM4kvnqRKjF/gyQ+BKmJKiHsxech2QSwOHGE/OQJJmZOM7N4honxlzl88A1eWTnH8sIx2lr6cHfsITq8RvvoGq7+g8JqOQb1IQqpfjLRLPFgmpHSMv8C7dDu92LEpmAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;6play website screenshot&quot;
+        title=&quot;6play website screenshot&quot;
+        src=&quot;/static/92aa0670116677da859844a5c9ec387a/fcda8/6play.png&quot;
+        srcset=&quot;/static/92aa0670116677da859844a5c9ec387a/12f09/6play.png 148w,
+/static/92aa0670116677da859844a5c9ec387a/e4a3f/6play.png 295w,
+/static/92aa0670116677da859844a5c9ec387a/fcda8/6play.png 590w,
+/static/92aa0670116677da859844a5c9ec387a/efc66/6play.png 885w,
+/static/92aa0670116677da859844a5c9ec387a/c83ae/6play.png 1180w,
+/static/92aa0670116677da859844a5c9ec387a/a878e/6play.png 2048w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;TLDR;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Never, ever, ever, ever work on performance improvements or optimization without monitoring!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you want to optimize the duration of a job, &lt;strong&gt;you have to monitor precisely&lt;/strong&gt; the duration of it and all its sub-steps.
+By doing that, you can really focus on the most expensive task.
+This will save you from wasting time on optimizations that will have little impact on the system as a whole.
+&lt;strong&gt;Use existing monitoring tools! Create them if they don’t exist!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;What was the problem with webpack ?&lt;/h2&gt;
+&lt;p&gt;For several weeks/months my colleagues have been complaining about the duration of our &lt;code class=&quot;language-text&quot;&gt;yarn build&lt;/code&gt; command.
+The purpose of this command is to build the distributable package of our application in a production target with &lt;em&gt;webpack&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;I even heard:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;“This command, I don’t run it locally anymore, it takes too much time.”&lt;/li&gt;
+&lt;li&gt;“My computer starts ventilating heavily every time I run this command. There’s nothing else I can do!”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Depending on the machine on which the build was launched, it tooks &lt;strong&gt;between 5 and 12 minutes&lt;/strong&gt;.
+It is not possible to have a build that takes so long.
+&lt;code class=&quot;language-text&quot;&gt;webpack&lt;/code&gt; is not a slow bundler.
+It is our use of &lt;code class=&quot;language-text&quot;&gt;webpack&lt;/code&gt; that makes it slow.&lt;/p&gt;
+&lt;h2&gt;Focus error, a morning lost&lt;/h2&gt;
+&lt;p&gt;Since this command launches a webpack build in &lt;code class=&quot;language-text&quot;&gt;production&lt;/code&gt; mode, I figured out that the culprit was webpack config itself.
+Given that I’ve dug deep into webpack, I thought it would be interesting to focus on this performance concern.
+I have indeed open sourced a set of workshop to learn how to use webpack from scratch (&lt;a href=&quot;https://webpack-workshop.netlify.com&quot;&gt;https://webpack-workshop.netlify.com&lt;/a&gt;).
+So at the end of January I took one day to improve the situation.&lt;/p&gt;
+&lt;p&gt;I had my own idea of the task that would take the most. So I tried to improve it, spending my entire morning on it.
+I just managed to &lt;strong&gt;gain 17 seconds&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I’m not going to lie, I was very disappointed with what I achieved.&lt;/p&gt;
+&lt;p&gt;The concern in my strategy was however obvious.
+I started off with a preconceived idea &lt;em&gt;“This is definitely the stage that takes the longest.”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Nothing was objective in my analysis.
+To improve the performance of an application it is necessary to focus on objective facts.&lt;/p&gt;
+&lt;h2&gt;Successful afternoon&lt;/h2&gt;
+&lt;p&gt;When I came back from my lunch break, I was motivated to win more than those poor 17 seconds.
+Then I remembered the Pareto principle.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The Pareto principle (also known as the 80/20 rule, the law of the vital few, or the principle of factor sparsity) states that, for many events, roughly 80% of the effects come from 20% of the causes.
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Pareto_principle&quot;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;There is probably one step that takes up most of the webpack build time.
+Pareto principle adapted to webpack could mean &lt;em&gt;“80% of the build time is caused by 20% of the config”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Let’s find the culprit ! 🎉&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I had to determine the build time of each loader, of each plugin.
+I was very lucky, the webpack community has already proposed a plugin that allows to measure everything.
+And it is very easy to install. ♥️&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/package/speed-measure-webpack-plugin&quot;&gt;Speed Measure Plugin&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here are the results I got:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;SMP  ⏱
+General output time took 4 mins, 5.68 secs
+
+ SMP  ⏱  Plugins
+IgnorePlugin took 57.73 secs
+TerserPlugin took 39.022 secs
+ExtractCssChunksPlugin took 3.13 secs
+OptimizeCssAssetsWebpackPlugin took 1.6 secs
+ManifestPlugin took 1.55 secs
+WebpackPwaManifest took 0.326 secs
+ContextReplacementPlugin took 0.129 secs
+HashedModuleIdsPlugin took 0.127 secs
+GenerateSW took 0.059 secs
+DefinePlugin took 0.047 secs
+EnvironmentPlugin took 0.04 secs
+LoadablePlugin took 0.033 secs
+Object took 0.024 secs
+
+ SMP  ⏱  Loaders
+babel-loader, and
+rev-replace-loader took 2 mins, 11.99 secs
+  module count = 2222
+modules with no loaders took 1 min, 57.86 secs
+  module count = 2071
+extract-css-chunks-webpack-plugin, and
+css-loader, and
+postcss-loader, and
+sass-loader took 1 min, 43.74 secs
+  module count = 95
+css-loader, and
+postcss-loader, and
+sass-loader took 1 min, 43.61 secs
+  module count = 95
+file-loader, and
+rev-replace-loader took 4.86 secs
+  module count = 43
+file-loader took 2.67 secs
+  module count = 32
+raw-loader took 0.446 secs
+  module count = 1
+@bedrock/package-json-loader took 0.005 secs
+  module count = 1
+script-loader took 0.003 secs
+  module count = 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;As expected, it’s not great!
+But at least I’m starting to get who the culprits are.
+We can see that for 2222 Javascript modules takes up 2mins &lt;strong&gt;but&lt;/strong&gt; for only 95 Sass files 1min43 🤣.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 45.416666666666664%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://giphy.com/embed/PjNx7g5jtLyJtvDohb&quot; frameborder=&quot;0&quot; class=&quot;giphy-embed&quot; allowfullscreen style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
+&lt;h3&gt;Damn node-sass&lt;/h3&gt;
+&lt;p&gt;Once the migration from &lt;code class=&quot;language-text&quot;&gt;node-sass&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;sass&lt;/code&gt; (new Sass re-implementation) and the update of &lt;code class=&quot;language-text&quot;&gt;sass-loader&lt;/code&gt;, I was shocked!
+It took me about 10 minutes because there were few breaking changes and I &lt;strong&gt;gained more than 1min30&lt;/strong&gt; on the build time.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;sass-loader&lt;/code&gt; made big improvements on performances, you should definitely make sure you use the last version.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I lost a morning on gaining 17 seconds and I spent 10 minutes to win 1min30.🤣&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;IgnorePlugin, TerserPlugin&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;TerserPlugin&lt;/code&gt; is used to uglify the javascript code in order to reduce its size and readability. It’s a relatively long process, but &lt;em&gt;39 seconds&lt;/em&gt; is too much.
+Just by updating the version of TerserPlugin to use the one integrated in Webpack, I managed to &lt;strong&gt;reduce by 20 seconds&lt;/strong&gt; the build time.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;IgnorePlugin&lt;/code&gt; is a core plugin that was used a lot in our application to avoid loading certain scripts in order to reduce the weight of the site.
+It was necessary, but today with Webpack we can use much better than that. &lt;em&gt;Dynamic Import, ContextReplacement&lt;/em&gt;, there are plenty of solutions. As a general rule, we should avoid compiling files and then not using them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Recommendations from the community&lt;/h3&gt;
+&lt;p&gt;To improve the build perfs webpack provides a web page listing the actions to take to hunt what takes time.
+I strongly advise to have a look at it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://webpack.js.org/guides/build-performance/&quot;&gt;https://webpack.js.org/guides/build-performance/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Final Result&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    SMP  ⏱
+    General output time took 2 mins, 18.27 secs&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://giphy.com/embed/3rUbeDiLFMtAOIBErf&quot; frameborder=&quot;0&quot; class=&quot;giphy-embed&quot; allowfullscreen style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
+&lt;p&gt;Based on precise and concrete measures, I was able to drastically improve the webpack build of my application.
+No more computers suffering just to compile a bit of JS and SASS.
+I could have lost whole days on futile modifications if I had not measured precisely what penalized the build.&lt;/p&gt;
+&lt;p&gt;ℹ️&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use &lt;code class=&quot;language-text&quot;&gt;Speed Measure Plugin&lt;/code&gt; to debug webpack build time&lt;/li&gt;
+&lt;li&gt;Track your build time evolution to detect big evolution before merge&lt;/li&gt;
+&lt;li&gt;Follow webpack performances recommandations&lt;/li&gt;
+&lt;li&gt;Look at webpack 5 new caching strategies&lt;/li&gt;
+&lt;li&gt;Keep your webpack config up to date&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Learning webpack Step By Step]]></title><description><![CDATA[If you need to use webpack for your project. You are very often forced by  who have done the Job for you. You don’t know what webpack is for…]]></description><link>https:/slashgear.github.io/learn-webpack/</link><guid isPermaLink="false">https:/slashgear.github.io/learn-webpack/</guid><pubDate>Tue, 23 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;If you need to use &lt;strong&gt;webpack&lt;/strong&gt; for your project. You are very often forced by &lt;code class=&quot;language-text&quot;&gt;CLI&lt;/code&gt; who have done the Job for you.&lt;/p&gt;
+&lt;p&gt;You don’t know what &lt;strong&gt;webpack&lt;/strong&gt; is for, or even how it works. You also don’t know where to start to learn.&lt;/p&gt;
+&lt;p&gt;That why I boostrapped some workshop in an open source project named:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Slashgear/webpack-workshop&quot;&gt;Slashgear/webpack-workshop&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;How to&lt;/h2&gt;
+&lt;p&gt;Just go to &lt;a href=&quot;https://slashgear.github.io/webpack-workshop/workshops/&quot;&gt;https://slashgear.github.io/webpack-workshop/workshops/&lt;/a&gt; and follow the instructions.&lt;/p&gt;
+&lt;p&gt;If you ❤️ these workshops, don’t hesitate to share this post and put a little ⭐️ on the repository.&lt;/p&gt;
+&lt;p&gt;You could also help me by contributing new workshops, or by translating them into different languages.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Announcing Git Kata]]></title><description><![CDATA[As a part-time computer science teacher, I often give workshops to learn about computers and their tools.
+Several times I met teams that had…]]></description><link>https:/slashgear.github.io/git-kata/</link><guid isPermaLink="false">https:/slashgear.github.io/git-kata/</guid><pubDate>Sun, 21 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;As a part-time computer science teacher, I often give workshops to learn about computers and their tools.
+Several times I met teams that had been using Git and Github for many years but were having a lot of trouble.
+The basis was known but in practice.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Wait, stay still, I’ll do that and you can get it back.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“I’m stuck working on the same file.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Pass me your file, I’ll add it to my PR.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I’m pretty sure you’ve heard that before!
+It may sound funny but it’s quite symptomatic of a lack of practice and reflexes to have when you get to use Git.
+Very often users know how to manage but do rather obscure things.&lt;/p&gt;
+&lt;p&gt;Often users know how to manage but do rather obscure things.
+A former colleague preferred to do several &lt;code class=&quot;language-text&quot;&gt;cherry-pick&lt;/code&gt; to retrieve the work of one of his colleagues’ successive commits rather than use a &lt;code class=&quot;language-text&quot;&gt;rebase&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;What if I designed a workshop that would allow teams to learn the right reflexes together when using Git and Github?&lt;/p&gt;
+&lt;p&gt;I had the opportunity to participate in several Coding Dojo/Kata programming sessions and I wanted to be inspired by this model.
+Instead of working on code, the workshop I designed focuses on git and its use.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Here is the link to the workshop, available free of charge on Github.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Slashgear/git-kata&quot;&gt;https://github.com/Slashgear/git-kata&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It’s all in the README.&lt;/p&gt;
+&lt;p&gt;Leave me your opinions and feedback in comments.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Why you should not publish content on Dev.to?]]></title><description><![CDATA[First things first: I’m not an Internet warrior. I do not wish to make Dev.to’s judgment here nor am I trying to convince you that this…]]></description><link>https:/slashgear.github.io/stop-dev-to/</link><guid isPermaLink="false">https:/slashgear.github.io/stop-dev-to/</guid><pubDate>Thu, 18 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;First things first: I’m not an Internet warrior. I do not wish to make Dev.to’s judgment here nor am I trying to convince you that this platform is right or wrong.&lt;/p&gt;
+&lt;p&gt;Instead, I would like to warn people of a trend that is endangering the web as we know it.&lt;/p&gt;
+&lt;h1&gt;TL;DR&lt;/h1&gt;
+&lt;p&gt;I don’t think Dev.to is a problem but how authors use it. Authors should not post their content only on dev.to. You should not publish content on Dev.to. You should &lt;strong&gt;share&lt;/strong&gt; content on Dev.to.&lt;/p&gt;
+&lt;h2&gt;“Actually, what’s your problem with Dev.to ?”&lt;/h2&gt;
+&lt;p&gt;Being an author for several years, I used to share articles on my personal blog. I was quickly confronted with an obvious problem. It is difficult to “make” a small personal blog live in a web world where social networks are taking up more and more space.&lt;/p&gt;
+&lt;p&gt;By publishing on my personal blog, I had a small audience. It was difficult for my articles to get passed my first level contacts range.&lt;/p&gt;
+&lt;p&gt;I was therefore quickly tempted to find a solution to remedy this visibility problem. The solution presented by one of my colleagues seemed attractive to me.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Why don’t you try the new Medium platform? Authors who publish on Medium have thousands of readers! Also, the editing interface is pretty cool!”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That’s what I did. I stopped publishing on my personal blog and started writing and publishing my posts on Medium only. And do I regret it today.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;And then unfortunately the story went wrong!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Medium, in only a few months, and following some business decisions, has really become a platform to avoid.&lt;/p&gt;
+&lt;p&gt;User tracking, advertising, a paywall, a real disgusting cocktail that would make &lt;a href=&quot;https://www.laquadrature.net/en/&quot;&gt;“la quadrature du net”&lt;/a&gt; scream. Many people have decided to leave the platform as a result of these decisions.&lt;/p&gt;
+&lt;p&gt;I’m not saying Dev.to will suffer the same fate. I’m not a medium, I don’t have the ability to see into the future. But in practice, Dev.to remains a company and thus is tied to financial issues. And the stability of Dev.to’s &lt;em&gt;Business Model&lt;/em&gt; is rather obscure.&lt;/p&gt;
+&lt;p&gt;You really have to trust the team so that Dev.to doesn’t go in the wrong direction. I would very much like to hear Ben Halpern’s opinion on this subject.&lt;/p&gt;
+&lt;h1&gt;So we should stop writing on Dev.to ?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;The answer is NO&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Dev.to is great, and have an amazing community. &lt;strong&gt;But&lt;/strong&gt;, authors should not post their blog content only on Dev.to.&lt;/p&gt;
+&lt;p&gt;We should follow the &lt;strong&gt;P.O.S.S.E&lt;/strong&gt; principle.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Publish (on your) Own Site, Syndicate Elsewhere&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Respecting it will help authors being and staying responsible of their publications on the Internet. This will:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;protect the web from hyper-centralization&lt;/li&gt;
+&lt;li&gt;avoid having your copyrights stolen&lt;/li&gt;
+&lt;li&gt;promote your blog&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All authors should have their own personal blog where they publish the content. They can then share this content on other platforms by placing a &lt;code class=&quot;language-text&quot;&gt;canonical url&lt;/code&gt; pointing to their own blog page.&lt;/p&gt;
+&lt;p&gt;Dev.to has this feature, which is very rare. &lt;strong&gt;I would really like this feature to be highlighted&lt;/strong&gt; so that the authors are aware of the problem.&lt;/p&gt;
+&lt;p&gt;For example, this post is available on &lt;a href=&quot;https://slashgear.github.io/posts/stop-dev-to/&quot;&gt;my personal blog&lt;/a&gt; and its content is shared here on Dev.to.&lt;/p&gt;
+&lt;p&gt;I also worked on a project for an open source syndication platform named &lt;a href=&quot;https://open-blog.dev/&quot;&gt;“Open Blog”&lt;/a&gt; in order to raise awareness about not being the owner of your content. If you liked this article, come take a look at it.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Creating an image lazy loading component with React]]></title><description><![CDATA[In the web world, we often have complex page structure.
+All the parts are not visible in the user viewport at first.
+Why should we load all…]]></description><link>https:/slashgear.github.io/creating-an-image-lazy-loading-component-with-react/</link><guid isPermaLink="false">https:/slashgear.github.io/creating-an-image-lazy-loading-component-with-react/</guid><pubDate>Tue, 02 Apr 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In the web world, we often have complex page structure.
+All the parts are not visible in the user viewport at first.
+Why should we load all the page content to be able to see it ?&lt;/p&gt;
+&lt;p&gt;By default, the browser load images in the lower part of you website, even if the user can’t see them at first.
+It could slow down the performance of your website.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Every website audit tool will ask you to set up lazy loading on images. But how to do it with React ?&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Example with a pictures grid&lt;/h2&gt;
+&lt;p&gt;In order to show you how to do it with React, I bootstrapped a small app showing a grid of 1000 images.
+I used styled-component as CSS in JS framework (CSS is JS is not required to lazy load images).&lt;/p&gt;
+&lt;iframe src=&quot;https://codesandbox.io/embed/m42qm215py?fontsize=14&quot; title=&quot;Eager loading images&quot; style=&quot;width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;&quot; sandbox=&quot;allow-modals allow-forms allow-popups allow-scripts allow-same-origin&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;If you open a tab with your devtools opened, you will realize that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;many HTTP queries has been made by your browser to fetch all the images.&lt;/li&gt;
+&lt;li&gt;all broken images have no fallback in order to have a smoother feeling.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;NB: loading 1000 images in a page is a very bad practice. It is just for the example here.&lt;/p&gt;
+&lt;h2&gt;Let’s lazy load images&lt;/h2&gt;
+&lt;p&gt;Let’s create a dedicated component with an image placeholder.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; React &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; styled &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;styled-components&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Image &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; styled&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;img&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;
+  display: block;
+  height: 100px;
+  width: 100px;
+&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; placeHolder &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;token string&quot;&gt;&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;LazyImage&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Image&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;placeHolder&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you use this component instead of a simple &lt;code class=&quot;language-text&quot;&gt;img&lt;/code&gt; tag, you won’t load image at all.
+It will display the placeholder here encoded in &lt;code class=&quot;language-text&quot;&gt;base64&lt;/code&gt;.
+This simple trick will let your browser show an image without generating an HTTP request because it is already &lt;em&gt;hardcoded&lt;/em&gt; in the source.&lt;/p&gt;
+&lt;p&gt;Base64 image source is just 1x1 pixel wide png. With that component, your browser won’t load the real image. We need to tell him &lt;em&gt;when&lt;/em&gt; to do it.&lt;/p&gt;
+&lt;h3&gt;Intersection Observer for the win&lt;/h3&gt;
+&lt;p&gt;Now let’s try to trigger real image loading when the user really need it.
+For that, we would need to have an API that let us know if an element is visible in user viewport.
+That is exactly what &lt;a href=&quot;https://developer.mozilla.org/fr/docs/Web/API/Intersection_Observer_API&quot;&gt;IntersectionObserver&lt;/a&gt; provides us.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e853e350b0c155f78b0c301d079c9239/29007/intersection-observer-caniuse.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 43.24324324324324%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAAB30lEQVQoz2VPXWvTUBjO/xO8FL2xtyIbjK1eTBA2ax2WKoWtVlxF3NBtbAxEdLZdG9Mm/bCmaU5yTto062k+miZpyJIWJzrpzNUoCA/PxfP18hIDxGDEnEFGEyqe2vZH0DfFYAQnFpqHjVuhPrUld8hbOu+NutZAIDCiMWQGqHoGaUWo9AClCGWZp6w+G0avy9eLIfsjMTAFzwAEbFGQLSK2CJsFiT2VQUURq+GEM+Dmy/8jdAmTO9bkhtptmCpn4rbZofxefmJ1JjYK5qLhO5MRnFcCCxI6IPXuD1Op90+OB82iLlWGbB6jGgZlDZZlkRSbp0qr1AdliWcwIBXwTeJIvp7DPEv0yV20tdyNrx69u9UG78fduvjmgWNwri154SkDjm3JN9HUQIGOprromdC1Ok6vJe89JTa3by8c3Fh7cecuef/Dy6VScnHx481mPCofZNsnO19S0eaTaHFjqbCfqPGfquhrLb0OMrGWsLf+OUIcHSbi9PN7heWV3MNnqcjb1EKaTmfikWJihdpNZHIb35OPDvdjmVIyS6Ve0Zv57cdsdo1sxHaqr4m/vnZp98ZG2xsCwwXOeedqjPVz0Z30/gTqzFMvLvTLQL9y1ZmLZ07/91T7OdV+OepsjP8BRo+wDydh9I0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;IntersectionObserver support in March 2019&quot;
+        title=&quot;IntersectionObserver support in March 2019&quot;
+        src=&quot;/static/e853e350b0c155f78b0c301d079c9239/fcda8/intersection-observer-caniuse.png&quot;
+        srcset=&quot;/static/e853e350b0c155f78b0c301d079c9239/12f09/intersection-observer-caniuse.png 148w,
+/static/e853e350b0c155f78b0c301d079c9239/e4a3f/intersection-observer-caniuse.png 295w,
+/static/e853e350b0c155f78b0c301d079c9239/fcda8/intersection-observer-caniuse.png 590w,
+/static/e853e350b0c155f78b0c301d079c9239/efc66/intersection-observer-caniuse.png 885w,
+/static/e853e350b0c155f78b0c301d079c9239/c83ae/intersection-observer-caniuse.png 1180w,
+/static/e853e350b0c155f78b0c301d079c9239/29007/intersection-observer-caniuse.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Intersection observer API provides us observe method to check on the visibility of an HTML element using its own ref.
+In order to follow last React API, I used &lt;em&gt;Hooks&lt;/em&gt; to keep a simple functional component with state and lifecycle.&lt;/p&gt;
+&lt;p&gt;If you don’t know what are Hooks or how to use them, take a look at my friend and colleague Matthieu Lux (&lt;a href=&quot;https://twitter.com/swiip?lang=fr&quot;&gt;@Swiip&lt;/a&gt;) with his &lt;a href=&quot;https://medium.zenika.com/react-hooks-my-introduction-81b15e6eff20&quot;&gt;React Hooks : my introduction article&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I had to use &lt;code class=&quot;language-text&quot;&gt;useState&lt;/code&gt; to handle the &lt;code class=&quot;language-text&quot;&gt;img ref&lt;/code&gt; in order to correctly trigger my side effect only when the &lt;code class=&quot;language-text&quot;&gt;ref&lt;/code&gt; is correctly loaded.
+Take a look at &lt;a href=&quot;https://medium.com/@teh_builder/ref-objects-inside-useeffect-hooks-eb7c15198780&quot;&gt;this article&lt;/a&gt; which explains why we can’t use &lt;code class=&quot;language-text&quot;&gt;useRef&lt;/code&gt; with &lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; React&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; useState&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; useEffect &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; styled &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;styled-components&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Image &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; styled&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;img&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;
+  display: block;
+  height: 100px;
+  width: 100px;
+&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; placeHolder &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;token string&quot;&gt;&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;LazyImage&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; src&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; alt &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;imageSrc&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; setImageSrc&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;placeHolder&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;imageRef&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; setImageRef&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;token function&quot;&gt;useEffect&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; observer
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; didCancel &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;imageRef &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; imageSrc &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; placeHolder&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;IntersectionObserver&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        observer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;IntersectionObserver&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+          &lt;span class=&quot;token parameter&quot;&gt;entries&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            entries&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;entry&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;token comment&quot;&gt;// when image is visible in the viewport + rootMargin&lt;/span&gt;
+              &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                &lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;didCancel &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt;
+                &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;entry&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;intersectionRatio &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; entry&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;isIntersecting&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+              &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token function&quot;&gt;setImageSrc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;src&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+              &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            threshold&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0.01&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            rootMargin&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;75%&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        observer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;observe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;imageRef&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// Old browsers fallback&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;setImageSrc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;src&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      didCancel &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// on component unmount, we remove the listner&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;observer &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; observer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;unobserve&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        observer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;unobserve&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;imageRef&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Image&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;ref&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;setImageRef&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;imageSrc&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;alt&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In this brand new implementation, I just made the component trigger image loading only when 1% of the image is visible in the viewport.&lt;/p&gt;
+&lt;p&gt;You can also note that if Intersection Observer is not available, it will trigger image loading.
+As a consequence, some browsers won’t be able to lazy load images.&lt;/p&gt;
+&lt;p&gt;You can also add margin on the viewport trigger, to make your browser load image if they are visible in the viewport + margin.&lt;/p&gt;
+&lt;h3&gt;Pimp it up with style&lt;/h3&gt;
+&lt;p&gt;With that shiny LazyImage component, we are now able to let browser load image at will.
+But we still not have a nice animation to display the loading to the user.&lt;/p&gt;
+&lt;p&gt;In order to make it smooth, I just had to handle &lt;code class=&quot;language-text&quot;&gt;onLoad&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;onError&lt;/code&gt; native event with custom CSS class to display image correctly.&lt;/p&gt;
+&lt;p&gt;This is the &lt;a href=&quot;https://codesandbox.io/s/34vpxnno9p?fontsize=14&quot;&gt;LazyImage component&lt;/a&gt; :&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; React&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; useState&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; useEffect &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; styled &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;styled-components&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; placeHolder &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;token string&quot;&gt;&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Image &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; styled&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;img&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;
+  display: block;
+  height: 100px;
+  width: 100px;
+  // Add a smooth animation on loading
+  @keyframes loaded {
+    0% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  // I use utilitary classes instead of props to avoid style regenerating
+  &amp;amp;.loaded:not(.has-error) {
+    animation: loaded 300ms ease-in-out;
+  }
+  &amp;amp;.has-error {
+    // fallback to placeholder image on error
+    content: url(&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;placeHolder&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;);
+  }
+&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;LazyImage&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; src&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; alt &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;imageSrc&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; setImageSrc&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;placeHolder&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;imageRef&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; setImageRef&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;onLoad&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;event&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    event&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;target&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;classList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;loaded&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;onError&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;event&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    event&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;target&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;classList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;has-error&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token function&quot;&gt;useEffect&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; observer
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; didCancel &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;imageRef &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; imageSrc &lt;span class=&quot;token operator&quot;&gt;!==&lt;/span&gt; src&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;IntersectionObserver&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        observer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;IntersectionObserver&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+          &lt;span class=&quot;token parameter&quot;&gt;entries&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            entries&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;entry&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                &lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;didCancel &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt;
+                &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;entry&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;intersectionRatio &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; entry&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;isIntersecting&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+              &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token function&quot;&gt;setImageSrc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;src&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                observer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;unobserve&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;imageRef&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+              &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            threshold&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0.01&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            rootMargin&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;75%&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        observer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;observe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;imageRef&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// Old browsers fallback&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;setImageSrc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;src&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      didCancel &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// on component cleanup, we remove the listner&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;observer &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; observer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;unobserve&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        observer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;unobserve&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;imageRef&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;src&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; imageSrc&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; imageRef&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Image&lt;/span&gt;&lt;/span&gt;
+      &lt;span class=&quot;token attr-name&quot;&gt;ref&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;setImageRef&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+      &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;imageSrc&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+      &lt;span class=&quot;token attr-name&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;alt&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+      &lt;span class=&quot;token attr-name&quot;&gt;onLoad&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;onLoad&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+      &lt;span class=&quot;token attr-name&quot;&gt;onError&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;onError&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;iframe src=&quot;https://codesandbox.io/embed/34vpxnno9p?fontsize=14&quot; title=&quot;Lazy loading&quot; style=&quot;width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;&quot; sandbox=&quot;allow-modals allow-forms allow-popups allow-scripts allow-same-origin&quot;&gt;&lt;/iframe&gt;
+&lt;h2&gt;Going further&lt;/h2&gt;
+&lt;p&gt;Lazy loading is key to make an awesome user experience.
+This article is only focused on images loading. However, with React you can lazy load more than just images.
+Thanks to &lt;code class=&quot;language-text&quot;&gt;React.lazy&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;React.Suspense&lt;/code&gt; feature, you could also lazy load components and related code.&lt;/p&gt;
+&lt;p&gt;In the upcoming version of React (currently in 16.8.5), we will be able to use &lt;em&gt;createFetcher&lt;/em&gt; (a still work in progress feature) to let us control lazy loading and fallback of &lt;em&gt;asynchronous rendered components&lt;/em&gt;.
+If you are curious, take a look at this conference about the upcoming features.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/nLF0n9SACd4?controls=0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Why you should use Compression Webpack Plugin?]]></title><description><![CDATA[If you are using webpack as module bundler for your application, you probably are concerned by its own performance and loading time.
+You may…]]></description><link>https:/slashgear.github.io/why-you-should-use-compression-webpack-plugin/</link><guid isPermaLink="false">https:/slashgear.github.io/why-you-should-use-compression-webpack-plugin/</guid><pubDate>Tue, 02 Apr 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;If you are using webpack as module bundler for your application, you probably are concerned by its own performance and loading time.
+You may have used code splitting, tree shaking, uglifyfication but you may have forgot a very important step.&lt;/p&gt;
+&lt;h2&gt;Compression is mandatory&lt;/h2&gt;
+&lt;p&gt;In 2019, if you are not using a compression algorithm to deliver your files in a lighter version to make your website load faster, the situation is critical.
+Every website performance analyser will tell you to do it. Here is a size comparison of a vanilla &lt;a href=&quot;https://cli.vuejs.org/&quot;&gt;Vue CLI&lt;/a&gt; website with and without Gzip.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/0a47e/vue-cli-vanilla-size.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 62.16216216216216%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsSAAALEgHS3X78AAABM0lEQVQoz5VSiUrDQBDt/3+B+hf6BSoiCta2iiB4pAdVSI9ks2d2ZidOuqlN44XDMHkJ72XOnvdeCCE3lmWZUlJrtc5EroAqwqIA56ofrNd+IaZvgMcqzcGVzi9SIwT9KbbWilxIYajhUuun1AERN+IQAoBfLIVYScD4hXas38XcuTF6tcy00JHQ4X0vZhmnRUQuOxdKrlXdOdWZI2jjCHZirTUAbOqE1ySdzFVFseL2mOgL2JbNDwTEAJOXt4ur9/79evikB49ylPjRBNmHHKeBfTDGu1mQjjxQI+bMSilbuvnz9Ozw+Pzo5PSgjteX05uH4jbBT+8nOBxjbsj5eqt7e0YoKfBJAEewRSySgicsIwHAEoW4HZ7R/pFse+ImjG0OyxjrfRwKMY4rLEvfFf/XPgDNJrrq4uYUcgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Vue CLI vanilla size compared to gzip&quot;
+        title=&quot;Vue CLI vanilla size compared to gzip&quot;
+        src=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/fcda8/vue-cli-vanilla-size.png&quot;
+        srcset=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/12f09/vue-cli-vanilla-size.png 148w,
+/static/15d620b40e592ba0943d30e7a40c5dc2/e4a3f/vue-cli-vanilla-size.png 295w,
+/static/15d620b40e592ba0943d30e7a40c5dc2/fcda8/vue-cli-vanilla-size.png 590w,
+/static/15d620b40e592ba0943d30e7a40c5dc2/0a47e/vue-cli-vanilla-size.png 600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Here we reduce 64% of the actual size with Gzip.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Compressing static files on the fly is redondant&lt;/h2&gt;
+&lt;p&gt;Every modern web server has the possibility to compress files on demand.
+Although Gzip is fast, compressing static files on each demand is anti-pattern.
+Even if you use a cache in front of your static files requests.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Static files compression should be done during the build time.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you are in a webpack context, adding compression is very easy.&lt;/p&gt;
+&lt;p&gt;To do so, you can install the &lt;em&gt;compression-webpack-plugin&lt;/em&gt; with:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; --dev compression-webpack-plugin&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;…and add it in your production configuration:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;
+plugins&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;CompressionWebpackPlugin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In two easy steps, your output static files will have their &lt;em&gt;.gz&lt;/em&gt; equivalent.
+Now if you ship those files on a webserver like &lt;a href=&quot;https://caddyserver.com/&quot;&gt;Caddy&lt;/a&gt;.
+It will automatically deliver the pre-gzipped version if they exist.
+However you need to activate it &lt;a href=&quot;http://nginx.org/en/docs/http/ngx_http_gzip_static_module.html&quot;&gt;in Nginx server configuration&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;“Should we only generate .gz ?”&lt;/h2&gt;
+&lt;p&gt;If you followed the above steps, you enabled compression on your webserver. That is great!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;But in 2019, Gzip is not the only solution to compress your files.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;Zopfli&lt;/h3&gt;
+&lt;p&gt;Zopfli is a lossless compression algorithm which has better compression results compared to Gzip with slower compression time.
+So if you can, you must always use Zopfli compression for static files, instead of basic Gzip.
+Output files of Zopfli respects the same format as Gzip, browser support is the same.&lt;/p&gt;
+&lt;p&gt;You can use zopfli &lt;a href=&quot;https://github.com/webpack-contrib/compression-webpack-plugin#using-zopfli&quot;&gt;with compression webpack plugin.&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Brotli&lt;/h3&gt;
+&lt;p&gt;Brotli is a recent compression algorithm (&lt;a href=&quot;https://tools.ietf.org/html/rfc7932&quot;&gt;RFC 7932&lt;/a&gt;) with &lt;a href=&quot;https://caniuse.com/#search=brotli&quot;&gt;a great browser support&lt;/a&gt;.
+Based on a new context modeling and a new file format, brotli is very performant for compressing static files.
+There is still some difficult parts with brotli (not available on Node &amp;#x3C; v11, hard to configure on some webservers like Nginx)&lt;/p&gt;
+&lt;p&gt;You can use brotli &lt;a href=&quot;https://github.com/webpack-contrib/compression-webpack-plugin#using-zopfli&quot;&gt;with compression webpack plugin.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0d631442de390a6737ca967f30f3263d/416ee/vue-cli-complete-size.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.27027027027026%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsSAAALEgHS3X78AAABLElEQVQoz51TPU/DMBDt72Vi4g/wVxhAIJhYK2ABNUkXkECitEiFpWqjJmn9dR/mEpPiqhlorefzy51fcnd2ekRkrTXGaK0DEY//3+hti2vLRCvDVhlX5ihTVQ5ctzgszJ5ktgOQCYnBMYFD4DbE0R7hv2JjbLHMCSF4492dfEssya/Wa2yq3VustVrMZ4h4iBgAiqoKsT3EIpNFK1UuZ0RwiFiaO57meQESlDYLqO5/N99N231O35Qpgz86S44eY96KpdVyyKPXUdIfDB+G2X2a3KXJ8zwbQzbBtLENYPABL19kXSSWzwL4p8ezi/Ojm+uTy6vj/u3p4vvdWDTgjePaBji24EPhf2kLs8TyRoERtNlJTtjcnF3unOtF1bFnEtQ3E2IBbvjmnwn8B+63MwOVH0z/AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Vue CLI compression results&quot;
+        title=&quot;Vue CLI compression results&quot;
+        src=&quot;/static/0d631442de390a6737ca967f30f3263d/fcda8/vue-cli-complete-size.png&quot;
+        srcset=&quot;/static/0d631442de390a6737ca967f30f3263d/12f09/vue-cli-complete-size.png 148w,
+/static/0d631442de390a6737ca967f30f3263d/e4a3f/vue-cli-complete-size.png 295w,
+/static/0d631442de390a6737ca967f30f3263d/fcda8/vue-cli-complete-size.png 590w,
+/static/0d631442de390a6737ca967f30f3263d/efc66/vue-cli-complete-size.png 885w,
+/static/0d631442de390a6737ca967f30f3263d/416ee/vue-cli-complete-size.png 930w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;In conclusion: “Why doing it with Webpack ?”&lt;/h2&gt;
+&lt;p&gt;Compressing static files during the build steps is still a moot topic.
+Some people argue that it is up to the web server to compress the files.
+In fact, today web servers do not really optimize the compression of static files.&lt;/p&gt;
+&lt;p&gt;When you compress during the build :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can easily see the complete size of your web application (which is great when you want to track web app performances)&lt;/li&gt;
+&lt;li&gt;Your app is much more portable (you will easily change your deployment or your web server with pre-compressed assets)&lt;/li&gt;
+&lt;li&gt;As a frontend developper you are familiar with the great value of lossless compression.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Angular basics]]></title><description><![CDATA[Those are my slides for the course I gave about Angular to students of Polytech Lyon in september 2017.]]></description><link>https:/slashgear.github.io/angular-training/</link><guid isPermaLink="false">https:/slashgear.github.io/angular-training/</guid><pubDate>Fri, 15 Sep 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Those are my slides for the course I gave about Angular to students of Polytech Lyon in september 2017.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt; &lt;iframe src=&quot;https://slashgear.github.io/angular-basics/#/&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;width:100%;height:100%;left:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot; allowfullscreen&gt;&lt;/iframe&gt; &lt;/div&gt; &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Enseigner autrement]]></title><description><![CDATA[Depuis septembre j’ai pu m’initier à l’enseignement dans le supérieur pour des étudiants en Master 2 et Master 1 à l’école
+Polytech Lyon. Je…]]></description><link>https:/slashgear.github.io/enseigner-autrement/</link><guid isPermaLink="false">https:/slashgear.github.io/enseigner-autrement/</guid><pubDate>Fri, 30 Jun 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Depuis septembre j’ai pu m’initier à l’enseignement dans le supérieur pour des étudiants en Master 2 et Master 1 à l’école
+Polytech Lyon. Je vous propose ici un petit REX de mon expérence en tant que professeur, me permettant par la même occasion de vous partager
+les méthodes d’enseignement que j’ai pu tester avec mes 80 étudiants.&lt;/p&gt;
+&lt;h1&gt;Enseignants / Étudiants, des objectifs qui diffèrent&lt;/h1&gt;
+&lt;p&gt;Je vois aujourd’hui deux soucis dans l’enseignement supérieur (mais cela reste valable à plusieurs niveaux)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Les étudiants dans la majorité visent la moyenne et le passage de leur année. Ils devraient plutôt essayer de comprendre ce qu’ils font et pourquoi ils le font.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Les étudiants se focalisent trop sur la note et pas assez sur les connaissances et compétences qu’ils peuvent acquérir.
+La note devrait refleter les compétences de l’étudiant, au final, on s’en sert juste pour discerner
+les étudiants qui travaillent et ceux qui ne font rien.
+La note ne reflète plus vraiment ce que l’étudiant maîtrise, mais plutôt son “classement” dans le groupe d’élève auquel il
+appartient.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;On teste la compréhension des étudiants quand il est trop tard.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Malgré du controle continu, on a construit les cours dans le supérieur pour ne pas revenir sur ce qui a déjà
+été présenté. Si un élève n’a pas compris, ce n’est pas grave, on continue. Lors de l’évaluation, plusieurs semaines plus tard,
+l’étudiant se plante et c’est de sa faute. Je pense qu’il est tout à fait normal qu’un étudiant, pour une raison X ou Y, loupe un passage du cours
+et ne le comprenne pas. Malheureusement, mis à part le redoublement, dans le supérieur, il n’y a pas vraiment de solution.&lt;/p&gt;
+&lt;p&gt;Face à ces deux problématiques, j’ai essayé de mettre en place plusieurs outils pédagogiques.
+Je vais d’abord vous les présenter, vous faire un retour sur leur efficacité.&lt;/p&gt;
+&lt;h2&gt;Tester la compréhension à chaque cours&lt;/h2&gt;
+&lt;p&gt;Afin de voir rapidement si un élève décroche, rien de tel qu’un petit quizz à chaque fin de cours pour tester ce qui a été retenu par l’étudiant.
+En général, je donne un petit quizz de 10 questions, qui se concentrent sur les points les plus importants du cours. Ce sont des questions à choix multiple, mais j’y adjoins au moins 2-3 questions ouvertes.
+Je les corrige le jour même, cela me permet de leur faire un retour rapidement et voir avec eux au cours suivant ce qu’il faudra revoir ensemble.&lt;/p&gt;
+&lt;p&gt;Les quizz sont un super outil pour analyser votre TD, ce qui a été compris ou non.
+Mais ils permettent également de contraindre les étudiants à écouter/ participer. En effet, s’ils ne suivent pas pendant le cours,
+ils vont difficilement pouvoir répondre.&lt;/p&gt;
+&lt;p&gt;Petites astuces que j’utilise pour mes quizz:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Les étudiants ont accès à Internet, leurs notes pendant le cours, les slides etc.&lt;/li&gt;
+&lt;li&gt;1 min 30 par question&lt;/li&gt;
+&lt;li&gt;Les étudiants ne peuvent pas communiquer entre eux, si j’ai le moindre doute au prochain quizz ils auront moitié moins de temps que les autres.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;En limitant le temps, cela permet de ne pas trop simplifier le test sachant qu’ils ont accès à tout.
+Si l’étudiant a bien suivi, il pourra même terminer avec de l’avance.
+S’il ne sait pas répondre directement à une question, il pourra fouiller ses notes ou chercher sur internet pour trouver la réponse.&lt;/p&gt;
+&lt;h2&gt;La remédiation&lt;/h2&gt;
+&lt;p&gt;Derrière cette appelation barbare se cache un méthodologie révolutionnaire dans l’enseignement. Je l’ai décourverte au lycée, en terminale avec un
+enseignant en mathématiques. On pourra comparer cette révolution à l’arrivée de l’agilité dans l’informatique.
+La comparaison entre agilité et remédiation ne s’arrête pas juste à l’impact qu’elles ont.
+En résumant beaucoup la remédiation, on peut dire que l’objectif est d’itérer avec l’étudiant, afin qu’à chaque fois il fournisse un meilleur
+travail, qu’il comprenne plus de choses.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Comment ça marche dans les faits ?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Il faut simplement considérer qu’une note n’est pas figée, un étudiant doit normalement
+fournir un meilleur travail, doit mieux comprendre s’il passe à nouveau un examen et qu’on lui explique
+ses erreurs à la précédente itération.&lt;/p&gt;
+&lt;p&gt;Je l’applique au rendu des TPs d’informatique avec mes étudiants. Ils me rendent une première version (comme si c’était la dernière),
+je la corrige et leur faire plein de retours. Je leur décris tout ce que je juge faux, ou qui pourrait être précisé/amélioré.
+Je donne une nouvelle deadline aux étudiants, ils peuvent corriger leurs erreurs, je recorrige leur TP (je me concentre sur ce qu’ils devaient corriger, donc cela me prend peu de temps).
+On itère autant de fois que l’étudiant le souhaite, il voit donc sa note augmenter, il voit grâce aux retours quels sont les points sur lesquels
+il doit travailler.&lt;/p&gt;
+&lt;p&gt;Niveau résultats, avec les étudiants c’est très efficace, la première itération est souvent moyenne, mais dès la deuxième on obtient des resultats très correct.
+Je passais de 2,3/5 de moyenne au TP à 4,1/5.&lt;/p&gt;
+&lt;p&gt;La remédiation peut se réaliser de plusieurs manières mais elle a toujours les mêmes conséquences :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La responsabilisation de l’étudiant (un étudiant qui travaille aura des résultats)&lt;/li&gt;
+&lt;li&gt;L’étudiant travaille plus (un petit effort lui permet d’augmenter sa note, de comprendre plus)&lt;/li&gt;
+&lt;li&gt;L’étudiant peut se tromper.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pour réussir à coup sûr votre passage à la remédiation :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Outillez-vous, j’en ai déjà parlé dans &lt;a href=&quot;/posts/github-classroom&quot;&gt;un autre article&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Responsabilisez vos étudiants jusqu’au bout en leur demandant de choisir leur dealine pour leur itération.
+(les étudiants ont plein de travaux à rendre, leur permettre de souffler quand ils sont chargés sera grandement apprécié).&lt;/li&gt;
+&lt;li&gt;La première fois que vous le mettez en place avec un groupe d’étudiants, vous ne devez pas leur dire qu’ ils seront notés deux fois.
+Ils vont fournir une première itération de bonne qualité et vont comprendre par l’exemple l’intérêt de cette méthode.
+Ainsi, pour le deuxième TP, ils joueront naturellement le jeu.&lt;/li&gt;
+&lt;li&gt;Rappelez vous qu’il faut à tout prix éviter de laisser les étudiants vous rendre un travail non terminé en fin de première itération.
+N’hésitez pas à ne pas corriger le travail d’un élève si il vous fournit un travail non terminé ou baclé.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Conseils pour futurs professeurs&lt;/h1&gt;
+&lt;p&gt;Si vous aussi, vous avez l’envie de partager vos compétences, votre passion avec des étudiants, je ne peux que vous inciter à
+tenter l’aventure. N’hésitez pas à contacter vos anciennes écoles, ou bien les écoles proches de chez vous et voir avec eux s’ils recherchent
+des interventions. Je suis presque sûr que si vous proposez un sujet qui vous passione, ils trouveront un créneau pour que vous puissiez faire un
+atelier avec les étudiants.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Commencez petit avec des interventions de 4h ou 8h maximum.&lt;/strong&gt;
+Des interventions plus longues seront pour vous un vrai calvaire à préparer. Entre les slides, les exercices, les TP, les
+corrections, cela vous prendra pas mal de temps. Ce temps sera bien plus maitrisable sur des petits ateliers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Discutez de votre atelier avec des personnes dans le même domaine d’activité&lt;/strong&gt;, ils sauront vous
+dire si votre présentation/atelier est objectivement intéressant et complèt.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Demandez un retour à vos étudiants grâce à un sondage anonyme&lt;/strong&gt; L’étudiant vous fera des retours sur vos méthodes pédagogiques.
+mais également sur le contenu de votre cours.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Amusez vous&lt;/strong&gt; Si pour vous le sujet que vous avez à présenter à vos étudiants ne vous plait pas ou ne vous intéresse pas, vous ne risquez pas de les intéresser.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Partager vos cours&lt;/strong&gt; Quelqu’un a peut-être eu la même idée d’atelier, ce serait vraiment dommage que vous ne
+partagiez pas vos exéperiences. Dans le domaine de l’informatique, la plafeforme &lt;a href=&quot;https://education.github.community&quot;&gt;Github Classroom community&lt;/a&gt; possède un forum très actif pour les enseignants en informatique.&lt;/p&gt;
+&lt;h1&gt;Prochain objectif, automatiser la notation&lt;/h1&gt;
+&lt;p&gt;Pour l’année prochaine, je souhaite complètement automatiser la notation des tests et des TPs que je donne aux étudiants.
+J’y vois plusieurs intérêts : premièrement c’est un sacré challenge, deuxièmement je pense y gagner pas mal de temps.
+En effet, après une période de préparation qui peut paraître importante, je vais pouvoir noter mes 80 étudiants en quelques minutes et
+ainsi leur donner un feedback encore plus rapide.&lt;/p&gt;
+&lt;p&gt;Dernier point et sûrement le plus intéressant pour moi, avec une notation automatique, je pense rendre la note plus objective.
+Comme pour la correction anonyme, la correction automatisée ne se fie qu’à ce que l’étudiant a réalisé.
+Ce n’est pas tout, la correction automatisée, dans l’idée que je m’en fais, permet de s’éviter de comparer les travaux
+et établir un pseudo classement des étudiants.&lt;/p&gt;
+&lt;p&gt;Je vois deux façons de le faire :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Des tests fonctionnels sur les réalisations des étudiants.&lt;/li&gt;
+&lt;li&gt;Utiliser un outil pour noter automatiquement les étudiants à partir de Quizz.
+Je vous renvoie directement à &lt;a href=&quot;https://medium.com/scribe/enseigner-le-d%C3%A9veloppement-web-%C3%A0-85-%C3%A9tudiants-sans-sarracher-les-cheveux-%EF%B8%8F-e518274f7063&quot;&gt;l’article d’Adrien Joly&lt;/a&gt; qui traite de ce sujet.
+Je pense réellement utiliser son outil avec mes étudiants à la rentrée.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Merci à vous d’être allé jusque là, je vous offre donc un cookie 🍪.
+N’hésitez pas à me partager vos expériences en tant que professeurs, mais également vos questions et remarques en commentaire de cet article.&lt;/p&gt;
+&lt;p&gt;Je me permets ici de remercier cette école, dont je suis sorti diplomé l’année dernière et qui me renouvelle sa confiance
+pour que j’enseigne l’année prochaine.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[MiXiT 2017]]></title><description><![CDATA[Cette fin de semaine c’était la nouvelle édition de la super conférence
+lyonnaise avec des crêpes et du coeur. Malgré le tirage au sort…]]></description><link>https:/slashgear.github.io/mixit17/</link><guid isPermaLink="false">https:/slashgear.github.io/mixit17/</guid><pubDate>Thu, 20 Apr 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Cette fin de semaine c’était la nouvelle édition de la super &lt;em&gt;conférence
+lyonnaise avec des crêpes et du coeur.&lt;/em&gt; Malgré le tirage au sort (très contesté) mis en place cette année,
+j’ai réussi a obtenir le &lt;em&gt;golden ticket&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;⚠️ Disclaimer, dans cet article, je donne ici mon ressenti sur cette édition du mixit.
+Je vais essayer d’ajouter ici les liens vers les vidéos des conférences dès que les liens seront disponibles
+Je ne parle pas de tous les talks auxquels j’ai pu assister.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Une introduction toute en musique&lt;/h2&gt;
+&lt;p&gt;Tout a commencé avec une super introduction musicale autour de la gestion de groupe
+géré d’une main de maître …du moins d’une baguette de chef d’orchestre par Samuel Couffignal.
+Très bel exemple de l’autogestion d’un groupe et du pouvoir d’action qu’un leader peut avoir sur un groupe.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/215505962&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;width:100%;height:100%;left:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;/div&gt;
+&lt;p&gt;Je vous passe l’anecdotique présentation de la monnaie locale : &lt;em&gt;&lt;a href=&quot;http://www.lagonette.org/&quot;&gt;La gonette&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Jour 1&lt;/h2&gt;
+&lt;h3&gt;Elm on l’♥️, on l’♥️ pas&lt;/h3&gt;
+&lt;p&gt;Premier talk, j’attaque par la présentation de Jordane
+Grenat sur ELM, une alternative pour le monde JS. Une présentation bien sympathique de l’environnement et de ses avantages.
+Beaucoup d’avantages sur cette plateforme, notamment le compilateur qui a vraiment été orienté utilisateur.
+L’analyse d’erreur de compilation est très fine et donne beaucoup d’informations sur la résolution de l’erreur.
+Je reste cependant pas du tout convaincu par la syntaxe que je trouve beaucoup trop concise
+et du coup pas forcément lisible. Et oui ceci est une fonction qui fait juste une addition.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/215620393&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;width:100%;height:100%;left:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;elm&quot;&gt;&lt;pre class=&quot;language-elm&quot;&gt;&lt;code class=&quot;language-elm&quot;&gt;&lt;span class=&quot;token hvariable&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;token hvariable&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;token hvariable&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;token hvariable&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token hvariable&quot;&gt;y&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Je pense qu’avec de la pratique la syntaxe doit moins piquer les yeux mais quand même.&lt;/p&gt;
+&lt;h3&gt;Electron par les copains nantais&lt;/h3&gt;
+&lt;p&gt;Contrairement à ce qu’on peut lire sur le slack de Zenika, Yvonnick Frin ne fait pas que de l’ionic ;)
+Il est même venu avec son collègue Eric Briand pour nous montrer Electron, la solution Github pour
+développer des applications desktop avec nos bonnes “vieilles” technologies front.
+Difficile de rentrer dans certains détails qui font polémique notamment la consommation
+des resources, mais cette présentation sait nous montrer les bases pour qu’on puisse commencer à faire joujou
+avec Electron.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/215528389&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;width:100%;height:100%;left:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;/div&gt;
+&lt;h3&gt;Éthique et tac !&lt;/h3&gt;
+&lt;p&gt;Quand un ancien journaliste de Numerama et actuel directeur de l’éthique chez Qwant (Guillaume Champeau) vient nous parler d’éthique, on se rappelle qu’on est bien à MiXiT.
+La conférence a abordé des thématiques comme les responsabilisations du développeur sur ce qu’il produit, le respect de la vie privée, etc.
+Sans parler d’un monde à la &lt;em&gt;Mister Robot,&lt;/em&gt; on peut quand même faire le constat que notre sphère privée et intime
+ne nous appartient aujourd’hui plus tout à fait. A voir absolument, surtout si un complotiste sommeille en vous.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/215558307&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;width:100%;height:100%;left:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;/div&gt;
+&lt;h3&gt;🦄 is awesome!!&lt;/h3&gt;
+&lt;p&gt;Dans le monde du web journalisme on parle souvent de titre putaclick et ce talk aurait
+quand même eu un prix pour son nom : &lt;em&gt;Css is awesome!&lt;/em&gt;
+Derrière ce titre très racoleur se cachait une intervention très bien détaillée sur la puissance propre de CSS.
+Par des exemples simples, Igor Labori nous partage quelques tricks CSS bien pratiques mais également quelques
+balises HTML5 oubliées.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/215621504&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;width:100%;height:100%;left:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;/div&gt;
+&lt;details&gt;
+    &lt;summary&gt;Sérieusement vous connaissez cette balise ?&lt;/summary&gt;
+    Et oui, on a pu voir quelques balises html cool aussi
+&lt;/details&gt;
+&lt;h3&gt;Futur of Kotlin &lt;em&gt;Oui je sais, encore du Kotlin&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;Quand Mr Andrey Breslav lui-même se déplace à Lyon pour parler Kotlin, je me devais de venir suivre sa conférence.
+Outre la présentation des approximatives prochaines features (non-beta) de Kotlin, Andrey a pu nous partager
+son expérience de créateur de langage. A voir si on veut se tenir au courant des nouveautés de Kotlin et si
+on s’intéresse à la conception de langage.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/215556547&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;width:100%;height:100%;left:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;/div&gt;
+&lt;h3&gt;Progressive Web Apps, rien de nouveau&lt;/h3&gt;
+&lt;p&gt;Un peu déçu de la présentation sur les progressive web apps, je ne m’attendais pas
+à une initiation PWA en 2017 sachant que ces concepts avaient été déjà présentés à MiXiT
+il y a 2 ans. Mais après je fais mon difficile, la présentation était très complète pour une initiation
+alors foncez la voir si pour vous les PWA sont un monde obscure.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/215625792&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;width:100%;height:100%;left:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;/div&gt;
+&lt;h2&gt;La soirée à l’hotel de ville&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d6edc5de54a1f67276084c6fd18b7779/a3429/soiree.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAABAv/EABcBAAMBAAAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAT6LrO0w5H//xAAaEAACAwEBAAAAAAAAAAAAAAAAAhESEwED/9oACAEBAAEFAvKJ6tmobObvGzH/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwGq/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAEREv/aAAgBAgEBPwGmZf/EABoQAAEFAQAAAAAAAAAAAAAAAAABEBESMSL/2gAIAQEABj8C6QWmNMmt/8QAGhABAQADAQEAAAAAAAAAAAAAAQARIVExkf/aAAgBAQABPyEjewWrFuXD7LPq9lto1//aAAwDAQACAAMAAAAQ19//xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQMBAT8QkMv/xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAgEBPxBcf//EAB0QAQACAgMBAQAAAAAAAAAAAAEAESFRMUFxYYH/2gAIAQEAAT8QplUcG77iEBZPu/yXZqOrEO6lRz7uHKMCUFUPkMmRxrif/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Soirée Mix-it 2017&quot;
+        title=&quot;Soirée Mix-it 2017&quot;
+        src=&quot;/static/d6edc5de54a1f67276084c6fd18b7779/1c72d/soiree.jpg&quot;
+        srcset=&quot;/static/d6edc5de54a1f67276084c6fd18b7779/a80bd/soiree.jpg 148w,
+/static/d6edc5de54a1f67276084c6fd18b7779/1c91a/soiree.jpg 295w,
+/static/d6edc5de54a1f67276084c6fd18b7779/1c72d/soiree.jpg 590w,
+/static/d6edc5de54a1f67276084c6fd18b7779/a8a14/soiree.jpg 885w,
+/static/d6edc5de54a1f67276084c6fd18b7779/fbd2c/soiree.jpg 1180w,
+/static/d6edc5de54a1f67276084c6fd18b7779/a3429/soiree.jpg 4160w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Jour 2&lt;/h2&gt;
+&lt;p&gt;On passe sur la keynote un peu trop &lt;em&gt;commercialobullshitojustu&lt;/em&gt; de Regen Villages
+qui semble plus concentré sur sa communication publicitaire que sur la qualité de ses slides.&lt;/p&gt;
+&lt;h3&gt;Un petit talk sur le monde mystérieux de l’ergonomie&lt;/h3&gt;
+&lt;p&gt;Et si on apprenait un peu à dialoguer avec un ergonome ? Ici Nathalie Cotté nous partage son expérience en tant
+qu’ergonome au sein d’une société d’édition de soft.
+Son retour et ses conseils sont très appréciables, elle nous donne un méthodologie assez simple pour améliorer
+l’ergonomie de son application afin d’éviter l’échec auprès des utilisateurs. A voir absolument si vous voulez arrêter
+de devoir former vos utilisateurs sur vos applications.&lt;/p&gt;
+&lt;h3&gt;La vexil&lt;strong&gt;LOL&lt;/strong&gt;ogie pour les nuls 🇫🇷&lt;/h3&gt;
+&lt;p&gt;Quand un passioné nous montre son bébé/son chef d’oeuvre autour de CSS et de la science des drapeaux,
+ça nous donne un talk hyper intéressant. Le défi fou de faire les drapeaux du monde entier avec un
+seul &lt;code class=&quot;language-text&quot;&gt;div&lt;/code&gt; et uniquement du CSS, c’est quand même beau. Le talk est en plus très bien conçu pour pouvoir comprendre la démarche
+et les solutions techniques mises en place. (&lt;a href=&quot;https://pixelastic.github.io/css-flags/&quot;&gt;Le lien vers la page de ses drapeaux&lt;/a&gt;)&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/216848472&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;width:100%;height:100%;left:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/4970e851bb080939a7721d104ae38066/fun.gif&quot; alt=&quot;Fun with flags&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;Un revenu universel démystifié&lt;/h3&gt;
+&lt;p&gt;Quand on voit cette conf on se dit que la fête de l’huma ça a bien changé, attendez… heu non on est à MiXiT en fait.
+Ce talk, qu’on pourrait critiquer dans le contexte actuel des élections cache en fait une présentation assez claire sur ce qu’est
+concrêtement le revenu universel.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/217015501&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;width:100%;height:100%;left:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;/div&gt;
+&lt;h3&gt;Random talk =&gt; se libérer du temps&lt;/h3&gt;
+&lt;p&gt;Et si on se dégageait une journée par semaine pour vraiment faire ce dont on a envie.
+Est on prêt à se passer de 20% de notre salaire pour enfin avoir du temps pour soi.
+Tout cela était le sujet du random talk auquel j’ai eu le droit de participer le deuxième jour.
+Une belle introduction au &lt;em&gt;travailler autrement&lt;/em&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/217023172&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;width:100%;height:100%;left:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;/div&gt;
+&lt;h3&gt;Cosmogonie, informatique et trou noir, un super vrai 👽 pour finir&lt;/h3&gt;
+&lt;p&gt;Après deux jours de conférences, j’avais envie de me changer les idées et voir autre chose. Alors, pour finir,
+je suis allé voir une présentation typiquement alien sur l’univers et les trous noirs. Le talk est vraiment passionnant
+et ne semble pas avoir déçu la foule présente dans la salle. On notera quand même sur les panneaux de feedback que
+cette présentation manquait cruellement de démo.&lt;/p&gt;
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;Encore une super édition concoctée par les bénévoles de MiXiT. Merci à eux.
+Je reste quand même sur ma faim avec certaines keynotes, mais le cru 2017 reste quand même une
+bonne année.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Merci &lt;a href=&quot;https://twitter.com/npayot&quot;&gt;@npayot&lt;/a&gt; (aka flipper le dauphin) serial blagueur et photographe à ses heures perdues pour la photo de l’article&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Merci à &lt;a href=&quot;https://twitter.com/hdurix&quot;&gt;@hdurix&lt;/a&gt; pour la revue&lt;/em&gt;
+&lt;em&gt;Crédit vidéo MiXiT&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Github classroom - un outil à tester]]></title><description><![CDATA[Lorsque j’ai commencé à enseigner en septembre dernier, je recherchais une solution
+pour pouvoir suivre facilement l’avancée des étudiants…]]></description><link>https:/slashgear.github.io/github-classroom/</link><guid isPermaLink="false">https:/slashgear.github.io/github-classroom/</guid><pubDate>Sat, 25 Mar 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Lorsque j’ai commencé à enseigner en septembre dernier, je recherchais une solution
+pour pouvoir suivre facilement l’avancée des étudiants pendant leur TP. J’ai d’abord songé à leur
+demander l’accès à leur repository Github/Bitbucket… mais je me suis vite rendu compte que ça
+n’allait pas être gérable durablement. J’ai alors cherché une solution clé en main.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Je suis alors tombé au hasard de mes recherches sur le forum de la &lt;a href=&quot;https://education.github.community&quot;&gt;communauté des
+enseignants sur Github&lt;/a&gt;. Une communauté très active et dont le sujet
+principal de discussion est &lt;strong&gt;Github classroom&lt;/strong&gt;. J’ai alors décortiqué cette solution proposée par Github
+afin de la tester au plus vite avec mes étudiants.&lt;/p&gt;
+&lt;h1&gt;Constat, en TP on est très mal équipé&lt;/h1&gt;
+&lt;p&gt;Avant de vous décrire le fonctionnement et la mise en place de cet outil avec vos étudiants,
+je préfère faire une petite liste des problèmes que j’ai pu rencontrer en tant que professeur
+ou même en tant qu’étudiant lors de la réalisation d’un TP.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Démarrer votre TP en 5 minutes avec vos étudiants, impossible.&lt;/strong&gt;
+Il est clair que passer une clé usb de PC en PC pour distribuer soit les sources du TP soit
+le sujet ce n’est pas pratique. On observe facilement que certains étudiants
+ne commencent alors leur TP qu’au bout de 15/20 minutes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Difficile de suivre l’avancement des étudiants.&lt;/strong&gt;
+Il arrive que des étudiants souhaitent avoir de l’aide pour résoudre un problème
+avec leur projet. Sans outils, on est souvent obligé de faire de nombreux échanges par
+mail pour finir par se comprendre et réussir à apporter son aide. Se contextualiser
+en lisant un mail où l’élève lâche juste un &lt;em&gt;ça marche pooo !&lt;/em&gt;, c’est pas très facile.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Le rapport, le code du projet, les mails d’échanges avec les étudiants, à des endroits différents.&lt;/strong&gt;
+Le rendu du TP, il faut l’avouer c’est vraiment l’étape la plus énervante.
+Entre les étudiants qui oublient la moitié des choses à rendre, les retards,
+les outils de la faculté qui ne marchent pas, centraliser et noter les travaux pratiques des étudiants
+devient vite un véritable calvaire que l’on traine sur plusieurs jours.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;“Non Monsieur j’ai pas copié” :&lt;/em&gt;&lt;/strong&gt;
+Trop de fois les étudiants se Ctrl-C/Ctrl-V les TPs et cela peut être
+très compliqué de vérifier qu’un étudiant n’a pas juste recopié le code de son collègue.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;“Et toi t’as fait quoi sur ce TP ?”&lt;/em&gt;&lt;/strong&gt;
+Et oui, parfois, quand les étudiants sont en groupe, un fainéant peut se cacher au milieu.
+Il est donc difficile d’évaluer réellement la compréhension individuelle dans cette situation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Comment vérifier que leur TP marche ? Dois-je l’installer ?&lt;/strong&gt;
+40 élèves, TP par binôme, cela fait 20 TP à installer et à vérifier. Il arrive que l’élève ait
+configuré son projet un peu bizarrement et il vous faudra au moins 10 minutes pour comprendre
+ce qu’il a fait.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Préparer un TP avec Github Classroom&lt;/h1&gt;
+&lt;p&gt;Alors déjà pour être clair, utiliser un outil comme &lt;strong&gt;Github Classroom&lt;/strong&gt; nécessite du temps
+de préparation supplémentaire. Il y a tout un tas de choses à configurer avant la première séance
+avec ses élèves. Cependant, ce temps de préparation va être largement récupéré dès que le TP aura commencé.&lt;/p&gt;
+&lt;h2&gt;Un outil bien expliqué&lt;/h2&gt;
+&lt;p&gt;Cet outil a une prise en main assez évidente, mais Github nous a quand même fourni
+plusieurs vidéos explicatives qui suffisent à comprendre son utilisation.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;blockquote&gt; &lt;p&gt;Getting started&lt;/p&gt; &lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/ChA_zph7aao?ecver=2&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;width:100%;height:100%;left:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;/blockquote&gt; &lt;/div&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;blockquote&gt; &lt;p&gt;How to set up group assignments&lt;/p&gt; &lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/-52quDR2QSc?ecver=2&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;width:100%;height:100%;left:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;/blockquote&gt; &lt;/div&gt;
+&lt;h2&gt;Les contraintes&lt;/h2&gt;
+&lt;p&gt;Cet outil n’est pas magique, il impose quelques contraintes qui peuvent être
+bloquantes pour vous et vos étudiants.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Il vous faut un compte Github&lt;/li&gt;
+&lt;li&gt;Tous les élèves doivent avoir un compte Github, il peut être difficile d’imposer ça aux élèves&lt;/li&gt;
+&lt;li&gt;Vous devez maitriser Git et bien connaitre l’interface de Github.&lt;/li&gt;
+&lt;li&gt;Vos élèves doivent être autonomes avec Git.&lt;/li&gt;
+&lt;li&gt;Vous devez créer une organisation sur Github (en quelques clics)&lt;/li&gt;
+&lt;li&gt;Les sources des TP et les réalisations de vos étudiants seront publiques si &lt;a href=&quot;https://education.github.com/discount_requests/new&quot;&gt;vous
+ne demandez pas une organisation privée à Github pour votre école.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Les étapes à respecter&lt;/h2&gt;
+&lt;h3&gt;1. Préparer vos sources et votre énoncé&lt;/h3&gt;
+&lt;p&gt;Il vous faudra tout d’abord déposer vos sources sur un dépot Github en
+veillant à bien le nommer pour le retrouver par la suite. Il faut aussi veiller à ne pas
+&lt;em&gt;marquer&lt;/em&gt; vos TP par les fichiers de configuration de votre IDE. En effet,
+vos étudiants n’utiliseront pas forcément le même que vous et ces fichiers pourraient les gêner/les troubler
+&lt;em&gt;(il en faut peu)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Je vous conseille également de rédiger l’énoncé en &lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;Markdown&lt;/a&gt;
+directement dans le fichier &lt;code class=&quot;language-text&quot;&gt;README.md&lt;/code&gt; .&lt;/p&gt;
+&lt;p&gt;Enfin, histoire de tout centraliser au même endroit, je vous pousse à
+définir un fichier &lt;code class=&quot;language-text&quot;&gt;Rapport.md&lt;/code&gt; pour que les étudiants rédigent également leur rapport en Markdown.
+(Après un premier test, les étudiants ont bien apprécié le Markdown. Très simple à comprendre, il leur a
+permis d’insérer du code mais également des images dans leur rapport sans prêter attention à la mise en page)&lt;/p&gt;
+&lt;p&gt;Pour terminer, &lt;a href=&quot;https://github.com/PolytechLyon/isi3-tp1-graph&quot;&gt;voici un exemple de TP que j’ai configuré pour mes étudiants.&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;2. Configurer votre &lt;em&gt;assignement&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;Une fois votre TP déposé sur un dépôt Github, il ne vous reste plus qu’à définir une &lt;code class=&quot;language-text&quot;&gt;instance&lt;/code&gt;
+de TP depuis l’interface de Github Classroom.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/038e52072fd39b5c797e3ffef7dc7148/720e3/create-assignement.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 79.72972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAAsSAAALEgHS3X78AAABM0lEQVQoz5WTbY+DIBCE/f+/sr1+OQUFXwsFjnvA1mpO294kkk3YZWZn18J7r5USQkzjGGP82SI+QJpzbj5DCHNmQWSMmabJWkvM3W2FpVhKcT5/XS4XvrIsyUzFPNa2rVJKa62a5ubcmn8p7rpO8oCUtWqnaQzec1mgo65rkSBFJUjq+z6fKUDR9Xqddf5F4XxoSRsG8tAPW9jCZ4X7xdbHWidJ1t6MsfDwRPoeoK94gIIGe12dTifahhypY8awwtq5TTGCuIZZK323TWFcA+Fddg4OenauElX5XeJYlVBiwDzSo1afxYy9afC7ZmBDP2Azmpm5y3hTTAZSmU2bQc+I5owfIG3Ysk9vqXaYm6wbzwhmwZ8WY8yQN4TTGhPykvyDWWawnQwJ5t0f42DOL/G6+BcbfqnRKk/9/AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Créer un assignement&quot;
+        title=&quot;Créer un assignement&quot;
+        src=&quot;/static/038e52072fd39b5c797e3ffef7dc7148/fcda8/create-assignement.png&quot;
+        srcset=&quot;/static/038e52072fd39b5c797e3ffef7dc7148/12f09/create-assignement.png 148w,
+/static/038e52072fd39b5c797e3ffef7dc7148/e4a3f/create-assignement.png 295w,
+/static/038e52072fd39b5c797e3ffef7dc7148/fcda8/create-assignement.png 590w,
+/static/038e52072fd39b5c797e3ffef7dc7148/efc66/create-assignement.png 885w,
+/static/038e52072fd39b5c797e3ffef7dc7148/c83ae/create-assignement.png 1180w,
+/static/038e52072fd39b5c797e3ffef7dc7148/720e3/create-assignement.png 1962w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Quelques petites astuces pour créer vos &lt;em&gt;assignements&lt;/em&gt; :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bien préciser les classes, groupes, année dans le titre.&lt;/li&gt;
+&lt;li&gt;Indiquer votre starter code de l’étape 1.&lt;/li&gt;
+&lt;li&gt;Vous pouvez bloquer le nombre maximum d’élèves par groupe.&lt;/li&gt;
+&lt;li&gt;Vous pouvez reprendre les équipes entre les différents TP d’une même matière.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;3. Diffuser votre TP à vos élèves&lt;/h3&gt;
+&lt;p&gt;Cette étape vous fera gagner un temps précieux, en effet, une fois votre &lt;em&gt;assignement&lt;/em&gt; créé
+l’outil vous génère un lien qui permettra aux étudiants de s’y connecter et de se regrouper.&lt;/p&gt;
+&lt;p&gt;Dans le cas des TP en groupe, un étudiant doit s’y connecter et créer son équipe, les autres pourront
+ensuite la rejoindre.&lt;/p&gt;
+&lt;p&gt;Un &lt;em&gt;repository&lt;/em&gt; sera alors créé par équipe.&lt;/p&gt;
+&lt;h3&gt;4. Suivre vos élèves dans leurs développements&lt;/h3&gt;
+&lt;p&gt;Vos étudiants vont un peu vous prendre pour la NSA, mais rassurez-les c’est pour leur bien.
+Une fois les dépots créés, vous pourrez voir sur votre page d’accueil github tous les commits
+de vos étudiants. Cela vous permettra de faire de la &lt;em&gt;review&lt;/em&gt; au fil de l’eau si vous avez le temps.&lt;/p&gt;
+&lt;p&gt;Vous pouvez également voir avec eux pour qu’ils ouvrent une &lt;em&gt;issue&lt;/em&gt; s’ils ont besoin de votre aide.
+Dans cette situation vous serez notifié par mail. L’étudiant pourra même vous indiquer dans l’&lt;em&gt;issue&lt;/em&gt;
+le code qui lui pose problème.&lt;/p&gt;
+&lt;h3&gt;5. Évaluer leurs réalisations&lt;/h3&gt;
+&lt;p&gt;Pour l’évaluation vous avez deux solutions :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Inspecter leur &lt;em&gt;repository&lt;/em&gt; et lire leur code. Pour cela je ne peux que vous conseiller
+l’extension &lt;a href=&quot;https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc&quot;&gt;Octotree&lt;/a&gt;
+qui vous permet d’afficher l’arbre des fichiers du dépôt.&lt;/li&gt;
+&lt;li&gt;Mettre en place des tests unitaires sur le projet de base et connecter un outil de CI en SaaS comme travis-ci.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Docker basics]]></title><description><![CDATA[Those are my slides for the course I gave about docker to students of Polytech Lyon in september 2016.]]></description><link>https:/slashgear.github.io/docker-training/</link><guid isPermaLink="false">https:/slashgear.github.io/docker-training/</guid><pubDate>Sat, 10 Sep 2016 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Those are my slides for the course I gave about docker to students of Polytech Lyon in september 2016.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt; &lt;iframe src=&quot;https://slashgear.github.io/docker-basics/#/&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;width:100%;height:100%;left:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot; allowfullscreen&gt;&lt;/iframe&gt; &lt;/div&gt; &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Generator Rancher Catalog]]></title><description><![CDATA[You can add private catalog entry in your Rancher instances, but creating
+configuration files could be really hard. In order to avoid errors…]]></description><link>https:/slashgear.github.io/generator-rancher-catalog/</link><guid isPermaLink="false">https:/slashgear.github.io/generator-rancher-catalog/</guid><pubDate>Mon, 20 Jun 2016 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;You can add private catalog entry in your Rancher instances, but creating
+configuration files could be really hard.&lt;/p&gt;
+&lt;p&gt;In order to avoid errors, I create a &lt;a href=&quot;https://github.com/Slashgear/generator-rancher-catalog&quot;&gt;generator for Rancher catalog entry based on
+yeoman.&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; -g yo
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; -g generator-rancher-catalog&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then generate your new project:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;yo rancher-catalog&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Don’t hesitate to contribute, PR are welcome.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://asciinema.org/a/644asuhwcljfkzm3j4g9j6qsg&quot;&gt;&lt;img src=&quot;https://asciinema.org/a/644asuhwcljfkzm3j4g9j6qsg.png&quot; alt=&quot;asciicast&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Rancher - How to]]></title><description><![CDATA[Mon expérience en tant que stagiaire chez Zenika m’a amené à utiliser
+Rancher pour orchestrer mes conteneurs Docker. Je vous présente ici un…]]></description><link>https:/slashgear.github.io/rancher/</link><guid isPermaLink="false">https:/slashgear.github.io/rancher/</guid><pubDate>Mon, 13 Jun 2016 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Mon expérience en tant que stagiaire chez Zenika m’a amené à utiliser
+Rancher pour orchestrer mes conteneurs Docker. Je vous présente ici un
+condensé de mon expérience avec cet outil, de son intérêt et de ses
+points forts, par le biais d’un petit “How to“ sur comment déployer son
+application ?&lt;/p&gt;
+&lt;p&gt;On constate que de plus en plus d’utilisateurs Docker cherchent à
+manipuler plus facilement leurs conteneurs et à mettre en place du
+déploiement continu. L’environnement technique autour de la
+problématique d’orchestration des modèles CaaS (Container as a Service)
+est très large et il est parfois difficile de s’y retrouver.&lt;/p&gt;
+&lt;h2&gt;Qu’en est-t-il de Rancher ?&lt;/h2&gt;
+&lt;h3&gt;Késako&lt;/h3&gt;
+&lt;p&gt;Rancher, projet open-source créé par la société Rancher Labs est un
+outil gratuit d’orchestration de conteneurs Docker. Il permet de
+facilement déployer des conteneurs Docker sur des machines possédant
+Docker. Grâce à une configuration simple et complète, il permet de lier
+ses conteneurs afin de composer des architectures de services aisément.
+Il peut déployer des containeurs sur des services cloud comme AWS,
+Azure, DigitalOcean mais aussi sur des machines personnalisées
+possédant Docker tout en s’appuyant sur docker-machine.&lt;/p&gt;
+&lt;h3&gt;Une installation assez simple&lt;/h3&gt;
+&lt;p&gt;Pour installer Rancher, à ce jour il suffit de posséder une machine
+linux 64-bit avec au moins 1GB de mémoire vive.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; docker run -d --restart&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;always -p &lt;span class=&quot;token number&quot;&gt;8080&lt;/span&gt;:8080 rancher/server&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Après quelques minutes d’installation, le server Rancher est disponible
+sur le port 8080 de votre machine (l’image contient une base MySQL, un
+Zookeeper, Redis, et le serveur rancher). Vous pouvez vous y connecter
+car l’accès est par défaut ouvert à tous. Par la suite,  vous pourrez
+activer l’authentification,et ainsi facilement configurer des comptes
+pour vos utilisateurs.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/7044fcf8b2240abbf24b959028a4f610/77f8f/environnement.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 47.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAABOklEQVQoz22QTU7DQAyFc0AW7JEQsOgp4CZdQ6uKI8AKobYrluyKaEmbpJlJYnt+MykOKSRSsb55evLIozeObu9fRrPlzWx5PV0wo19zOZlfTRcXD/NTzsbP5+Onu8fXCBARQCuqvWW867V2NjgXvA3eDbC5EHGardMsitP9ah1/ximQQqU7SBsGtCZjyFjU5u+KUcYaZ9lE1rmmaUIIh0Fp59+3Isml4Xkia+3hpKzz7fCw1TStFkCrbSal4ISsSqn/hyuiY9Q27RGltTFG/YRXxqDWLUrDIHyFFG0yuZOQlZiWkBY9SQE7WX0l+0wWsgKmBASiErFEVhJVFW3zYidKASRQlUoX1NN2kHN1i1S80RyoMww/FyW52CRZImQB6Ova+bbqENrD1YTO8yfXEidvHxViKiTHYb4BzX7wYutWWbQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Interface graphique de Rancher&quot;
+        title=&quot;Interface graphique de Rancher&quot;
+        src=&quot;/static/7044fcf8b2240abbf24b959028a4f610/fcda8/environnement.png&quot;
+        srcset=&quot;/static/7044fcf8b2240abbf24b959028a4f610/12f09/environnement.png 148w,
+/static/7044fcf8b2240abbf24b959028a4f610/e4a3f/environnement.png 295w,
+/static/7044fcf8b2240abbf24b959028a4f610/fcda8/environnement.png 590w,
+/static/7044fcf8b2240abbf24b959028a4f610/efc66/environnement.png 885w,
+/static/7044fcf8b2240abbf24b959028a4f610/c83ae/environnement.png 1180w,
+/static/7044fcf8b2240abbf24b959028a4f610/77f8f/environnement.png 1353w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;Déployer une application simple avec Rancher&lt;/h3&gt;
+&lt;p&gt;Après l’IaaS, le SaaS, le PaaS, le DaaS et Patricia Kaas, voila
+maintenant venue l’ère du Caas (Container as a Service). L’objectif
+ici est de conteneuriser les services de son(ses) application(s) et de
+les faire interagir. Pour montrer simplement la mécanique de Rancher,
+j’ai choisi de vous présenter le déploiement d’une application web très
+simple nommée whoami, disponible sur le Docker Hub (développé en Go
+par Emile Vauge).&lt;/p&gt;
+&lt;p&gt;Pour ce faire, je vais vous expliquer  la méthode de création de
+services par l’interface graphique. Sachez que l’on peut interagir
+avec Rancher par l’intermédiaire d’un outil en ligne de commande
+(rancher-cli,encore très limité pour l’instant) ou d’API REST.&lt;/p&gt;
+&lt;h4&gt;Ajouter des hosts sur lesquels déployer&lt;/h4&gt;
+&lt;p&gt;Dans un premier temps il faut définir des machines sur lesquelles
+déployer votre application.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/09dee4224d527f5831843599f577d8b3/7970d/machine.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 51.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABYElEQVQoz32QbUscMRDH9zP7vi/OQpF+mL4SqVXftVAo4sNJoRwUZc3tXmaSzEySfdTbZm+9UywKv4T5M/OfmST7fHT+4ehi//jq08n1wdl8dnw5+3q5fzL/eHrzFrNv870vPw8Of2UcQl/HYd1PrB/aMRge3+Vh6Ju+qTKumiGpx3W6fdv/1Q7QWEchVj5E40apAcHaFMeqHq3pDEPb95mR0HZd1XZN20msxAcJccInf4wknn2Y4ljXddtNhLrJ7sGgI3CkLeWlvlXlnSryolwCrqxDEmRBYiDGDbApnsgUWMNPiXw5OlW50gjoLDhntp4t9FI+m1OnHIxCVxgqLI8YUkhgCa0rLWsOzkcnfrdFlip27ZfoNtgRYzWJJm94BNlziH9K+1sBicBrs6MiTdagNCrAew3pe1MdMk+richNvrq4K9l7cP9N3n1Myon33xfqx0LJtjS9i72Il0km/gGH3yRQyaEF5gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Création de machines&quot;
+        title=&quot;Création de machines&quot;
+        src=&quot;/static/09dee4224d527f5831843599f577d8b3/fcda8/machine.png&quot;
+        srcset=&quot;/static/09dee4224d527f5831843599f577d8b3/12f09/machine.png 148w,
+/static/09dee4224d527f5831843599f577d8b3/e4a3f/machine.png 295w,
+/static/09dee4224d527f5831843599f577d8b3/fcda8/machine.png 590w,
+/static/09dee4224d527f5831843599f577d8b3/efc66/machine.png 885w,
+/static/09dee4224d527f5831843599f577d8b3/c83ae/machine.png 1180w,
+/static/09dee4224d527f5831843599f577d8b3/7970d/machine.png 1908w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Rancher propose des connecteurs à plusieurs services cloud du web comme
+Amazon EC2, Azure, Digital Ocean, mais vous pouvez également ajouter
+n’importe quelle machine disposant de docker comme “host” Rancher
+(“Custom”).&lt;/p&gt;
+&lt;p&gt;Pour l’exemple, j’ai ajouté deux machines au cluster nommées node1 et
+node2, et j’ai ajouté l’hôte Rancher lui-même self
+(c’est possible mais non recommandé).&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bcd00c6977b0abb9aa112407e39372d8/36c33/host.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 62.83783783783784%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAABy0lEQVQoz41Ry27TQBTNJ7CICmJBVyyR+EFIqwiJBR/AniU0AVXlD1ixRBUhiZo0dmN7/BjPjD0vvzhjS0lVFYnRkX3n3Htm7rkzej39fDKZn07n47cXL6Zfx5OLl+8vX324On337enZ7Pn5fDyZnZzNnp3Pn7z58gAjru3vkOXKrvbxOkgjoZf7eBNlROhtnC98Egm1ClKkSGEQo+CAUUbZxx9/Ln/dqrLkopBSMi5yJspSClFwLsAIIRAoqR6s0Y0ffPq5/n69gzLNecoAwYoS8oxx6rY86xmKAspQk1A2YNR1XdO2Xdc2TaONsVVVNw2AqKlrY4y2YFwWZGWt0jrBHT2cWGpToCWtByUWDsG+Z+q6blCDv3XpGp+kv9+Jm6oqpSzdwiFQWa0UfBY9g9KU5iGJSZKSNIuSLOciPdy89YPFxlvd+l5IwiQjKV1u/eXGW+/udiEhWb6Ps+sbb7G92wXEi+LDtU6MMXgxxTx4KUup0H+YsX2as0I6BjPVhmL2vXVlLLo7tg0/WhtYts5PjdK2bXtGwy3GZp3XSkoFSxitNvYoxpPG9x5gCIbcwFAmcl5QLqj7Fni2Y9tMFPdt/AuP1vyv+FH8BeVBwG9QQM+oAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Hosts&quot;
+        title=&quot;Hosts&quot;
+        src=&quot;/static/bcd00c6977b0abb9aa112407e39372d8/fcda8/host.png&quot;
+        srcset=&quot;/static/bcd00c6977b0abb9aa112407e39372d8/12f09/host.png 148w,
+/static/bcd00c6977b0abb9aa112407e39372d8/e4a3f/host.png 295w,
+/static/bcd00c6977b0abb9aa112407e39372d8/fcda8/host.png 590w,
+/static/bcd00c6977b0abb9aa112407e39372d8/efc66/host.png 885w,
+/static/bcd00c6977b0abb9aa112407e39372d8/36c33/host.png 946w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h4&gt;Créer son service&lt;/h4&gt;
+&lt;p&gt;Il faut maintenant créer une stack pour accueillir notre service whoami.
+Dans la logique Rancher, une stack est un ensemble de services.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c862fa4069b40c90035b4b3a02c9addd/9e0ed/stack.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 51.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABDUlEQVQoz43OS07DMBAGYJ+ZOyAeOQC3YN1FWnaIBRtoglBBLQlpEW1ejhM/xzFOo0RJihC/voU9Mx4Z3bhPF+7SufOvF76z8K8W3uXcO3f/tjy7fXBmj0iySithjDYGOnpgcu2AUIKhinOltSVhhCsouSSUSQAFJ13QTCrEhGBcCKnqLlrb3SbMyvnrriip7SqAehBT1/ebw2qPkVA2ANA8GEY3U3asBt0eR1G6tisRqSguaUV584UBKsTzLsWUCSknLcsWKecoznHrkOVD32k28z6CfRLn+aTVQ9s4O77E/ZZeSUiS/1Lvoa8U54RkRSMdS3CRnhRb7TB6WYdvQdQIo/XndvM/70G0CqIfId0rn36KyBQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Stack&quot;
+        title=&quot;Stack&quot;
+        src=&quot;/static/c862fa4069b40c90035b4b3a02c9addd/fcda8/stack.png&quot;
+        srcset=&quot;/static/c862fa4069b40c90035b4b3a02c9addd/12f09/stack.png 148w,
+/static/c862fa4069b40c90035b4b3a02c9addd/e4a3f/stack.png 295w,
+/static/c862fa4069b40c90035b4b3a02c9addd/fcda8/stack.png 590w,
+/static/c862fa4069b40c90035b4b3a02c9addd/efc66/stack.png 885w,
+/static/c862fa4069b40c90035b4b3a02c9addd/c83ae/stack.png 1180w,
+/static/c862fa4069b40c90035b4b3a02c9addd/9e0ed/stack.png 1923w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;On peut remarquer que pour l’ajout d’une stack, on peut importer un
+fichier &lt;code class=&quot;language-text&quot;&gt;docker-compose.yml&lt;/code&gt; et un fichier &lt;code class=&quot;language-text&quot;&gt;rancher-compose.yml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Le fichier docker-compose.yml définit la structure de la stack,
+l’ensemble de ses services ainsi que leurs configurations.
+Ce fichier est natif de l’api Docker Compose.`&lt;/p&gt;
+&lt;p&gt;Le fichier rancher-compose est un “add-on” au docker compose,
+il permet de configurer des paramètres Rancher comme la configuration
+des loadbalancer (HA-Proxy) et la scalabilité horizontale des services.
+Ces deux fichiers sont exportables à tout moment, cela peut-être très
+pratique pour une réinstallation (par exemple, voici la
+&lt;a href=&quot;https://drive.google.com/file/d/0B0NhGeba-vjZVnJldGRYUTBZaGs/view&quot;&gt;configuration de la stack&lt;/a&gt;
+qui est installée dans cette partie).&lt;/p&gt;
+&lt;p&gt;Une fois la stack créée en lui donnant uniquement un nom, il faut
+ajouter notre service whoami. Pour cela il suffit de cliquer sur
+“Add service” et de le définir comme cela.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/48d761834dc232cc35b22955f7da9c22/26c3a/whoami.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 51.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABE0lEQVQoz32RS07EMAyGc2POANIw7FlwCA6A0HSWbBGjKRIHADEzfaWtE9tJmmC66wN+fYqs/HFix+r+6fV2d9ju37dZfrfPN9lxk+U3u+M/XD8frh5fHrI35dAMnlOKKQ1T4trmSAwpkCOrejAtGCAGJPa+56AtW6KyM2fdG0SwKNYMS4zkFBIxO3ZecOMqd8QQPhv4+K5JxM6N1gxkVoZoGKSYFKdKY9GSKG5cSE477xVY2wGEEGZHhpHlpZNkKduitMvLF8QWxT8kH6R4tNOapFepaNVC578aUMbatu+rRte6rdu20lpWiQGxBeiNlWCVzliFaKq6uZSVcCrK06WQ4FyUMiRpRmY2A3+HxPLVkv8DCPY3w7YFM+QAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Whoami example&quot;
+        title=&quot;Whoami example&quot;
+        src=&quot;/static/48d761834dc232cc35b22955f7da9c22/fcda8/whoami.png&quot;
+        srcset=&quot;/static/48d761834dc232cc35b22955f7da9c22/12f09/whoami.png 148w,
+/static/48d761834dc232cc35b22955f7da9c22/e4a3f/whoami.png 295w,
+/static/48d761834dc232cc35b22955f7da9c22/fcda8/whoami.png 590w,
+/static/48d761834dc232cc35b22955f7da9c22/efc66/whoami.png 885w,
+/static/48d761834dc232cc35b22955f7da9c22/c83ae/whoami.png 1180w,
+/static/48d761834dc232cc35b22955f7da9c22/26c3a/whoami.png 1907w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;On remarque que seul le nom du service, l’image docker et le “port map”
+ont été définis (ie: c’est un exemple simple, vous pouvez voir par les
+onglets du bas que la configuration peut être beaucoup plus poussée,
+gestion des volumes, du network du service, des HealthCheck).&lt;/p&gt;
+&lt;p&gt;Après cette simple configuration, il suffira de cliquer sur “Create” et
+informagiquement votre service sera déployé sur un host choisi par Cattle.&lt;/p&gt;
+&lt;p&gt;Vous allez me dire, “qu’est ce que Cattle ?”, et vous aurez raison.
+Cattle est l’orchestrateur par défaut utilisé par Rancher. Il est
+maintenu par l’équipe de Rancher et le projet est open-source et
+disponible sur Github.&lt;/p&gt;
+&lt;p&gt;Sachez que Rancher fonctionne également avec Kubernetes, Swarm et
+Mesos mais pour cet article, je me suis limité à l’utilisation de Cattle.&lt;/p&gt;
+&lt;h4&gt;Scaler et Loadbalancer&lt;/h4&gt;
+&lt;p&gt;Après quelques temps de démarrage, votre service whoami devrait être
+disponible.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/b79a5/start.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 43.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAAA1UlEQVQoz63N204CMRAG4L7/A/ggvoIx4IVhwUW4UkGi0C49zKm7y41jV1ETIzEh+TJpZ/5pzTYS5i73vXQ/5P4weD93vQXZRJbuYH28f1gvn54fV2tjQ4pICQmIjxJRAPSAw0hELmeri6vl1uuQXYjIvLM7o5OgCWbJmT9ps0nQRNARimhH2hZZgEX3CpTcGn3mV01MyqlytcX3gH5uhtB/uZDoTMvpo7tPcNLXsvXB+XCsdn+aKzEgMqNJPa7ubqb1qNTJfFH9aTpfjKv6+na2eXl9A7+q8wIdABJZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Start&quot;
+        title=&quot;Start&quot;
+        src=&quot;/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/fcda8/start.png&quot;
+        srcset=&quot;/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/12f09/start.png 148w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/e4a3f/start.png 295w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/fcda8/start.png 590w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/efc66/start.png 885w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/c83ae/start.png 1180w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/b79a5/start.png 1372w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Si vous cliquez sur le “80”, vous devez accéder au service whoami.
+Il vous donnera plusieurs informations sur lui-même, notamment son nom.&lt;/p&gt;
+&lt;p&gt;Le but maintenant est de scaler notre service, afin de le distribuer
+sur plusieurs machines.&lt;/p&gt;
+&lt;p&gt;Dans le détail du service, on peut voir que la scale est actuellement
+définie à 1. Il suffirait donc de l’augmenter ? Et bien non, le service
+que nous venons de définir occupe le port 80 de la machine. Il ne
+pourrait donc pas être disponible plus d’une fois par machine. Et c’est
+là l’une des problématiques des microservices :  l’allocation dynamique
+de port et la “connaissance” des services par le loadbalancer. Rancher
+offre une solution simple à ce problème, il ne faut plus réserver de
+port pour son application, le loadbalancer va connaître les services
+par l’orchestrateur.&lt;/p&gt;
+&lt;p&gt;Il faut donc supprimer la configuration du port statique du service.&lt;/p&gt;
+&lt;p&gt;Une fois le port libéré , il faut donc créer un loadbalancer qui
+distribue la charge entre les instances de whoami. Dans la stack,
+cliquez sur “Add Load Balancer”&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/36278add82f22f1e306be60a799b6681/f33fc/loadb.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 47.972972972972975%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABcklEQVQoz3WQS27bMBCGeeVeoLsmrQ/RG3RddBGnu6LLLCygKOLGtC1K5PAxQ0rUI44zkpzAmwIfhj9/kjOcEau7zZd1wazui8/r4nZd3NxtPv2fm3Xx8fvDh2+/vv58EOjs2KbzaTg/9y9jdxq685AvjFf6ilPXdCkSotgelKy0rI0CJ7X7V8G+NnJmp7RU+n0rq4tg56CB7wuMDaUmxMSktmVim9OMoxgoxmZyFtrcNflyiqkRxge+VFt/1MDC4YQNVIFTBrTzDmnyiU2U2iobXEDWEFDAvGjra7AhxuULniJ4BB9YXJyYkGhbgTSO05nlsfHoiBT4bWlqHyuHnFtZLC0qh+zUnpjKEWD6o2CnrUXSAfm9cCHsy+rpoB736u/u+HSslfUMt8O5DcZ3AGNpg/bouZEZkXOeVMCAFIhi0/TDMI6D5MoeM8+o77s3+mGKeabtOsHV7TwSjgu1n2b8Y7P7/VgiRe5rmQvMX4UrXgFKuCOQyjheAwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Load balancer&quot;
+        title=&quot;Load balancer&quot;
+        src=&quot;/static/36278add82f22f1e306be60a799b6681/fcda8/loadb.png&quot;
+        srcset=&quot;/static/36278add82f22f1e306be60a799b6681/12f09/loadb.png 148w,
+/static/36278add82f22f1e306be60a799b6681/e4a3f/loadb.png 295w,
+/static/36278add82f22f1e306be60a799b6681/fcda8/loadb.png 590w,
+/static/36278add82f22f1e306be60a799b6681/efc66/loadb.png 885w,
+/static/36278add82f22f1e306be60a799b6681/c83ae/loadb.png 1180w,
+/static/36278add82f22f1e306be60a799b6681/f33fc/loadb.png 1905w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Une fois le loadbalancer créé, on peut donc augmenter la scale de son
+application sans avoir de problème d’allocation de port. Si vous cliquez
+le “80” du loadbalancer, vous devez atteindre votre service, et s’il
+est scalé, l’hostname devrait changer au refresh.&lt;/p&gt;
+&lt;p&gt;A ce stade du déploiement, on peut se demander, ce qu’il en est de
+l’infrastructure des machines  créées plus tôt.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5ac8774826df26dbe266ef830d1b3ff8/27b8e/host2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 83.78378378378379%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAAsSAAALEgHS3X78AAACXklEQVQ4y01T2W7bQAzUh/cb+jF9Loo+96koiqRuEkuWrVva+15J6dBCkgKEzeVyuMMhVTAfX19fa2ZC3lwIt35yMfmY+5kvUqd1U8Y1wxxSNj7AwS2ChxXNxBYuvj1ev59uk5AjDtoIpSfGJya0tUyqkXGJoNbjwqTWxrnDisfq9lRdP3/9+enLj3pEukaJRao3Ix/4+SMokYDjxEXRCx1y2vd9W/O6rspYFyKqgmeE5ex9MM7bEKwPyEAw5YwsbV0xCI2et31HxrpucFKmfwSRh0JUd9vgIwI/xHTc+hAJvObsfIQQqKesu5dPeDDECJNKAwkHGUDiyjrnfQSRomUSLthCHmUMCB+0rfNMSiakpj4Sbk9lfWn7d5u5LM7d9Odcn2/dtR+rdiibfhGyvHYPz9WlHy/dULV9M85c6Us7NMNEz5BgCkMpOq5IDx/QmPYe/MHQej8zga5AUuEObCPYEkHqFtG8AkVg0MYcoRIkRe8w5wMiAGUkETZhf8CfS0VSkxwkEIHtBziiP08vA6wI9Q72HpsDCXDQzpMuBxhksFjxvoC4AFnjPSKIh5S4sTlnHH+dXn4/lQ/PZdX05a2DhFgSdZ+HwYQccaZ54HHsI9HeNvwlmqVflBm4BjtEQI2WpOynv9UVY4DVXQ9tF6Gqpnt8uZwwhWtbdwO+FmSjllIahagYeoRgzSJGJuthAQjqS0MbgB2+jQzGlOba6Ps4Ir2PvmgRoAW9PCt7bCLtWM53nxZw3XZE0PNGK7ujysjF8UnQV3H/LdpF0jf4ZlgGek3pj4im4/wG+9/+AeOJxYHnd8zNAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Hosts&quot;
+        title=&quot;Hosts&quot;
+        src=&quot;/static/5ac8774826df26dbe266ef830d1b3ff8/fcda8/host2.png&quot;
+        srcset=&quot;/static/5ac8774826df26dbe266ef830d1b3ff8/12f09/host2.png 148w,
+/static/5ac8774826df26dbe266ef830d1b3ff8/e4a3f/host2.png 295w,
+/static/5ac8774826df26dbe266ef830d1b3ff8/fcda8/host2.png 590w,
+/static/5ac8774826df26dbe266ef830d1b3ff8/27b8e/host2.png 836w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Rancher a déployé les conteneurs docker de façon équilibrée entre les
+différentes machines. On peut définir nos propres règles de déploiement
+par l’utilisation de label sur les machines.&lt;/p&gt;
+&lt;p&gt;Par exemple, on peut ajouter le label “name = frontend”, et pour chaque
+service que l’on crée, définir si il peut démarrer ou non sur la machine
+dont le name est frontend.&lt;/p&gt;
+&lt;p&gt;Sur chacun des conteneurs, rancher nous permet d’accéder à un shell et
+une vue des logs, ce qui est très pratique pour le débug.&lt;/p&gt;
+&lt;p&gt;Certes cet exemple était simple, mais on peut facilement déployer des
+architectures plus complexes grâce à Rancher, et c’est là tout son
+intérêt. Voici l’architecture des services de l’un des projets que j’ai
+déployé grâce à lui.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 548px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/39e646d632a82cd4ad26d901963a1c11/a58fe/microservices.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 74.32432432432432%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsSAAALEgHS3X78AAAB/ElEQVQoz4WTa4/SQBSG+f9/w/jBxBhdNRphF7kVohRo0V6gHXrvTKdzLYWE+GEPGtcsLtnkfDozb94zz3mnU0t1rSKKA5IFJIcKq5wIcXGhc1Ws1NSxDXPRnRij+Xy8NBEpuGqolM+LKyl34FZWKEjiKMeUpnXFpH7Gmf4uwgU9qI3MXrhfeqmpTm3GaS31n9OrYqY0l03JWUgLREu7RD5JdxRHNYY+mD/4X4orITNGc167OAY9+GvdMqmw4IgWQZUXnJWMXYqBBPCIKb6dzz4PR69ve13DAGai2W+ypDsz3ve/vu3f9abTZehz3Vw6wzwFeIbh2nIty3OdMMhTIkVCySZA9spb257vI4TzJ8YGcSmYPrV32eKl39uqjB11wRjWXP1qP0SzV9t+cahpqyouHonPnFQT1eRsXiWrMgRCcU0w53AK7/+BI4AX17j6m5bOw1ZrKWEZESOAR6p9o49caeiHrIDJ4Q6Qa/RBqObfnqmQUu+BwWD1/eNk+Gk2Ga7mbh4z3RieNbbMm3EfEI5sMyTFec9CPhLDtNs88bfIMp3V0tnFKSI5xNNJ0A7F1uKn74RhnEDUYRZ6kTAq1JlBK95tx130rTkdSsXgqfyod6p84w0HsbU/HWH5T8cTICNWDpP1LHcjjiES0CwE86pkkNjzwk959f+vugfbxSvXfEKQDAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Hosts&quot;
+        title=&quot;Hosts&quot;
+        src=&quot;/static/39e646d632a82cd4ad26d901963a1c11/a58fe/microservices.png&quot;
+        srcset=&quot;/static/39e646d632a82cd4ad26d901963a1c11/12f09/microservices.png 148w,
+/static/39e646d632a82cd4ad26d901963a1c11/e4a3f/microservices.png 295w,
+/static/39e646d632a82cd4ad26d901963a1c11/a58fe/microservices.png 548w&quot;
+        sizes=&quot;(max-width: 548px) 100vw, 548px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;Un « blue/green deployement »  et une “rolling upgrade” en 5 minutes&lt;/h3&gt;
+&lt;p&gt;Dans la plupart des cas, une mise en production est souvent un
+passage difficile pour le développeur. Les outils DevOps ont bien
+évidemment permis de simplifier cette étape cruciale de la vie d’un
+projet.&lt;/p&gt;
+&lt;p&gt;Rancher permet d’utiliser plusieurs méthodes pour mettre à jour un
+service déjà en production tout en garantissant la continuité des
+services :&lt;/p&gt;
+&lt;h4&gt;La rolling upgrade (remplacement d’un service par un autre)&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/b30a1750f67a83ef7c8cab4ccdd1b326/indiana.gif&quot; alt=&quot;Hosts&quot;&gt;&lt;/p&gt;
+&lt;h4&gt;Le blue/green deployement&lt;/h4&gt;
+&lt;p&gt;Ces deux méthodes ont été présentées par Christophe Furmaniak et
+Youcef Yekhlef (deux consultants architectes de Zenika) lors de leur
+intervention à de pendant la Devoxx 2016. Je ne peux que vous
+conseiller de la regarder :&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt; &lt;iframe src=&quot;https://www.youtube.com/embed/QFqt8xMTChY?ecver=2&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;width:100%;height:100%;left:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot; allowfullscreen&gt;&lt;/iframe&gt; &lt;/div&gt; &lt;/div&gt;
+&lt;h3&gt;Un service DNS et Network overlay&lt;/h3&gt;
+&lt;p&gt;Pour ceux qui ont déjà bien pratiqué Docker, faire communiquer deux
+containeurs entre eux sans avoir d’outil d’orchestration n’est pas très
+aisé. Bien sûr, il y a la publication de port sur le Host, mais on
+arrive vite aux limites. Rancher apporte nativement une fonctionnalité
+d’overlay network via un tunnel ipsec permettant à deux containers sur
+deux machines différentes d’être sur le même réseau virtuel. Rancher va
+plus loin puisqu’il possède son service DNS dans lequel il enregistre
+chaque nouveau container qu’il crée. Cela a plusieurs avantages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Deux services d’une même Stack se connaissent par leur nom ;&lt;/li&gt;
+&lt;li&gt;Un service peut connaître un service d’une autre stack par &lt;code class=&quot;language-text&quot;&gt;nomService.nomStack&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Un catalogue qui s’enrichit&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ccd638ac43343c2b2dfbacfbdd0cd99f/cb9f4/catalogue.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 51.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABxklEQVQoz0VQyW4TQRT0L/MHSAkgckLiIzgQDOQCiDi5EgXJmch2EF5iz3gbd09P78vrWXhjIkVqlUrdVV31Xu/dj+HLb8nZ1eTt9eTs+uH1YPxmMH41GJ9cjk4ux6dXkyN5Pqf49HP0ov/r/fffPW+007xtY9vEJljEtqnaOnRYhdbIp5vnU7dNg0pvdU97uFve2qCND/PZzHrvIWbp1ECwJXc3N76qrTVKlA6itl5T4UPYM05K0VPObxjXLiBJaUeEcYt9gZ+W0vzJ8lIZZe18e5DWYcCWSdQUXFAuenPC+/fZgvANVxfj9ZKKbam+jrJ5nq8o/3i3fCQ8LcR5kq6oQPJltEYLl7JLdgEUkxEgK8RDlgul14X6m+3o4d55JwoMA5xFaeWDRzEh1PlA/ycDgBOyiiCNZ1xBCNJ6oUxd1wHASgMxotorFgG3EWMICKTknRkLnw8fsduO636yWhVyx9XnZJkWKiX8w+10cSjXTH4aLtJCbkp1McpQ09VGc6ntYs9wK1ybLM+PxE5zwnRHZjlBQSFNsuVImDIpU4hPC8MmSogQAkRoxQaHxyEJ3UNXEA50h8SGOKU+VpUHaOoqRiBH8z+MIyKtn5nTGQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Rancher catalogue&quot;
+        title=&quot;Rancher catalogue&quot;
+        src=&quot;/static/ccd638ac43343c2b2dfbacfbdd0cd99f/fcda8/catalogue.png&quot;
+        srcset=&quot;/static/ccd638ac43343c2b2dfbacfbdd0cd99f/12f09/catalogue.png 148w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/e4a3f/catalogue.png 295w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/fcda8/catalogue.png 590w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/efc66/catalogue.png 885w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/c83ae/catalogue.png 1180w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/cb9f4/catalogue.png 1903w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Rancher possède son propre catalogue d’applications, ces applications
+sont sous la forme de groupes de stacks pré-configurées qui s’appuient
+sur les images du Docker Hub :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La stack Elastic ;&lt;/li&gt;
+&lt;li&gt;Janitor, un service basé sur docker-cleanup, pour nettoyer les images et conteneurs non-utilisés. ;&lt;/li&gt;
+&lt;li&gt;Traefik, un load balancer développé en Go par Emile Vauge de la Zstartup Containous ;&lt;/li&gt;
+&lt;li&gt;Gluster, un gestionnaire de volume partagé ;&lt;/li&gt;
+&lt;li&gt;Odoo, le célèbre ERP open source ;&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Il est aussi possible d’ajouter son propre
+&lt;a href=&quot;http://docs.rancher.com/rancher/v1.5/en/catalog/&quot;&gt;catalogue de stacks d’entreprise&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Je vous ai présenté ici les principales features de Rancher,
+je ne peux que vous conseiller de le tester pour faire joujou avec vos
+conteneurs Docker. Cependant, la question qu’on peut encore se poser
+aujourd’hui reste la suivante : Rancher ne restera-t-il qu’un joujou
+pour orchestrer des services ? On sait déjà que des entreprises comme
+Orange et Sony commencent à l’utiliser pour des besoins interne
+(cf : Sony et le playstation Network &lt;a href=&quot;https://www.youtube.com/watch?v=hwhxXwT6zlw&quot;&gt;https://www.youtube.com/watch?v=hwhxXwT6zlw&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;N’hésitez surtout pas à partager vos expériences avec Rancher.&lt;/p&gt;
+&lt;p&gt;Merci encore à Youcef Yekhlef, Christophe Furmaniak et à mon tuteur de
+stage Christophe Tardella pour l’aide apportée à la rédaction de cet article.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Kotlin in action]]></title><description><![CDATA[JetBrains, pour les développeurs Java enfermés dans une grotte et ne
+connaissant qu’Eclipse, outre le fait de fournir une suite d’outils…]]></description><link>https:/slashgear.github.io/kotlin/</link><guid isPermaLink="false">https:/slashgear.github.io/kotlin/</guid><pubDate>Tue, 26 Apr 2016 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JetBrains, pour les développeurs Java enfermés dans une grotte et ne
+connaissant qu’Eclipse, outre le fait de fournir une suite d’outils
+pour le développement et un IDE Java (IntelliJ), s’est lancé en 2011
+dans la création d’un nouveau langage de programmation. &lt;strong&gt;Plein de
+promesses, ce langage, le Kotlin, présenté par Hadi Harriri lors du
+Mix-it 2016, m’a fait forte impression.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Du jeudi 21 au vendredi 22 avril 2016 se tenait à Lyon la sixième
+édition du Mix-IT. Rassemblant plus de 600 participants, cette
+convention aux allures de grande fête pour développeurs et agilistes
+permettaient de suivre talks, ateliers, conférences mais également
+d’échanger autour d’une délicieuse crêpe suzette avec des passionnés
+venus du monde entier.&lt;/p&gt;
+&lt;p&gt;En attendant l’article de retour sur le Mix-IT, revenons-en au
+sujet principal de cet article, le Kotlin. Ne connaissant alors ce
+langage que de nom, j’étais très intrigué par la présentation de
+Mr Hadi Harriri nommée “Kotlin : ready for production”. Après une
+présentation assez sommaire de l’historique du langage et de l’objectif
+du projet de Jetbrains, on comprend assez rapidement qu’en introduisant
+le Kotlin, la firme internationale tente de répondre aux besoins des
+développeurs Java en rassemblant dans un langage le meilleur du Scala,
+des avantages du C#, et une concision poussée à l’extrême. C’est à se
+demander si la firme perd espoir en Oracle pour sortir de nouvelles
+versions de Java plus ambitieuses.&lt;/p&gt;
+&lt;h2&gt;La concision ok&lt;/h2&gt;
+&lt;p&gt;Comme je le dis plus haut, la concision était une volonté et un objectif
+très clair de Jetbrains pour la création du langage Kotlin. Il est
+vrai qu’en Java, on peut très facilement  se retrouver à avoir du
+Boilerplate un peu partout. On pense aux getter/setter, très verbeux
+pour finalement une fonctionnalité qu’on peut résumer habilement.
+Évidemment, des plugins comme Lombok permettent par annotation de
+réduire tous ce volume de code.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Afin de vous montrer un exemple de concision, voici une comparaison
+entre un objet très simple en Java et l’exact équivalent en Kotlin.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Version Java :&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Person&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Cloneable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Integer&lt;/span&gt; id&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Integer&lt;/span&gt; id&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;id &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; id&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;setName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Integer&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; id&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;setId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Integer&lt;/span&gt; id&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;id &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; id&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token annotation punctuation&quot;&gt;@Override&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Object&lt;/span&gt; obj&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;obj &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;obj &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; obj&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token class-name&quot;&gt;Person&lt;/span&gt; guest &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; obj&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; id &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; guest&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;id &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; guest&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;getName &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;guest&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token annotation punctuation&quot;&gt;@Override&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hashCode&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; prime &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;31&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; prime &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;hashCode&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; prime &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; id&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token annotation punctuation&quot;&gt;@Override&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Person(name=&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;name&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;,id=&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;id&lt;span class=&quot;token string&quot;&gt;&quot;)&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token annotation punctuation&quot;&gt;@Override&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Object&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;clone&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;token class-name&quot;&gt;Person&lt;/span&gt; person &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	    &lt;span class=&quot;token keyword&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	      	person &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;clone&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;CloneNotSupportedException&lt;/span&gt; cnse&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	      	cnse&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;printStackTrace&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;err&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+	    person&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;clone&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	    person&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;id &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; id&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;clone&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; person&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Version Kotlin :&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;dat &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; name&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; String&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; id&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Int&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Les fonctions venant de Object (toString,equals,..) sont apportées par
+le mot clef “data” devant “class” dans le fichier Kotlin.&lt;/p&gt;
+&lt;h2&gt;Des fonctionnalités intéressantes&lt;/h2&gt;
+&lt;p&gt;Lors de la conférence du Mix-IT, j’ai pu repérer quelques
+fonctionnalités qui me semblent réellement intéressantes à vous
+partager dans cet article. Cette liste n’est pas exhaustive, mais
+devrait vous donnez un aperçu des possibilités.&lt;/p&gt;
+&lt;h2&gt;Classes&lt;/h2&gt;
+&lt;p&gt;Pour déclarer une classe en Kotlin, on peut se débarrasser des
+getter/setter, on peut définir un constructeur principal. En outre,
+on peut même définir la mutabilité des attributs de la classe grâce
+aux mots clés var (mutable) et val (read-only).&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; firstName&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; String&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; lastName&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; String&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; age&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Int&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Déclarations de fonction sans accolades (inline)&lt;/h2&gt;
+&lt;p&gt;On peut déclarer des fonctions sans accolades, c’est assez compacte.
+On perd un peu en lisibilité mais on gagne en espace.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Int&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; j&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;Int&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; j&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Des conditions plus simples&lt;/h2&gt;
+&lt;p&gt;Adieu le switch au profit du when avec des “arrow operators”.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;x == 1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;x == 2&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Note the block&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;x is neither 1 nor 2&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pour les boucles rien de spécial à noter de particulier mais c’est sur l’opération “if” qu’on peut observer un ajout très pratique.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; max &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Choose a&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    a
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Choose b&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    b
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;La dernière expression du block if est la valeur du block. On évite
+donc l’initialisation de variables en dehors du bloc et évite sa
+modification dans chacune des branches. On peut remarquer que
+l’opérateur de fin d’instruction ‘;’ disparaît (en réalité
+il est optionnel)&lt;/p&gt;
+&lt;h2&gt;Adieu les “NullPointerException”&lt;/h2&gt;
+&lt;p&gt;Kotlin a été pensé pour éviter les danger des références null et faire
+disparaître les NullPointerException et les “null-check”.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; a&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; String &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;abc&quot;&lt;/span&gt;
+a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// compilation error&lt;/span&gt;
+To allow nulls&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; we can declare a variable &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; nullable string&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; written String&lt;span class=&quot;token operator&quot;&gt;?:&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; b&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; String&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;abc&quot;&lt;/span&gt;
+b &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// ok&lt;/span&gt;
+
+b&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;On ne peut pas affecter à une variable la valeur null si on n’a pas
+délibérément défini cette variable comme nullable. Le Kotlin introduit
+également le “call safe operator” qui permet de tester la nullité d’une
+variable avant l’appel d’un fonction sur cette variable.&lt;/p&gt;
+&lt;h2&gt;Des fonctions “Callable”&lt;/h2&gt;
+&lt;p&gt;En Kotlin, une fonction peut être déclarée en dehors d’un objet. Cela
+peut paraître étrange vis à vis du Java mais cette fonctionnalité peut
+être très pratique, en particulier pour déclarer la fonction main de
+son projet.&lt;/p&gt;
+&lt;p&gt;Une fonction déclarée en dehors d’un objet peut être appelé de
+n’importe quel endroit de cette façon :&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;hello&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+
+&lt;span class=&quot;token keyword&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token operator&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;La programmation fonctionnelle pour les gouverner tous&lt;/h2&gt;
+&lt;p&gt;Le paradigme fonctionnelle est bien sûr présent dans le langage.  Il
+permet de réaliser toutes les opérations usuelles (map, reduce,
+forEach,etc,..)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; sum &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+ints&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;filter&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; it &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  sum &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; it
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sum&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Les “Extension Functions”&lt;/h2&gt;
+&lt;p&gt;En Kotlin on peut “étendre” une classe par une fonction de manière
+assez simple. On peut donc facilement rajouter des méthodes sans passer
+par un héritage.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;fun&lt;/span&gt; MutableList&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Int&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;swap&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;index1&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Int&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; index2&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Int&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; tmp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;index1&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// &apos;this&apos; corresponds to the list&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;index1&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;index2&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;index2&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; tmp
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ici le mot-clé “this” permet d’accéder à l’objet étendu.&lt;/p&gt;
+&lt;h2&gt;L’interopérabilité&lt;/h2&gt;
+&lt;p&gt;La question soulevée par ce nouveau langage vient assez rapidement.
+Peut-on facilement passer de Java à Kotlin? Est-ce que notre code
+Kotlin va fonctionner avec tous le code Java que l’on a déjà?
+Est-ce que nos outils actuels sont adaptés au développement Kotlin?&lt;/p&gt;
+&lt;h2&gt;Les IDE&lt;/h2&gt;
+&lt;p&gt;Bien évidemment, JetBrains met ses produits en avant pour
+l’utilisation du Kotlin. On peut en effet utiliser leur célèbre IDE
+Intellij pour développer dans ce langage. Cerise sur la gâteau, on
+peut même utiliser la version Community gratuite pour se faire une
+idée. Il existe également un plugin pour Eclipse. Par contre, aucun
+projet de plugin n’est en cours pour NetBeans.&lt;/p&gt;
+&lt;h2&gt;Java&lt;/h2&gt;
+&lt;p&gt;Kotlin permet également une compatibilité avec toutes les
+librairies Java, c’est sûrement l’argument le plus fort et évidemment
+mis en avant par JetBrains. Le code créé peut donc fonctionner sur une
+JVM de la version 6 à 8.&lt;/p&gt;
+&lt;p&gt;On peut donc profiter de tous les avantages du langage Kotlin tout en
+restant 10 ans en arrière coté virtual machine.
+Enfin, aucune modification n’est nécessaire pour faire intéragir du
+code Java avec du Kotlin. De plus, l’appel de méthode Java est
+complètement transparent pour le Kotlin.&lt;/p&gt;
+&lt;h2&gt;Javascript&lt;/h2&gt;
+&lt;p&gt;Et oui, JetBrains n’a pas voulu ignorer le mouvement récent du
+développement Javascript. On peut donc cibler le langage Javascript au
+build afin de faire tourner son application Kotlin sur un
+environnement NodeJS ou bien dans un navigateur.Cette fonctionnalité
+est donc à tester. On tient peut-être ici une alternative au
+TypeScript ?… mais ça reste à mes yeux gadget.&lt;/p&gt;
+&lt;h2&gt;Android&lt;/h2&gt;
+&lt;p&gt;N’ayant fait que quelques Lab Android, je n’ai pas forcément une
+vision complète de l’environnement, mais je me souviens avoir été gêné
+par le nombre de ligne de code Java nécessaire pour obtenir une si
+simple application mobile.&lt;/p&gt;
+&lt;p&gt;Il se trouve que l’on peut dès aujourd’hui développer des applications
+mobiles Android depuis l’IDE recommandé par Google
+(i.e: Android Studio) en Kotlin, à tester pour les amateurs.&lt;/p&gt;
+&lt;h2&gt;Spring Boot&lt;/h2&gt;
+&lt;p&gt;Enfin, on peut voir que le Kotlin intéresse les committers du projet
+Spring, notamment le lyonnais Sébastien Deleuze avec cet article
+intitulé Developing Spring Boot applications with Kotlin. Voir autant
+d’effervescence autour de ce langage rassure un peu, et
+personnellement je pense tenter l’utilisation du Kotlin dans le
+contexte Spring Boot pour me faire une idée plus objective sur le sujet.&lt;/p&gt;
+&lt;p&gt;D’ailleurs, le Spring Initializr intègre depuis quelques temps
+l’option de génération de projet Spring Boot en Kotlin.&lt;/p&gt;
+&lt;p&gt;N’hésitez pas à aller tester ce langage sur le site et vous faire
+votre propre avis sur ce langage. Quand à moi, je vais rapidement
+l’essayer pour un de mes projets.&lt;/p&gt;
+&lt;p&gt;D’autres ressources sont disponibles sur le Github d’&lt;a href=&quot;https://github.com/hhariri/awesome-kotlin&quot;&gt;Hadi Hariri&lt;/a&gt;
+pourraient vous intéresser&lt;/p&gt;</content:encoded></item></channel></rss>
