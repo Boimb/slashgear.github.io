@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 19 Apr 2020 15:31:34 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 19 Apr 2020 15:42:22 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
 You should follow him on Twitter]]></description><link>https://slashgear.github.io/</link><guid isPermaLink="false">https://slashgear.github.io/</guid><content:encoded>&lt;p&gt;Written by &lt;strong&gt;Antoine Caron&lt;/strong&gt; who lives and works in Lyon (France) building useful things at &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
 You should follow him &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;on Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Ecrit par Antoine Caron qui vit et travaille à Lyon et développe des choses utiles à Bedrock.
 Tu devrais le suivre sur Twitter]]></description><link>https://slashgear.github.io/fr/</link><guid isPermaLink="false">https://slashgear.github.io/fr/</guid><content:encoded>&lt;p&gt;Ecrit par &lt;strong&gt;Antoine Caron&lt;/strong&gt; qui vit et travaille à Lyon et développe des choses utiles à &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
@@ -387,7 +387,32 @@ Instead of working on code, the workshop I designed focuses on git and its use.&
 &lt;p&gt;&lt;strong&gt;Here is the link to the workshop, available free of charge on Github.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/Slashgear/git-kata&quot;&gt;https://github.com/Slashgear/git-kata&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;It’s all in the README.&lt;/p&gt;
-&lt;p&gt;Leave me your opinions and feedback in comments.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Why you should not publish content on Dev.to?]]></title><description><![CDATA[First things first: I’m not an Internet warrior. I do not wish to make Dev.to’s judgment here nor am I trying to convince you that this…]]></description><link>https://slashgear.github.io/stop-dev-to/</link><guid isPermaLink="false">https://slashgear.github.io/stop-dev-to/</guid><pubDate>Thu, 18 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;First things first: I’m not an Internet warrior. I do not wish to make Dev.to’s judgment here nor am I trying to convince you that this platform is right or wrong.&lt;/p&gt;
+&lt;p&gt;Leave me your opinions and feedback in comments.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Un Kata pour jouer avec Git]]></title><description><![CDATA[En tant que professeur d’informatique à temps partiel, je donne souvent des ateliers pour comprendre et utiliser des outils.
+Plusieurs fois…]]></description><link>https://slashgear.github.io/fr/git-kata/</link><guid isPermaLink="false">https://slashgear.github.io/fr/git-kata/</guid><pubDate>Sun, 21 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;En tant que professeur d’informatique à temps partiel, je donne souvent des ateliers pour comprendre et utiliser des outils.
+Plusieurs fois, j’ai rencontré des équipes qui utilisaient Git et Github depuis de nombreuses années mais qui avaient beaucoup de difficultés.
+La base était connue mais en pratique.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Attendez, ne bougez pas, je vais faire cela et vous pourrez le récupérer.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Je suis coincé, on travaille sur le même dossier.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Passez-moi ton fichier, je l’ajouterai à PR.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Je suis presque sûr que vous avez déjà entendu cela !
+Cela peut sembler drôle mais c’est assez symptomatique d’un manque de pratique et de réflexes à avoir quand on utilise Git.
+Très souvent, les utilisateurs savent comment gérer mais préfèrent faire des choses plutôt obscures.&lt;/p&gt;
+&lt;p&gt;Un ancien collègue a préféré faire plusieurs &lt;code class=&quot;language-text&quot;&gt;cherry-pick&lt;/code&gt; pour récupérer le travail de ses collègues plutôt que d’utiliser un seul &lt;code class=&quot;language-text&quot;&gt;rebase&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Et si je concevais un atelier qui permettrait aux équipes d’apprendre ensemble les bons réflexes lors de l’utilisation de Git et Github ?&lt;/p&gt;
+&lt;p&gt;J’ai eu l’occasion de participer à plusieurs sessions de programmation de Dojo/Kata de programmation et je désirais m’inspirer de ce modèle.
+Au lieu de travailler sur le code, l’atelier que j’ai conçu se concentre sur git et son utilisation.
+Aucun language de programmation n’est nécessaire pour cet atelier.
+Vous pouvez même mixer des personnes qui n’utilisent pas le même language.
+Seulement Git est nécessaire pour cet atelier&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Voici le lien vers l’atelier, disponible gratuitement sur Github.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Slashgear/git-kata&quot;&gt;https://github.com/Slashgear/git-kata&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tout est dans le README.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Why you should not publish content on Dev.to?]]></title><description><![CDATA[First things first: I’m not an Internet warrior. I do not wish to make Dev.to’s judgment here nor am I trying to convince you that this…]]></description><link>https://slashgear.github.io/stop-dev-to/</link><guid isPermaLink="false">https://slashgear.github.io/stop-dev-to/</guid><pubDate>Thu, 18 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;First things first: I’m not an Internet warrior. I do not wish to make Dev.to’s judgment here nor am I trying to convince you that this platform is right or wrong.&lt;/p&gt;
 &lt;p&gt;Instead, I would like to warn people of a trend that is endangering the web as we know it.&lt;/p&gt;
 &lt;h1 id=&quot;tldr&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-label=&quot;tldr permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h1&gt;
 &lt;p&gt;I don’t think Dev.to is a problem but how authors use it. Authors should not post their content only on dev.to. You should not publish content on Dev.to. You should &lt;strong&gt;share&lt;/strong&gt; content on Dev.to.&lt;/p&gt;
