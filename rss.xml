@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 19 Apr 2020 18:27:13 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 19 Apr 2020 20:58:13 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
 You should follow him on Twitter]]></description><link>https://slashgear.github.io/</link><guid isPermaLink="false">https://slashgear.github.io/</guid><content:encoded>&lt;p&gt;Written by &lt;strong&gt;Antoine Caron&lt;/strong&gt; who lives and works in Lyon (France) building useful things at &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
 You should follow him &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;on Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Ecrit par Antoine Caron qui vit et travaille à Lyon et développe des choses utiles à Bedrock.
 Tu devrais le suivre sur Twitter]]></description><link>https://slashgear.github.io/fr/</link><guid isPermaLink="false">https://slashgear.github.io/fr/</guid><content:encoded>&lt;p&gt;Ecrit par &lt;strong&gt;Antoine Caron&lt;/strong&gt; qui vit et travaille à Lyon et développe des choses utiles à &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
@@ -842,6 +842,140 @@ In fact, today web servers do not really optimize the compression of static file
 &lt;li&gt;You can easily see the complete size of your web application (which is great when you want to track web app performances)&lt;/li&gt;
 &lt;li&gt;Your app is much more portable (you will easily change your deployment or your web server with pre-compressed assets)&lt;/li&gt;
 &lt;li&gt;As a frontend developper you are familiar with the great value of lossless compression.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Pourquoi devriez-vous utiliser le plugin Compression Webpack ?]]></title><description><![CDATA[Si vous utilisez webpack comme bundler pour votre application, vous êtes probablement préoccupé par ses propres performances et son temps de…]]></description><link>https://slashgear.github.io/fr/pourquoi-vous-devriez-utiliser-le-compression-webpack-plugin/</link><guid isPermaLink="false">https://slashgear.github.io/fr/pourquoi-vous-devriez-utiliser-le-compression-webpack-plugin/</guid><pubDate>Tue, 02 Apr 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Si vous utilisez webpack comme bundler pour votre application, vous êtes probablement préoccupé par ses propres performances et son temps de chargement.
+Vous avez peut-être utilisé le code-splitting, le tree-shaking, l’uglification mais vous avez peut-être oublié une étape très importante.&lt;/p&gt;
+&lt;h2 id=&quot;la-compression-est-obligatoire&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#la-compression-est-obligatoire&quot; aria-label=&quot;la compression est obligatoire permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;La compression est obligatoire&lt;/h2&gt;
+&lt;p&gt;En 2019, si vous n’utilisez pas un algorithme de compression pour livrer vos fichiers dans une version allégée afin de rendre le chargement de votre site web plus rapide, la situation est critique.
+Chaque analyseur de performance de site web vous dira de le faire.
+Voici une comparaison de la taille d’un site web sur la vanille &lt;a href=&quot;https://cli.vuejs.org/&quot;&gt;Vue CLI&lt;/a&gt; avec et sans Gzip.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/0a47e/vue-cli-vanilla-size.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 62.16216216216216%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsSAAALEgHS3X78AAABM0lEQVQoz5VSiUrDQBDt/3+B+hf6BSoiCta2iiB4pAdVSI9ks2d2ZidOuqlN44XDMHkJ72XOnvdeCCE3lmWZUlJrtc5EroAqwqIA56ofrNd+IaZvgMcqzcGVzi9SIwT9KbbWilxIYajhUuun1AERN+IQAoBfLIVYScD4hXas38XcuTF6tcy00JHQ4X0vZhmnRUQuOxdKrlXdOdWZI2jjCHZirTUAbOqE1ySdzFVFseL2mOgL2JbNDwTEAJOXt4ur9/79evikB49ylPjRBNmHHKeBfTDGu1mQjjxQI+bMSilbuvnz9Ozw+Pzo5PSgjteX05uH4jbBT+8nOBxjbsj5eqt7e0YoKfBJAEewRSySgicsIwHAEoW4HZ7R/pFse+ImjG0OyxjrfRwKMY4rLEvfFf/XPgDNJrrq4uYUcgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/cbe2e/vue-cli-vanilla-size.webp 148w,
+/static/15d620b40e592ba0943d30e7a40c5dc2/3084c/vue-cli-vanilla-size.webp 295w,
+/static/15d620b40e592ba0943d30e7a40c5dc2/5ca24/vue-cli-vanilla-size.webp 590w,
+/static/15d620b40e592ba0943d30e7a40c5dc2/e88ff/vue-cli-vanilla-size.webp 600w&quot;
+          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/12f09/vue-cli-vanilla-size.png 148w,
+/static/15d620b40e592ba0943d30e7a40c5dc2/e4a3f/vue-cli-vanilla-size.png 295w,
+/static/15d620b40e592ba0943d30e7a40c5dc2/fcda8/vue-cli-vanilla-size.png 590w,
+/static/15d620b40e592ba0943d30e7a40c5dc2/0a47e/vue-cli-vanilla-size.png 600w&quot;
+          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/fcda8/vue-cli-vanilla-size.png&quot;
+          alt=&quot;taille des fichiers de Vue CLI comparée à leur version gzip&quot;
+          title=&quot;taille des fichiers de Vue CLI comparée à leur version gzip&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ici, nous réduisons 64% de la taille réelle avec Gzip.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;compresser-des-fichiers-statiques-à-la-volée-est-redondant&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#compresser-des-fichiers-statiques-%C3%A0-la-vol%C3%A9e-est-redondant&quot; aria-label=&quot;compresser des fichiers statiques à la volée est redondant permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Compresser des fichiers statiques à la volée est redondant&lt;/h2&gt;
+&lt;p&gt;Tout serveur web moderne a la possibilité de compresser des fichiers à la demande.
+Bien que Gzip soit rapide, la compression de fichiers statiques à chaque demande est contraire au modèle, même si vous utilisez un cache devant vos demandes de fichiers statiques.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;La compression des fichiers statiques doit être effectuée pendant la période de construction.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Si vous êtes dans un contexte de webpack, il est très facile d’ajouter une compression.&lt;/p&gt;
+&lt;p&gt;Pour ce faire, vous pouvez installer le &lt;em&gt;compression-webpack-plugin&lt;/em&gt; avec :&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; --dev compression-webpack-plugin&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;…et l’ajouter dans votre configuration de production :&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;
+plugins&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;CompressionWebpackPlugin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;En deux étapes faciles, vos fichiers statiques de sortie auront leur équivalent &lt;em&gt;.gz&lt;/em&gt;.
+Maintenant, si vous envoyez ces fichiers sur un serveur web comme &lt;a href=&quot;https://caddyserver.com/&quot;&gt;Caddy&lt;/a&gt;.
+Il délivrera automatiquement la version pré-zippée s’ils existent.
+Cependant, vous devez l’activer &lt;a href=&quot;http://nginx.org/en/docs/http/ngx_http_gzip_static_module.html&quot;&gt;dans la configuration du serveur Nginx&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;devrions-nous-seulement-générer-des-gz-&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#devrions-nous-seulement-g%C3%A9n%C3%A9rer-des-gz-&quot; aria-label=&quot;devrions nous seulement générer des gz  permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;“Devrions-nous seulement générer des .gz ?&lt;/h2&gt;
+&lt;p&gt;Si vous avez suivi les étapes ci-dessus, vous avez activé la compression sur votre serveur web. C’est génial !&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mais en 2019, Gzip n’est pas la seule solution pour compresser vos fichiers.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;zopfli&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#zopfli&quot; aria-label=&quot;zopfli permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Zopfli&lt;/h3&gt;
+&lt;p&gt;Zopfli est un algorithme de compression sans perte qui donne de meilleurs résultats de compression que Gzip avec un temps de compression plus lent.
+Donc si vous le pouvez, vous devez toujours utiliser la compression Zopfli pour les fichiers statiques, au lieu de Gzip de base.
+Les fichiers de sortie de Zopfli respectent le même format que Gzip, le support du navigateur est le même.&lt;/p&gt;
+&lt;p&gt;Vous pouvez utiliser zopfli &lt;a href=&quot;https://github.com/webpack-contrib/compression-webpack-plugin#using-zopfli&quot;&gt;avec le plugin de compression webpack&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;brotli&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#brotli&quot; aria-label=&quot;brotli permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Brotli&lt;/h3&gt;
+&lt;p&gt;Brotli est un algorithme de compression récent (&lt;a href=&quot;https://tools.ietf.org/html/rfc7932&quot;&gt;RFC 7932&lt;/a&gt;) avec &lt;a href=&quot;https://caniuse.com/#search=brotli&quot;&gt;un excellent support du navigateur&lt;/a&gt;.
+Basé sur une nouvelle modélisation et un nouveau format de fichier, brotli est très performant pour la compression des fichiers statiques.
+Il y a encore quelques parties difficiles avec brotli (non disponible sur Node &amp;#x3C; v11, difficile à configurer sur certains serveurs web comme Nginx)&lt;/p&gt;
+&lt;p&gt;Vous pouvez utiliser brotli &lt;a href=&quot;https://github.com/webpack-contrib/compression-webpack-plugin#using-zopfli&quot;&gt;avec le plugin de compression webpack.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0d631442de390a6737ca967f30f3263d/416ee/vue-cli-complete-size.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.27027027027026%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsSAAALEgHS3X78AAABLElEQVQoz51TPU/DMBDt72Vi4g/wVxhAIJhYK2ABNUkXkECitEiFpWqjJmn9dR/mEpPiqhlorefzy51fcnd2ekRkrTXGaK0DEY//3+hti2vLRCvDVhlX5ihTVQ5ctzgszJ5ktgOQCYnBMYFD4DbE0R7hv2JjbLHMCSF4492dfEssya/Wa2yq3VustVrMZ4h4iBgAiqoKsT3EIpNFK1UuZ0RwiFiaO57meQESlDYLqO5/N99N231O35Qpgz86S44eY96KpdVyyKPXUdIfDB+G2X2a3KXJ8zwbQzbBtLENYPABL19kXSSWzwL4p8ezi/Ojm+uTy6vj/u3p4vvdWDTgjePaBji24EPhf2kLs8TyRoERtNlJTtjcnF3unOtF1bFnEtQ3E2IBbvjmnwn8B+63MwOVH0z/AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/0d631442de390a6737ca967f30f3263d/cbe2e/vue-cli-complete-size.webp 148w,
+/static/0d631442de390a6737ca967f30f3263d/3084c/vue-cli-complete-size.webp 295w,
+/static/0d631442de390a6737ca967f30f3263d/5ca24/vue-cli-complete-size.webp 590w,
+/static/0d631442de390a6737ca967f30f3263d/dad35/vue-cli-complete-size.webp 885w,
+/static/0d631442de390a6737ca967f30f3263d/6eb96/vue-cli-complete-size.webp 930w&quot;
+          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/0d631442de390a6737ca967f30f3263d/12f09/vue-cli-complete-size.png 148w,
+/static/0d631442de390a6737ca967f30f3263d/e4a3f/vue-cli-complete-size.png 295w,
+/static/0d631442de390a6737ca967f30f3263d/fcda8/vue-cli-complete-size.png 590w,
+/static/0d631442de390a6737ca967f30f3263d/efc66/vue-cli-complete-size.png 885w,
+/static/0d631442de390a6737ca967f30f3263d/416ee/vue-cli-complete-size.png 930w&quot;
+          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/0d631442de390a6737ca967f30f3263d/fcda8/vue-cli-complete-size.png&quot;
+          alt=&quot;résultats de compressions avec Vue CLI&quot;
+          title=&quot;résultats de compressions avec Vue CLI&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;en-conclusion--pourquoi-le-faire-avec-webpack-&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#en-conclusion--pourquoi-le-faire-avec-webpack-&quot; aria-label=&quot;en conclusion  pourquoi le faire avec webpack  permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;En conclusion : “Pourquoi le faire avec Webpack ?&lt;/h2&gt;
+&lt;p&gt;La compression des fichiers statiques pendant les étapes de construction est encore un sujet discutable.
+Certaines personnes affirment que c’est au serveur web de compresser les fichiers.
+Cependant, aujourd’hui, les serveurs web n’optimisent pas vraiment la compression des fichiers statiques.&lt;/p&gt;
+&lt;p&gt;Lorsque vous comprimez pendant la construction :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vous pouvez facilement voir la taille complète de votre application web (ce qui est très utile lorsque vous voulez suivre les performances d’une application web)&lt;/li&gt;
+&lt;li&gt;Votre application est beaucoup plus portable (vous pourrez facilement changer votre déploiement ou votre serveur web avec des ressources pré-compressées)&lt;/li&gt;
+&lt;li&gt;En tant que développeur de frontend, vous êtes familier avec la grande valeur de la compression sans perte.&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Angular basics]]></title><description><![CDATA[Those are my slides for the course I gave about Angular to students of Polytech Lyon in september 2017.]]></description><link>https://slashgear.github.io/angular-training/</link><guid isPermaLink="false">https://slashgear.github.io/angular-training/</guid><pubDate>Fri, 15 Sep 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Those are my slides for the course I gave about Angular to students of Polytech Lyon in september 2017.&lt;/p&gt;
 &lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt; &lt;iframe src=&quot;https://slashgear.github.io/angular-basics/#/&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;width:100%;height:100%;left:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot; allowfullscreen&gt;&lt;/iframe&gt; &lt;/div&gt; &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Les bases d'angular]]></title><description><![CDATA[Ce sont mes diapositives pour le cours que j’ai donné sur Angular aux étudiants de Polytech Lyon en septembre 2017.]]></description><link>https://slashgear.github.io/fr/cours-angular/</link><guid isPermaLink="false">https://slashgear.github.io/fr/cours-angular/</guid><pubDate>Fri, 15 Sep 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Ce sont mes diapositives pour le cours que j’ai donné sur Angular aux étudiants de Polytech Lyon en septembre 2017.&lt;/p&gt;
 &lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt; &lt;iframe src=&quot;https://slashgear.github.io/angular-basics/#/&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;width:100%;height:100%;left:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot; allowfullscreen&gt;&lt;/iframe&gt; &lt;/div&gt; &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Enseigner autrement]]></title><description><![CDATA[Depuis septembre j’ai pu m’initier à l’enseignement dans le supérieur pour des étudiants en Master 2 et Master 1 à l’école
