@@ -1,8 +1,62 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Apr 2020 09:17:02 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Apr 2020 15:46:48 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
 You should follow him on Twitter]]></description><link>https://slashgear.github.io/</link><guid isPermaLink="false">https://slashgear.github.io/</guid><content:encoded>&lt;p&gt;Written by &lt;strong&gt;Antoine Caron&lt;/strong&gt; who lives and works in Lyon (France) building useful things at &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
 You should follow him &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;on Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Ecrit par Antoine Caron qui vit et travaille à Lyon et développe des choses utiles à Bedrock.
 Tu devrais le suivre sur Twitter]]></description><link>https://slashgear.github.io/fr/</link><guid isPermaLink="false">https://slashgear.github.io/fr/</guid><content:encoded>&lt;p&gt;Ecrit par &lt;strong&gt;Antoine Caron&lt;/strong&gt; qui vit et travaille à Lyon et développe des choses utiles à &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
-Tu devrais le suivre sur &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to boost the speed of your webpack build?]]></title><description><![CDATA[How did I cut in half my project’s webpack build time ? Who never complained about the infinite duration of a webpack build on a project ?
+Tu devrais le suivre sur &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Personal tribute to "Game of Life"]]></title><description><![CDATA[This end of the school year as a college professor is not very usual.
+In a few days, I’m about to give my first courses to distance students…]]></description><link>https://slashgear.github.io/gol-tribute/</link><guid isPermaLink="false">https://slashgear.github.io/gol-tribute/</guid><pubDate>Mon, 20 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This end of the school year as a college professor is not very usual.
+In a few days, I’m about to give my first courses to distance students through Discord.&lt;/p&gt;
+&lt;p&gt;I don’t yet know in detail how it will work.
+But I’ve tried to adapt my courses on “Design Patterns” to be easier and shorter than in previous years.
+Indeed, I already imagine that it will be complicated to go at the same rhythm.&lt;/p&gt;
+&lt;p&gt;I had to redo a workshop on the &lt;em&gt;very classic&lt;/em&gt; MVC pattern.
+I must confess that I was sorely lacking in ideas.
+First of all, I didn’t want to make a graphical interface with &lt;em&gt;JavaFx&lt;/em&gt; (Java being the best known language of my students).
+Second, I wanted to use my programming language, JS.&lt;/p&gt;
+&lt;p&gt;I hope that by the time you read this article, the &lt;a href=&quot;https://en.wikipedia.org/wiki/Coronavirus_disease_2019&quot;&gt;Coronavirus&lt;/a&gt; crisis that hit the world in early 2020 is over.
+As of today, we are still in the middle of it.
+I even read recently that &lt;a href=&quot;https://wikipedia.org/wiki/John_Horton_Conway&quot;&gt;Jon H. Conway&lt;/a&gt;, the creator of the famous “Game of Life” died of this disease.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgs.xkcd.com/comics/rip_john_conway.gif&quot; alt=&quot;animation by xkcd&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Eureka !”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It didn’t take me long to set up a little &lt;em&gt;game of life&lt;/em&gt; in JS and without framework.
+The concept of the game is very simple.
+With the &lt;em&gt;canvas&lt;/em&gt; API, in a few minutes I was able to recreate this well known game.&lt;/p&gt;
+&lt;p&gt;So here’s the demo I was going to share with my students as an example:&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://game-of-life-demo.now.sh/&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;width:100%;height:100%;left:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
+&lt;p&gt;Link to the demo: &lt;a href=&quot;https://game-of-life-demo.now.sh/&quot;&gt;https://game-of-life-demo.now.sh/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;All I had to do was to put it in the shape of a workshop so Students could do it themselves.
+As all my classes are open, here it is &lt;a href=&quot;https://github.com/PolytechLyon/isi3-mvc-gol&quot;&gt;available on Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I don’t know if &lt;a href=&quot;https://wikipedia.org/wiki/John_Horton_Conway&quot;&gt;Jon H. Conway&lt;/a&gt; had any idea (when he designed this game) that it would become such a &lt;em&gt;“reference”&lt;/em&gt; in the computer science world.
+By introducing my students to it, I hope it will stay that way.&lt;/p&gt;
+&lt;p&gt;Feel free to share with me your implementations of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life&quot;&gt;“Game of Life”&lt;/a&gt; in other languages or on other platforms.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hommage personnel au "Game of Life" (Jeu de la vie)]]></title><description><![CDATA[Cette fin d’année scolaire en tant que professeur à la fac n’est pas très habituelle.
+D’ici quelques jours, je m’apprête à donner mes…]]></description><link>https://slashgear.github.io/fr/gol-hommage/</link><guid isPermaLink="false">https://slashgear.github.io/fr/gol-hommage/</guid><pubDate>Mon, 20 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Cette fin d’année scolaire en tant que professeur à la fac n’est pas très habituelle.
+D’ici quelques jours, je m’apprête à donner mes premiers cours à des étudiants à distance par Discord.&lt;/p&gt;
+&lt;p&gt;Je ne sais pas encore en détails comment cela va se dérouler.
+Mais j’ai quand même essayé d’adapter mes cours sur les “Design Patterns” pour qu’ils soient plus faciles et moins long que les années précédentes.
+En effet, j’imagine déjà qu’il sera compliqué d’aller au même rythme.&lt;/p&gt;
+&lt;p&gt;Il m’a fallu refaire un TP sur le &lt;em&gt;très classique&lt;/em&gt; pattern MVC.
+Je dois vous avouer que je manquais cruellement d’idée.
+D’abord, je n’avais pas envie de faire une interface graphique avec &lt;em&gt;JavaFx&lt;/em&gt; (Java étant le langage le mieux connu de mes étudiants).
+Ensuite, je voulais utiliser mon langage de programmation, le JS.&lt;/p&gt;
+&lt;p&gt;J’espère qu’au moment où vous lisez cet article, la crise du COVID-19 qui a frappé le monde entier dès le début de l’année 2020 est terminée.
+À ce jour, on est encore en plein dedans.
+J’ai même lu récemment que &lt;a href=&quot;https://wikipedia.org/wiki/John_Horton_Conway&quot;&gt;Jon H. Conway&lt;/a&gt;, le créateur du fameux &lt;a href=&quot;https://wikipedia.org/wiki/Jeu_de_la_vie&quot;&gt;“Game of Life”&lt;/a&gt; est décédé de cette maladie.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgs.xkcd.com/comics/rip_john_conway.gif&quot; alt=&quot;animation by xkcd&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“La voilà mon idée !”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Il ne m’a pas fallu longtemps pour mettre en place un petit &lt;em&gt;jeu de la vie&lt;/em&gt; en JS et sans framework.
+Le concept est très simple.
+Avec l’API des &lt;em&gt;canvas&lt;/em&gt;, en quelques minutes j’ai pu recréer ce jeu si connu.&lt;/p&gt;
+&lt;p&gt;Voici donc la démo que je comptais partager à mes étudiants en tant qu’exemple:&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://game-of-life-demo.now.sh/&quot; frameborder=&quot;0&quot; style=&quot;position:absolute;width:100%;height:100%;left:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
+&lt;p&gt;Lien de la démo: &lt;a href=&quot;https://game-of-life-demo.now.sh/&quot;&gt;https://game-of-life-demo.now.sh/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ne me restait plus qu’à le mettre sous la forme d’un TP pour qu’ils puissent le faire eux-même.
+Comme tous mes cours sont libres, le voici &lt;a href=&quot;https://github.com/PolytechLyon/isi3-mvc-gol&quot;&gt;disponible sur Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Je ne sais pas du tout si &lt;a href=&quot;https://wikipedia.org/wiki/John_Horton_Conway&quot;&gt;Jon H. Conway&lt;/a&gt; se doutait (au moment où il a conçu ce jeu) que celui-ci deviendrait à ce point une &lt;em&gt;“référence”&lt;/em&gt; dans le monde de l’informatique.
+En le faisant découvrir à mes étudiants, j’espère qu’il le restera.&lt;/p&gt;
+&lt;p&gt;N’hésitez pas à me partager vos implémentations du &lt;a href=&quot;https://wikipedia.org/wiki/Jeu_de_la_vie&quot;&gt;“Game of Life”&lt;/a&gt; dans d’autres langages où sur d’autres plateformes.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to boost the speed of your webpack build?]]></title><description><![CDATA[How did I cut in half my project’s webpack build time ? Who never complained about the infinite duration of a webpack build on a project ?
 I…]]></description><link>https://slashgear.github.io/hunting-webpack-performances/</link><guid isPermaLink="false">https://slashgear.github.io/hunting-webpack-performances/</guid><pubDate>Sun, 01 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;how-did-i-cut-in-half-my-projects-webpack-build-time-&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#how-did-i-cut-in-half-my-projects-webpack-build-time-&quot; aria-label=&quot;how did i cut in half my projects webpack build time  permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How did I cut in half my project’s webpack build time ?&lt;/h2&gt;
 &lt;p&gt;Who never complained about the infinite duration of a webpack build on a project ?
 I’m currently working on a big web application coded in React/Redux with server side rendering.
