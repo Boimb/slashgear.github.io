@@ -1,8 +1,232 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 01 May 2020 20:18:49 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 02 May 2020 10:44:52 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
 You should follow him on Twitter]]></description><link>https://slashgear.github.io/</link><guid isPermaLink="false">https://slashgear.github.io/</guid><content:encoded>&lt;p&gt;Written by &lt;strong&gt;Antoine Caron&lt;/strong&gt; who lives and works in Lyon (France) building useful things at &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
 You should follow him &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;on Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Ecrit par Antoine Caron qui vit et travaille à Lyon et développe des choses utiles à Bedrock.
 Tu devrais le suivre sur Twitter]]></description><link>https://slashgear.github.io/fr/</link><guid isPermaLink="false">https://slashgear.github.io/fr/</guid><content:encoded>&lt;p&gt;Ecrit par &lt;strong&gt;Antoine Caron&lt;/strong&gt; qui vit et travaille à Lyon et développe des choses utiles à &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
-Tu devrais le suivre sur &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Personal tribute to "Game of Life"]]></title><description><![CDATA[This end of the school year as a college professor is not very usual.
+Tu devrais le suivre sur &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Announcing use-reduced-motion]]></title><description><![CDATA[Everything always starts with an idea Last week, as I was setting up the dark mode on my personal website, I got motivated to work on a new…]]></description><link>https://slashgear.github.io/use-reduced-motion/</link><guid isPermaLink="false">https://slashgear.github.io/use-reduced-motion/</guid><pubDate>Fri, 01 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;everything-always-starts-with-an-idea&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#everything-always-starts-with-an-idea&quot; aria-label=&quot;everything always starts with an idea permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Everything always starts with an idea&lt;/h2&gt;
+&lt;p&gt;Last week, as I was setting up the dark mode on &lt;a href=&quot;https://slashgear.github.io/&quot;&gt;my personal website&lt;/a&gt;, I got motivated to work on a new package for the React community.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;” Well, somebody shared a hook to handle the `prefers-color-scheme’ feature in browsers, that’s super handy.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In just a few minutes, I was able to integrate this great feature without getting in my head.
+That’s when I thought of that &lt;a href=&quot;https://web.dev/prefers-reduced-motion/&quot;&gt;awesome blog post about a new feature for accessibility&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;At the time, while reading this article, I found out that some users may feel uncomfortable consulting web pages that “wiggle”.
+Indeed, elements of a page that move, zoom or change colors can greatly disturb the use and understanding of the content of our pages.
+This may not be the case for you, but many users are in this situation.&lt;/p&gt;
+&lt;p&gt;In order to allow you to better understand the problem, I suggest a small experiment with a very short video.
+Focus on the people dressed in white and try to count the number of passes.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/Ahg6qcgoay4&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
+&lt;p&gt;Do you understand now?&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;“superb onboarding animation”&lt;/em&gt; may be very beautiful, but it is very disturbing for some of your users.
+They find themselves in the same situation as you do with this video.
+The moving elements make it difficult to capture all the information you want to convey.&lt;/p&gt;
+&lt;p&gt;Fortunately, OS and browsers have become aware of accessibility issues and now provide tools.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;It is therefore our responsibility today to integrate these solutions to avoid putting some of our users in a situation of handicap.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A &lt;em&gt;media query&lt;/em&gt; allows you to stop your animations for users who wish to do so.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/*
+  If the user has expressed their preference for
+  reduced motion, then don&apos;t use animations on buttons.
+*/&lt;/span&gt;
+&lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token property&quot;&gt;prefers-reduced-motion&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; reduce&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token selector&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;animation&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; none&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;a href=&quot;https://caniuse.com/#feat=prefers-reduced-motion&quot;&gt;support for this feature&lt;/a&gt; is even very correct.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/8f1fd/prefersReduceMotion-support-05-2020.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 29.72972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAABlUlEQVQY03WQ30tTYRjHz38YiQU6CIKQpIyigvJC8CKUilBxaBddGJRF+wETRWRzLp1rbrqdnR9bZzs/nDvznO24KfP+07ubvPLiw/O+X77v8z7fR3JqOZxqDls7wNGz4pzF1g8w1X0sce84J1ydq7fi28cEZxUu/QaBpyO19DS2msKuiUa1Q1zzCP+0RPe0KMx5euLRdafKwNP+c+3rDAQ3uvD4GleeghToUYJyhE41jy8m7RpFelaFnrzJQNmkbyl0hp80S/iuLGqZtlnEMwu49T+4jQJeU+HcEppAcvYSJNfm+bk0xdbqS+Krb4mHXxFffk4s/IL1hSeY5ST1TBQt+pn6xlcM9VCkymDIKbTcNlrkG/XSLoaSQTp5/Zj3n0KMJR5y9/sooz/ucWd9hPFfIZ7GJpmIPyK9PMNa+Bkr8w9IT4VYSs6x82WW4uIs2Y/T7E3eJ/vhDYWVd0j9szJ9t4LVzJH6G+O3kWCnFqFi7XLZVum2ZS4aebzWMZ4n0xPRW80jumaeCxE5EOvoizUMPUP+AbNqjxBco4H8AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/cbe2e/prefersReduceMotion-support-05-2020.webp 148w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/3084c/prefersReduceMotion-support-05-2020.webp 295w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/5ca24/prefersReduceMotion-support-05-2020.webp 590w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/dad35/prefersReduceMotion-support-05-2020.webp 885w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/2baf0/prefersReduceMotion-support-05-2020.webp 1180w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/c5daa/prefersReduceMotion-support-05-2020.webp 2528w&quot;
+          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/12f09/prefersReduceMotion-support-05-2020.png 148w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/e4a3f/prefersReduceMotion-support-05-2020.png 295w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/fcda8/prefersReduceMotion-support-05-2020.png 590w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/efc66/prefersReduceMotion-support-05-2020.png 885w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/c83ae/prefersReduceMotion-support-05-2020.png 1180w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/8f1fd/prefersReduceMotion-support-05-2020.png 2528w&quot;
+          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/fcda8/prefersReduceMotion-support-05-2020.png&quot;
+          alt=&quot;Support for the prefers-reduced-motion feature in May 2020&quot;
+          title=&quot;Support for the prefers-reduced-motion feature in May 2020&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Here is a video demo of how this feature works, taken from &lt;a href=&quot;https://web.dev/prefers-reduced-motion/&quot;&gt;the article quoted above&lt;/a&gt;.&lt;/p&gt;
+&lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt;
+&lt;video muted=&quot;&quot; playsinline=&quot;&quot; controls=&quot;&quot; style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;
+    &lt;source src=&quot;https://storage.googleapis.com/web-dev-assets/prefers-reduced-motion/prefers-reduced-motion.mp4&quot; type=&quot;video/mp4&quot;&gt;
+&lt;/video&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;where-is-the-package-and-how-to-use-it&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#where-is-the-package-and-how-to-use-it&quot; aria-label=&quot;where is the package and how to use it permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Where is the package and how to use it?&lt;/h2&gt;
+&lt;p&gt;It’s very nice this &lt;em&gt;media query&lt;/em&gt; but in some cases, the animations I use on my sites are managed by JavaScript.
+Fortunately, we have solutions to track the use of the &lt;em&gt;media query&lt;/em&gt; in the browser.&lt;/p&gt;
+&lt;p&gt;To make them easier to use with &lt;em&gt;React&lt;/em&gt;, I’ve integrated them into a &lt;em&gt;Hook&lt;/em&gt; in the way of &lt;code class=&quot;language-text&quot;&gt;use-dark-mode&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/package/use-reduced-motion&quot;&gt;https://www.npmjs.com/package/use-reduced-motion&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To install it in your project, nothing could be simpler:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; use-reduced-motion
+&lt;span class=&quot;token comment&quot;&gt;# or&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; use-reduced-motion&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then you just have to use it in one of your components:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; React &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;react&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; useReducedMotion &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;use-reduced-motion&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; AnimatedDiv &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;../somewhere&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;MyExampleComponent&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; prefersReducedMotion &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useReducedMotion&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;AnimatedDiv&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;pause&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;prefersReducedMotion&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I invite you to test here with your browser/OS, the following animation will stop automatically.&lt;/p&gt;
+&lt;iframe
+ src=&quot;https://codesandbox.io/embed/use-reduced-motion-pi966?fontsize=14&amp;hidenavigation=1&amp;theme=dark&amp;view=preview&quot;
+ style=&quot;width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;&quot;
+ title=&quot;use-reduced-motion&quot;
+ allow=&quot;accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr&quot;
+ sandbox=&quot;allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;Feel free to share this article if you liked it, any contribution to the package is welcome.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.reactjs.org/docs/hooks-intro.html&quot;&gt;React Hook Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/Slashgear/use-reduced-motion&quot;&gt;Source code of &lt;code class=&quot;language-text&quot;&gt;use-reduced-motion&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/donavon/use-dark-mode&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;use-dark-mode&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Image credit &lt;a href=&quot;https://undraw.co/&quot;&gt;unDraw&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Et voici use-reduced-motion!]]></title><description><![CDATA[Tout part toujours d’une idée La semaine dernière, alors que je mettais en place le mode sombre sur mon site perso, je me suis motivé à…]]></description><link>https://slashgear.github.io/fr/use-reduced-motion/</link><guid isPermaLink="false">https://slashgear.github.io/fr/use-reduced-motion/</guid><pubDate>Fri, 01 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;tout-part-toujours-dune-idée&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tout-part-toujours-dune-id%C3%A9e&quot; aria-label=&quot;tout part toujours dune idée permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tout part toujours d’une idée&lt;/h2&gt;
+&lt;p&gt;La semaine dernière, alors que je mettais en place le mode sombre sur &lt;a href=&quot;https://slashgear.github.io/fr/&quot;&gt;mon site perso&lt;/a&gt;, je me suis motivé à travailler sur un nouveau package pour la communauté React.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Tiens, quelqu’un a partagé un hook pour gérer la feature &lt;code class=&quot;language-text&quot;&gt;prefers-color-scheme&lt;/code&gt; des navigateurs, c’est super pratique.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;En quelques minutes, j’ai pu intégrer cette super feature sans me prendre la tête.
+C’est alors que j’ai repensé à cet &lt;a href=&quot;https://web.dev/prefers-reduced-motion/&quot;&gt;article de blog génial sur une nouvelle feature pour l’accessibilité&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A l’époque, en lisant cet article, j’ai pris conscience que certains utilisateurs peuvent avoir de la gêne à consulter des pages web qui “gigottent”.
+En effet, des élements d’une page qui bougent, qui zoom ou changent de couleurs peuvent énormément troubler l’usage et la compréhension du contenu de nos pages.
+Ce n’est peut-être pas votre cas, mais beaucoup d’utilisateurs sont dans cette situation.&lt;/p&gt;
+&lt;p&gt;Afin de vous permettre de mieux comprendre le problème, je vous propose une petite expérience avec une très courte vidéo.
+Concentrez-vous sur les personnes habillées de blanc et essayer de compter le nombre de passes.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/Ahg6qcgoay4&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
+&lt;p&gt;Vous comprenez maintenant ?&lt;/p&gt;
+&lt;p&gt;La &lt;em&gt;“superbe animation d’onboarding”&lt;/em&gt; est peut-être très belle, mais elle perturbe énormément certains de vos utilisateurs.
+Ils se retrouvent dans la même situation que vous avec cette vidéo.
+Les éléments en mouvements amènent des difficultés à saisir l’intégralité des informations que vous souhaitez transmettre.&lt;/p&gt;
+&lt;p&gt;Heureusement, les OS et les navigateurs ont pris conscience des sujets d’accessibilité et fournissent aujourd’hui des outils.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Il est donc aujourd’hui de notre responsabilité d’intégrer ces solutions pour éviter de mettre certains de nos utilisateurs dans une situation de handicap.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Une &lt;em&gt;media query&lt;/em&gt; vous permets donc de stopper vos animations pour les utilisateurs qui le souhaitent.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token property&quot;&gt;prefers-reduced-motion&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; reduce&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token selector&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;animation&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; none&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Le &lt;a href=&quot;https://caniuse.com/#feat=prefers-reduced-motion&quot;&gt;support de cette fonctionnalité&lt;/a&gt; est même très correct.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/8f1fd/prefersReduceMotion-support-05-2020.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 29.72972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAABlUlEQVQY03WQ30tTYRjHz38YiQU6CIKQpIyigvJC8CKUilBxaBddGJRF+wETRWRzLp1rbrqdnR9bZzs/nDvznO24KfP+07ubvPLiw/O+X77v8z7fR3JqOZxqDls7wNGz4pzF1g8w1X0sce84J1ydq7fi28cEZxUu/QaBpyO19DS2msKuiUa1Q1zzCP+0RPe0KMx5euLRdafKwNP+c+3rDAQ3uvD4GleeghToUYJyhE41jy8m7RpFelaFnrzJQNmkbyl0hp80S/iuLGqZtlnEMwu49T+4jQJeU+HcEppAcvYSJNfm+bk0xdbqS+Krb4mHXxFffk4s/IL1hSeY5ST1TBQt+pn6xlcM9VCkymDIKbTcNlrkG/XSLoaSQTp5/Zj3n0KMJR5y9/sooz/ucWd9hPFfIZ7GJpmIPyK9PMNa+Bkr8w9IT4VYSs6x82WW4uIs2Y/T7E3eJ/vhDYWVd0j9szJ9t4LVzJH6G+O3kWCnFqFi7XLZVum2ZS4aebzWMZ4n0xPRW80jumaeCxE5EOvoizUMPUP+AbNqjxBco4H8AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/cbe2e/prefersReduceMotion-support-05-2020.webp 148w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/3084c/prefersReduceMotion-support-05-2020.webp 295w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/5ca24/prefersReduceMotion-support-05-2020.webp 590w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/dad35/prefersReduceMotion-support-05-2020.webp 885w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/2baf0/prefersReduceMotion-support-05-2020.webp 1180w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/c5daa/prefersReduceMotion-support-05-2020.webp 2528w&quot;
+          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/12f09/prefersReduceMotion-support-05-2020.png 148w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/e4a3f/prefersReduceMotion-support-05-2020.png 295w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/fcda8/prefersReduceMotion-support-05-2020.png 590w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/efc66/prefersReduceMotion-support-05-2020.png 885w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/c83ae/prefersReduceMotion-support-05-2020.png 1180w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/8f1fd/prefersReduceMotion-support-05-2020.png 2528w&quot;
+          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/fcda8/prefersReduceMotion-support-05-2020.png&quot;
+          alt=&quot;Support de la fonctionnalité prefers-reduced-motion en mai 2020&quot;
+          title=&quot;Support de la fonctionnalité prefers-reduced-motion en mai 2020&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Voici une démo en vidéo du fonctionnement de cette fonctionnalité extraite de &lt;a href=&quot;https://web.dev/prefers-reduced-motion/&quot;&gt;l’article cité plus haut&lt;/a&gt;.&lt;/p&gt;
+&lt;div style=&quot;position:relative;height:0;padding-bottom:56.25%&quot;&gt;
+&lt;video muted=&quot;&quot; playsinline=&quot;&quot; controls=&quot;&quot; style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;
+    &lt;source src=&quot;https://storage.googleapis.com/web-dev-assets/prefers-reduced-motion/prefers-reduced-motion.mp4&quot; type=&quot;video/mp4&quot;&gt;
+&lt;/video&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;le-package-et-comment-lutiliser&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#le-package-et-comment-lutiliser&quot; aria-label=&quot;le package et comment lutiliser permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Le package et comment l’utiliser&lt;/h2&gt;
+&lt;p&gt;Elle est très sympa cette &lt;em&gt;media query&lt;/em&gt; mais dans certains cas, les animations que j’utilise sur mes sites sont gérées par du JavaScript.
+Heureusement, on a des solutions pour surveiller l’usage des &lt;em&gt;media query&lt;/em&gt; dans le navigateur.&lt;/p&gt;
+&lt;p&gt;Pour faciliter leur usage avec &lt;em&gt;React&lt;/em&gt;, je l’ai donc intégré dans un &lt;em&gt;Hook&lt;/em&gt; à la manière de &lt;code class=&quot;language-text&quot;&gt;use-dark-mode&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Le voici: &lt;a href=&quot;https://www.npmjs.com/package/use-reduced-motion&quot;&gt;https://www.npmjs.com/package/use-reduced-motion&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pour l’installer dans votre projet, rien de plus simple:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; use-reduced-motion
+&lt;span class=&quot;token comment&quot;&gt;# or&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; use-reduced-motion&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ensuite il vous reste à l’utiliser dans l’un de vos composants:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; React &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;react&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; useReducedMotion &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;use-reduced-motion&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; AnimatedDiv &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;../somewhere&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;MyExampleComponent&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; prefersReducedMotion &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useReducedMotion&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;AnimatedDiv&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;pause&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;prefersReducedMotion&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Je vous invite à tester ici avec votre navigateur/OS, l’animation suivante va s’arrêter automatiquement.&lt;/p&gt;
+&lt;iframe
+ src=&quot;https://codesandbox.io/embed/use-reduced-motion-pi966?fontsize=14&amp;hidenavigation=1&amp;theme=dark&amp;view=preview&quot;
+ style=&quot;width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;&quot;
+ title=&quot;use-reduced-motion&quot;
+ allow=&quot;accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr&quot;
+ sandbox=&quot;allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;N’hésitez pas à partager cet article s’il vous a plu, toute contribution au package est la bienvenue.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://fr.reactjs.org/docs/hooks-intro.html&quot;&gt;Documentation sur les Hook React&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/Slashgear/use-reduced-motion&quot;&gt;Code source du Hook &lt;code class=&quot;language-text&quot;&gt;use-reduced-motion&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/donavon/use-dark-mode&quot;&gt;Le Hook &lt;code class=&quot;language-text&quot;&gt;use-dark-mode&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Crédit image &lt;a href=&quot;https://undraw.co/&quot;&gt;unDraw&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Personal tribute to "Game of Life"]]></title><description><![CDATA[This end of the school year as a college professor is not very usual.
 In a few days, I’m about to give my first courses to distance students…]]></description><link>https://slashgear.github.io/gol-tribute/</link><guid isPermaLink="false">https://slashgear.github.io/gol-tribute/</guid><pubDate>Mon, 20 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This end of the school year as a college professor is not very usual.
 In a few days, I’m about to give my first courses to distance students through Discord.&lt;/p&gt;
 &lt;p&gt;I don’t yet know in detail how it will work.
