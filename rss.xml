@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 04 May 2020 10:52:40 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 04 May 2020 18:14:25 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
 You should follow him on Twitter]]></description><link>https://slashgear.github.io/</link><guid isPermaLink="false">https://slashgear.github.io/</guid><content:encoded>&lt;p&gt;Written by &lt;strong&gt;Antoine Caron&lt;/strong&gt; who lives and works in Lyon (France) building useful things at &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
 You should follow him &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;on Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Ecrit par Antoine Caron qui vit et travaille à Lyon et développe des choses utiles à Bedrock.
 Tu devrais le suivre sur Twitter]]></description><link>https://slashgear.github.io/fr/</link><guid isPermaLink="false">https://slashgear.github.io/fr/</guid><content:encoded>&lt;p&gt;Ecrit par &lt;strong&gt;Antoine Caron&lt;/strong&gt; qui vit et travaille à Lyon et développe des choses utiles à &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
@@ -34,7 +34,7 @@ The moving elements make it difficult to capture all the information you want to
 &lt;p&gt;The &lt;a href=&quot;https://caniuse.com/#feat=prefers-reduced-motion&quot;&gt;support for this feature&lt;/a&gt; is even very correct.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -45,32 +45,32 @@ The moving elements make it difficult to capture all the information you want to
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 29.72972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAABlUlEQVQY03WQ30tTYRjHz38YiQU6CIKQpIyigvJC8CKUilBxaBddGJRF+wETRWRzLp1rbrqdnR9bZzs/nDvznO24KfP+07ubvPLiw/O+X77v8z7fR3JqOZxqDls7wNGz4pzF1g8w1X0sce84J1ydq7fi28cEZxUu/QaBpyO19DS2msKuiUa1Q1zzCP+0RPe0KMx5euLRdafKwNP+c+3rDAQ3uvD4GleeghToUYJyhE41jy8m7RpFelaFnrzJQNmkbyl0hp80S/iuLGqZtlnEMwu49T+4jQJeU+HcEppAcvYSJNfm+bk0xdbqS+Krb4mHXxFffk4s/IL1hSeY5ST1TBQt+pn6xlcM9VCkymDIKbTcNlrkG/XSLoaSQTp5/Zj3n0KMJR5y9/sooz/ucWd9hPFfIZ7GJpmIPyK9PMNa+Bkr8w9IT4VYSs6x82WW4uIs2Y/T7E3eJ/vhDYWVd0j9szJ9t4LVzJH6G+O3kWCnFqFi7XLZVum2ZS4aebzWMZ4n0xPRW80jumaeCxE5EOvoizUMPUP+AbNqjxBco4H8AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 29.500000000000004%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAABlUlEQVQY03WQ30tTYRjHz38YiQU6CIKQpIyigvJC8CKUilBxaBddGJRF+wETRWRzLp1rbrqdnR9bZzs/nDvznO24KfP+07ubvPLiw/O+X77v8z7fR3JqOZxqDls7wNGz4pzF1g8w1X0sce84J1ydq7fi28cEZxUu/QaBpyO19DS2msKuiUa1Q1zzCP+0RPe0KMx5euLRdafKwNP+c+3rDAQ3uvD4GleeghToUYJyhE41jy8m7RpFelaFnrzJQNmkbyl0hp80S/iuLGqZtlnEMwu49T+4jQJeU+HcEppAcvYSJNfm+bk0xdbqS+Krb4mHXxFffk4s/IL1hSeY5ST1TBQt+pn6xlcM9VCkymDIKbTcNlrkG/XSLoaSQTp5/Zj3n0KMJR5y9/sooz/ucWd9hPFfIZ7GJpmIPyK9PMNa+Bkr8w9IT4VYSs6x82WW4uIs2Y/T7E3eJ/vhDYWVd0j9szJ9t4LVzJH6G+O3kWCnFqFi7XLZVum2ZS4aebzWMZ4n0xPRW80jumaeCxE5EOvoizUMPUP+AbNqjxBco4H8AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/cbe2e/prefersReduceMotion-support-05-2020.webp 148w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/3084c/prefersReduceMotion-support-05-2020.webp 295w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/5ca24/prefersReduceMotion-support-05-2020.webp 590w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/dad35/prefersReduceMotion-support-05-2020.webp 885w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/2baf0/prefersReduceMotion-support-05-2020.webp 1180w,
+          srcset=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/ba381/prefersReduceMotion-support-05-2020.webp 200w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/7f61c/prefersReduceMotion-support-05-2020.webp 400w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/d00b9/prefersReduceMotion-support-05-2020.webp 800w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/92f8c/prefersReduceMotion-support-05-2020.webp 1200w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/fad48/prefersReduceMotion-support-05-2020.webp 1600w,
 /static/109310f0f5f4ab72be7c1e83a6ea85db/c5daa/prefersReduceMotion-support-05-2020.webp 2528w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/12f09/prefersReduceMotion-support-05-2020.png 148w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/e4a3f/prefersReduceMotion-support-05-2020.png 295w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/fcda8/prefersReduceMotion-support-05-2020.png 590w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/efc66/prefersReduceMotion-support-05-2020.png 885w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/c83ae/prefersReduceMotion-support-05-2020.png 1180w,
+          srcset=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/772e8/prefersReduceMotion-support-05-2020.png 200w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/e17e5/prefersReduceMotion-support-05-2020.png 400w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/5a190/prefersReduceMotion-support-05-2020.png 800w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/c1b63/prefersReduceMotion-support-05-2020.png 1200w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/29007/prefersReduceMotion-support-05-2020.png 1600w,
 /static/109310f0f5f4ab72be7c1e83a6ea85db/8f1fd/prefersReduceMotion-support-05-2020.png 2528w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/fcda8/prefersReduceMotion-support-05-2020.png&quot;
+          src=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/5a190/prefersReduceMotion-support-05-2020.png&quot;
           alt=&quot;Support for the prefers-reduced-motion feature in May 2020&quot;
           title=&quot;Support for the prefers-reduced-motion feature in May 2020&quot;
           loading=&quot;lazy&quot;
@@ -144,7 +144,7 @@ Les éléments en mouvements amènent des difficultés à saisir l’intégralit
 &lt;p&gt;Le &lt;a href=&quot;https://caniuse.com/#feat=prefers-reduced-motion&quot;&gt;support de cette fonctionnalité&lt;/a&gt; est même très correct.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -155,32 +155,32 @@ Les éléments en mouvements amènent des difficultés à saisir l’intégralit
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 29.72972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAABlUlEQVQY03WQ30tTYRjHz38YiQU6CIKQpIyigvJC8CKUilBxaBddGJRF+wETRWRzLp1rbrqdnR9bZzs/nDvznO24KfP+07ubvPLiw/O+X77v8z7fR3JqOZxqDls7wNGz4pzF1g8w1X0sce84J1ydq7fi28cEZxUu/QaBpyO19DS2msKuiUa1Q1zzCP+0RPe0KMx5euLRdafKwNP+c+3rDAQ3uvD4GleeghToUYJyhE41jy8m7RpFelaFnrzJQNmkbyl0hp80S/iuLGqZtlnEMwu49T+4jQJeU+HcEppAcvYSJNfm+bk0xdbqS+Krb4mHXxFffk4s/IL1hSeY5ST1TBQt+pn6xlcM9VCkymDIKbTcNlrkG/XSLoaSQTp5/Zj3n0KMJR5y9/sooz/ucWd9hPFfIZ7GJpmIPyK9PMNa+Bkr8w9IT4VYSs6x82WW4uIs2Y/T7E3eJ/vhDYWVd0j9szJ9t4LVzJH6G+O3kWCnFqFi7XLZVum2ZS4aebzWMZ4n0xPRW80jumaeCxE5EOvoizUMPUP+AbNqjxBco4H8AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 29.500000000000004%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAABlUlEQVQY03WQ30tTYRjHz38YiQU6CIKQpIyigvJC8CKUilBxaBddGJRF+wETRWRzLp1rbrqdnR9bZzs/nDvznO24KfP+07ubvPLiw/O+X77v8z7fR3JqOZxqDls7wNGz4pzF1g8w1X0sce84J1ydq7fi28cEZxUu/QaBpyO19DS2msKuiUa1Q1zzCP+0RPe0KMx5euLRdafKwNP+c+3rDAQ3uvD4GleeghToUYJyhE41jy8m7RpFelaFnrzJQNmkbyl0hp80S/iuLGqZtlnEMwu49T+4jQJeU+HcEppAcvYSJNfm+bk0xdbqS+Krb4mHXxFffk4s/IL1hSeY5ST1TBQt+pn6xlcM9VCkymDIKbTcNlrkG/XSLoaSQTp5/Zj3n0KMJR5y9/sooz/ucWd9hPFfIZ7GJpmIPyK9PMNa+Bkr8w9IT4VYSs6x82WW4uIs2Y/T7E3eJ/vhDYWVd0j9szJ9t4LVzJH6G+O3kWCnFqFi7XLZVum2ZS4aebzWMZ4n0xPRW80jumaeCxE5EOvoizUMPUP+AbNqjxBco4H8AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/cbe2e/prefersReduceMotion-support-05-2020.webp 148w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/3084c/prefersReduceMotion-support-05-2020.webp 295w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/5ca24/prefersReduceMotion-support-05-2020.webp 590w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/dad35/prefersReduceMotion-support-05-2020.webp 885w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/2baf0/prefersReduceMotion-support-05-2020.webp 1180w,
+          srcset=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/ba381/prefersReduceMotion-support-05-2020.webp 200w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/7f61c/prefersReduceMotion-support-05-2020.webp 400w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/d00b9/prefersReduceMotion-support-05-2020.webp 800w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/92f8c/prefersReduceMotion-support-05-2020.webp 1200w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/fad48/prefersReduceMotion-support-05-2020.webp 1600w,
 /static/109310f0f5f4ab72be7c1e83a6ea85db/c5daa/prefersReduceMotion-support-05-2020.webp 2528w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/12f09/prefersReduceMotion-support-05-2020.png 148w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/e4a3f/prefersReduceMotion-support-05-2020.png 295w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/fcda8/prefersReduceMotion-support-05-2020.png 590w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/efc66/prefersReduceMotion-support-05-2020.png 885w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/c83ae/prefersReduceMotion-support-05-2020.png 1180w,
+          srcset=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/772e8/prefersReduceMotion-support-05-2020.png 200w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/e17e5/prefersReduceMotion-support-05-2020.png 400w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/5a190/prefersReduceMotion-support-05-2020.png 800w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/c1b63/prefersReduceMotion-support-05-2020.png 1200w,
+/static/109310f0f5f4ab72be7c1e83a6ea85db/29007/prefersReduceMotion-support-05-2020.png 1600w,
 /static/109310f0f5f4ab72be7c1e83a6ea85db/8f1fd/prefersReduceMotion-support-05-2020.png 2528w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/fcda8/prefersReduceMotion-support-05-2020.png&quot;
+          src=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/5a190/prefersReduceMotion-support-05-2020.png&quot;
           alt=&quot;Support de la fonctionnalité prefers-reduced-motion en mai 2020&quot;
           title=&quot;Support de la fonctionnalité prefers-reduced-motion en mai 2020&quot;
           loading=&quot;lazy&quot;
@@ -375,7 +375,7 @@ This gives a full name: &lt;code class=&quot;language-text&quot;&gt;user/SET_USE
 A big advantage of this naming rule is that you can easily filter the action in &lt;a href=&quot;https://github.com/reduxjs/redux-devtools&quot;&gt;redux-devtools&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -386,32 +386,32 @@ A big advantage of this naming rule is that you can easily filter the action in 
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 77.70270270270271%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB6klEQVQ4y6WU63LaMBCFeZymwTY2NvhuLvIVG0wggdI0f/r+z3C6u8ZOmMx0SvrjjOS19OlIu9LICTLYvoLjp7DcNfjbi0uY8xXcuMAq3yOtjlgXT9Ivt2fsjr/QPL2ifX7Dy+W3xPhfrBqMgkWFWZASUMF0FnicBCJ9GkEVNGhdI98cCXBBvT/T5Bfk9bPEqu1J4ooWS0tSdSBgUoKhmhUKSDNDjM0Ahp3Qqi0McqpR35xHmLoRrHkI046g0zidxukWzwnw3fBF4jBZNzCmsQDHZjg45BUnToIHnQbr3QRuH40PmnTxB90TiUPelu2t5QfDuGVwRkB2+k1zu0mGdzP5Xf67Q5+A7DBcbgZ33LLDjM7pI/BvYnAHpEzGBGSoR30G9Fu+B3jjMF7VArVmyyE5usXAw38ASRpBuvMLpJ9WXwBylnvglArbJo3Nq8OvAN0oR0QJ4fNzPHVzhlys9wPDDOHVJd+WLsvXmzIAvTsdEozrkYt4LDclHK4eA/uS+Ccgb7U/Q95yX9ycbQHSDeItfy7mzxLgIm0RLGtEagc3qWDTa+OEuShSW8yiovsO8iF+I4rP6XVy+YWishstyyNYi+KAbPsDm8MbVH1C0f5E2pxFqjmh3L9Kn8fw/3zXtRk9XTyW40V7wR/bWBgVncKSpwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 77.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB6klEQVQ4y6WU63LaMBCFeZymwTY2NvhuLvIVG0wggdI0f/r+z3C6u8ZOmMx0SvrjjOS19OlIu9LICTLYvoLjp7DcNfjbi0uY8xXcuMAq3yOtjlgXT9Ivt2fsjr/QPL2ifX7Dy+W3xPhfrBqMgkWFWZASUMF0FnicBCJ9GkEVNGhdI98cCXBBvT/T5Bfk9bPEqu1J4ooWS0tSdSBgUoKhmhUKSDNDjM0Ahp3Qqi0McqpR35xHmLoRrHkI046g0zidxukWzwnw3fBF4jBZNzCmsQDHZjg45BUnToIHnQbr3QRuH40PmnTxB90TiUPelu2t5QfDuGVwRkB2+k1zu0mGdzP5Xf67Q5+A7DBcbgZ33LLDjM7pI/BvYnAHpEzGBGSoR30G9Fu+B3jjMF7VArVmyyE5usXAw38ASRpBuvMLpJ9WXwBylnvglArbJo3Nq8OvAN0oR0QJ4fNzPHVzhlys9wPDDOHVJd+WLsvXmzIAvTsdEozrkYt4LDclHK4eA/uS+Ccgb7U/Q95yX9ycbQHSDeItfy7mzxLgIm0RLGtEagc3qWDTa+OEuShSW8yiovsO8iF+I4rP6XVy+YWishstyyNYi+KAbPsDm8MbVH1C0f5E2pxFqjmh3L9Kn8fw/3zXtRk9XTyW40V7wR/bWBgVncKSpwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/6ddc87a11f1bc6add7fb7ee327893e94/cbe2e/redux-devtools.webp 148w,
-/static/6ddc87a11f1bc6add7fb7ee327893e94/3084c/redux-devtools.webp 295w,
-/static/6ddc87a11f1bc6add7fb7ee327893e94/5ca24/redux-devtools.webp 590w,
-/static/6ddc87a11f1bc6add7fb7ee327893e94/dad35/redux-devtools.webp 885w,
-/static/6ddc87a11f1bc6add7fb7ee327893e94/2baf0/redux-devtools.webp 1180w,
+          srcset=&quot;/static/6ddc87a11f1bc6add7fb7ee327893e94/ba381/redux-devtools.webp 200w,
+/static/6ddc87a11f1bc6add7fb7ee327893e94/7f61c/redux-devtools.webp 400w,
+/static/6ddc87a11f1bc6add7fb7ee327893e94/d00b9/redux-devtools.webp 800w,
+/static/6ddc87a11f1bc6add7fb7ee327893e94/92f8c/redux-devtools.webp 1200w,
+/static/6ddc87a11f1bc6add7fb7ee327893e94/fad48/redux-devtools.webp 1600w,
 /static/6ddc87a11f1bc6add7fb7ee327893e94/8ed74/redux-devtools.webp 2726w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/6ddc87a11f1bc6add7fb7ee327893e94/12f09/redux-devtools.png 148w,
-/static/6ddc87a11f1bc6add7fb7ee327893e94/e4a3f/redux-devtools.png 295w,
-/static/6ddc87a11f1bc6add7fb7ee327893e94/fcda8/redux-devtools.png 590w,
-/static/6ddc87a11f1bc6add7fb7ee327893e94/efc66/redux-devtools.png 885w,
-/static/6ddc87a11f1bc6add7fb7ee327893e94/c83ae/redux-devtools.png 1180w,
+          srcset=&quot;/static/6ddc87a11f1bc6add7fb7ee327893e94/772e8/redux-devtools.png 200w,
+/static/6ddc87a11f1bc6add7fb7ee327893e94/e17e5/redux-devtools.png 400w,
+/static/6ddc87a11f1bc6add7fb7ee327893e94/5a190/redux-devtools.png 800w,
+/static/6ddc87a11f1bc6add7fb7ee327893e94/c1b63/redux-devtools.png 1200w,
+/static/6ddc87a11f1bc6add7fb7ee327893e94/29007/redux-devtools.png 1600w,
 /static/6ddc87a11f1bc6add7fb7ee327893e94/10f47/redux-devtools.png 2726w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/6ddc87a11f1bc6add7fb7ee327893e94/fcda8/redux-devtools.png&quot;
+          src=&quot;/static/6ddc87a11f1bc6add7fb7ee327893e94/5a190/redux-devtools.png&quot;
           alt=&quot;redux devtools screenshot&quot;
           title=&quot;redux devtools screenshot&quot;
           loading=&quot;lazy&quot;
@@ -514,7 +514,7 @@ An action at the other end of your application could affect this state without b
 This should be avoided.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 721px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -525,28 +525,26 @@ This should be avoided.&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 58.10810810810811%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAACiklEQVQoz6VSS2sTURQek1YXVhf6O8SFC11EEFxYwaYouhBc6T9QcOkDF0J9tBatCApSC4KbKibFWpK0k0nSJJ285pFM3mk6aaadJJMmscm9kxzvpChVpAoOfHPvOd/hnO+bORT1n091yXWn5ffVt4N+XWPoGcqfqJgX2fzA58XYQBPAPDxyeejEScuRM2eHj5L6g1MvX1lsNvsYw3ju2e1z9+e/Ljx8Nz1zgXCD4sfZq50wC/T0257jzWtUcjngX4Uc/i0eNF6165ZDHb830ggsg8rQ0Aosa0Rh9RYdKT53ruTGmWhp4otHmuJX2xOijMeFNWTgKR2RJ0VZf0Tuj5MKjHm48mQ4XX8mlOGJGFduAxu4AdHwza0l13FKlBGwyQoE4hsQSlchKG2A0gYoExin0gFIljFsIpLbBlB1gPRmDwp1gBYACDJO/KI9XsI4swkoowKKrCbRUozGPsmHJKWBBFlDnri3nwtmOJRSuojNSYjm3Jjm3R1BViBR6kXpedsBED2mDV/ARBR2etI6xtI6wmw2jV3hZewMe3E0r2I2VcaOkBcvBN06HYtgrtDEDMdjB+vFbn6FNKySht3Y+IdZsyEuWtim+pYNK3Jjx1JxCyBfBciqOyhoALFcAwo1AOKkz+UqpJ6sRN2wvNaJ/XAbzn2jKDbTPEUuFwlGQtmGlUyx8mvIKsi6lfyY0ZU8Pj8x4xwV5O6IkeMIZ/ChbJPUNy+xmdYxo1lK0Sm3UPv7voDvyhDz/u65PZe7vWv9+GLblCzrZvIdfyIla+aM3B0w+Iowz0AzAVrcds2Ii1lp/+5abrVtMvIYgPJJ9T9P1IIPKDUl7etP5+0vVM7eqIufTvdjYc60l9rv0F4KiYnHoFQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 58.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAACiklEQVQoz6VSS2sTURQek1YXVhf6O8SFC11EEFxYwaYouhBc6T9QcOkDF0J9tBatCApSC4KbKibFWpK0k0nSJJ285pFM3mk6aaadJJMmscm9kxzvpChVpAoOfHPvOd/hnO+bORT1n091yXWn5ffVt4N+XWPoGcqfqJgX2fzA58XYQBPAPDxyeejEScuRM2eHj5L6g1MvX1lsNvsYw3ju2e1z9+e/Ljx8Nz1zgXCD4sfZq50wC/T0257jzWtUcjngX4Uc/i0eNF6165ZDHb830ggsg8rQ0Aosa0Rh9RYdKT53ruTGmWhp4otHmuJX2xOijMeFNWTgKR2RJ0VZf0Tuj5MKjHm48mQ4XX8mlOGJGFduAxu4AdHwza0l13FKlBGwyQoE4hsQSlchKG2A0gYoExin0gFIljFsIpLbBlB1gPRmDwp1gBYACDJO/KI9XsI4swkoowKKrCbRUozGPsmHJKWBBFlDnri3nwtmOJRSuojNSYjm3Jjm3R1BViBR6kXpedsBED2mDV/ARBR2etI6xtI6wmw2jV3hZewMe3E0r2I2VcaOkBcvBN06HYtgrtDEDMdjB+vFbn6FNKySht3Y+IdZsyEuWtim+pYNK3Jjx1JxCyBfBciqOyhoALFcAwo1AOKkz+UqpJ6sRN2wvNaJ/XAbzn2jKDbTPEUuFwlGQtmGlUyx8mvIKsi6lfyY0ZU8Pj8x4xwV5O6IkeMIZ/ChbJPUNy+xmdYxo1lK0Sm3UPv7voDvyhDz/u65PZe7vWv9+GLblCzrZvIdfyIla+aM3B0w+Iowz0AzAVrcds2Ii1lp/+5abrVtMvIYgPJJ9T9P1IIPKDUl7etP5+0vVM7eqIufTvdjYc60l9rv0F4KiYnHoFQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/847fbba6812318a026c231349b6a15c2/cbe2e/combineReducer.webp 148w,
-/static/847fbba6812318a026c231349b6a15c2/3084c/combineReducer.webp 295w,
-/static/847fbba6812318a026c231349b6a15c2/5ca24/combineReducer.webp 590w,
+          srcset=&quot;/static/847fbba6812318a026c231349b6a15c2/ba381/combineReducer.webp 200w,
+/static/847fbba6812318a026c231349b6a15c2/7f61c/combineReducer.webp 400w,
 /static/847fbba6812318a026c231349b6a15c2/c71bf/combineReducer.webp 721w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 721px) 100vw, 721px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/847fbba6812318a026c231349b6a15c2/12f09/combineReducer.png 148w,
-/static/847fbba6812318a026c231349b6a15c2/e4a3f/combineReducer.png 295w,
-/static/847fbba6812318a026c231349b6a15c2/fcda8/combineReducer.png 590w,
+          srcset=&quot;/static/847fbba6812318a026c231349b6a15c2/772e8/combineReducer.png 200w,
+/static/847fbba6812318a026c231349b6a15c2/e17e5/combineReducer.png 400w,
 /static/847fbba6812318a026c231349b6a15c2/01dae/combineReducer.png 721w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 721px) 100vw, 721px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/847fbba6812318a026c231349b6a15c2/fcda8/combineReducer.png&quot;
+          src=&quot;/static/847fbba6812318a026c231349b6a15c2/01dae/combineReducer.png&quot;
           alt=&quot;combine reducer schema&quot;
           title=&quot;combine reducer schema&quot;
           loading=&quot;lazy&quot;
@@ -706,7 +704,7 @@ I’m currently working on a big web application coded in React/Redux with serve
 The application exists since 2015 and it has evolved a lot since then (&lt;a href=&quot;https://tech.m6web.fr/&quot;&gt;M6web tech blog&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -721,28 +719,28 @@ The application exists since 2015 and it has evolved a lot since then (&lt;a hre
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/92aa0670116677da859844a5c9ec387a/cbe2e/6play.webp 148w,
-/static/92aa0670116677da859844a5c9ec387a/3084c/6play.webp 295w,
-/static/92aa0670116677da859844a5c9ec387a/5ca24/6play.webp 590w,
-/static/92aa0670116677da859844a5c9ec387a/dad35/6play.webp 885w,
-/static/92aa0670116677da859844a5c9ec387a/2baf0/6play.webp 1180w,
+          srcset=&quot;/static/92aa0670116677da859844a5c9ec387a/ba381/6play.webp 200w,
+/static/92aa0670116677da859844a5c9ec387a/7f61c/6play.webp 400w,
+/static/92aa0670116677da859844a5c9ec387a/d00b9/6play.webp 800w,
+/static/92aa0670116677da859844a5c9ec387a/92f8c/6play.webp 1200w,
+/static/92aa0670116677da859844a5c9ec387a/fad48/6play.webp 1600w,
 /static/92aa0670116677da859844a5c9ec387a/8df42/6play.webp 2048w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/92aa0670116677da859844a5c9ec387a/12f09/6play.png 148w,
-/static/92aa0670116677da859844a5c9ec387a/e4a3f/6play.png 295w,
-/static/92aa0670116677da859844a5c9ec387a/fcda8/6play.png 590w,
-/static/92aa0670116677da859844a5c9ec387a/efc66/6play.png 885w,
-/static/92aa0670116677da859844a5c9ec387a/c83ae/6play.png 1180w,
+          srcset=&quot;/static/92aa0670116677da859844a5c9ec387a/772e8/6play.png 200w,
+/static/92aa0670116677da859844a5c9ec387a/e17e5/6play.png 400w,
+/static/92aa0670116677da859844a5c9ec387a/5a190/6play.png 800w,
+/static/92aa0670116677da859844a5c9ec387a/c1b63/6play.png 1200w,
+/static/92aa0670116677da859844a5c9ec387a/29007/6play.png 1600w,
 /static/92aa0670116677da859844a5c9ec387a/a878e/6play.png 2048w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/92aa0670116677da859844a5c9ec387a/fcda8/6play.png&quot;
+          src=&quot;/static/92aa0670116677da859844a5c9ec387a/5a190/6play.png&quot;
           alt=&quot;6play website screenshot&quot;
           title=&quot;6play website screenshot&quot;
           loading=&quot;lazy&quot;
@@ -886,36 +884,36 @@ I could have lost whole days on futile modifications if I had not measured preci
 &lt;p&gt;If you take a look at &lt;a href=&quot;https://babeljs.io/docs/en/babel-plugin-proposal-optional-chaining&quot;&gt;@babel/plugin-proposal-optional-chaining&lt;/a&gt;, this is how babel will transpile it.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 48.64864864864865%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA+UlEQVQoz62SW0+EMBCF+f9/0Jggi+Jm47oIdHqhl+lxaHlQE5PF2OTLmYfO6VzaTLPC6iP+4+Sc0Xh3Q/JXcBiF264HiKPkvyOFqZg2Tg9w1CKHV6T15U9E1yOul2qoNWFZZmzKvLXOUno6DLLklQqph1seEPQTgqkkdzpAj2BbYdhbtrO0/CaMWK3gJnCiA+iiOdlqaOgKtZyh1QXRf0jHSgY9ywVBlO9BFsJRVcPVDAj0iGRPWKmTuEM0W9zCmw5cBv/8K1yWIjnuXA2ts2UhRN9RpGAMIaZ4F4nTXqH3MNZKckUbA9Km6PZY4rzDX+KfsPyQXAw/AUu4CmU0DqFWAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 48.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA+UlEQVQoz62SW0+EMBCF+f9/0Jggi+Jm47oIdHqhl+lxaHlQE5PF2OTLmYfO6VzaTLPC6iP+4+Sc0Xh3Q/JXcBiF264HiKPkvyOFqZg2Tg9w1CKHV6T15U9E1yOul2qoNWFZZmzKvLXOUno6DLLklQqph1seEPQTgqkkdzpAj2BbYdhbtrO0/CaMWK3gJnCiA+iiOdlqaOgKtZyh1QXRf0jHSgY9ywVBlO9BFsJRVcPVDAj0iGRPWKmTuEM0W9zCmw5cBv/8K1yWIjnuXA2ts2UhRN9RpGAMIaZ4F4nTXqH3MNZKckUbA9Km6PZY4rzDX+KfsPyQXAw/AUu4CmU0DqFWAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/5e332fb09af3fd8001ac2612fd3221b2/cbe2e/babel-doc.webp 148w,
-/static/5e332fb09af3fd8001ac2612fd3221b2/3084c/babel-doc.webp 295w,
-/static/5e332fb09af3fd8001ac2612fd3221b2/5ca24/babel-doc.webp 590w,
-/static/5e332fb09af3fd8001ac2612fd3221b2/dad35/babel-doc.webp 885w,
-/static/5e332fb09af3fd8001ac2612fd3221b2/2baf0/babel-doc.webp 1180w,
+          srcset=&quot;/static/5e332fb09af3fd8001ac2612fd3221b2/ba381/babel-doc.webp 200w,
+/static/5e332fb09af3fd8001ac2612fd3221b2/7f61c/babel-doc.webp 400w,
+/static/5e332fb09af3fd8001ac2612fd3221b2/d00b9/babel-doc.webp 800w,
+/static/5e332fb09af3fd8001ac2612fd3221b2/92f8c/babel-doc.webp 1200w,
+/static/5e332fb09af3fd8001ac2612fd3221b2/fad48/babel-doc.webp 1600w,
 /static/5e332fb09af3fd8001ac2612fd3221b2/a3f95/babel-doc.webp 2370w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/5e332fb09af3fd8001ac2612fd3221b2/12f09/babel-doc.png 148w,
-/static/5e332fb09af3fd8001ac2612fd3221b2/e4a3f/babel-doc.png 295w,
-/static/5e332fb09af3fd8001ac2612fd3221b2/fcda8/babel-doc.png 590w,
-/static/5e332fb09af3fd8001ac2612fd3221b2/efc66/babel-doc.png 885w,
-/static/5e332fb09af3fd8001ac2612fd3221b2/c83ae/babel-doc.png 1180w,
+          srcset=&quot;/static/5e332fb09af3fd8001ac2612fd3221b2/772e8/babel-doc.png 200w,
+/static/5e332fb09af3fd8001ac2612fd3221b2/e17e5/babel-doc.png 400w,
+/static/5e332fb09af3fd8001ac2612fd3221b2/5a190/babel-doc.png 800w,
+/static/5e332fb09af3fd8001ac2612fd3221b2/c1b63/babel-doc.png 1200w,
+/static/5e332fb09af3fd8001ac2612fd3221b2/29007/babel-doc.png 1600w,
 /static/5e332fb09af3fd8001ac2612fd3221b2/59f0d/babel-doc.png 2370w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/5e332fb09af3fd8001ac2612fd3221b2/fcda8/babel-doc.png&quot;
+          src=&quot;/static/5e332fb09af3fd8001ac2612fd3221b2/5a190/babel-doc.png&quot;
           alt=&quot;babel transpile example&quot;
           title=&quot;babel transpile example&quot;
           loading=&quot;lazy&quot;
@@ -1210,7 +1208,7 @@ For that, we would need to have an API that let us know if an element is visible
 That is exactly what &lt;a href=&quot;https://developer.mozilla.org/fr/docs/Web/API/Intersection_Observer_API&quot;&gt;IntersectionObserver&lt;/a&gt; provides us.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -1221,32 +1219,30 @@ That is exactly what &lt;a href=&quot;https://developer.mozilla.org/fr/docs/Web/
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 43.24324324324324%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAAB30lEQVQoz2VPXWvTUBjO/xO8FL2xtyIbjK1eTBA2ax2WKoWtVlxF3NBtbAxEdLZdG9Mm/bCmaU5yTto062k+miZpyJIWJzrpzNUoCA/PxfP18hIDxGDEnEFGEyqe2vZH0DfFYAQnFpqHjVuhPrUld8hbOu+NutZAIDCiMWQGqHoGaUWo9AClCGWZp6w+G0avy9eLIfsjMTAFzwAEbFGQLSK2CJsFiT2VQUURq+GEM+Dmy/8jdAmTO9bkhtptmCpn4rbZofxefmJ1JjYK5qLhO5MRnFcCCxI6IPXuD1Op90+OB82iLlWGbB6jGgZlDZZlkRSbp0qr1AdliWcwIBXwTeJIvp7DPEv0yV20tdyNrx69u9UG78fduvjmgWNwri154SkDjm3JN9HUQIGOprromdC1Ok6vJe89JTa3by8c3Fh7cecuef/Dy6VScnHx481mPCofZNsnO19S0eaTaHFjqbCfqPGfquhrLb0OMrGWsLf+OUIcHSbi9PN7heWV3MNnqcjb1EKaTmfikWJihdpNZHIb35OPDvdjmVIyS6Ve0Zv57cdsdo1sxHaqr4m/vnZp98ZG2xsCwwXOeedqjPVz0Z30/gTqzFMvLvTLQL9y1ZmLZ07/91T7OdV+OepsjP8BRo+wDydh9I0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 43%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAAB30lEQVQoz2VPXWvTUBjO/xO8FL2xtyIbjK1eTBA2ax2WKoWtVlxF3NBtbAxEdLZdG9Mm/bCmaU5yTto062k+miZpyJIWJzrpzNUoCA/PxfP18hIDxGDEnEFGEyqe2vZH0DfFYAQnFpqHjVuhPrUld8hbOu+NutZAIDCiMWQGqHoGaUWo9AClCGWZp6w+G0avy9eLIfsjMTAFzwAEbFGQLSK2CJsFiT2VQUURq+GEM+Dmy/8jdAmTO9bkhtptmCpn4rbZofxefmJ1JjYK5qLhO5MRnFcCCxI6IPXuD1Op90+OB82iLlWGbB6jGgZlDZZlkRSbp0qr1AdliWcwIBXwTeJIvp7DPEv0yV20tdyNrx69u9UG78fduvjmgWNwri154SkDjm3JN9HUQIGOprromdC1Ok6vJe89JTa3by8c3Fh7cecuef/Dy6VScnHx481mPCofZNsnO19S0eaTaHFjqbCfqPGfquhrLb0OMrGWsLf+OUIcHSbi9PN7heWV3MNnqcjb1EKaTmfikWJihdpNZHIb35OPDvdjmVIyS6Ve0Zv57cdsdo1sxHaqr4m/vnZp98ZG2xsCwwXOeedqjPVz0Z30/gTqzFMvLvTLQL9y1ZmLZ07/91T7OdV+OepsjP8BRo+wDydh9I0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/e853e350b0c155f78b0c301d079c9239/cbe2e/intersection-observer-caniuse.webp 148w,
-/static/e853e350b0c155f78b0c301d079c9239/3084c/intersection-observer-caniuse.webp 295w,
-/static/e853e350b0c155f78b0c301d079c9239/5ca24/intersection-observer-caniuse.webp 590w,
-/static/e853e350b0c155f78b0c301d079c9239/dad35/intersection-observer-caniuse.webp 885w,
-/static/e853e350b0c155f78b0c301d079c9239/2baf0/intersection-observer-caniuse.webp 1180w,
+          srcset=&quot;/static/e853e350b0c155f78b0c301d079c9239/ba381/intersection-observer-caniuse.webp 200w,
+/static/e853e350b0c155f78b0c301d079c9239/7f61c/intersection-observer-caniuse.webp 400w,
+/static/e853e350b0c155f78b0c301d079c9239/d00b9/intersection-observer-caniuse.webp 800w,
+/static/e853e350b0c155f78b0c301d079c9239/92f8c/intersection-observer-caniuse.webp 1200w,
 /static/e853e350b0c155f78b0c301d079c9239/fad48/intersection-observer-caniuse.webp 1600w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/e853e350b0c155f78b0c301d079c9239/12f09/intersection-observer-caniuse.png 148w,
-/static/e853e350b0c155f78b0c301d079c9239/e4a3f/intersection-observer-caniuse.png 295w,
-/static/e853e350b0c155f78b0c301d079c9239/fcda8/intersection-observer-caniuse.png 590w,
-/static/e853e350b0c155f78b0c301d079c9239/efc66/intersection-observer-caniuse.png 885w,
-/static/e853e350b0c155f78b0c301d079c9239/c83ae/intersection-observer-caniuse.png 1180w,
+          srcset=&quot;/static/e853e350b0c155f78b0c301d079c9239/772e8/intersection-observer-caniuse.png 200w,
+/static/e853e350b0c155f78b0c301d079c9239/e17e5/intersection-observer-caniuse.png 400w,
+/static/e853e350b0c155f78b0c301d079c9239/5a190/intersection-observer-caniuse.png 800w,
+/static/e853e350b0c155f78b0c301d079c9239/c1b63/intersection-observer-caniuse.png 1200w,
 /static/e853e350b0c155f78b0c301d079c9239/29007/intersection-observer-caniuse.png 1600w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/e853e350b0c155f78b0c301d079c9239/fcda8/intersection-observer-caniuse.png&quot;
+          src=&quot;/static/e853e350b0c155f78b0c301d079c9239/5a190/intersection-observer-caniuse.png&quot;
           alt=&quot;IntersectionObserver support in March 2019&quot;
           title=&quot;IntersectionObserver support in March 2019&quot;
           loading=&quot;lazy&quot;
@@ -1428,7 +1424,7 @@ You may have used code splitting, tree shaking, uglifyfication but you may have 
 Every website performance analyser will tell you to do it. Here is a size comparison of a vanilla &lt;a href=&quot;https://cli.vuejs.org/&quot;&gt;Vue CLI&lt;/a&gt; website with and without Gzip.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 600px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -1439,28 +1435,26 @@ Every website performance analyser will tell you to do it. Here is a size compar
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 62.16216216216216%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsSAAALEgHS3X78AAABM0lEQVQoz5VSiUrDQBDt/3+B+hf6BSoiCta2iiB4pAdVSI9ks2d2ZidOuqlN44XDMHkJ72XOnvdeCCE3lmWZUlJrtc5EroAqwqIA56ofrNd+IaZvgMcqzcGVzi9SIwT9KbbWilxIYajhUuun1AERN+IQAoBfLIVYScD4hXas38XcuTF6tcy00JHQ4X0vZhmnRUQuOxdKrlXdOdWZI2jjCHZirTUAbOqE1ySdzFVFseL2mOgL2JbNDwTEAJOXt4ur9/79evikB49ylPjRBNmHHKeBfTDGu1mQjjxQI+bMSilbuvnz9Ozw+Pzo5PSgjteX05uH4jbBT+8nOBxjbsj5eqt7e0YoKfBJAEewRSySgicsIwHAEoW4HZ7R/pFse+ImjG0OyxjrfRwKMY4rLEvfFf/XPgDNJrrq4uYUcgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 62%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsSAAALEgHS3X78AAABM0lEQVQoz5VSiUrDQBDt/3+B+hf6BSoiCta2iiB4pAdVSI9ks2d2ZidOuqlN44XDMHkJ72XOnvdeCCE3lmWZUlJrtc5EroAqwqIA56ofrNd+IaZvgMcqzcGVzi9SIwT9KbbWilxIYajhUuun1AERN+IQAoBfLIVYScD4hXas38XcuTF6tcy00JHQ4X0vZhmnRUQuOxdKrlXdOdWZI2jjCHZirTUAbOqE1ySdzFVFseL2mOgL2JbNDwTEAJOXt4ur9/79evikB49ylPjRBNmHHKeBfTDGu1mQjjxQI+bMSilbuvnz9Ozw+Pzo5PSgjteX05uH4jbBT+8nOBxjbsj5eqt7e0YoKfBJAEewRSySgicsIwHAEoW4HZ7R/pFse+ImjG0OyxjrfRwKMY4rLEvfFf/XPgDNJrrq4uYUcgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/cbe2e/vue-cli-vanilla-size.webp 148w,
-/static/15d620b40e592ba0943d30e7a40c5dc2/3084c/vue-cli-vanilla-size.webp 295w,
-/static/15d620b40e592ba0943d30e7a40c5dc2/5ca24/vue-cli-vanilla-size.webp 590w,
+          srcset=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/ba381/vue-cli-vanilla-size.webp 200w,
+/static/15d620b40e592ba0943d30e7a40c5dc2/7f61c/vue-cli-vanilla-size.webp 400w,
 /static/15d620b40e592ba0943d30e7a40c5dc2/e88ff/vue-cli-vanilla-size.webp 600w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/12f09/vue-cli-vanilla-size.png 148w,
-/static/15d620b40e592ba0943d30e7a40c5dc2/e4a3f/vue-cli-vanilla-size.png 295w,
-/static/15d620b40e592ba0943d30e7a40c5dc2/fcda8/vue-cli-vanilla-size.png 590w,
+          srcset=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/772e8/vue-cli-vanilla-size.png 200w,
+/static/15d620b40e592ba0943d30e7a40c5dc2/e17e5/vue-cli-vanilla-size.png 400w,
 /static/15d620b40e592ba0943d30e7a40c5dc2/0a47e/vue-cli-vanilla-size.png 600w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/fcda8/vue-cli-vanilla-size.png&quot;
+          src=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/0a47e/vue-cli-vanilla-size.png&quot;
           alt=&quot;Vue CLI vanilla size compared to gzip&quot;
           title=&quot;Vue CLI vanilla size compared to gzip&quot;
           loading=&quot;lazy&quot;
@@ -1503,7 +1497,7 @@ There is still some difficult parts with brotli (not available on Node &amp;#x3C
 &lt;p&gt;You can use brotli &lt;a href=&quot;https://github.com/webpack-contrib/compression-webpack-plugin#using-zopfli&quot;&gt;with compression webpack plugin.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -1514,30 +1508,28 @@ There is still some difficult parts with brotli (not available on Node &amp;#x3C
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 70.27027027027026%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsSAAALEgHS3X78AAABLElEQVQoz51TPU/DMBDt72Vi4g/wVxhAIJhYK2ABNUkXkECitEiFpWqjJmn9dR/mEpPiqhlorefzy51fcnd2ekRkrTXGaK0DEY//3+hti2vLRCvDVhlX5ihTVQ5ctzgszJ5ktgOQCYnBMYFD4DbE0R7hv2JjbLHMCSF4492dfEssya/Wa2yq3VustVrMZ4h4iBgAiqoKsT3EIpNFK1UuZ0RwiFiaO57meQESlDYLqO5/N99N231O35Qpgz86S44eY96KpdVyyKPXUdIfDB+G2X2a3KXJ8zwbQzbBtLENYPABL19kXSSWzwL4p8ezi/Ojm+uTy6vj/u3p4vvdWDTgjePaBji24EPhf2kLs8TyRoERtNlJTtjcnF3unOtF1bFnEtQ3E2IBbvjmnwn8B+63MwOVH0z/AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 70.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsSAAALEgHS3X78AAABLElEQVQoz51TPU/DMBDt72Vi4g/wVxhAIJhYK2ABNUkXkECitEiFpWqjJmn9dR/mEpPiqhlorefzy51fcnd2ekRkrTXGaK0DEY//3+hti2vLRCvDVhlX5ihTVQ5ctzgszJ5ktgOQCYnBMYFD4DbE0R7hv2JjbLHMCSF4492dfEssya/Wa2yq3VustVrMZ4h4iBgAiqoKsT3EIpNFK1UuZ0RwiFiaO57meQESlDYLqO5/N99N231O35Qpgz86S44eY96KpdVyyKPXUdIfDB+G2X2a3KXJ8zwbQzbBtLENYPABL19kXSSWzwL4p8ezi/Ojm+uTy6vj/u3p4vvdWDTgjePaBji24EPhf2kLs8TyRoERtNlJTtjcnF3unOtF1bFnEtQ3E2IBbvjmnwn8B+63MwOVH0z/AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/0d631442de390a6737ca967f30f3263d/cbe2e/vue-cli-complete-size.webp 148w,
-/static/0d631442de390a6737ca967f30f3263d/3084c/vue-cli-complete-size.webp 295w,
-/static/0d631442de390a6737ca967f30f3263d/5ca24/vue-cli-complete-size.webp 590w,
-/static/0d631442de390a6737ca967f30f3263d/dad35/vue-cli-complete-size.webp 885w,
+          srcset=&quot;/static/0d631442de390a6737ca967f30f3263d/ba381/vue-cli-complete-size.webp 200w,
+/static/0d631442de390a6737ca967f30f3263d/7f61c/vue-cli-complete-size.webp 400w,
+/static/0d631442de390a6737ca967f30f3263d/d00b9/vue-cli-complete-size.webp 800w,
 /static/0d631442de390a6737ca967f30f3263d/6eb96/vue-cli-complete-size.webp 930w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/0d631442de390a6737ca967f30f3263d/12f09/vue-cli-complete-size.png 148w,
-/static/0d631442de390a6737ca967f30f3263d/e4a3f/vue-cli-complete-size.png 295w,
-/static/0d631442de390a6737ca967f30f3263d/fcda8/vue-cli-complete-size.png 590w,
-/static/0d631442de390a6737ca967f30f3263d/efc66/vue-cli-complete-size.png 885w,
+          srcset=&quot;/static/0d631442de390a6737ca967f30f3263d/772e8/vue-cli-complete-size.png 200w,
+/static/0d631442de390a6737ca967f30f3263d/e17e5/vue-cli-complete-size.png 400w,
+/static/0d631442de390a6737ca967f30f3263d/5a190/vue-cli-complete-size.png 800w,
 /static/0d631442de390a6737ca967f30f3263d/416ee/vue-cli-complete-size.png 930w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/0d631442de390a6737ca967f30f3263d/fcda8/vue-cli-complete-size.png&quot;
+          src=&quot;/static/0d631442de390a6737ca967f30f3263d/5a190/vue-cli-complete-size.png&quot;
           alt=&quot;Vue CLI compression results&quot;
           title=&quot;Vue CLI compression results&quot;
           loading=&quot;lazy&quot;
@@ -1563,7 +1555,7 @@ Chaque analyseur de performance de site web vous dira de le faire.
 Voici une comparaison de la taille d’un site web sur la vanille &lt;a href=&quot;https://cli.vuejs.org/&quot;&gt;Vue CLI&lt;/a&gt; avec et sans Gzip.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 600px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -1574,28 +1566,26 @@ Voici une comparaison de la taille d’un site web sur la vanille &lt;a href=&qu
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 62.16216216216216%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsSAAALEgHS3X78AAABM0lEQVQoz5VSiUrDQBDt/3+B+hf6BSoiCta2iiB4pAdVSI9ks2d2ZidOuqlN44XDMHkJ72XOnvdeCCE3lmWZUlJrtc5EroAqwqIA56ofrNd+IaZvgMcqzcGVzi9SIwT9KbbWilxIYajhUuun1AERN+IQAoBfLIVYScD4hXas38XcuTF6tcy00JHQ4X0vZhmnRUQuOxdKrlXdOdWZI2jjCHZirTUAbOqE1ySdzFVFseL2mOgL2JbNDwTEAJOXt4ur9/79evikB49ylPjRBNmHHKeBfTDGu1mQjjxQI+bMSilbuvnz9Ozw+Pzo5PSgjteX05uH4jbBT+8nOBxjbsj5eqt7e0YoKfBJAEewRSySgicsIwHAEoW4HZ7R/pFse+ImjG0OyxjrfRwKMY4rLEvfFf/XPgDNJrrq4uYUcgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 62%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsSAAALEgHS3X78AAABM0lEQVQoz5VSiUrDQBDt/3+B+hf6BSoiCta2iiB4pAdVSI9ks2d2ZidOuqlN44XDMHkJ72XOnvdeCCE3lmWZUlJrtc5EroAqwqIA56ofrNd+IaZvgMcqzcGVzi9SIwT9KbbWilxIYajhUuun1AERN+IQAoBfLIVYScD4hXas38XcuTF6tcy00JHQ4X0vZhmnRUQuOxdKrlXdOdWZI2jjCHZirTUAbOqE1ySdzFVFseL2mOgL2JbNDwTEAJOXt4ur9/79evikB49ylPjRBNmHHKeBfTDGu1mQjjxQI+bMSilbuvnz9Ozw+Pzo5PSgjteX05uH4jbBT+8nOBxjbsj5eqt7e0YoKfBJAEewRSySgicsIwHAEoW4HZ7R/pFse+ImjG0OyxjrfRwKMY4rLEvfFf/XPgDNJrrq4uYUcgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/cbe2e/vue-cli-vanilla-size.webp 148w,
-/static/15d620b40e592ba0943d30e7a40c5dc2/3084c/vue-cli-vanilla-size.webp 295w,
-/static/15d620b40e592ba0943d30e7a40c5dc2/5ca24/vue-cli-vanilla-size.webp 590w,
+          srcset=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/ba381/vue-cli-vanilla-size.webp 200w,
+/static/15d620b40e592ba0943d30e7a40c5dc2/7f61c/vue-cli-vanilla-size.webp 400w,
 /static/15d620b40e592ba0943d30e7a40c5dc2/e88ff/vue-cli-vanilla-size.webp 600w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/12f09/vue-cli-vanilla-size.png 148w,
-/static/15d620b40e592ba0943d30e7a40c5dc2/e4a3f/vue-cli-vanilla-size.png 295w,
-/static/15d620b40e592ba0943d30e7a40c5dc2/fcda8/vue-cli-vanilla-size.png 590w,
+          srcset=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/772e8/vue-cli-vanilla-size.png 200w,
+/static/15d620b40e592ba0943d30e7a40c5dc2/e17e5/vue-cli-vanilla-size.png 400w,
 /static/15d620b40e592ba0943d30e7a40c5dc2/0a47e/vue-cli-vanilla-size.png 600w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/fcda8/vue-cli-vanilla-size.png&quot;
+          src=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/0a47e/vue-cli-vanilla-size.png&quot;
           alt=&quot;taille des fichiers de Vue CLI comparée à leur version gzip&quot;
           title=&quot;taille des fichiers de Vue CLI comparée à leur version gzip&quot;
           loading=&quot;lazy&quot;
@@ -1637,7 +1627,7 @@ Il y a encore quelques parties difficiles avec brotli (non disponible sur Node &
 &lt;p&gt;Vous pouvez utiliser brotli &lt;a href=&quot;https://github.com/webpack-contrib/compression-webpack-plugin#using-zopfli&quot;&gt;avec le plugin de compression webpack.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -1648,30 +1638,28 @@ Il y a encore quelques parties difficiles avec brotli (non disponible sur Node &
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 70.27027027027026%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsSAAALEgHS3X78AAABLElEQVQoz51TPU/DMBDt72Vi4g/wVxhAIJhYK2ABNUkXkECitEiFpWqjJmn9dR/mEpPiqhlorefzy51fcnd2ekRkrTXGaK0DEY//3+hti2vLRCvDVhlX5ihTVQ5ctzgszJ5ktgOQCYnBMYFD4DbE0R7hv2JjbLHMCSF4492dfEssya/Wa2yq3VustVrMZ4h4iBgAiqoKsT3EIpNFK1UuZ0RwiFiaO57meQESlDYLqO5/N99N231O35Qpgz86S44eY96KpdVyyKPXUdIfDB+G2X2a3KXJ8zwbQzbBtLENYPABL19kXSSWzwL4p8ezi/Ojm+uTy6vj/u3p4vvdWDTgjePaBji24EPhf2kLs8TyRoERtNlJTtjcnF3unOtF1bFnEtQ3E2IBbvjmnwn8B+63MwOVH0z/AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 70.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsSAAALEgHS3X78AAABLElEQVQoz51TPU/DMBDt72Vi4g/wVxhAIJhYK2ABNUkXkECitEiFpWqjJmn9dR/mEpPiqhlorefzy51fcnd2ekRkrTXGaK0DEY//3+hti2vLRCvDVhlX5ihTVQ5ctzgszJ5ktgOQCYnBMYFD4DbE0R7hv2JjbLHMCSF4492dfEssya/Wa2yq3VustVrMZ4h4iBgAiqoKsT3EIpNFK1UuZ0RwiFiaO57meQESlDYLqO5/N99N231O35Qpgz86S44eY96KpdVyyKPXUdIfDB+G2X2a3KXJ8zwbQzbBtLENYPABL19kXSSWzwL4p8ezi/Ojm+uTy6vj/u3p4vvdWDTgjePaBji24EPhf2kLs8TyRoERtNlJTtjcnF3unOtF1bFnEtQ3E2IBbvjmnwn8B+63MwOVH0z/AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/0d631442de390a6737ca967f30f3263d/cbe2e/vue-cli-complete-size.webp 148w,
-/static/0d631442de390a6737ca967f30f3263d/3084c/vue-cli-complete-size.webp 295w,
-/static/0d631442de390a6737ca967f30f3263d/5ca24/vue-cli-complete-size.webp 590w,
-/static/0d631442de390a6737ca967f30f3263d/dad35/vue-cli-complete-size.webp 885w,
+          srcset=&quot;/static/0d631442de390a6737ca967f30f3263d/ba381/vue-cli-complete-size.webp 200w,
+/static/0d631442de390a6737ca967f30f3263d/7f61c/vue-cli-complete-size.webp 400w,
+/static/0d631442de390a6737ca967f30f3263d/d00b9/vue-cli-complete-size.webp 800w,
 /static/0d631442de390a6737ca967f30f3263d/6eb96/vue-cli-complete-size.webp 930w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/0d631442de390a6737ca967f30f3263d/12f09/vue-cli-complete-size.png 148w,
-/static/0d631442de390a6737ca967f30f3263d/e4a3f/vue-cli-complete-size.png 295w,
-/static/0d631442de390a6737ca967f30f3263d/fcda8/vue-cli-complete-size.png 590w,
-/static/0d631442de390a6737ca967f30f3263d/efc66/vue-cli-complete-size.png 885w,
+          srcset=&quot;/static/0d631442de390a6737ca967f30f3263d/772e8/vue-cli-complete-size.png 200w,
+/static/0d631442de390a6737ca967f30f3263d/e17e5/vue-cli-complete-size.png 400w,
+/static/0d631442de390a6737ca967f30f3263d/5a190/vue-cli-complete-size.png 800w,
 /static/0d631442de390a6737ca967f30f3263d/416ee/vue-cli-complete-size.png 930w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/0d631442de390a6737ca967f30f3263d/fcda8/vue-cli-complete-size.png&quot;
+          src=&quot;/static/0d631442de390a6737ca967f30f3263d/5a190/vue-cli-complete-size.png&quot;
           alt=&quot;résultats de compressions avec Vue CLI&quot;
           title=&quot;résultats de compressions avec Vue CLI&quot;
           loading=&quot;lazy&quot;
@@ -1860,7 +1848,7 @@ alors foncez la voir si pour vous les PWA sont un monde obscure.&lt;/p&gt;
 &lt;h2 id=&quot;la-soirée-à-lhotel-de-ville&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#la-soir%C3%A9e-%C3%A0-lhotel-de-ville&quot; aria-label=&quot;la soirée à lhotel de ville permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;La soirée à l’hotel de ville&lt;/h2&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -1875,28 +1863,28 @@ alors foncez la voir si pour vous les PWA sont un monde obscure.&lt;/p&gt;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/d6edc5de54a1f67276084c6fd18b7779/cbe2e/soiree.webp 148w,
-/static/d6edc5de54a1f67276084c6fd18b7779/3084c/soiree.webp 295w,
-/static/d6edc5de54a1f67276084c6fd18b7779/5ca24/soiree.webp 590w,
-/static/d6edc5de54a1f67276084c6fd18b7779/dad35/soiree.webp 885w,
-/static/d6edc5de54a1f67276084c6fd18b7779/2baf0/soiree.webp 1180w,
+          srcset=&quot;/static/d6edc5de54a1f67276084c6fd18b7779/ba381/soiree.webp 200w,
+/static/d6edc5de54a1f67276084c6fd18b7779/7f61c/soiree.webp 400w,
+/static/d6edc5de54a1f67276084c6fd18b7779/d00b9/soiree.webp 800w,
+/static/d6edc5de54a1f67276084c6fd18b7779/92f8c/soiree.webp 1200w,
+/static/d6edc5de54a1f67276084c6fd18b7779/fad48/soiree.webp 1600w,
 /static/d6edc5de54a1f67276084c6fd18b7779/39c10/soiree.webp 4160w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/d6edc5de54a1f67276084c6fd18b7779/a80bd/soiree.jpg 148w,
-/static/d6edc5de54a1f67276084c6fd18b7779/1c91a/soiree.jpg 295w,
-/static/d6edc5de54a1f67276084c6fd18b7779/1c72d/soiree.jpg 590w,
-/static/d6edc5de54a1f67276084c6fd18b7779/a8a14/soiree.jpg 885w,
-/static/d6edc5de54a1f67276084c6fd18b7779/fbd2c/soiree.jpg 1180w,
+          srcset=&quot;/static/d6edc5de54a1f67276084c6fd18b7779/e07e9/soiree.jpg 200w,
+/static/d6edc5de54a1f67276084c6fd18b7779/066f9/soiree.jpg 400w,
+/static/d6edc5de54a1f67276084c6fd18b7779/4b190/soiree.jpg 800w,
+/static/d6edc5de54a1f67276084c6fd18b7779/e5166/soiree.jpg 1200w,
+/static/d6edc5de54a1f67276084c6fd18b7779/b17f8/soiree.jpg 1600w,
 /static/d6edc5de54a1f67276084c6fd18b7779/a3429/soiree.jpg 4160w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/jpeg&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/d6edc5de54a1f67276084c6fd18b7779/1c72d/soiree.jpg&quot;
+          src=&quot;/static/d6edc5de54a1f67276084c6fd18b7779/4b190/soiree.jpg&quot;
           alt=&quot;Soirée Mix-it 2017&quot;
           title=&quot;Soirée Mix-it 2017&quot;
           loading=&quot;lazy&quot;
@@ -2022,7 +2010,7 @@ permis d’insérer du code mais également des images dans leur rapport sans pr
 de TP depuis l’interface de Github Classroom.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -2033,32 +2021,32 @@ de TP depuis l’interface de Github Classroom.&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 79.72972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAAsSAAALEgHS3X78AAABM0lEQVQoz5WTbY+DIBCE/f+/sr1+OQUFXwsFjnvA1mpO294kkk3YZWZn18J7r5USQkzjGGP82SI+QJpzbj5DCHNmQWSMmabJWkvM3W2FpVhKcT5/XS4XvrIsyUzFPNa2rVJKa62a5ubcmn8p7rpO8oCUtWqnaQzec1mgo65rkSBFJUjq+z6fKUDR9Xqddf5F4XxoSRsG8tAPW9jCZ4X7xdbHWidJ1t6MsfDwRPoeoK94gIIGe12dTifahhypY8awwtq5TTGCuIZZK323TWFcA+Fddg4OenauElX5XeJYlVBiwDzSo1afxYy9afC7ZmBDP2Azmpm5y3hTTAZSmU2bQc+I5owfIG3Ysk9vqXaYm6wbzwhmwZ8WY8yQN4TTGhPykvyDWWawnQwJ5t0f42DOL/G6+BcbfqnRKk/9/AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 80%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAAsSAAALEgHS3X78AAABM0lEQVQoz5WTbY+DIBCE/f+/sr1+OQUFXwsFjnvA1mpO294kkk3YZWZn18J7r5USQkzjGGP82SI+QJpzbj5DCHNmQWSMmabJWkvM3W2FpVhKcT5/XS4XvrIsyUzFPNa2rVJKa62a5ubcmn8p7rpO8oCUtWqnaQzec1mgo65rkSBFJUjq+z6fKUDR9Xqddf5F4XxoSRsG8tAPW9jCZ4X7xdbHWidJ1t6MsfDwRPoeoK94gIIGe12dTifahhypY8awwtq5TTGCuIZZK323TWFcA+Fddg4OenauElX5XeJYlVBiwDzSo1afxYy9afC7ZmBDP2Azmpm5y3hTTAZSmU2bQc+I5owfIG3Ysk9vqXaYm6wbzwhmwZ8WY8yQN4TTGhPykvyDWWawnQwJ5t0f42DOL/G6+BcbfqnRKk/9/AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/038e52072fd39b5c797e3ffef7dc7148/cbe2e/create-assignement.webp 148w,
-/static/038e52072fd39b5c797e3ffef7dc7148/3084c/create-assignement.webp 295w,
-/static/038e52072fd39b5c797e3ffef7dc7148/5ca24/create-assignement.webp 590w,
-/static/038e52072fd39b5c797e3ffef7dc7148/dad35/create-assignement.webp 885w,
-/static/038e52072fd39b5c797e3ffef7dc7148/2baf0/create-assignement.webp 1180w,
+          srcset=&quot;/static/038e52072fd39b5c797e3ffef7dc7148/ba381/create-assignement.webp 200w,
+/static/038e52072fd39b5c797e3ffef7dc7148/7f61c/create-assignement.webp 400w,
+/static/038e52072fd39b5c797e3ffef7dc7148/d00b9/create-assignement.webp 800w,
+/static/038e52072fd39b5c797e3ffef7dc7148/92f8c/create-assignement.webp 1200w,
+/static/038e52072fd39b5c797e3ffef7dc7148/fad48/create-assignement.webp 1600w,
 /static/038e52072fd39b5c797e3ffef7dc7148/a2081/create-assignement.webp 1962w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/038e52072fd39b5c797e3ffef7dc7148/12f09/create-assignement.png 148w,
-/static/038e52072fd39b5c797e3ffef7dc7148/e4a3f/create-assignement.png 295w,
-/static/038e52072fd39b5c797e3ffef7dc7148/fcda8/create-assignement.png 590w,
-/static/038e52072fd39b5c797e3ffef7dc7148/efc66/create-assignement.png 885w,
-/static/038e52072fd39b5c797e3ffef7dc7148/c83ae/create-assignement.png 1180w,
+          srcset=&quot;/static/038e52072fd39b5c797e3ffef7dc7148/772e8/create-assignement.png 200w,
+/static/038e52072fd39b5c797e3ffef7dc7148/e17e5/create-assignement.png 400w,
+/static/038e52072fd39b5c797e3ffef7dc7148/5a190/create-assignement.png 800w,
+/static/038e52072fd39b5c797e3ffef7dc7148/c1b63/create-assignement.png 1200w,
+/static/038e52072fd39b5c797e3ffef7dc7148/29007/create-assignement.png 1600w,
 /static/038e52072fd39b5c797e3ffef7dc7148/720e3/create-assignement.png 1962w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/038e52072fd39b5c797e3ffef7dc7148/fcda8/create-assignement.png&quot;
+          src=&quot;/static/038e52072fd39b5c797e3ffef7dc7148/5a190/create-assignement.png&quot;
           alt=&quot;Créer un assignement&quot;
           title=&quot;Créer un assignement&quot;
           loading=&quot;lazy&quot;
@@ -2149,7 +2137,7 @@ activer l’authentification,et ainsi facilement configurer des comptes
 pour vos utilisateurs.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -2160,32 +2148,30 @@ pour vos utilisateurs.&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 47.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAABOklEQVQoz22QTU7DQAyFc0AW7JEQsOgp4CZdQ6uKI8AKobYrluyKaEmbpJlJYnt+MykOKSRSsb55evLIozeObu9fRrPlzWx5PV0wo19zOZlfTRcXD/NTzsbP5+Onu8fXCBARQCuqvWW867V2NjgXvA3eDbC5EHGardMsitP9ah1/ximQQqU7SBsGtCZjyFjU5u+KUcYaZ9lE1rmmaUIIh0Fp59+3Isml4Xkia+3hpKzz7fCw1TStFkCrbSal4ISsSqn/hyuiY9Q27RGltTFG/YRXxqDWLUrDIHyFFG0yuZOQlZiWkBY9SQE7WX0l+0wWsgKmBASiErFEVhJVFW3zYidKASRQlUoX1NN2kHN1i1S80RyoMww/FyW52CRZImQB6Ova+bbqENrD1YTO8yfXEidvHxViKiTHYb4BzX7wYutWWbQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 47.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABXUlEQVQoz2WRyU7DMBRF/XtsWBaJUfAf/AhsoQWJX+iCRQlLhMSOQaRV0ky1Y8f2s52B50SlrWodRTfXz8O7JleT4OLh9WwSnE6Cy8dX1Oeox8HJODgeB6P7l6NdRnezg5vp4e30+mlGpJRaa2cNYgfMRjtr+ylbr3HGLLM8jJPvKCE/8whVWUkulZCK9yitpdKVBqEUfvnaH0BHAmAB0WA0QNM03Wa0cSl/sxK0rmuH92rbttsb1jmy73Zt8/a1iHIahqEQIoqi3a23FjvX9+U2+F4BsGUwxmvju98uGFDGkKSgRcmRfAeBTlrQRZL5WVYiOePIUOzrWUlSrgsBudA9kK81+ikTvJKYYqV8Tni+q51PS4PSwERF5ss0pQx3AmO1MQrzMwasA2vBv5VD8Ldrmo9o9fwZV1JmlOX+Injyima0XHGh8Dnruu18sMbV/yGBQ9ebcybfY7q9+A/YMyn1ab2+zAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/7044fcf8b2240abbf24b959028a4f610/cbe2e/environnement.webp 148w,
-/static/7044fcf8b2240abbf24b959028a4f610/3084c/environnement.webp 295w,
-/static/7044fcf8b2240abbf24b959028a4f610/5ca24/environnement.webp 590w,
-/static/7044fcf8b2240abbf24b959028a4f610/dad35/environnement.webp 885w,
-/static/7044fcf8b2240abbf24b959028a4f610/2baf0/environnement.webp 1180w,
+          srcset=&quot;/static/7044fcf8b2240abbf24b959028a4f610/ba381/environnement.webp 200w,
+/static/7044fcf8b2240abbf24b959028a4f610/7f61c/environnement.webp 400w,
+/static/7044fcf8b2240abbf24b959028a4f610/d00b9/environnement.webp 800w,
+/static/7044fcf8b2240abbf24b959028a4f610/92f8c/environnement.webp 1200w,
 /static/7044fcf8b2240abbf24b959028a4f610/87c73/environnement.webp 1353w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/7044fcf8b2240abbf24b959028a4f610/12f09/environnement.png 148w,
-/static/7044fcf8b2240abbf24b959028a4f610/e4a3f/environnement.png 295w,
-/static/7044fcf8b2240abbf24b959028a4f610/fcda8/environnement.png 590w,
-/static/7044fcf8b2240abbf24b959028a4f610/efc66/environnement.png 885w,
-/static/7044fcf8b2240abbf24b959028a4f610/c83ae/environnement.png 1180w,
+          srcset=&quot;/static/7044fcf8b2240abbf24b959028a4f610/772e8/environnement.png 200w,
+/static/7044fcf8b2240abbf24b959028a4f610/e17e5/environnement.png 400w,
+/static/7044fcf8b2240abbf24b959028a4f610/5a190/environnement.png 800w,
+/static/7044fcf8b2240abbf24b959028a4f610/c1b63/environnement.png 1200w,
 /static/7044fcf8b2240abbf24b959028a4f610/77f8f/environnement.png 1353w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/7044fcf8b2240abbf24b959028a4f610/fcda8/environnement.png&quot;
+          src=&quot;/static/7044fcf8b2240abbf24b959028a4f610/5a190/environnement.png&quot;
           alt=&quot;Interface graphique de Rancher&quot;
           title=&quot;Interface graphique de Rancher&quot;
           loading=&quot;lazy&quot;
@@ -2211,7 +2197,7 @@ avec Rancher par l’intermédiaire d’un outil en ligne de commande
 déployer votre application.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -2222,32 +2208,32 @@ déployer votre application.&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 51.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABYElEQVQoz32QbUscMRDH9zP7vi/OQpF+mL4SqVXftVAo4sNJoRwUZc3tXmaSzEySfdTbZm+9UywKv4T5M/OfmST7fHT+4ehi//jq08n1wdl8dnw5+3q5fzL/eHrzFrNv870vPw8Of2UcQl/HYd1PrB/aMRge3+Vh6Ju+qTKumiGpx3W6fdv/1Q7QWEchVj5E40apAcHaFMeqHq3pDEPb95mR0HZd1XZN20msxAcJccInf4wknn2Y4ljXddtNhLrJ7sGgI3CkLeWlvlXlnSryolwCrqxDEmRBYiDGDbApnsgUWMNPiXw5OlW50gjoLDhntp4t9FI+m1OnHIxCVxgqLI8YUkhgCa0rLWsOzkcnfrdFlip27ZfoNtgRYzWJJm94BNlziH9K+1sBicBrs6MiTdagNCrAew3pe1MdMk+richNvrq4K9l7cP9N3n1Myon33xfqx0LJtjS9i72Il0km/gGH3yRQyaEF5gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 51.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABYElEQVQoz32QbUscMRDH9zP7vi/OQpF+mL4SqVXftVAo4sNJoRwUZc3tXmaSzEySfdTbZm+9UywKv4T5M/OfmST7fHT+4ehi//jq08n1wdl8dnw5+3q5fzL/eHrzFrNv870vPw8Of2UcQl/HYd1PrB/aMRge3+Vh6Ju+qTKumiGpx3W6fdv/1Q7QWEchVj5E40apAcHaFMeqHq3pDEPb95mR0HZd1XZN20msxAcJccInf4wknn2Y4ljXddtNhLrJ7sGgI3CkLeWlvlXlnSryolwCrqxDEmRBYiDGDbApnsgUWMNPiXw5OlW50gjoLDhntp4t9FI+m1OnHIxCVxgqLI8YUkhgCa0rLWsOzkcnfrdFlip27ZfoNtgRYzWJJm94BNlziH9K+1sBicBrs6MiTdagNCrAew3pe1MdMk+richNvrq4K9l7cP9N3n1Myon33xfqx0LJtjS9i72Il0km/gGH3yRQyaEF5gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/09dee4224d527f5831843599f577d8b3/cbe2e/machine.webp 148w,
-/static/09dee4224d527f5831843599f577d8b3/3084c/machine.webp 295w,
-/static/09dee4224d527f5831843599f577d8b3/5ca24/machine.webp 590w,
-/static/09dee4224d527f5831843599f577d8b3/dad35/machine.webp 885w,
-/static/09dee4224d527f5831843599f577d8b3/2baf0/machine.webp 1180w,
+          srcset=&quot;/static/09dee4224d527f5831843599f577d8b3/ba381/machine.webp 200w,
+/static/09dee4224d527f5831843599f577d8b3/7f61c/machine.webp 400w,
+/static/09dee4224d527f5831843599f577d8b3/d00b9/machine.webp 800w,
+/static/09dee4224d527f5831843599f577d8b3/92f8c/machine.webp 1200w,
+/static/09dee4224d527f5831843599f577d8b3/fad48/machine.webp 1600w,
 /static/09dee4224d527f5831843599f577d8b3/36414/machine.webp 1908w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/09dee4224d527f5831843599f577d8b3/12f09/machine.png 148w,
-/static/09dee4224d527f5831843599f577d8b3/e4a3f/machine.png 295w,
-/static/09dee4224d527f5831843599f577d8b3/fcda8/machine.png 590w,
-/static/09dee4224d527f5831843599f577d8b3/efc66/machine.png 885w,
-/static/09dee4224d527f5831843599f577d8b3/c83ae/machine.png 1180w,
+          srcset=&quot;/static/09dee4224d527f5831843599f577d8b3/772e8/machine.png 200w,
+/static/09dee4224d527f5831843599f577d8b3/e17e5/machine.png 400w,
+/static/09dee4224d527f5831843599f577d8b3/5a190/machine.png 800w,
+/static/09dee4224d527f5831843599f577d8b3/c1b63/machine.png 1200w,
+/static/09dee4224d527f5831843599f577d8b3/29007/machine.png 1600w,
 /static/09dee4224d527f5831843599f577d8b3/7970d/machine.png 1908w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/09dee4224d527f5831843599f577d8b3/fcda8/machine.png&quot;
+          src=&quot;/static/09dee4224d527f5831843599f577d8b3/5a190/machine.png&quot;
           alt=&quot;Création de machines&quot;
           title=&quot;Création de machines&quot;
           loading=&quot;lazy&quot;
@@ -2265,7 +2251,7 @@ node2, et j’ai ajouté l’hôte Rancher lui-même self
 (c’est possible mais non recommandé).&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -2276,30 +2262,28 @@ node2, et j’ai ajouté l’hôte Rancher lui-même self
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 62.83783783783784%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAABy0lEQVQoz41Ry27TQBTNJ7CICmJBVyyR+EFIqwiJBR/AniU0AVXlD1ixRBUhiZo0dmN7/BjPjD0vvzhjS0lVFYnRkX3n3Htm7rkzej39fDKZn07n47cXL6Zfx5OLl+8vX324On337enZ7Pn5fDyZnZzNnp3Pn7z58gAjru3vkOXKrvbxOkgjoZf7eBNlROhtnC98Egm1ClKkSGEQo+CAUUbZxx9/Ln/dqrLkopBSMi5yJspSClFwLsAIIRAoqR6s0Y0ffPq5/n69gzLNecoAwYoS8oxx6rY86xmKAspQk1A2YNR1XdO2Xdc2TaONsVVVNw2AqKlrY4y2YFwWZGWt0jrBHT2cWGpToCWtByUWDsG+Z+q6blCDv3XpGp+kv9+Jm6oqpSzdwiFQWa0UfBY9g9KU5iGJSZKSNIuSLOciPdy89YPFxlvd+l5IwiQjKV1u/eXGW+/udiEhWb6Ps+sbb7G92wXEi+LDtU6MMXgxxTx4KUup0H+YsX2as0I6BjPVhmL2vXVlLLo7tg0/WhtYts5PjdK2bXtGwy3GZp3XSkoFSxitNvYoxpPG9x5gCIbcwFAmcl5QLqj7Fni2Y9tMFPdt/AuP1vyv+FH8BeVBwG9QQM+oAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 63%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAABy0lEQVQoz41Ry27TQBTNJ7CICmJBVyyR+EFIqwiJBR/AniU0AVXlD1ixRBUhiZo0dmN7/BjPjD0vvzhjS0lVFYnRkX3n3Htm7rkzej39fDKZn07n47cXL6Zfx5OLl+8vX324On337enZ7Pn5fDyZnZzNnp3Pn7z58gAjru3vkOXKrvbxOkgjoZf7eBNlROhtnC98Egm1ClKkSGEQo+CAUUbZxx9/Ln/dqrLkopBSMi5yJspSClFwLsAIIRAoqR6s0Y0ffPq5/n69gzLNecoAwYoS8oxx6rY86xmKAspQk1A2YNR1XdO2Xdc2TaONsVVVNw2AqKlrY4y2YFwWZGWt0jrBHT2cWGpToCWtByUWDsG+Z+q6blCDv3XpGp+kv9+Jm6oqpSzdwiFQWa0UfBY9g9KU5iGJSZKSNIuSLOciPdy89YPFxlvd+l5IwiQjKV1u/eXGW+/udiEhWb6Ps+sbb7G92wXEi+LDtU6MMXgxxTx4KUup0H+YsX2as0I6BjPVhmL2vXVlLLo7tg0/WhtYts5PjdK2bXtGwy3GZp3XSkoFSxitNvYoxpPG9x5gCIbcwFAmcl5QLqj7Fni2Y9tMFPdt/AuP1vyv+FH8BeVBwG9QQM+oAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/bcd00c6977b0abb9aa112407e39372d8/cbe2e/host.webp 148w,
-/static/bcd00c6977b0abb9aa112407e39372d8/3084c/host.webp 295w,
-/static/bcd00c6977b0abb9aa112407e39372d8/5ca24/host.webp 590w,
-/static/bcd00c6977b0abb9aa112407e39372d8/dad35/host.webp 885w,
+          srcset=&quot;/static/bcd00c6977b0abb9aa112407e39372d8/ba381/host.webp 200w,
+/static/bcd00c6977b0abb9aa112407e39372d8/7f61c/host.webp 400w,
+/static/bcd00c6977b0abb9aa112407e39372d8/d00b9/host.webp 800w,
 /static/bcd00c6977b0abb9aa112407e39372d8/30833/host.webp 946w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/bcd00c6977b0abb9aa112407e39372d8/12f09/host.png 148w,
-/static/bcd00c6977b0abb9aa112407e39372d8/e4a3f/host.png 295w,
-/static/bcd00c6977b0abb9aa112407e39372d8/fcda8/host.png 590w,
-/static/bcd00c6977b0abb9aa112407e39372d8/efc66/host.png 885w,
+          srcset=&quot;/static/bcd00c6977b0abb9aa112407e39372d8/772e8/host.png 200w,
+/static/bcd00c6977b0abb9aa112407e39372d8/e17e5/host.png 400w,
+/static/bcd00c6977b0abb9aa112407e39372d8/5a190/host.png 800w,
 /static/bcd00c6977b0abb9aa112407e39372d8/36c33/host.png 946w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/bcd00c6977b0abb9aa112407e39372d8/fcda8/host.png&quot;
+          src=&quot;/static/bcd00c6977b0abb9aa112407e39372d8/5a190/host.png&quot;
           alt=&quot;Hosts&quot;
           title=&quot;Hosts&quot;
           loading=&quot;lazy&quot;
@@ -2313,7 +2297,7 @@ node2, et j’ai ajouté l’hôte Rancher lui-même self
 Dans la logique Rancher, une stack est un ensemble de services.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -2324,32 +2308,32 @@ Dans la logique Rancher, une stack est un ensemble de services.&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 51.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABDUlEQVQoz43OS07DMBAGYJ+ZOyAeOQC3YN1FWnaIBRtoglBBLQlpEW1ejhM/xzFOo0RJihC/voU9Mx4Z3bhPF+7SufOvF76z8K8W3uXcO3f/tjy7fXBmj0iySithjDYGOnpgcu2AUIKhinOltSVhhCsouSSUSQAFJ13QTCrEhGBcCKnqLlrb3SbMyvnrriip7SqAehBT1/ebw2qPkVA2ANA8GEY3U3asBt0eR1G6tisRqSguaUV584UBKsTzLsWUCSknLcsWKecoznHrkOVD32k28z6CfRLn+aTVQ9s4O77E/ZZeSUiS/1Lvoa8U54RkRSMdS3CRnhRb7TB6WYdvQdQIo/XndvM/70G0CqIfId0rn36KyBQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 51%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABDUlEQVQoz43OS07DMBAGYJ+ZOyAeOQC3YN1FWnaIBRtoglBBLQlpEW1ejhM/xzFOo0RJihC/voU9Mx4Z3bhPF+7SufOvF76z8K8W3uXcO3f/tjy7fXBmj0iySithjDYGOnpgcu2AUIKhinOltSVhhCsouSSUSQAFJ13QTCrEhGBcCKnqLlrb3SbMyvnrriip7SqAehBT1/ebw2qPkVA2ANA8GEY3U3asBt0eR1G6tisRqSguaUV584UBKsTzLsWUCSknLcsWKecoznHrkOVD32k28z6CfRLn+aTVQ9s4O77E/ZZeSUiS/1Lvoa8U54RkRSMdS3CRnhRb7TB6WYdvQdQIo/XndvM/70G0CqIfId0rn36KyBQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/c862fa4069b40c90035b4b3a02c9addd/cbe2e/stack.webp 148w,
-/static/c862fa4069b40c90035b4b3a02c9addd/3084c/stack.webp 295w,
-/static/c862fa4069b40c90035b4b3a02c9addd/5ca24/stack.webp 590w,
-/static/c862fa4069b40c90035b4b3a02c9addd/dad35/stack.webp 885w,
-/static/c862fa4069b40c90035b4b3a02c9addd/2baf0/stack.webp 1180w,
+          srcset=&quot;/static/c862fa4069b40c90035b4b3a02c9addd/ba381/stack.webp 200w,
+/static/c862fa4069b40c90035b4b3a02c9addd/7f61c/stack.webp 400w,
+/static/c862fa4069b40c90035b4b3a02c9addd/d00b9/stack.webp 800w,
+/static/c862fa4069b40c90035b4b3a02c9addd/92f8c/stack.webp 1200w,
+/static/c862fa4069b40c90035b4b3a02c9addd/fad48/stack.webp 1600w,
 /static/c862fa4069b40c90035b4b3a02c9addd/93f82/stack.webp 1923w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/c862fa4069b40c90035b4b3a02c9addd/12f09/stack.png 148w,
-/static/c862fa4069b40c90035b4b3a02c9addd/e4a3f/stack.png 295w,
-/static/c862fa4069b40c90035b4b3a02c9addd/fcda8/stack.png 590w,
-/static/c862fa4069b40c90035b4b3a02c9addd/efc66/stack.png 885w,
-/static/c862fa4069b40c90035b4b3a02c9addd/c83ae/stack.png 1180w,
+          srcset=&quot;/static/c862fa4069b40c90035b4b3a02c9addd/772e8/stack.png 200w,
+/static/c862fa4069b40c90035b4b3a02c9addd/e17e5/stack.png 400w,
+/static/c862fa4069b40c90035b4b3a02c9addd/5a190/stack.png 800w,
+/static/c862fa4069b40c90035b4b3a02c9addd/c1b63/stack.png 1200w,
+/static/c862fa4069b40c90035b4b3a02c9addd/29007/stack.png 1600w,
 /static/c862fa4069b40c90035b4b3a02c9addd/9e0ed/stack.png 1923w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/c862fa4069b40c90035b4b3a02c9addd/fcda8/stack.png&quot;
+          src=&quot;/static/c862fa4069b40c90035b4b3a02c9addd/5a190/stack.png&quot;
           alt=&quot;Stack&quot;
           title=&quot;Stack&quot;
           loading=&quot;lazy&quot;
@@ -2375,7 +2359,7 @@ ajouter notre service whoami. Pour cela il suffit de cliquer sur
 “Add service” et de le définir comme cela.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -2386,32 +2370,32 @@ ajouter notre service whoami. Pour cela il suffit de cliquer sur
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 51.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABE0lEQVQoz32RS07EMAyGc2POANIw7FlwCA6A0HSWbBGjKRIHADEzfaWtE9tJmmC66wN+fYqs/HFix+r+6fV2d9ju37dZfrfPN9lxk+U3u+M/XD8frh5fHrI35dAMnlOKKQ1T4trmSAwpkCOrejAtGCAGJPa+56AtW6KyM2fdG0SwKNYMS4zkFBIxO3ZecOMqd8QQPhv4+K5JxM6N1gxkVoZoGKSYFKdKY9GSKG5cSE477xVY2wGEEGZHhpHlpZNkKduitMvLF8QWxT8kH6R4tNOapFepaNVC578aUMbatu+rRte6rdu20lpWiQGxBeiNlWCVzliFaKq6uZSVcCrK06WQ4FyUMiRpRmY2A3+HxPLVkv8DCPY3w7YFM+QAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 51.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABE0lEQVQoz32RS07EMAyGc2POANIw7FlwCA6A0HSWbBGjKRIHADEzfaWtE9tJmmC66wN+fYqs/HFix+r+6fV2d9ju37dZfrfPN9lxk+U3u+M/XD8frh5fHrI35dAMnlOKKQ1T4trmSAwpkCOrejAtGCAGJPa+56AtW6KyM2fdG0SwKNYMS4zkFBIxO3ZecOMqd8QQPhv4+K5JxM6N1gxkVoZoGKSYFKdKY9GSKG5cSE477xVY2wGEEGZHhpHlpZNkKduitMvLF8QWxT8kH6R4tNOapFepaNVC578aUMbatu+rRte6rdu20lpWiQGxBeiNlWCVzliFaKq6uZSVcCrK06WQ4FyUMiRpRmY2A3+HxPLVkv8DCPY3w7YFM+QAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/48d761834dc232cc35b22955f7da9c22/cbe2e/whoami.webp 148w,
-/static/48d761834dc232cc35b22955f7da9c22/3084c/whoami.webp 295w,
-/static/48d761834dc232cc35b22955f7da9c22/5ca24/whoami.webp 590w,
-/static/48d761834dc232cc35b22955f7da9c22/dad35/whoami.webp 885w,
-/static/48d761834dc232cc35b22955f7da9c22/2baf0/whoami.webp 1180w,
+          srcset=&quot;/static/48d761834dc232cc35b22955f7da9c22/ba381/whoami.webp 200w,
+/static/48d761834dc232cc35b22955f7da9c22/7f61c/whoami.webp 400w,
+/static/48d761834dc232cc35b22955f7da9c22/d00b9/whoami.webp 800w,
+/static/48d761834dc232cc35b22955f7da9c22/92f8c/whoami.webp 1200w,
+/static/48d761834dc232cc35b22955f7da9c22/fad48/whoami.webp 1600w,
 /static/48d761834dc232cc35b22955f7da9c22/854a9/whoami.webp 1907w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/48d761834dc232cc35b22955f7da9c22/12f09/whoami.png 148w,
-/static/48d761834dc232cc35b22955f7da9c22/e4a3f/whoami.png 295w,
-/static/48d761834dc232cc35b22955f7da9c22/fcda8/whoami.png 590w,
-/static/48d761834dc232cc35b22955f7da9c22/efc66/whoami.png 885w,
-/static/48d761834dc232cc35b22955f7da9c22/c83ae/whoami.png 1180w,
+          srcset=&quot;/static/48d761834dc232cc35b22955f7da9c22/772e8/whoami.png 200w,
+/static/48d761834dc232cc35b22955f7da9c22/e17e5/whoami.png 400w,
+/static/48d761834dc232cc35b22955f7da9c22/5a190/whoami.png 800w,
+/static/48d761834dc232cc35b22955f7da9c22/c1b63/whoami.png 1200w,
+/static/48d761834dc232cc35b22955f7da9c22/29007/whoami.png 1600w,
 /static/48d761834dc232cc35b22955f7da9c22/26c3a/whoami.png 1907w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/48d761834dc232cc35b22955f7da9c22/fcda8/whoami.png&quot;
+          src=&quot;/static/48d761834dc232cc35b22955f7da9c22/5a190/whoami.png&quot;
           alt=&quot;Whoami example&quot;
           title=&quot;Whoami example&quot;
           loading=&quot;lazy&quot;
@@ -2437,7 +2421,7 @@ Mesos mais pour cet article, je me suis limité à l’utilisation de Cattle.&lt
 disponible.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -2448,32 +2432,30 @@ disponible.&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 43.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAAA1UlEQVQoz63N204CMRAG4L7/A/ggvoIx4IVhwUW4UkGi0C49zKm7y41jV1ETIzEh+TJpZ/5pzTYS5i73vXQ/5P4weD93vQXZRJbuYH28f1gvn54fV2tjQ4pICQmIjxJRAPSAw0hELmeri6vl1uuQXYjIvLM7o5OgCWbJmT9ps0nQRNARimhH2hZZgEX3CpTcGn3mV01MyqlytcX3gH5uhtB/uZDoTMvpo7tPcNLXsvXB+XCsdn+aKzEgMqNJPa7ubqb1qNTJfFH9aTpfjKv6+na2eXl9A7+q8wIdABJZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 43.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAAA1UlEQVQoz63N204CMRAG4L7/A/ggvoIx4IVhwUW4UkGi0C49zKm7y41jV1ETIzEh+TJpZ/5pzTYS5i73vXQ/5P4weD93vQXZRJbuYH28f1gvn54fV2tjQ4pICQmIjxJRAPSAw0hELmeri6vl1uuQXYjIvLM7o5OgCWbJmT9ps0nQRNARimhH2hZZgEX3CpTcGn3mV01MyqlytcX3gH5uhtB/uZDoTMvpo7tPcNLXsvXB+XCsdn+aKzEgMqNJPa7ubqb1qNTJfFH9aTpfjKv6+na2eXl9A7+q8wIdABJZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/cbe2e/start.webp 148w,
-/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/3084c/start.webp 295w,
-/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/5ca24/start.webp 590w,
-/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/dad35/start.webp 885w,
-/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/2baf0/start.webp 1180w,
+          srcset=&quot;/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/ba381/start.webp 200w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/7f61c/start.webp 400w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/d00b9/start.webp 800w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/92f8c/start.webp 1200w,
 /static/e8e9c7193ddbbf5ec9e4e6d47167aa26/1177a/start.webp 1372w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/12f09/start.png 148w,
-/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/e4a3f/start.png 295w,
-/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/fcda8/start.png 590w,
-/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/efc66/start.png 885w,
-/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/c83ae/start.png 1180w,
+          srcset=&quot;/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/772e8/start.png 200w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/e17e5/start.png 400w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/5a190/start.png 800w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/c1b63/start.png 1200w,
 /static/e8e9c7193ddbbf5ec9e4e6d47167aa26/b79a5/start.png 1372w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/fcda8/start.png&quot;
+          src=&quot;/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/5a190/start.png&quot;
           alt=&quot;Start&quot;
           title=&quot;Start&quot;
           loading=&quot;lazy&quot;
@@ -2501,7 +2483,7 @@ distribue la charge entre les instances de whoami. Dans la stack,
 cliquez sur “Add Load Balancer”&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -2512,32 +2494,32 @@ cliquez sur “Add Load Balancer”&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 47.972972972972975%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABcklEQVQoz3WQS27bMBCGeeVeoLsmrQ/RG3RddBGnu6LLLCygKOLGtC1K5PAxQ0rUI44zkpzAmwIfhj9/kjOcEau7zZd1wazui8/r4nZd3NxtPv2fm3Xx8fvDh2+/vv58EOjs2KbzaTg/9y9jdxq685AvjFf6ilPXdCkSotgelKy0rI0CJ7X7V8G+NnJmp7RU+n0rq4tg56CB7wuMDaUmxMSktmVim9OMoxgoxmZyFtrcNflyiqkRxge+VFt/1MDC4YQNVIFTBrTzDmnyiU2U2iobXEDWEFDAvGjra7AhxuULniJ4BB9YXJyYkGhbgTSO05nlsfHoiBT4bWlqHyuHnFtZLC0qh+zUnpjKEWD6o2CnrUXSAfm9cCHsy+rpoB736u/u+HSslfUMt8O5DcZ3AGNpg/bouZEZkXOeVMCAFIhi0/TDMI6D5MoeM8+o77s3+mGKeabtOsHV7TwSjgu1n2b8Y7P7/VgiRe5rmQvMX4UrXgFKuCOQyjheAwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 48%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABcklEQVQoz3WQS27bMBCGeeVeoLsmrQ/RG3RddBGnu6LLLCygKOLGtC1K5PAxQ0rUI44zkpzAmwIfhj9/kjOcEau7zZd1wazui8/r4nZd3NxtPv2fm3Xx8fvDh2+/vv58EOjs2KbzaTg/9y9jdxq685AvjFf6ilPXdCkSotgelKy0rI0CJ7X7V8G+NnJmp7RU+n0rq4tg56CB7wuMDaUmxMSktmVim9OMoxgoxmZyFtrcNflyiqkRxge+VFt/1MDC4YQNVIFTBrTzDmnyiU2U2iobXEDWEFDAvGjra7AhxuULniJ4BB9YXJyYkGhbgTSO05nlsfHoiBT4bWlqHyuHnFtZLC0qh+zUnpjKEWD6o2CnrUXSAfm9cCHsy+rpoB736u/u+HSslfUMt8O5DcZ3AGNpg/bouZEZkXOeVMCAFIhi0/TDMI6D5MoeM8+o77s3+mGKeabtOsHV7TwSjgu1n2b8Y7P7/VgiRe5rmQvMX4UrXgFKuCOQyjheAwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/36278add82f22f1e306be60a799b6681/cbe2e/loadb.webp 148w,
-/static/36278add82f22f1e306be60a799b6681/3084c/loadb.webp 295w,
-/static/36278add82f22f1e306be60a799b6681/5ca24/loadb.webp 590w,
-/static/36278add82f22f1e306be60a799b6681/dad35/loadb.webp 885w,
-/static/36278add82f22f1e306be60a799b6681/2baf0/loadb.webp 1180w,
+          srcset=&quot;/static/36278add82f22f1e306be60a799b6681/ba381/loadb.webp 200w,
+/static/36278add82f22f1e306be60a799b6681/7f61c/loadb.webp 400w,
+/static/36278add82f22f1e306be60a799b6681/d00b9/loadb.webp 800w,
+/static/36278add82f22f1e306be60a799b6681/92f8c/loadb.webp 1200w,
+/static/36278add82f22f1e306be60a799b6681/fad48/loadb.webp 1600w,
 /static/36278add82f22f1e306be60a799b6681/2100e/loadb.webp 1905w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/36278add82f22f1e306be60a799b6681/12f09/loadb.png 148w,
-/static/36278add82f22f1e306be60a799b6681/e4a3f/loadb.png 295w,
-/static/36278add82f22f1e306be60a799b6681/fcda8/loadb.png 590w,
-/static/36278add82f22f1e306be60a799b6681/efc66/loadb.png 885w,
-/static/36278add82f22f1e306be60a799b6681/c83ae/loadb.png 1180w,
+          srcset=&quot;/static/36278add82f22f1e306be60a799b6681/772e8/loadb.png 200w,
+/static/36278add82f22f1e306be60a799b6681/e17e5/loadb.png 400w,
+/static/36278add82f22f1e306be60a799b6681/5a190/loadb.png 800w,
+/static/36278add82f22f1e306be60a799b6681/c1b63/loadb.png 1200w,
+/static/36278add82f22f1e306be60a799b6681/29007/loadb.png 1600w,
 /static/36278add82f22f1e306be60a799b6681/f33fc/loadb.png 1905w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/36278add82f22f1e306be60a799b6681/fcda8/loadb.png&quot;
+          src=&quot;/static/36278add82f22f1e306be60a799b6681/5a190/loadb.png&quot;
           alt=&quot;Load balancer&quot;
           title=&quot;Load balancer&quot;
           loading=&quot;lazy&quot;
@@ -2554,7 +2536,7 @@ est scalé, l’hostname devrait changer au refresh.&lt;/p&gt;
 l’infrastructure des machines créées plus tôt.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -2565,28 +2547,28 @@ l’infrastructure des machines créées plus tôt.&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 83.78378378378379%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAAsSAAALEgHS3X78AAACXklEQVQ4y01T2W7bQAzUh/cb+jF9Loo+96koiqRuEkuWrVva+15J6dBCkgKEzeVyuMMhVTAfX19fa2ZC3lwIt35yMfmY+5kvUqd1U8Y1wxxSNj7AwS2ChxXNxBYuvj1ev59uk5AjDtoIpSfGJya0tUyqkXGJoNbjwqTWxrnDisfq9lRdP3/9+enLj3pEukaJRao3Ix/4+SMokYDjxEXRCx1y2vd9W/O6rspYFyKqgmeE5ex9MM7bEKwPyEAw5YwsbV0xCI2et31HxrpucFKmfwSRh0JUd9vgIwI/xHTc+hAJvObsfIQQqKesu5dPeDDECJNKAwkHGUDiyjrnfQSRomUSLthCHmUMCB+0rfNMSiakpj4Sbk9lfWn7d5u5LM7d9Odcn2/dtR+rdiibfhGyvHYPz9WlHy/dULV9M85c6Us7NMNEz5BgCkMpOq5IDx/QmPYe/MHQej8zga5AUuEObCPYEkHqFtG8AkVg0MYcoRIkRe8w5wMiAGUkETZhf8CfS0VSkxwkEIHtBziiP08vA6wI9Q72HpsDCXDQzpMuBxhksFjxvoC4AFnjPSKIh5S4sTlnHH+dXn4/lQ/PZdX05a2DhFgSdZ+HwYQccaZ54HHsI9HeNvwlmqVflBm4BjtEQI2WpOynv9UVY4DVXQ9tF6Gqpnt8uZwwhWtbdwO+FmSjllIahagYeoRgzSJGJuthAQjqS0MbgB2+jQzGlOba6Ps4Ir2PvmgRoAW9PCt7bCLtWM53nxZw3XZE0PNGK7ujysjF8UnQV3H/LdpF0jf4ZlgGek3pj4im4/wG+9/+AeOJxYHnd8zNAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 84%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAAsSAAALEgHS3X78AAACXklEQVQ4y01T2W7bQAzUh/cb+jF9Loo+96koiqRuEkuWrVva+15J6dBCkgKEzeVyuMMhVTAfX19fa2ZC3lwIt35yMfmY+5kvUqd1U8Y1wxxSNj7AwS2ChxXNxBYuvj1ev59uk5AjDtoIpSfGJya0tUyqkXGJoNbjwqTWxrnDisfq9lRdP3/9+enLj3pEukaJRao3Ix/4+SMokYDjxEXRCx1y2vd9W/O6rspYFyKqgmeE5ex9MM7bEKwPyEAw5YwsbV0xCI2et31HxrpucFKmfwSRh0JUd9vgIwI/xHTc+hAJvObsfIQQqKesu5dPeDDECJNKAwkHGUDiyjrnfQSRomUSLthCHmUMCB+0rfNMSiakpj4Sbk9lfWn7d5u5LM7d9Odcn2/dtR+rdiibfhGyvHYPz9WlHy/dULV9M85c6Us7NMNEz5BgCkMpOq5IDx/QmPYe/MHQej8zga5AUuEObCPYEkHqFtG8AkVg0MYcoRIkRe8w5wMiAGUkETZhf8CfS0VSkxwkEIHtBziiP08vA6wI9Q72HpsDCXDQzpMuBxhksFjxvoC4AFnjPSKIh5S4sTlnHH+dXn4/lQ/PZdX05a2DhFgSdZ+HwYQccaZ54HHsI9HeNvwlmqVflBm4BjtEQI2WpOynv9UVY4DVXQ9tF6Gqpnt8uZwwhWtbdwO+FmSjllIahagYeoRgzSJGJuthAQjqS0MbgB2+jQzGlOba6Ps4Ir2PvmgRoAW9PCt7bCLtWM53nxZw3XZE0PNGK7ujysjF8UnQV3H/LdpF0jf4ZlgGek3pj4im4/wG+9/+AeOJxYHnd8zNAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/5ac8774826df26dbe266ef830d1b3ff8/cbe2e/host2.webp 148w,
-/static/5ac8774826df26dbe266ef830d1b3ff8/3084c/host2.webp 295w,
-/static/5ac8774826df26dbe266ef830d1b3ff8/5ca24/host2.webp 590w,
+          srcset=&quot;/static/5ac8774826df26dbe266ef830d1b3ff8/ba381/host2.webp 200w,
+/static/5ac8774826df26dbe266ef830d1b3ff8/7f61c/host2.webp 400w,
+/static/5ac8774826df26dbe266ef830d1b3ff8/d00b9/host2.webp 800w,
 /static/5ac8774826df26dbe266ef830d1b3ff8/05152/host2.webp 836w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/5ac8774826df26dbe266ef830d1b3ff8/12f09/host2.png 148w,
-/static/5ac8774826df26dbe266ef830d1b3ff8/e4a3f/host2.png 295w,
-/static/5ac8774826df26dbe266ef830d1b3ff8/fcda8/host2.png 590w,
+          srcset=&quot;/static/5ac8774826df26dbe266ef830d1b3ff8/772e8/host2.png 200w,
+/static/5ac8774826df26dbe266ef830d1b3ff8/e17e5/host2.png 400w,
+/static/5ac8774826df26dbe266ef830d1b3ff8/5a190/host2.png 800w,
 /static/5ac8774826df26dbe266ef830d1b3ff8/27b8e/host2.png 836w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/5ac8774826df26dbe266ef830d1b3ff8/fcda8/host2.png&quot;
+          src=&quot;/static/5ac8774826df26dbe266ef830d1b3ff8/5a190/host2.png&quot;
           alt=&quot;Hosts&quot;
           title=&quot;Hosts&quot;
           loading=&quot;lazy&quot;
@@ -2620,19 +2602,19 @@ déployé grâce à lui.&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 74.32432432432432%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsSAAALEgHS3X78AAAB/ElEQVQoz4WTa4/SQBSG+f9/w/jBxBhdNRphF7kVohRo0V6gHXrvTKdzLYWE+GEPGtcsLtnkfDozb94zz3mnU0t1rSKKA5IFJIcKq5wIcXGhc1Ws1NSxDXPRnRij+Xy8NBEpuGqolM+LKyl34FZWKEjiKMeUpnXFpH7Gmf4uwgU9qI3MXrhfeqmpTm3GaS31n9OrYqY0l03JWUgLREu7RD5JdxRHNYY+mD/4X4orITNGc167OAY9+GvdMqmw4IgWQZUXnJWMXYqBBPCIKb6dzz4PR69ve13DAGai2W+ypDsz3ve/vu3f9abTZehz3Vw6wzwFeIbh2nIty3OdMMhTIkVCySZA9spb257vI4TzJ8YGcSmYPrV32eKl39uqjB11wRjWXP1qP0SzV9t+cahpqyouHonPnFQT1eRsXiWrMgRCcU0w53AK7/+BI4AX17j6m5bOw1ZrKWEZESOAR6p9o49caeiHrIDJ4Q6Qa/RBqObfnqmQUu+BwWD1/eNk+Gk2Ga7mbh4z3RieNbbMm3EfEI5sMyTFec9CPhLDtNs88bfIMp3V0tnFKSI5xNNJ0A7F1uKn74RhnEDUYRZ6kTAq1JlBK95tx130rTkdSsXgqfyod6p84w0HsbU/HWH5T8cTICNWDpP1LHcjjiES0CwE86pkkNjzwk959f+vugfbxSvXfEKQDAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 74%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsSAAALEgHS3X78AAAB/ElEQVQoz4WTa4/SQBSG+f9/w/jBxBhdNRphF7kVohRo0V6gHXrvTKdzLYWE+GEPGtcsLtnkfDozb94zz3mnU0t1rSKKA5IFJIcKq5wIcXGhc1Ws1NSxDXPRnRij+Xy8NBEpuGqolM+LKyl34FZWKEjiKMeUpnXFpH7Gmf4uwgU9qI3MXrhfeqmpTm3GaS31n9OrYqY0l03JWUgLREu7RD5JdxRHNYY+mD/4X4orITNGc167OAY9+GvdMqmw4IgWQZUXnJWMXYqBBPCIKb6dzz4PR69ve13DAGai2W+ypDsz3ve/vu3f9abTZehz3Vw6wzwFeIbh2nIty3OdMMhTIkVCySZA9spb257vI4TzJ8YGcSmYPrV32eKl39uqjB11wRjWXP1qP0SzV9t+cahpqyouHonPnFQT1eRsXiWrMgRCcU0w53AK7/+BI4AX17j6m5bOw1ZrKWEZESOAR6p9o49caeiHrIDJ4Q6Qa/RBqObfnqmQUu+BwWD1/eNk+Gk2Ga7mbh4z3RieNbbMm3EfEI5sMyTFec9CPhLDtNs88bfIMp3V0tnFKSI5xNNJ0A7F1uKn74RhnEDUYRZ6kTAq1JlBK95tx130rTkdSsXgqfyod6p84w0HsbU/HWH5T8cTICNWDpP1LHcjjiES0CwE86pkkNjzwk959f+vugfbxSvXfEKQDAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/39e646d632a82cd4ad26d901963a1c11/cbe2e/microservices.webp 148w,
-/static/39e646d632a82cd4ad26d901963a1c11/3084c/microservices.webp 295w,
+          srcset=&quot;/static/39e646d632a82cd4ad26d901963a1c11/ba381/microservices.webp 200w,
+/static/39e646d632a82cd4ad26d901963a1c11/7f61c/microservices.webp 400w,
 /static/39e646d632a82cd4ad26d901963a1c11/01940/microservices.webp 548w&quot;
           sizes=&quot;(max-width: 548px) 100vw, 548px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/39e646d632a82cd4ad26d901963a1c11/12f09/microservices.png 148w,
-/static/39e646d632a82cd4ad26d901963a1c11/e4a3f/microservices.png 295w,
+          srcset=&quot;/static/39e646d632a82cd4ad26d901963a1c11/772e8/microservices.png 200w,
+/static/39e646d632a82cd4ad26d901963a1c11/e17e5/microservices.png 400w,
 /static/39e646d632a82cd4ad26d901963a1c11/a58fe/microservices.png 548w&quot;
           sizes=&quot;(max-width: 548px) 100vw, 548px&quot;
           type=&quot;image/png&quot;
@@ -2680,7 +2662,7 @@ chaque nouveau container qu’il crée. Cela a plusieurs avantages:&lt;/p&gt;
 &lt;h3 id=&quot;un-catalogue-qui-senrichit&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#un-catalogue-qui-senrichit&quot; aria-label=&quot;un catalogue qui senrichit permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Un catalogue qui s’enrichit&lt;/h3&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -2691,32 +2673,32 @@ chaque nouveau container qu’il crée. Cela a plusieurs avantages:&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 51.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABxklEQVQoz0VQyW4TQRT0L/MHSAkgckLiIzgQDOQCiDi5EgXJmch2EF5iz3gbd09P78vrWXhjIkVqlUrdVV31Xu/dj+HLb8nZ1eTt9eTs+uH1YPxmMH41GJ9cjk4ux6dXkyN5Pqf49HP0ov/r/fffPW+007xtY9vEJljEtqnaOnRYhdbIp5vnU7dNg0pvdU97uFve2qCND/PZzHrvIWbp1ECwJXc3N76qrTVKlA6itl5T4UPYM05K0VPObxjXLiBJaUeEcYt9gZ+W0vzJ8lIZZe18e5DWYcCWSdQUXFAuenPC+/fZgvANVxfj9ZKKbam+jrJ5nq8o/3i3fCQ8LcR5kq6oQPJltEYLl7JLdgEUkxEgK8RDlgul14X6m+3o4d55JwoMA5xFaeWDRzEh1PlA/ycDgBOyiiCNZ1xBCNJ6oUxd1wHASgMxotorFgG3EWMICKTknRkLnw8fsduO636yWhVyx9XnZJkWKiX8w+10cSjXTH4aLtJCbkp1McpQ09VGc6ntYs9wK1ybLM+PxE5zwnRHZjlBQSFNsuVImDIpU4hPC8MmSogQAkRoxQaHxyEJ3UNXEA50h8SGOKU+VpUHaOoqRiBH8z+MIyKtn5nTGQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 51.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABxklEQVQoz0VQyW4TQRT0L/MHSAkgckLiIzgQDOQCiDi5EgXJmch2EF5iz3gbd09P78vrWXhjIkVqlUrdVV31Xu/dj+HLb8nZ1eTt9eTs+uH1YPxmMH41GJ9cjk4ux6dXkyN5Pqf49HP0ov/r/fffPW+007xtY9vEJljEtqnaOnRYhdbIp5vnU7dNg0pvdU97uFve2qCND/PZzHrvIWbp1ECwJXc3N76qrTVKlA6itl5T4UPYM05K0VPObxjXLiBJaUeEcYt9gZ+W0vzJ8lIZZe18e5DWYcCWSdQUXFAuenPC+/fZgvANVxfj9ZKKbam+jrJ5nq8o/3i3fCQ8LcR5kq6oQPJltEYLl7JLdgEUkxEgK8RDlgul14X6m+3o4d55JwoMA5xFaeWDRzEh1PlA/ycDgBOyiiCNZ1xBCNJ6oUxd1wHASgMxotorFgG3EWMICKTknRkLnw8fsduO636yWhVyx9XnZJkWKiX8w+10cSjXTH4aLtJCbkp1McpQ09VGc6ntYs9wK1ybLM+PxE5zwnRHZjlBQSFNsuVImDIpU4hPC8MmSogQAkRoxQaHxyEJ3UNXEA50h8SGOKU+VpUHaOoqRiBH8z+MIyKtn5nTGQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/ccd638ac43343c2b2dfbacfbdd0cd99f/cbe2e/catalogue.webp 148w,
-/static/ccd638ac43343c2b2dfbacfbdd0cd99f/3084c/catalogue.webp 295w,
-/static/ccd638ac43343c2b2dfbacfbdd0cd99f/5ca24/catalogue.webp 590w,
-/static/ccd638ac43343c2b2dfbacfbdd0cd99f/dad35/catalogue.webp 885w,
-/static/ccd638ac43343c2b2dfbacfbdd0cd99f/2baf0/catalogue.webp 1180w,
+          srcset=&quot;/static/ccd638ac43343c2b2dfbacfbdd0cd99f/ba381/catalogue.webp 200w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/7f61c/catalogue.webp 400w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/d00b9/catalogue.webp 800w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/92f8c/catalogue.webp 1200w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/fad48/catalogue.webp 1600w,
 /static/ccd638ac43343c2b2dfbacfbdd0cd99f/367e1/catalogue.webp 1903w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/ccd638ac43343c2b2dfbacfbdd0cd99f/12f09/catalogue.png 148w,
-/static/ccd638ac43343c2b2dfbacfbdd0cd99f/e4a3f/catalogue.png 295w,
-/static/ccd638ac43343c2b2dfbacfbdd0cd99f/fcda8/catalogue.png 590w,
-/static/ccd638ac43343c2b2dfbacfbdd0cd99f/efc66/catalogue.png 885w,
-/static/ccd638ac43343c2b2dfbacfbdd0cd99f/c83ae/catalogue.png 1180w,
+          srcset=&quot;/static/ccd638ac43343c2b2dfbacfbdd0cd99f/772e8/catalogue.png 200w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/e17e5/catalogue.png 400w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/5a190/catalogue.png 800w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/c1b63/catalogue.png 1200w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/29007/catalogue.png 1600w,
 /static/ccd638ac43343c2b2dfbacfbdd0cd99f/cb9f4/catalogue.png 1903w&quot;
-          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/ccd638ac43343c2b2dfbacfbdd0cd99f/fcda8/catalogue.png&quot;
+          src=&quot;/static/ccd638ac43343c2b2dfbacfbdd0cd99f/5a190/catalogue.png&quot;
           alt=&quot;Rancher catalogue&quot;
           title=&quot;Rancher catalogue&quot;
           loading=&quot;lazy&quot;
