@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 26 May 2020 20:18:11 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 26 May 2020 20:46:08 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
 You should follow him on Twitter.
 Take a…]]></description><link>https://slashgear.github.io/</link><guid isPermaLink="false">https://slashgear.github.io/</guid><content:encoded>&lt;p&gt;Written by &lt;strong&gt;Antoine Caron&lt;/strong&gt; who lives and works in Lyon (France) building useful things at &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
 You should follow him &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;on Twitter&lt;/a&gt;.
@@ -93,7 +93,7 @@ Here is a tutorial of how to publish Gatsby website with travis.&lt;/p&gt;
       &lt;/picture&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&quot;3-configure-your-travis-job-with&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-configure-your-travis-job-with&quot; aria-label=&quot;3 configure your travis job with permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. Configure your travis job with&lt;/h2&gt;
+&lt;h2 id=&quot;3-configure-your-travis-job&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-configure-your-travis-job&quot; aria-label=&quot;3 configure your travis job permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. Configure your travis job&lt;/h2&gt;
 &lt;p&gt;Toggle your github repository to travis listed project on &lt;a href=&quot;https://travis-ci.org/account/repositories&quot;&gt;this page&lt;/a&gt;.
 Then on your project travis page, go to &lt;code class=&quot;language-text&quot;&gt;More options &amp;gt; Settings&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;span
@@ -244,7 +244,246 @@ Then on your project travis page, go to &lt;code class=&quot;language-text&quot;
 &lt;p&gt;Save it, and now it is done !
 You are good to go, your next commit pushed on master branch will trigger deployment of your site.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Hope this will help you configure travis deployment for your project.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Announcing use-reduced-motion]]></title><description><![CDATA[Everything always starts with an idea Last week, as I was setting up the dark mode on my personal website, I got motivated to work on a new…]]></description><link>https://slashgear.github.io/use-reduced-motion/</link><guid isPermaLink="false">https://slashgear.github.io/use-reduced-motion/</guid><pubDate>Fri, 01 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;everything-always-starts-with-an-idea&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#everything-always-starts-with-an-idea&quot; aria-label=&quot;everything always starts with an idea permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Everything always starts with an idea&lt;/h2&gt;
+&lt;p&gt;Hope this will help you configure travis deployment for your project.&lt;/p&gt;
+&lt;p&gt;If you liked it, I’ll try to do the same tutorial with &lt;em&gt;Github Action&lt;/em&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Comment se déployer sur les pages Github avec Travis CI ?]]></title><description><![CDATA[Github Pages est une solution pour héberger des sites web statiques directement dans ton dépôt Github en poussant les fichiers du site vers…]]></description><link>https://slashgear.github.io/fr/comment-deployer-sur-github-pages-avec-travis-ci/</link><guid isPermaLink="false">https://slashgear.github.io/fr/comment-deployer-sur-github-pages-avec-travis-ci/</guid><pubDate>Tue, 26 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Github Pages est une solution pour héberger des sites web statiques directement dans ton dépôt Github en poussant les fichiers du site vers la branche &lt;code class=&quot;language-text&quot;&gt;gh-pages&lt;/code&gt;.
+J’utilise cette fonctionnalité pour héberger &lt;a href=&quot;https://slashgear.github.io&quot;&gt;ce blog&lt;/a&gt;.
+C’est gratuit et très utile pour héberger tes sites/blog/documentations de projets open-source.
+Voici un tutoriel sur la façon de publier le site web Gatsby avec travis.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Assurez-toi d’avoir un dépôt public github avec ton site statique et un compte travis-ci.org.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-ajouter-le-fichier-de-configuration-travis&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-ajouter-le-fichier-de-configuration-travis&quot; aria-label=&quot;1 ajouter le fichier de configuration travis permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Ajouter le fichier de configuration travis&lt;/h2&gt;
+&lt;p&gt;Définissez la configuration de base de travis-ci pour construire et pousser ton site sur des pages “gh” à chaque nouveau commit sur master.
+&lt;em&gt;Ajoutez le fichier &lt;code class=&quot;language-text&quot;&gt;.travis-ci.yml&lt;/code&gt; dans le répertoire racine de ton projet git.&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# C&apos;est la partie obligatoire contenant l&apos;étape de construction pour gatsby&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;language&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; node_js
+&lt;span class=&quot;token key atrule&quot;&gt;node_js&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;12&apos;&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;cache&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;yarn&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean important&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;directories&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; public
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; .cache
+&lt;span class=&quot;token key atrule&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; yarn build &lt;span class=&quot;token comment&quot;&gt;# Générer des fichiers HTML statiques&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# Voici la partie magique&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;deploy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;# Utiliser le processus de déploiement des pages Github&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;provider&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; pages
+  &lt;span class=&quot;token key atrule&quot;&gt;skip-cleanup&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean important&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;# Répertoire où se trouvent les fichiers générés&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;local_dir&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; public
+  &lt;span class=&quot;token comment&quot;&gt;# Github security/auth token&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;github-token&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; $GITHUB_TOKEN
+  &lt;span class=&quot;token comment&quot;&gt;# Conserve les anciens fichiers/constructions des déploiements précédents&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;keep-history&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean important&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;# La branche Git sur laquelle on souhaite déployer (master, gh-pages, foo...)&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;target_branch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; gh&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;pages
+  &lt;span class=&quot;token key atrule&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;# Quelle branche déclenchera le déploiement&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;branch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Consultez &lt;a href=&quot;https://docs.travis-ci.com/user/deployment/&quot;&gt;tous les fournisseurs de déploiement disponibles avec travis&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-génère-un-token-github&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-g%C3%A9n%C3%A8re-un-token-github&quot; aria-label=&quot;2 génère un token github permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Génère un token Github&lt;/h2&gt;
+&lt;p&gt;Générez un jeton Github sur &lt;a href=&quot;https://github.com/settings/tokens/new&quot;&gt;cette page&lt;/a&gt; avec l’autorisation du dépôt et conservez-le en lieu sûr.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9c3684fc2f51e0bbd36557ef7fe363e9/9b29b/project-options.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 58.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAAB7ElEQVQoz41S224aMRDdzygCHrgsAhooQUj8Q/MI4RMAJX3ihV/gN5OWSyQW9r6217un42FJ0ySqau3RzI49x+fYtk4nB+fz+RWO4+B4PMLzPLiuy/A8H86ZaoGHMAwRBAGCMOA8NDkhimPsdztYWmcwyPMcoE8KCd/3ebEhM7mIBQ7uDomO8HaYnhy4QCmkWQbrEJ4RKwGdaagshZP4iEQMqSQyWvA3w4VEpBIqVZcSxZyUZ+4JPqm0npxf8KMAkiaElth6B/hkV0h5UVAgy/+4SJIEkuaZUApWlxeKrZ33gkQkrJAJ3QMU2TZm3hLmhTom/cxyMWc9nbasUGnFpAnZ0ZoU4Z3b/H3l82E9O1u+MaVT6FRjs9ng4XGOxx8PmC8WWC4XWCwM5kU0teUHrFYrrNdrWD/dPZ2XoDPK6SIU7u6+o1L5gkajRrFCqKJa/Yhyucwwa0qlEtrtNobDISxvv6WnItiSIsLJZALbbmIw6KPX+8rodrvodDqMa27bNprNJsdGo0HrehiNRrBe9s8Ik4gP1Ci8v5/i5qaL29tv1NiinVvcaJqu8ZpfYf7NJv1+31g+IKb3kxUKZ7MZkXReVdh2C63Wv2FIB4MBxuMxEZ52CKKQH7F5W9PplMjavGu9XmPUav+Her2O388Sy08B06NIAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/9c3684fc2f51e0bbd36557ef7fe363e9/ba381/project-options.webp 200w,
+/static/9c3684fc2f51e0bbd36557ef7fe363e9/7f61c/project-options.webp 400w,
+/static/9c3684fc2f51e0bbd36557ef7fe363e9/d00b9/project-options.webp 800w,
+/static/9c3684fc2f51e0bbd36557ef7fe363e9/92f8c/project-options.webp 1200w,
+/static/9c3684fc2f51e0bbd36557ef7fe363e9/fad48/project-options.webp 1600w,
+/static/9c3684fc2f51e0bbd36557ef7fe363e9/93e07/project-options.webp 3840w&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/9c3684fc2f51e0bbd36557ef7fe363e9/772e8/project-options.png 200w,
+/static/9c3684fc2f51e0bbd36557ef7fe363e9/e17e5/project-options.png 400w,
+/static/9c3684fc2f51e0bbd36557ef7fe363e9/5a190/project-options.png 800w,
+/static/9c3684fc2f51e0bbd36557ef7fe363e9/c1b63/project-options.png 1200w,
+/static/9c3684fc2f51e0bbd36557ef7fe363e9/29007/project-options.png 1600w,
+/static/9c3684fc2f51e0bbd36557ef7fe363e9/9b29b/project-options.png 3840w&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/9c3684fc2f51e0bbd36557ef7fe363e9/5a190/project-options.png&quot;
+          alt=&quot;github token generator page&quot;
+          title=&quot;github token generator page&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;3-configure-ton-job-travis&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-configure-ton-job-travis&quot; aria-label=&quot;3 configure ton job travis permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. Configure ton job travis&lt;/h2&gt;
+&lt;p&gt;Active ton dépôt github dans la liste des projets travis sur &lt;a href=&quot;https://travis-ci.org/account/repositories&quot;&gt;cette page&lt;/a&gt;.
+Ensuite, sur la page travis de ton projet, va sur “Plus d’options &gt; Paramètres”.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9c3684fc2f51e0bbd36557ef7fe363e9/9b29b/project-options.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 58.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAAB7ElEQVQoz41S224aMRDdzygCHrgsAhooQUj8Q/MI4RMAJX3ihV/gN5OWSyQW9r6217un42FJ0ySqau3RzI49x+fYtk4nB+fz+RWO4+B4PMLzPLiuy/A8H86ZaoGHMAwRBAGCMOA8NDkhimPsdztYWmcwyPMcoE8KCd/3ebEhM7mIBQ7uDomO8HaYnhy4QCmkWQbrEJ4RKwGdaagshZP4iEQMqSQyWvA3w4VEpBIqVZcSxZyUZ+4JPqm0npxf8KMAkiaElth6B/hkV0h5UVAgy/+4SJIEkuaZUApWlxeKrZ33gkQkrJAJ3QMU2TZm3hLmhTom/cxyMWc9nbasUGnFpAnZ0ZoU4Z3b/H3l82E9O1u+MaVT6FRjs9ng4XGOxx8PmC8WWC4XWCwM5kU0teUHrFYrrNdrWD/dPZ2XoDPK6SIU7u6+o1L5gkajRrFCqKJa/Yhyucwwa0qlEtrtNobDISxvv6WnItiSIsLJZALbbmIw6KPX+8rodrvodDqMa27bNprNJsdGo0HrehiNRrBe9s8Ik4gP1Ci8v5/i5qaL29tv1NiinVvcaJqu8ZpfYf7NJv1+31g+IKb3kxUKZ7MZkXReVdh2C63Wv2FIB4MBxuMxEZ52CKKQH7F5W9PplMjavGu9XmPUav+Her2O388Sy08B06NIAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/9c3684fc2f51e0bbd36557ef7fe363e9/ba381/project-options.webp 200w,
+/static/9c3684fc2f51e0bbd36557ef7fe363e9/7f61c/project-options.webp 400w,
+/static/9c3684fc2f51e0bbd36557ef7fe363e9/d00b9/project-options.webp 800w,
+/static/9c3684fc2f51e0bbd36557ef7fe363e9/92f8c/project-options.webp 1200w,
+/static/9c3684fc2f51e0bbd36557ef7fe363e9/fad48/project-options.webp 1600w,
+/static/9c3684fc2f51e0bbd36557ef7fe363e9/93e07/project-options.webp 3840w&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/9c3684fc2f51e0bbd36557ef7fe363e9/772e8/project-options.png 200w,
+/static/9c3684fc2f51e0bbd36557ef7fe363e9/e17e5/project-options.png 400w,
+/static/9c3684fc2f51e0bbd36557ef7fe363e9/5a190/project-options.png 800w,
+/static/9c3684fc2f51e0bbd36557ef7fe363e9/c1b63/project-options.png 1200w,
+/static/9c3684fc2f51e0bbd36557ef7fe363e9/29007/project-options.png 1600w,
+/static/9c3684fc2f51e0bbd36557ef7fe363e9/9b29b/project-options.png 3840w&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/9c3684fc2f51e0bbd36557ef7fe363e9/5a190/project-options.png&quot;
+          alt=&quot;more options screenshot&quot;
+          title=&quot;more options screenshot&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Dans la section “Variables d’environnement”, ajoutez une variable nommée “GITHUB_TOKEN” et utilisez le token généré à l’étape précédente.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/15ad6376a91e61cc3be5a0d08bf78ab7/de55f/env-var.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 24%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAjUlEQVQY05WQ2woDIQxE/f/vFH2wi6BWN97SnYCLLe1DAwdmkiFeVCTiJ1UeY9zMOYWl/yn1OA4OIXCMkVNK7L1nrTUbYwRrrfQwQ+Y8T6brEqUU0Qt4oOgytZKEAIY55zsA4LFw9/uLeu9yO2jVWpPGAks/w1iC3PK11jdQzjnRav+zX3zL7Iei8DLoF4hbiDooP1GIAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/15ad6376a91e61cc3be5a0d08bf78ab7/ba381/env-var.webp 200w,
+/static/15ad6376a91e61cc3be5a0d08bf78ab7/7f61c/env-var.webp 400w,
+/static/15ad6376a91e61cc3be5a0d08bf78ab7/d00b9/env-var.webp 800w,
+/static/15ad6376a91e61cc3be5a0d08bf78ab7/92f8c/env-var.webp 1200w,
+/static/15ad6376a91e61cc3be5a0d08bf78ab7/fad48/env-var.webp 1600w,
+/static/15ad6376a91e61cc3be5a0d08bf78ab7/b3b3f/env-var.webp 3080w&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/15ad6376a91e61cc3be5a0d08bf78ab7/772e8/env-var.png 200w,
+/static/15ad6376a91e61cc3be5a0d08bf78ab7/e17e5/env-var.png 400w,
+/static/15ad6376a91e61cc3be5a0d08bf78ab7/5a190/env-var.png 800w,
+/static/15ad6376a91e61cc3be5a0d08bf78ab7/c1b63/env-var.png 1200w,
+/static/15ad6376a91e61cc3be5a0d08bf78ab7/29007/env-var.png 1600w,
+/static/15ad6376a91e61cc3be5a0d08bf78ab7/de55f/env-var.png 3080w&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/15ad6376a91e61cc3be5a0d08bf78ab7/5a190/env-var.png&quot;
+          alt=&quot;env variables settings screenshot&quot;
+          title=&quot;env variables settings screenshot&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;4-activer-la-fonction-github-pages&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-activer-la-fonction-github-pages&quot; aria-label=&quot;4 activer la fonction github pages permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. Activer la fonction Github Pages&lt;/h2&gt;
+&lt;p&gt;Dans la page des paramètres de ton dépôt github, assure-toi d’activer la fonctionnalité des pages github dans la section “Github Pages”.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6084de328e926a428de53162c2a73880/7e21b/github-pages.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 77.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAACGklEQVQ4y51UbY+cIBj0//+1tmnTD5dLk152T111BUFUVF6cPoC6SW/7oWcyGUAcnpfBTEoJxhm6roOg8WefbdsiZ4xLlFWL8tYgfy9gVgNrLLGN44PTmvkwDticJ8UkmonFoposuJ7Beo675GCKo5Ut2r6NXHd3WusiV7yhPQyNaCNurIFaRhi4JFi4Gj+XV/wYX/FteMH3wFOOr2OBL0PCiy3xhhK/n+ANN/xCjtw3McpMzAqFqCDNAGkP6AhhNLp1RO8mjF5j8BNBf8Smof2cBPWkUeQlBBfgrIPsJERH45bRnGPoVYIaI6vRQowbrD268eCYsjEmdpfxDr1S0POMSesd87437Pb0gYfzW4Tftri+7ey9T4KKRC7XKy6XK+5tG0WVGtD3feROCEiKrhs91Oz+aRvvk3i2rCvei1tEXlZYlpXSIVtQ5IktsYMha1iXoniGM0JHm1byUhAKH3/C0hGn4DRNKIoSRVki3JqVIlvXNUY4Uz2XZSFeYm3TfI3vI8Ie4yNOwfCC07Xj+9WTVLuyvuNOHR5H6ixBDUOs7XDMqbbh3UQO6bWLtQ2CIdIsdO7vZw7pW/dfiZ8R9tqjahjquo5dDnV0zp2NSdibtM9TymYvD6079+iysR4NmbiqatQN3VlKlZHBW+IDoRwt+fTGBvBenz4NddXkVUOHH93Oztbvv6Bwkt+Ne5zqt8fcb89/XamGwB8+CNttr0xdEwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/6084de328e926a428de53162c2a73880/ba381/github-pages.webp 200w,
+/static/6084de328e926a428de53162c2a73880/7f61c/github-pages.webp 400w,
+/static/6084de328e926a428de53162c2a73880/d00b9/github-pages.webp 800w,
+/static/6084de328e926a428de53162c2a73880/92f8c/github-pages.webp 1200w,
+/static/6084de328e926a428de53162c2a73880/fad48/github-pages.webp 1600w,
+/static/6084de328e926a428de53162c2a73880/4dd3a/github-pages.webp 1626w&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/6084de328e926a428de53162c2a73880/772e8/github-pages.png 200w,
+/static/6084de328e926a428de53162c2a73880/e17e5/github-pages.png 400w,
+/static/6084de328e926a428de53162c2a73880/5a190/github-pages.png 800w,
+/static/6084de328e926a428de53162c2a73880/c1b63/github-pages.png 1200w,
+/static/6084de328e926a428de53162c2a73880/29007/github-pages.png 1600w,
+/static/6084de328e926a428de53162c2a73880/7e21b/github-pages.png 1626w&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/6084de328e926a428de53162c2a73880/5a190/github-pages.png&quot;
+          alt=&quot;github pages paramètres screenshot&quot;
+          title=&quot;github pages paramètres screenshot&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;c’est fini !
+Ton prochain commit poussé sur la branche master va déclencher le déploiement de ton site.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;J’espère que cela t’aidera à configurer le déploiement de travis pour ton projet.&lt;/p&gt;
+&lt;p&gt;Si cela t’as plu je vais essayer de faire le même tuto avec les &lt;em&gt;Github Action&lt;/em&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Announcing use-reduced-motion]]></title><description><![CDATA[Everything always starts with an idea Last week, as I was setting up the dark mode on my personal website, I got motivated to work on a new…]]></description><link>https://slashgear.github.io/use-reduced-motion/</link><guid isPermaLink="false">https://slashgear.github.io/use-reduced-motion/</guid><pubDate>Fri, 01 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;everything-always-starts-with-an-idea&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#everything-always-starts-with-an-idea&quot; aria-label=&quot;everything always starts with an idea permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Everything always starts with an idea&lt;/h2&gt;
 &lt;p&gt;Last week, as I was setting up the dark mode on &lt;a href=&quot;https://slashgear.github.io/&quot;&gt;my personal website&lt;/a&gt;, I got motivated to work on a new package for the React community.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;” Well, somebody shared a hook to handle the `prefers-color-scheme’ feature in browsers, that’s super handy.”&lt;/p&gt;
