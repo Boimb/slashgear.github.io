@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 26 May 2020 20:46:08 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 19 Nov 2020 22:34:34 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
 You should follow him on Twitter.
 Take a…]]></description><link>https://slashgear.github.io/</link><guid isPermaLink="false">https://slashgear.github.io/</guid><content:encoded>&lt;p&gt;Written by &lt;strong&gt;Antoine Caron&lt;/strong&gt; who lives and works in Lyon (France) building useful things at &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
 You should follow him &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;on Twitter&lt;/a&gt;.
@@ -48,7 +48,7 @@ Here is a tutorial of how to publish Gatsby website with travis.&lt;/p&gt;
 &lt;p&gt;Generate a Github token on &lt;a href=&quot;https://github.com/settings/tokens/new&quot;&gt;this page&lt;/a&gt; with repository permission and keep it safe.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -59,7 +59,7 @@ Here is a tutorial of how to publish Gatsby website with travis.&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 58.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAAB7ElEQVQoz41S224aMRDdzygCHrgsAhooQUj8Q/MI4RMAJX3ihV/gN5OWSyQW9r6217un42FJ0ySqau3RzI49x+fYtk4nB+fz+RWO4+B4PMLzPLiuy/A8H86ZaoGHMAwRBAGCMOA8NDkhimPsdztYWmcwyPMcoE8KCd/3ebEhM7mIBQ7uDomO8HaYnhy4QCmkWQbrEJ4RKwGdaagshZP4iEQMqSQyWvA3w4VEpBIqVZcSxZyUZ+4JPqm0npxf8KMAkiaElth6B/hkV0h5UVAgy/+4SJIEkuaZUApWlxeKrZ33gkQkrJAJ3QMU2TZm3hLmhTom/cxyMWc9nbasUGnFpAnZ0ZoU4Z3b/H3l82E9O1u+MaVT6FRjs9ng4XGOxx8PmC8WWC4XWCwM5kU0teUHrFYrrNdrWD/dPZ2XoDPK6SIU7u6+o1L5gkajRrFCqKJa/Yhyucwwa0qlEtrtNobDISxvv6WnItiSIsLJZALbbmIw6KPX+8rodrvodDqMa27bNprNJsdGo0HrehiNRrBe9s8Ik4gP1Ci8v5/i5qaL29tv1NiinVvcaJqu8ZpfYf7NJv1+31g+IKb3kxUKZ7MZkXReVdh2C63Wv2FIB4MBxuMxEZ52CKKQH7F5W9PplMjavGu9XmPUav+Her2O388Sy08B06NIAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 58.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAAB2ElEQVQoz52T647aMBCF8xoooC73JeUiEKKrpm8E/Gj/sFqJdy1EKrCbJsG5OHYup/aErLSrVSvV0qczsZ0zM45j8CQB5xxpmhLX4Arf8xEEATzPg+97YFcG5/dPcJFASgkpZKVSVJplihxRFMHI8hxFUaAsSyKJE4SMKUIyZSGjudPVQVZKoEQ1lNI7VYgik8iUj+HGDGkmUJQFuFKfh0gEVxklJXozbiZcpsiLvJoSKcACZIEPpjo1fvlnsCSkDUxEOAUXqlC3UVet0QnrOE5iWifDNEGZZ1WlVCHzkKoseiMZ+hfk4q3Ze17brVvWejs2qjDiseo/hywyosT/DzIM44geXNfF09Mjvv/YYrvdYr1eY7PZkNbxR+i9u90O+/0expm5EEKQ4eFwwGw2QafTwt3dJ5hmE81mE61Wi6hjraZpvtJoNDAej7FYLGCEL8/qXlWGztHBw8MXWNaIjCeTz4RlWRiNRkQd9/t99Ho90m63i/l8juVyCePl+YQk5WR4PB5h21/V4kwZjnF/P8BwWL3wHm1Wo591oul0CuOiWtZ/ClXoOMrwmyp/ooyGlH0wGPwTbbparaoKz+qaRLePos/Qtm3K1m631Vl2FG2K/4bep1Ub/wH+yMrELqknpQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -98,7 +98,7 @@ Here is a tutorial of how to publish Gatsby website with travis.&lt;/p&gt;
 Then on your project travis page, go to &lt;code class=&quot;language-text&quot;&gt;More options &amp;gt; Settings&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -109,7 +109,7 @@ Then on your project travis page, go to &lt;code class=&quot;language-text&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 58.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAAB7ElEQVQoz41S224aMRDdzygCHrgsAhooQUj8Q/MI4RMAJX3ihV/gN5OWSyQW9r6217un42FJ0ySqau3RzI49x+fYtk4nB+fz+RWO4+B4PMLzPLiuy/A8H86ZaoGHMAwRBAGCMOA8NDkhimPsdztYWmcwyPMcoE8KCd/3ebEhM7mIBQ7uDomO8HaYnhy4QCmkWQbrEJ4RKwGdaagshZP4iEQMqSQyWvA3w4VEpBIqVZcSxZyUZ+4JPqm0npxf8KMAkiaElth6B/hkV0h5UVAgy/+4SJIEkuaZUApWlxeKrZ33gkQkrJAJ3QMU2TZm3hLmhTom/cxyMWc9nbasUGnFpAnZ0ZoU4Z3b/H3l82E9O1u+MaVT6FRjs9ng4XGOxx8PmC8WWC4XWCwM5kU0teUHrFYrrNdrWD/dPZ2XoDPK6SIU7u6+o1L5gkajRrFCqKJa/Yhyucwwa0qlEtrtNobDISxvv6WnItiSIsLJZALbbmIw6KPX+8rodrvodDqMa27bNprNJsdGo0HrehiNRrBe9s8Ik4gP1Ci8v5/i5qaL29tv1NiinVvcaJqu8ZpfYf7NJv1+31g+IKb3kxUKZ7MZkXReVdh2C63Wv2FIB4MBxuMxEZ52CKKQH7F5W9PplMjavGu9XmPUav+Her2O388Sy08B06NIAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 58.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAAB2ElEQVQoz52T647aMBCF8xoooC73JeUiEKKrpm8E/Gj/sFqJdy1EKrCbJsG5OHYup/aErLSrVSvV0qczsZ0zM45j8CQB5xxpmhLX4Arf8xEEATzPg+97YFcG5/dPcJFASgkpZKVSVJplihxRFMHI8hxFUaAsSyKJE4SMKUIyZSGjudPVQVZKoEQ1lNI7VYgik8iUj+HGDGkmUJQFuFKfh0gEVxklJXozbiZcpsiLvJoSKcACZIEPpjo1fvlnsCSkDUxEOAUXqlC3UVet0QnrOE5iWifDNEGZZ1WlVCHzkKoseiMZ+hfk4q3Ze17brVvWejs2qjDiseo/hywyosT/DzIM44geXNfF09Mjvv/YYrvdYr1eY7PZkNbxR+i9u90O+/0expm5EEKQ4eFwwGw2QafTwt3dJ5hmE81mE61Wi6hjraZpvtJoNDAej7FYLGCEL8/qXlWGztHBw8MXWNaIjCeTz4RlWRiNRkQd9/t99Ho90m63i/l8juVyCePl+YQk5WR4PB5h21/V4kwZjnF/P8BwWL3wHm1Wo591oul0CuOiWtZ/ClXoOMrwmyp/ooyGlH0wGPwTbbparaoKz+qaRLePos/Qtm3K1m631Vl2FG2K/4bep1Ub/wH+yMrELqknpQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -146,7 +146,7 @@ Then on your project travis page, go to &lt;code class=&quot;language-text&quot;
 &lt;p&gt;In the &lt;code class=&quot;language-text&quot;&gt;Environment Variables&lt;/code&gt; section, add variable named &lt;code class=&quot;language-text&quot;&gt;GITHUB_TOKEN&lt;/code&gt; and use generated token from previous step.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -157,7 +157,7 @@ Then on your project travis page, go to &lt;code class=&quot;language-text&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 24%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAjUlEQVQY05WQ2woDIQxE/f/vFH2wi6BWN97SnYCLLe1DAwdmkiFeVCTiJ1UeY9zMOYWl/yn1OA4OIXCMkVNK7L1nrTUbYwRrrfQwQ+Y8T6brEqUU0Qt4oOgytZKEAIY55zsA4LFw9/uLeu9yO2jVWpPGAks/w1iC3PK11jdQzjnRav+zX3zL7Iei8DLoF4hbiDooP1GIAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 24%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAm0lEQVQY032P2w6EIAxE+f//RB9WIngHkS6n0YRszDY5odBxOhoXgvhlkW3bZN93PUN9azmOQ87zlJSS5JxfYQ7mMwwSpknmeZalGnvvxVorXdcpfd/LOI46Q4N5jFHPFsKAifWSqiDeMCRlmxgwfD5a11VTXdel0FP0hpj5fgQMf8WY8LvPnb6Fcs5pIIOolPKXN82zECiWsuwLXEqGr02u2UMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -195,7 +195,7 @@ Then on your project travis page, go to &lt;code class=&quot;language-text&quot;
 &lt;p&gt;In your github repository settings page, be sure to activate github pages feature in &lt;code class=&quot;language-text&quot;&gt;Github Pages&lt;/code&gt; section.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -206,7 +206,7 @@ Then on your project travis page, go to &lt;code class=&quot;language-text&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 77.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAACGklEQVQ4y51UbY+cIBj0//+1tmnTD5dLk152T111BUFUVF6cPoC6SW/7oWcyGUAcnpfBTEoJxhm6roOg8WefbdsiZ4xLlFWL8tYgfy9gVgNrLLGN44PTmvkwDticJ8UkmonFoposuJ7Beo675GCKo5Ut2r6NXHd3WusiV7yhPQyNaCNurIFaRhi4JFi4Gj+XV/wYX/FteMH3wFOOr2OBL0PCiy3xhhK/n+ANN/xCjtw3McpMzAqFqCDNAGkP6AhhNLp1RO8mjF5j8BNBf8Smof2cBPWkUeQlBBfgrIPsJERH45bRnGPoVYIaI6vRQowbrD268eCYsjEmdpfxDr1S0POMSesd87437Pb0gYfzW4Tftri+7ey9T4KKRC7XKy6XK+5tG0WVGtD3feROCEiKrhs91Oz+aRvvk3i2rCvei1tEXlZYlpXSIVtQ5IktsYMha1iXoniGM0JHm1byUhAKH3/C0hGn4DRNKIoSRVki3JqVIlvXNUY4Uz2XZSFeYm3TfI3vI8Ie4yNOwfCC07Xj+9WTVLuyvuNOHR5H6ixBDUOs7XDMqbbh3UQO6bWLtQ2CIdIsdO7vZw7pW/dfiZ8R9tqjahjquo5dDnV0zp2NSdibtM9TymYvD6079+iysR4NmbiqatQN3VlKlZHBW+IDoRwt+fTGBvBenz4NddXkVUOHH93Oztbvv6Bwkt+Ne5zqt8fcb89/XamGwB8+CNttr0xdEwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 77.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAACFElEQVQ4y52U646bMBCF8/7P1nZVVatuVXVVwiWAMWAwYHzhdMYkJNvun27Qp+PYMJyZsTkJIZCmCfI8wzlN8dHftm1RT7LtkeUV8qJCkpxhVwvvPJxlHJzbNc5F3o55LYRAEfegp954lJOHnFdI1UJ0Ei1p0zcHlazjWtUKlE2Numt22gYXUWGYNTxdMWDpBb6ZH/g6veDL+B1P+gVPU4rPOsMnZszwbHO8IsevB14PCvxEiiSU0SU5HHHuC0jboyVYpdOkExqrIdYRHf0ftgkqsOqob6C5Mcy7w2U2yNIcneyJDqpTkU62kVENxIhx0HE8aItOb6DSXbtx1xiQC9sphaZt0ZPqaYqMeodvigSuEVWKGuDChsBzuK7RxY2JATU9xN39nSSoa4FhJDfEMJCzUaPveyhy100BwxLebpWHcbi++LRai3NeIMlyJJT6NM+wNLeuK9ZDHVYXKM1wd/wXh0NOwdBDy2KifmBLR46Ay7KguFwinB7XlB2yGrPGl7BLY0yEXdsDuodcG/cQkG8QjSQaSG5Mr1BUNSrRxHoyiurJDbvVV3HnSbn+avbo571Z7PS0beGfJOaFndn/SvzeZbOhFB11uI4urdvPZvDhfl6PM7zzmDLjvL8HtH5DVUv6OBRUx/KavkQt5DGWtMEFUTQjne0J08TMcUcwXLZbt0/vtf+GfxiH64b2YXv303Vz+AdpvNr6PqnJtwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -286,7 +286,7 @@ Voici un tutoriel sur la façon de publier le site web Gatsby avec travis.&lt;/p
 &lt;p&gt;Générez un jeton Github sur &lt;a href=&quot;https://github.com/settings/tokens/new&quot;&gt;cette page&lt;/a&gt; avec l’autorisation du dépôt et conservez-le en lieu sûr.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -297,7 +297,7 @@ Voici un tutoriel sur la façon de publier le site web Gatsby avec travis.&lt;/p
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 58.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAAB7ElEQVQoz41S224aMRDdzygCHrgsAhooQUj8Q/MI4RMAJX3ihV/gN5OWSyQW9r6217un42FJ0ySqau3RzI49x+fYtk4nB+fz+RWO4+B4PMLzPLiuy/A8H86ZaoGHMAwRBAGCMOA8NDkhimPsdztYWmcwyPMcoE8KCd/3ebEhM7mIBQ7uDomO8HaYnhy4QCmkWQbrEJ4RKwGdaagshZP4iEQMqSQyWvA3w4VEpBIqVZcSxZyUZ+4JPqm0npxf8KMAkiaElth6B/hkV0h5UVAgy/+4SJIEkuaZUApWlxeKrZ33gkQkrJAJ3QMU2TZm3hLmhTom/cxyMWc9nbasUGnFpAnZ0ZoU4Z3b/H3l82E9O1u+MaVT6FRjs9ng4XGOxx8PmC8WWC4XWCwM5kU0teUHrFYrrNdrWD/dPZ2XoDPK6SIU7u6+o1L5gkajRrFCqKJa/Yhyucwwa0qlEtrtNobDISxvv6WnItiSIsLJZALbbmIw6KPX+8rodrvodDqMa27bNprNJsdGo0HrehiNRrBe9s8Ik4gP1Ci8v5/i5qaL29tv1NiinVvcaJqu8ZpfYf7NJv1+31g+IKb3kxUKZ7MZkXReVdh2C63Wv2FIB4MBxuMxEZ52CKKQH7F5W9PplMjavGu9XmPUav+Her2O388Sy08B06NIAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 58.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAAB2ElEQVQoz52T647aMBCF8xoooC73JeUiEKKrpm8E/Gj/sFqJdy1EKrCbJsG5OHYup/aErLSrVSvV0qczsZ0zM45j8CQB5xxpmhLX4Arf8xEEATzPg+97YFcG5/dPcJFASgkpZKVSVJplihxRFMHI8hxFUaAsSyKJE4SMKUIyZSGjudPVQVZKoEQ1lNI7VYgik8iUj+HGDGkmUJQFuFKfh0gEVxklJXozbiZcpsiLvJoSKcACZIEPpjo1fvlnsCSkDUxEOAUXqlC3UVet0QnrOE5iWifDNEGZZ1WlVCHzkKoseiMZ+hfk4q3Ze17brVvWejs2qjDiseo/hywyosT/DzIM44geXNfF09Mjvv/YYrvdYr1eY7PZkNbxR+i9u90O+/0expm5EEKQ4eFwwGw2QafTwt3dJ5hmE81mE61Wi6hjraZpvtJoNDAej7FYLGCEL8/qXlWGztHBw8MXWNaIjCeTz4RlWRiNRkQd9/t99Ho90m63i/l8juVyCePl+YQk5WR4PB5h21/V4kwZjnF/P8BwWL3wHm1Wo591oul0CuOiWtZ/ClXoOMrwmyp/ooyGlH0wGPwTbbparaoKz+qaRLePos/Qtm3K1m631Vl2FG2K/4bep1Ub/wH+yMrELqknpQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -336,7 +336,7 @@ Voici un tutoriel sur la façon de publier le site web Gatsby avec travis.&lt;/p
 Ensuite, sur la page travis de ton projet, va sur “Plus d’options &gt; Paramètres”.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -347,7 +347,7 @@ Ensuite, sur la page travis de ton projet, va sur “Plus d’options &gt; Param
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 58.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAAB7ElEQVQoz41S224aMRDdzygCHrgsAhooQUj8Q/MI4RMAJX3ihV/gN5OWSyQW9r6217un42FJ0ySqau3RzI49x+fYtk4nB+fz+RWO4+B4PMLzPLiuy/A8H86ZaoGHMAwRBAGCMOA8NDkhimPsdztYWmcwyPMcoE8KCd/3ebEhM7mIBQ7uDomO8HaYnhy4QCmkWQbrEJ4RKwGdaagshZP4iEQMqSQyWvA3w4VEpBIqVZcSxZyUZ+4JPqm0npxf8KMAkiaElth6B/hkV0h5UVAgy/+4SJIEkuaZUApWlxeKrZ33gkQkrJAJ3QMU2TZm3hLmhTom/cxyMWc9nbasUGnFpAnZ0ZoU4Z3b/H3l82E9O1u+MaVT6FRjs9ng4XGOxx8PmC8WWC4XWCwM5kU0teUHrFYrrNdrWD/dPZ2XoDPK6SIU7u6+o1L5gkajRrFCqKJa/Yhyucwwa0qlEtrtNobDISxvv6WnItiSIsLJZALbbmIw6KPX+8rodrvodDqMa27bNprNJsdGo0HrehiNRrBe9s8Ik4gP1Ci8v5/i5qaL29tv1NiinVvcaJqu8ZpfYf7NJv1+31g+IKb3kxUKZ7MZkXReVdh2C63Wv2FIB4MBxuMxEZ52CKKQH7F5W9PplMjavGu9XmPUav+Her2O388Sy08B06NIAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 58.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAAB2ElEQVQoz52T647aMBCF8xoooC73JeUiEKKrpm8E/Gj/sFqJdy1EKrCbJsG5OHYup/aErLSrVSvV0qczsZ0zM45j8CQB5xxpmhLX4Arf8xEEATzPg+97YFcG5/dPcJFASgkpZKVSVJplihxRFMHI8hxFUaAsSyKJE4SMKUIyZSGjudPVQVZKoEQ1lNI7VYgik8iUj+HGDGkmUJQFuFKfh0gEVxklJXozbiZcpsiLvJoSKcACZIEPpjo1fvlnsCSkDUxEOAUXqlC3UVet0QnrOE5iWifDNEGZZ1WlVCHzkKoseiMZ+hfk4q3Ze17brVvWejs2qjDiseo/hywyosT/DzIM44geXNfF09Mjvv/YYrvdYr1eY7PZkNbxR+i9u90O+/0expm5EEKQ4eFwwGw2QafTwt3dJ5hmE81mE61Wi6hjraZpvtJoNDAej7FYLGCEL8/qXlWGztHBw8MXWNaIjCeTz4RlWRiNRkQd9/t99Ho90m63i/l8juVyCePl+YQk5WR4PB5h21/V4kwZjnF/P8BwWL3wHm1Wo591oul0CuOiWtZ/ClXoOMrwmyp/ooyGlH0wGPwTbbparaoKz+qaRLePos/Qtm3K1m631Vl2FG2K/4bep1Ub/wH+yMrELqknpQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -384,7 +384,7 @@ Ensuite, sur la page travis de ton projet, va sur “Plus d’options &gt; Param
 &lt;p&gt;Dans la section “Variables d’environnement”, ajoutez une variable nommée “GITHUB_TOKEN” et utilisez le token généré à l’étape précédente.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -395,7 +395,7 @@ Ensuite, sur la page travis de ton projet, va sur “Plus d’options &gt; Param
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 24%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAjUlEQVQY05WQ2woDIQxE/f/vFH2wi6BWN97SnYCLLe1DAwdmkiFeVCTiJ1UeY9zMOYWl/yn1OA4OIXCMkVNK7L1nrTUbYwRrrfQwQ+Y8T6brEqUU0Qt4oOgytZKEAIY55zsA4LFw9/uLeu9yO2jVWpPGAks/w1iC3PK11jdQzjnRav+zX3zL7Iei8DLoF4hbiDooP1GIAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 24%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAm0lEQVQY032P2w6EIAxE+f//RB9WIngHkS6n0YRszDY5odBxOhoXgvhlkW3bZN93PUN9azmOQ87zlJSS5JxfYQ7mMwwSpknmeZalGnvvxVorXdcpfd/LOI46Q4N5jFHPFsKAifWSqiDeMCRlmxgwfD5a11VTXdel0FP0hpj5fgQMf8WY8LvPnb6Fcs5pIIOolPKXN82zECiWsuwLXEqGr02u2UMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -433,7 +433,7 @@ Ensuite, sur la page travis de ton projet, va sur “Plus d’options &gt; Param
 &lt;p&gt;Dans la page des paramètres de ton dépôt github, assure-toi d’activer la fonctionnalité des pages github dans la section “Github Pages”.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -444,7 +444,7 @@ Ensuite, sur la page travis de ton projet, va sur “Plus d’options &gt; Param
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 77.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAACGklEQVQ4y51UbY+cIBj0//+1tmnTD5dLk152T111BUFUVF6cPoC6SW/7oWcyGUAcnpfBTEoJxhm6roOg8WefbdsiZ4xLlFWL8tYgfy9gVgNrLLGN44PTmvkwDticJ8UkmonFoposuJ7Beo675GCKo5Ut2r6NXHd3WusiV7yhPQyNaCNurIFaRhi4JFi4Gj+XV/wYX/FteMH3wFOOr2OBL0PCiy3xhhK/n+ANN/xCjtw3McpMzAqFqCDNAGkP6AhhNLp1RO8mjF5j8BNBf8Smof2cBPWkUeQlBBfgrIPsJERH45bRnGPoVYIaI6vRQowbrD268eCYsjEmdpfxDr1S0POMSesd87437Pb0gYfzW4Tftri+7ey9T4KKRC7XKy6XK+5tG0WVGtD3feROCEiKrhs91Oz+aRvvk3i2rCvei1tEXlZYlpXSIVtQ5IktsYMha1iXoniGM0JHm1byUhAKH3/C0hGn4DRNKIoSRVki3JqVIlvXNUY4Uz2XZSFeYm3TfI3vI8Ie4yNOwfCC07Xj+9WTVLuyvuNOHR5H6ixBDUOs7XDMqbbh3UQO6bWLtQ2CIdIsdO7vZw7pW/dfiZ8R9tqjahjquo5dDnV0zp2NSdibtM9TymYvD6079+iysR4NmbiqatQN3VlKlZHBW+IDoRwt+fTGBvBenz4NddXkVUOHH93Oztbvv6Bwkt+Ne5zqt8fcb89/XamGwB8+CNttr0xdEwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 77.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAACFElEQVQ4y52U646bMBCF8/7P1nZVVatuVXVVwiWAMWAwYHzhdMYkJNvun27Qp+PYMJyZsTkJIZCmCfI8wzlN8dHftm1RT7LtkeUV8qJCkpxhVwvvPJxlHJzbNc5F3o55LYRAEfegp954lJOHnFdI1UJ0Ei1p0zcHlazjWtUKlE2Numt22gYXUWGYNTxdMWDpBb6ZH/g6veDL+B1P+gVPU4rPOsMnZszwbHO8IsevB14PCvxEiiSU0SU5HHHuC0jboyVYpdOkExqrIdYRHf0ftgkqsOqob6C5Mcy7w2U2yNIcneyJDqpTkU62kVENxIhx0HE8aItOb6DSXbtx1xiQC9sphaZt0ZPqaYqMeodvigSuEVWKGuDChsBzuK7RxY2JATU9xN39nSSoa4FhJDfEMJCzUaPveyhy100BwxLebpWHcbi++LRai3NeIMlyJJT6NM+wNLeuK9ZDHVYXKM1wd/wXh0NOwdBDy2KifmBLR46Ay7KguFwinB7XlB2yGrPGl7BLY0yEXdsDuodcG/cQkG8QjSQaSG5Mr1BUNSrRxHoyiurJDbvVV3HnSbn+avbo571Z7PS0beGfJOaFndn/SvzeZbOhFB11uI4urdvPZvDhfl6PM7zzmDLjvL8HtH5DVUv6OBRUx/KavkQt5DGWtMEFUTQjne0J08TMcUcwXLZbt0/vtf+GfxiH64b2YXv303Vz+AdpvNr6PqnJtwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -515,7 +515,7 @@ The moving elements make it difficult to capture all the information you want to
 &lt;p&gt;The &lt;a href=&quot;https://caniuse.com/#feat=prefers-reduced-motion&quot;&gt;support for this feature&lt;/a&gt; is even very correct.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -526,7 +526,7 @@ The moving elements make it difficult to capture all the information you want to
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 29.500000000000004%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAABlUlEQVQY03WQ30tTYRjHz38YiQU6CIKQpIyigvJC8CKUilBxaBddGJRF+wETRWRzLp1rbrqdnR9bZzs/nDvznO24KfP+07ubvPLiw/O+X77v8z7fR3JqOZxqDls7wNGz4pzF1g8w1X0sce84J1ydq7fi28cEZxUu/QaBpyO19DS2msKuiUa1Q1zzCP+0RPe0KMx5euLRdafKwNP+c+3rDAQ3uvD4GleeghToUYJyhE41jy8m7RpFelaFnrzJQNmkbyl0hp80S/iuLGqZtlnEMwu49T+4jQJeU+HcEppAcvYSJNfm+bk0xdbqS+Krb4mHXxFffk4s/IL1hSeY5ST1TBQt+pn6xlcM9VCkymDIKbTcNlrkG/XSLoaSQTp5/Zj3n0KMJR5y9/sooz/ucWd9hPFfIZ7GJpmIPyK9PMNa+Bkr8w9IT4VYSs6x82WW4uIs2Y/T7E3eJ/vhDYWVd0j9szJ9t4LVzJH6G+O3kWCnFqFi7XLZVum2ZS4aebzWMZ4n0xPRW80jumaeCxE5EOvoizUMPUP+AbNqjxBco4H8AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 29.500000000000004%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAABl0lEQVQY0zWQ3WvTYBSH8w8KigwUGdILFfFikwkqDhV2qQycVjYKXqmjTs06hh+7WDM3urRbE9emTdK0Tb+SJTGLdvX+8U3Bi4f38HA47/kdadjRGNgVBlaJUUvFc8r4KV2NYatMMvzJedBgfGpwnpLWgv/uV19n7BtTF3k60rBRxG0ouGJgT+B3jwj7mmg8InAr/BGNk6jJJH1TwpTmlL+RKQYbwhtTPw7qSLGRJz7ZIrTFAFMlbmucdU/4rctMrCKJWyPqiE/EppFXIxAb+d1jAuE8RxV1lWBQ57RzTOhWkbq7m2znHiNn5/myeo/C2iM2swtsvV7g08oc8tp9RmYJa+cdlpzD+Z6nbVZwDQW7VqSxt02zkMep/xDsIalzGR7kZrnyeZaL7y8zsz7DhfVLZDauc1O+wd2NW6gvnvJy9TZvF6/x7WGGFeUZ+6+eUMkucbA0j3LnKqXlRfQ3z5ESca9ERDHcIjvWRxS7wFfzA07vgMQXcUc6sX2I52uE4uhxv8qgXyYWcVMfdyokPY24dchZu8w/3wGPqPXF0yMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -625,7 +625,7 @@ Les éléments en mouvements amènent des difficultés à saisir l’intégralit
 &lt;p&gt;Le &lt;a href=&quot;https://caniuse.com/#feat=prefers-reduced-motion&quot;&gt;support de cette fonctionnalité&lt;/a&gt; est même très correct.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -636,7 +636,7 @@ Les éléments en mouvements amènent des difficultés à saisir l’intégralit
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 29.500000000000004%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAABlUlEQVQY03WQ30tTYRjHz38YiQU6CIKQpIyigvJC8CKUilBxaBddGJRF+wETRWRzLp1rbrqdnR9bZzs/nDvznO24KfP+07ubvPLiw/O+X77v8z7fR3JqOZxqDls7wNGz4pzF1g8w1X0sce84J1ydq7fi28cEZxUu/QaBpyO19DS2msKuiUa1Q1zzCP+0RPe0KMx5euLRdafKwNP+c+3rDAQ3uvD4GleeghToUYJyhE41jy8m7RpFelaFnrzJQNmkbyl0hp80S/iuLGqZtlnEMwu49T+4jQJeU+HcEppAcvYSJNfm+bk0xdbqS+Krb4mHXxFffk4s/IL1hSeY5ST1TBQt+pn6xlcM9VCkymDIKbTcNlrkG/XSLoaSQTp5/Zj3n0KMJR5y9/sooz/ucWd9hPFfIZ7GJpmIPyK9PMNa+Bkr8w9IT4VYSs6x82WW4uIs2Y/T7E3eJ/vhDYWVd0j9szJ9t4LVzJH6G+O3kWCnFqFi7XLZVum2ZS4aebzWMZ4n0xPRW80jumaeCxE5EOvoizUMPUP+AbNqjxBco4H8AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 29.500000000000004%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAABl0lEQVQY0zWQ3WvTYBSH8w8KigwUGdILFfFikwkqDhV2qQycVjYKXqmjTs06hh+7WDM3urRbE9emTdK0Tb+SJTGLdvX+8U3Bi4f38HA47/kdadjRGNgVBlaJUUvFc8r4KV2NYatMMvzJedBgfGpwnpLWgv/uV19n7BtTF3k60rBRxG0ouGJgT+B3jwj7mmg8InAr/BGNk6jJJH1TwpTmlL+RKQYbwhtTPw7qSLGRJz7ZIrTFAFMlbmucdU/4rctMrCKJWyPqiE/EppFXIxAb+d1jAuE8RxV1lWBQ57RzTOhWkbq7m2znHiNn5/myeo/C2iM2swtsvV7g08oc8tp9RmYJa+cdlpzD+Z6nbVZwDQW7VqSxt02zkMep/xDsIalzGR7kZrnyeZaL7y8zsz7DhfVLZDauc1O+wd2NW6gvnvJy9TZvF6/x7WGGFeUZ+6+eUMkucbA0j3LnKqXlRfQ3z5ESca9ERDHcIjvWRxS7wFfzA07vgMQXcUc6sX2I52uE4uhxv8qgXyYWcVMfdyokPY24dchZu8w/3wGPqPXF0yMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -856,7 +856,7 @@ This gives a full name: &lt;code class=&quot;language-text&quot;&gt;user/SET_USE
 A big advantage of this naming rule is that you can easily filter the action in &lt;a href=&quot;https://github.com/reduxjs/redux-devtools&quot;&gt;redux-devtools&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -867,7 +867,7 @@ A big advantage of this naming rule is that you can easily filter the action in 
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 77.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB6klEQVQ4y6WU63LaMBCFeZymwTY2NvhuLvIVG0wggdI0f/r+z3C6u8ZOmMx0SvrjjOS19OlIu9LICTLYvoLjp7DcNfjbi0uY8xXcuMAq3yOtjlgXT9Ivt2fsjr/QPL2ifX7Dy+W3xPhfrBqMgkWFWZASUMF0FnicBCJ9GkEVNGhdI98cCXBBvT/T5Bfk9bPEqu1J4ooWS0tSdSBgUoKhmhUKSDNDjM0Ahp3Qqi0McqpR35xHmLoRrHkI046g0zidxukWzwnw3fBF4jBZNzCmsQDHZjg45BUnToIHnQbr3QRuH40PmnTxB90TiUPelu2t5QfDuGVwRkB2+k1zu0mGdzP5Xf67Q5+A7DBcbgZ33LLDjM7pI/BvYnAHpEzGBGSoR30G9Fu+B3jjMF7VArVmyyE5usXAw38ASRpBuvMLpJ9WXwBylnvglArbJo3Nq8OvAN0oR0QJ4fNzPHVzhlys9wPDDOHVJd+WLsvXmzIAvTsdEozrkYt4LDclHK4eA/uS+Ccgb7U/Q95yX9ycbQHSDeItfy7mzxLgIm0RLGtEagc3qWDTa+OEuShSW8yiovsO8iF+I4rP6XVy+YWishstyyNYi+KAbPsDm8MbVH1C0f5E2pxFqjmh3L9Kn8fw/3zXtRk9XTyW40V7wR/bWBgVncKSpwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 77.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB60lEQVQ4y61U23aiQBD0c9aIgIrcQRDlpoDGJEZDnnb//xdquxvIMWd3H/TsQ52CnpmiuqebkR1kWLobWH4GfRlBM1ZQjRAzM0a0bVBUb6hPbYfnFs3pE4fXT+IW54+feG9/Iac9A0beqhBB092SWIiJ7uFJczG3YmyLZ6ySCmVzJsEr9scLiro7mO1fUR2vgk1+RFqekO5eSDAq4QS5CCkzD9OZL8+GnSBOGyhGBNWMsLBDioX0oQC6EUCd+wKNwGfYBGPkxzsEBIWCA3hhYa+xIYcTeh/zZrU7wDzRCVrPOsccjHtQyiXC9Z7qt5ID7I4XJGVKg2P8Lqw5Ij6+ERD07sQhpxxtako7k4AiKXcOuS7DB55uDv0Nwx65FC48u7T8FOoi+Ep5e4fgN4chCXIdOe3p/D8IskPmoYac8tzqL+VeQb8XZF6QCAt9OXxE0AlzSdemSTGchGoYfm+buwXpdqUX6VK4VbqUPXGb0AQ85JBvmIXZndJPCqeeZA8IutQ2LMgOZzRiE1noGjvJDrLpx9T+s5lv0a+LYJjU8NbUNtTcJs204aZYepk8c2xJtWUYXvpPtmjaTP5bkaFRXLwgyk+CvLmiOLZIdvRHOXwIp/U7Nvs3lBRnTusL8RnbiuIV81n2MmfNBb8B6HgYU6q2YXkAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -963,7 +963,7 @@ The use of the &lt;em&gt;spread operator&lt;/em&gt; is thus more than recommende
 This package is much easier to use than tools like &lt;a href=&quot;https://immutable-js.github.io/immutable-js/&quot;&gt;immutable.js&lt;/a&gt; because it does not use Object prototype.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;immutable-set&apos;&lt;/span&gt;
 
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; newState &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;state&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Rhone.Villeurbanne.postal&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;69100&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; newState &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;state&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Rhone.Villeurbanne.postal&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;69100&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&quot;do-not-use-the-default-case&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#do-not-use-the-default-case&quot; aria-label=&quot;do not use the default case permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Do not use the default case&lt;/h2&gt;
 &lt;p&gt;The implementation of a &lt;code class=&quot;language-text&quot;&gt;redux&lt;/code&gt; &lt;a href=&quot;https://redux.js.org/basics/reducers&quot;&gt;reducer&lt;/a&gt; very often consists of a &lt;code class=&quot;language-text&quot;&gt;switch&lt;/code&gt; where each &lt;code class=&quot;language-text&quot;&gt;case&lt;/code&gt; corresponds to an &lt;code class=&quot;language-text&quot;&gt;action&lt;/code&gt;.
 A &lt;code class=&quot;language-text&quot;&gt;switch&lt;/code&gt; must always define the &lt;code class=&quot;language-text&quot;&gt;default&lt;/code&gt; case if you follow so basic &lt;code class=&quot;language-text&quot;&gt;eslint&lt;/code&gt; rules.&lt;/p&gt;
@@ -995,7 +995,7 @@ An action at the other end of your application could affect this state without b
 This should be avoided.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 721px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 721px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -1006,7 +1006,7 @@ This should be avoided.&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 58.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAACiklEQVQoz6VSS2sTURQek1YXVhf6O8SFC11EEFxYwaYouhBc6T9QcOkDF0J9tBatCApSC4KbKibFWpK0k0nSJJ285pFM3mk6aaadJJMmscm9kxzvpChVpAoOfHPvOd/hnO+bORT1n091yXWn5ffVt4N+XWPoGcqfqJgX2fzA58XYQBPAPDxyeejEScuRM2eHj5L6g1MvX1lsNvsYw3ju2e1z9+e/Ljx8Nz1zgXCD4sfZq50wC/T0257jzWtUcjngX4Uc/i0eNF6165ZDHb830ggsg8rQ0Aosa0Rh9RYdKT53ruTGmWhp4otHmuJX2xOijMeFNWTgKR2RJ0VZf0Tuj5MKjHm48mQ4XX8mlOGJGFduAxu4AdHwza0l13FKlBGwyQoE4hsQSlchKG2A0gYoExin0gFIljFsIpLbBlB1gPRmDwp1gBYACDJO/KI9XsI4swkoowKKrCbRUozGPsmHJKWBBFlDnri3nwtmOJRSuojNSYjm3Jjm3R1BViBR6kXpedsBED2mDV/ARBR2etI6xtI6wmw2jV3hZewMe3E0r2I2VcaOkBcvBN06HYtgrtDEDMdjB+vFbn6FNKySht3Y+IdZsyEuWtim+pYNK3Jjx1JxCyBfBciqOyhoALFcAwo1AOKkz+UqpJ6sRN2wvNaJ/XAbzn2jKDbTPEUuFwlGQtmGlUyx8mvIKsi6lfyY0ZU8Pj8x4xwV5O6IkeMIZ/ChbJPUNy+xmdYxo1lK0Sm3UPv7voDvyhDz/u65PZe7vWv9+GLblCzrZvIdfyIla+aM3B0w+Iowz0AzAVrcds2Ii1lp/+5abrVtMvIYgPJJ9T9P1IIPKDUl7etP5+0vVM7eqIufTvdjYc60l9rv0F4KiYnHoFQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 58.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAAC8UlEQVQoz31TyW4TQRAtOyEXDiAQgg/gioQACSMRQ86cOHDiGzjBHQFC4sByAQnCEswmiBAhJIFgB8YOBu9OZvHM2ON9ibc4ifE67mmKtpNcEEpLT1X1uvr161Y3wA7DYrEAIpoYhv8BTFy7Cuhx7625uMmmz9Nren91WP4AfvD5oTmXODzlCA6L2fbQCcvonqPHLftOnR7bD2Da/eTJ0/OfP3+563S6rs3Mzt2Yn/968+7tO6fZfua8w34r7fiK9sfjOjfxlGYX7Ajf/Al4N+uGV1MczLvVviOoGQgdFvO/cVCzMVLBzXyrHrjsvB0/rPs9mbR9HnNMrBv0K+CJVO5xwdTrb4Hkc2co+2LBl3ijrFBbJK/b5AKx8em27adYeqkW6TPGTfSjWyi+FjMdm7RCJ9RI4RKGfRf+LIUuFj99PAB+tYrOYBI5Blc4iYvLKdQqBqorPdTKBsr5Foa0KuPoJsfmAtEyqkUdYyUDpQJ530yXAMUQlKanAKIlgyRXkcRXCQkmlwi3zBGv5iNahZDlTJ4sSi7iFJwknIqRWNkg3lh4UDO+K+VqqBToZJQirEZTI2sLdhMobNdo0TDUYocGExrllgJ0UQxTIV2nPjVDv4d91BH4RT1yjPKpOl0U+EGPR5V6EXbJcsF4n1lDSFSomc/1AJRC70/fOhPFOLt5Jd/DSLaLQrrBYgeFVBO9UpEdXd/iuhjJdQe9sRJFMde1xUoE4mVqXkq1AYLx5rFQojUWSjStAa1uXU63rUJOt4p5w6qW0PrJX7Zcfzh7Nl7DUT6rn2Gw8tku692wBhONMV+scbAvFE624DtfAxCzXZALPWAOBtAqCPEqwzqCosZhw//giDB355zbL8NKB0Grbs5vrwkxoX7OTgqcsClolgu6mT0Js7yFeCo7hFcANsRHe1cle6MqObChTp+k/H3IJZVd2339NcydaVvQE63//8tt8Daoey+DPgOm9cjc9Jo0K7ejHw61ojPQUKZMO33Xv85OiSkH0s2GAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -1185,7 +1185,7 @@ I’m currently working on a big web application coded in React/Redux with serve
 The application exists since 2015 and it has evolved a lot since then (&lt;a href=&quot;https://tech.m6web.fr/&quot;&gt;M6web tech blog&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -1196,7 +1196,7 @@ The application exists since 2015 and it has evolved a lot since then (&lt;a hre
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAAEAUlEQVQ4yy2U2W9UZRjGz3Q6c+acMxtdpp2ls7SdpdN29tN9lu4dOi1daUFaFCwIspuqGMISUoy0SQFFpCYgCRpNFEO4kBhjTExMTNQbEhK98S/wRv+Anx/Gi/fq+/L7nvd9n+eTNGMYrTqCYmjB5Uj+VxZDK06tA6scw2puQ89Ok0yWkaQAdiWCUw2jmlrZVavjcKaRLW0o5iiWqhCSKmCqKYpiimFTO7Fak8haCsWhi+rGpHWyWFnhxuVNlmcP4fOmMBhqqTbUoNnD1Cb30JSbI9AxgidS+B8oVChqAtmaxuzsQq7PIzcMItWVSOX388tXj/jn9z/469lzvr75IYVSBcmoCcUK8cpxelcv0FlZ5fRb1wRQqFMt7ai2NIqAKXUDKK4SqndMAAcpTKzx4P0dfv3mO+7e+pjN8xusHz+PJ6oLoEogOcHRd+5QnHuVz+58gqTJbdjtaew13dhceTT3MJbGIaGyD4M1Qzg1zdLBczx58AVnT1/kyLGL3L56k/G9R+kfXMRY38Hn959wf/suO1t3kGyWONnsLOXKa0Q653BHZ3D6BbQmiyTHyQws8+z7n/j58bf89vQH/n7+JxfOXmbh0DrlwjRVrgTr797j01v3eSo6kFRzjGCgRKG4QmHoMCl9gaboGGbXANXuIrbEPF/uPGTn6g3ubX7Ejw8fMbf3dRri/chVqmjbTG9hho0r2zy+/gGSU+2gOVgkGi0TaduNx9eLPzKKNzlPk76P2vQUI0N7uP3mdW6/vc32xS0y4wcw7ApjEDDJVIcvrHPi1AUOLB1B2iX8tn/vSU4ev8SBl86QyU5S3r3GwtI6s/OnxAyHkSw+VhcPsXH+PbqHFvH2zWBxhARQQ3ZnUKN9uBIjeEVJDmHKSCBPe3iQOmcnrYF+BnKzDGSm6YyIlj0Z5Jo4krmJUHqcjsFl/HoFo/Cg0dyI2dqMXNuG7NPFMnOiZSXOxNB+Qr4eAUyQi4/SFRumKOxQ1KfwhXqQ1Raq5RY8rXm6S0uExZlPGLkh0I1RcmI0uLA0iDA0ZF/MMM6VS1tkU2XcrixOezvBRp3e5G7y2SlC/m4sWhiL0opii5HJVBjNL9OlzxBsHsAkN2OzR0lmythdabFlo7go8mySmsVrARHBMP76HBF/Py1iQa6aJFZHHFWLIguVje4uuhKTJGKjuD0iVeYQHlcSb6AXzdaOZDVFiAXz9Ijw96QnSbeP0ZeZYqy0j97cNGZDiGoReovkF496kA1BvM4kvnqRKjF/gyQ+BKmJKiHsxech2QSwOHGE/OQJJmZOM7N4honxlzl88A1eWTnH8sIx2lr6cHfsITq8RvvoGq7+g8JqOQb1IQqpfjLRLPFgmpHSMv8C7dDu92LEpmAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD/klEQVQ4yx2U3W+TZRjG325t37dvW9qu27qu7bp+ruu6frfb2m3tKO3GvjeabSisDggQxImCiBpAogFhSGTARCRA0Eg4UWIMCQdyYEw8IfHAAzj0D/DA+A/8fMbBlTzJk/uX57qv+34kozbMtpSmIG2WBA5bGqU5jMWcxKzGkXU9FAuLLM4cwGqNYVACqLouDFovVnsKm2sYc2sWqy2BooSRVAFTRZFBFxGAfswCJKsJVEsWgyWPVo0xU1tm45MvqM806OxMoNHY0QkZzUHssWlcqXm8fRU6AkUBFDBV34tBwGRTCr01j9w2guwoI7WW6R1c4vcfHvPfq1f889dLfrq+RXlsBklrQpJkIrsPM7h6lv7pVY6+f0EABUxV+lBNSQzWHAZ7EaW9hOqqCeAYhdpBvr91lz+fPefhNw+5fu4yHx7/GHckL4AKnv4qh85sMbxwkPubd5FMwtK2TbMtj1m8zOisYBBS2opozBn88WkW31znyf1HnDxxjsbBj9j6fJOJpSMUKks0tUR5cOdHHnx1h9sbW0guZ4FkcpbxySOE+xfpCM9h8QhgSwZJjhIbqPPi2W+8+OVXXjx9zr8v/+bimUvsWTvFQm0JyR7j1MV7PLr5gKeb3yJZdyTp7ipRGlultOsQ6YElvL0TyO3DaJ2jqLF5Ht/+jnuXNrl75Wv+ePQze/eu4+wviSC3+6gnV5zhs0+v8WTjJpKzLSeAo4RC44QikzhdQ7iDFVGwQGd6mZb0LDvH5rh1+jI3Tn/JjQvXGJxqoLH3vIZJuhacviTr756l8cZRpGTfOMt7jvHOsfM09p8kk51mYvch6isfsFg/QU+6iqS42V9/iytnrzJSXcFdmMdgC6KRVDENSdRwAUeiikdIcliThL0jxCMV2u0J/F0FipkFhjNzJCJj7HClke19SHoPvlSNvvIy3QOzaC0hmnUO9CY/cmsU2Z1DcWaRooEyu0aW8HuGaNkRIxOtMti7i9HEOKXcDG7fELIxiFbvx+kvMlBeIZycoDNawSHumiWrUJsYtQQGhwhyqrafC+evMiiKne0ZbJYYXY4sQ4lJRrOzBLoHUYwhFEMQxRQhlZqiNrJCLjdPIFhCp/gxmkLEUxNYOzLbqxfCqAuj1/hpkrzI2iDu1gwhT4Ggu/C6DSZLFNXYgywH6HDmyCemSfRW6XQPoNf7cLbF8XQXMQqHUodN9LCrSD4+wUBykuS2ZfGKammFQm5OfBoBmjU+FI0XndSJrOnGZRWA9jyqISqC8Ym0PTQ1B8TZixTwjTFcOcDI5NvUZo8zV19nvNpgbd97NPadoL5wmKhY+o7IFMHyGtGda7QPrdLtzTKSKjMcF4sRShPxJikV9vA/KgLxJQMbz84AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -1365,11 +1365,11 @@ I could have lost whole days on futile modifications if I had not measured preci
 &lt;p&gt;If you take a look at &lt;a href=&quot;https://babeljs.io/docs/en/babel-plugin-proposal-optional-chaining&quot;&gt;@babel/plugin-proposal-optional-chaining&lt;/a&gt;, this is how babel will transpile it.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 48.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA+UlEQVQoz62SW0+EMBCF+f9/0Jggi+Jm47oIdHqhl+lxaHlQE5PF2OTLmYfO6VzaTLPC6iP+4+Sc0Xh3Q/JXcBiF264HiKPkvyOFqZg2Tg9w1CKHV6T15U9E1yOul2qoNWFZZmzKvLXOUno6DLLklQqph1seEPQTgqkkdzpAj2BbYdhbtrO0/CaMWK3gJnCiA+iiOdlqaOgKtZyh1QXRf0jHSgY9ywVBlO9BFsJRVcPVDAj0iGRPWKmTuEM0W9zCmw5cBv/8K1yWIjnuXA2ts2UhRN9RpGAMIaZ4F4nTXqH3MNZKckUbA9Km6PZY4rzDX+KfsPyQXAw/AUu4CmU0DqFWAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 48.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA9ElEQVQoz6WRbU9DIQyF9///4GLi5qbRxWzZvVDKy6VwLIj6RaN3NnnSFNJDD91475Hzgha11n/RYpPiBEkXlDzdznKFLNMQ9Cd4c4eaniDxCAmHdWhPDg9Y/OO7oPcMY2Y4RxBp1ouOL0pZRevrgpGf4ectktth4b2+tF854QFZexIfh2A0CHRCdGdEPiNw+09zA4TaLfMVZj6B7CsWXRCqQxGLOijZ9vpbPu6G4FjKC6LdQnTsqLYT7ZA1R7rvdYlf1n4ktK/6tBz6QpyzoJaJek1k+1nWRf0FkTwmTAmOvTYrzCrKsOR6Zq1FCqRUpfxKizdFQgo6ABDNpwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -1689,7 +1689,7 @@ For that, we would need to have an API that let us know if an element is visible
 That is exactly what &lt;a href=&quot;https://developer.mozilla.org/fr/docs/Web/API/Intersection_Observer_API&quot;&gt;IntersectionObserver&lt;/a&gt; provides us.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -1700,7 +1700,7 @@ That is exactly what &lt;a href=&quot;https://developer.mozilla.org/fr/docs/Web/
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 43%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAAB30lEQVQoz2VPXWvTUBjO/xO8FL2xtyIbjK1eTBA2ax2WKoWtVlxF3NBtbAxEdLZdG9Mm/bCmaU5yTto062k+miZpyJIWJzrpzNUoCA/PxfP18hIDxGDEnEFGEyqe2vZH0DfFYAQnFpqHjVuhPrUld8hbOu+NutZAIDCiMWQGqHoGaUWo9AClCGWZp6w+G0avy9eLIfsjMTAFzwAEbFGQLSK2CJsFiT2VQUURq+GEM+Dmy/8jdAmTO9bkhtptmCpn4rbZofxefmJ1JjYK5qLhO5MRnFcCCxI6IPXuD1Op90+OB82iLlWGbB6jGgZlDZZlkRSbp0qr1AdliWcwIBXwTeJIvp7DPEv0yV20tdyNrx69u9UG78fduvjmgWNwri154SkDjm3JN9HUQIGOprromdC1Ok6vJe89JTa3by8c3Fh7cecuef/Dy6VScnHx481mPCofZNsnO19S0eaTaHFjqbCfqPGfquhrLb0OMrGWsLf+OUIcHSbi9PN7heWV3MNnqcjb1EKaTmfikWJihdpNZHIb35OPDvdjmVIyS6Ve0Zv57cdsdo1sxHaqr4m/vnZp98ZG2xsCwwXOeedqjPVz0Z30/gTqzFMvLvTLQL9y1ZmLZ07/91T7OdV+OepsjP8BRo+wDydh9I0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 43%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB5klEQVQoz2WP22vTYBiH8wcKXos3vXAIXlXFyYY4UOu0a1GslnlqN0EvnNOJsLkebNM2PSyHLV++HNo0+ZI2/ZL0sCarOnVDTHcxBsKPl4f3/T0XL9Fr0z11J5iWumNrDNYYW2cC2LeEA0c6zaCzN8Zw4spDDAbd3X2LxxpLGBJlSFVTrukSpcFKG5Q0oawCMvCD6qnsYejb4hRs0bMFD4PAJ0SOlNh8EJHOSkyuxZdUWGvxpIPYs/L/Ca4E5tY7StVUGhZiMdrFStlrbfuOfODK/pnqCYsnLE/cqek7ItEFuY5CY62hZTdQI9tVqB67haQaEkpdWFZhAbI5lftmgJIMqgiSGig094p8fVsHNIGodfH5TTW68Dl9kaZfDHVOfD1n642BI42s4DGhj+GoBz0LjkxhbPJDCwQbR+XUD4+I9MtQeO3cYuzCpfyV1Or1evzGtS/n6/FZbS0lFt7nns6zS/Pl2Gzx3RIDNplmnn4TB8l7orQR3ZohPr6NRCqxy5mr4czc/UQo/XDmCZVYXgxlHoSplWjya6QWu/VpdSGZi74qPl6mEpupO+yz22T97kolSfwZo99O0+6yfYszHa43Ev729c6Qd8fyoWccD9GPifFrCvpRv33ktg899N03frr68UD7Bz0Mr+mywVtxAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -1906,7 +1906,7 @@ You may have used code splitting, tree shaking, uglifyfication but you may have 
 Every website performance analyser will tell you to do it. Here is a size comparison of a vanilla &lt;a href=&quot;https://cli.vuejs.org/&quot;&gt;Vue CLI&lt;/a&gt; website with and without Gzip.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 600px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -1917,7 +1917,7 @@ Every website performance analyser will tell you to do it. Here is a size compar
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 62%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsSAAALEgHS3X78AAABM0lEQVQoz5VSiUrDQBDt/3+B+hf6BSoiCta2iiB4pAdVSI9ks2d2ZidOuqlN44XDMHkJ72XOnvdeCCE3lmWZUlJrtc5EroAqwqIA56ofrNd+IaZvgMcqzcGVzi9SIwT9KbbWilxIYajhUuun1AERN+IQAoBfLIVYScD4hXas38XcuTF6tcy00JHQ4X0vZhmnRUQuOxdKrlXdOdWZI2jjCHZirTUAbOqE1ySdzFVFseL2mOgL2JbNDwTEAJOXt4ur9/79evikB49ylPjRBNmHHKeBfTDGu1mQjjxQI+bMSilbuvnz9Ozw+Pzo5PSgjteX05uH4jbBT+8nOBxjbsj5eqt7e0YoKfBJAEewRSySgicsIwHAEoW4HZ7R/pFse+ImjG0OyxjrfRwKMY4rLEvfFf/XPgDNJrrq4uYUcgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 62%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAABPklEQVQoz4VS20oDMRDt/z9aP6QqFaGKP+CTiiAiWNtut+4tm9tuLjNjsnW3lrY0DOFkcg6TnJmRMaYsyyosxrIsY4zVNcuLojGeiNBaQqQTa3Q02zpa5rY1jUlWsirxrNhaK4VU0vSVdhIcUriXHA0oiIuS16XwPjJg4CGeEQdl0+g8qySTAEd4x8XQcZ3zWmtWC1lrwOgRQGTiPt6CnVhKGcqGg3fme1ksV7yzNwT8swYPQCfG/kuI8PWZPH/wRW5TRamgDadNTSnDdQVhD5F0wHry0P/ZOSe40K2ev8+vxzdXl9PJxXQyvr17WMye+P2rG2L24h7fXMZRG9wZ9mebkvCzojzFbO3WC7INoSP0CH5LAO/6Z8bu7ImjVR1wALJpt0kpVduaeAsoROhFpIS5VEodTNhg8empHHr2C3fZuxH5QH/+AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -1979,7 +1979,7 @@ There is still some difficult parts with brotli (not available on Node &amp;#x3C
 &lt;p&gt;You can use brotli &lt;a href=&quot;https://github.com/webpack-contrib/compression-webpack-plugin#using-zopfli&quot;&gt;with compression webpack plugin.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -1990,7 +1990,7 @@ There is still some difficult parts with brotli (not available on Node &amp;#x3C
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 70.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsSAAALEgHS3X78AAABLElEQVQoz51TPU/DMBDt72Vi4g/wVxhAIJhYK2ABNUkXkECitEiFpWqjJmn9dR/mEpPiqhlorefzy51fcnd2ekRkrTXGaK0DEY//3+hti2vLRCvDVhlX5ihTVQ5ctzgszJ5ktgOQCYnBMYFD4DbE0R7hv2JjbLHMCSF4492dfEssya/Wa2yq3VustVrMZ4h4iBgAiqoKsT3EIpNFK1UuZ0RwiFiaO57meQESlDYLqO5/N99N231O35Qpgz86S44eY96KpdVyyKPXUdIfDB+G2X2a3KXJ8zwbQzbBtLENYPABL19kXSSWzwL4p8ezi/Ojm+uTy6vj/u3p4vvdWDTgjePaBji24EPhf2kLs8TyRoERtNlJTtjcnF3unOtF1bFnEtQ3E2IBbvjmnwn8B+63MwOVH0z/AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 70.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNUlEQVQoz51STU+DQBDlj3rz4sk/5MVo9KBX/4KmJrTGptF60NamibHWCrvA7nzsOiwVEeqhncwMD5i3MPMmMsZkwZRSkrXWRMjOM7Mj8hIlcn6TRQBgghV5XpQpZ6bMOlMYSFcsUWgDdjO5Rq5xPJB8kRiMkyAgpm6N4DUZEJPVJyFUT1tF/+GoRjrTSLgL2Vqz/FgA7ESWDhOVVr1tQUZEuVhrk9U705Y9i1QipPc8e0sWXyBvRVViV0odvIubv13eCX8yfUz1snV8VbYRr3sO1e51Mh9cj4a3T/e98d3NQ3+0HLzgYEL9kCuPn3E4o9z+kCUQQRYx7l2eHu1dnBycH+9fnR3Ox3GagSpcy7UsDv+dtuCCSXufea+cU42VYsYauwaWYUXdjQ01v0WiYhfLjESmb26wMkfhz0pmAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -2037,7 +2037,7 @@ Chaque analyseur de performance de site web vous dira de le faire.
 Voici une comparaison de la taille d’un site web sur la vanille &lt;a href=&quot;https://cli.vuejs.org/&quot;&gt;Vue CLI&lt;/a&gt; avec et sans Gzip.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 600px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -2048,7 +2048,7 @@ Voici une comparaison de la taille d’un site web sur la vanille &lt;a href=&qu
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 62%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsSAAALEgHS3X78AAABM0lEQVQoz5VSiUrDQBDt/3+B+hf6BSoiCta2iiB4pAdVSI9ks2d2ZidOuqlN44XDMHkJ72XOnvdeCCE3lmWZUlJrtc5EroAqwqIA56ofrNd+IaZvgMcqzcGVzi9SIwT9KbbWilxIYajhUuun1AERN+IQAoBfLIVYScD4hXas38XcuTF6tcy00JHQ4X0vZhmnRUQuOxdKrlXdOdWZI2jjCHZirTUAbOqE1ySdzFVFseL2mOgL2JbNDwTEAJOXt4ur9/79evikB49ylPjRBNmHHKeBfTDGu1mQjjxQI+bMSilbuvnz9Ozw+Pzo5PSgjteX05uH4jbBT+8nOBxjbsj5eqt7e0YoKfBJAEewRSySgicsIwHAEoW4HZ7R/pFse+ImjG0OyxjrfRwKMY4rLEvfFf/XPgDNJrrq4uYUcgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 62%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAABPklEQVQoz4VS20oDMRDt/z9aP6QqFaGKP+CTiiAiWNtut+4tm9tuLjNjsnW3lrY0DOFkcg6TnJmRMaYsyyosxrIsY4zVNcuLojGeiNBaQqQTa3Q02zpa5rY1jUlWsirxrNhaK4VU0vSVdhIcUriXHA0oiIuS16XwPjJg4CGeEQdl0+g8qySTAEd4x8XQcZ3zWmtWC1lrwOgRQGTiPt6CnVhKGcqGg3fme1ksV7yzNwT8swYPQCfG/kuI8PWZPH/wRW5TRamgDadNTSnDdQVhD5F0wHry0P/ZOSe40K2ev8+vxzdXl9PJxXQyvr17WMye+P2rG2L24h7fXMZRG9wZ9mebkvCzojzFbO3WC7INoSP0CH5LAO/6Z8bu7ImjVR1wALJpt0kpVduaeAsoROhFpIS5VEodTNhg8empHHr2C3fZuxH5QH/+AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -2109,7 +2109,7 @@ Il y a encore quelques parties difficiles avec brotli (non disponible sur Node &
 &lt;p&gt;Vous pouvez utiliser brotli &lt;a href=&quot;https://github.com/webpack-contrib/compression-webpack-plugin#using-zopfli&quot;&gt;avec le plugin de compression webpack.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -2120,7 +2120,7 @@ Il y a encore quelques parties difficiles avec brotli (non disponible sur Node &
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 70.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsSAAALEgHS3X78AAABLElEQVQoz51TPU/DMBDt72Vi4g/wVxhAIJhYK2ABNUkXkECitEiFpWqjJmn9dR/mEpPiqhlorefzy51fcnd2ekRkrTXGaK0DEY//3+hti2vLRCvDVhlX5ihTVQ5ctzgszJ5ktgOQCYnBMYFD4DbE0R7hv2JjbLHMCSF4492dfEssya/Wa2yq3VustVrMZ4h4iBgAiqoKsT3EIpNFK1UuZ0RwiFiaO57meQESlDYLqO5/N99N231O35Qpgz86S44eY96KpdVyyKPXUdIfDB+G2X2a3KXJ8zwbQzbBtLENYPABL19kXSSWzwL4p8ezi/Ojm+uTy6vj/u3p4vvdWDTgjePaBji24EPhf2kLs8TyRoERtNlJTtjcnF3unOtF1bFnEtQ3E2IBbvjmnwn8B+63MwOVH0z/AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 70.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNUlEQVQoz51STU+DQBDlj3rz4sk/5MVo9KBX/4KmJrTGptF60NamibHWCrvA7nzsOiwVEeqhncwMD5i3MPMmMsZkwZRSkrXWRMjOM7Mj8hIlcn6TRQBgghV5XpQpZ6bMOlMYSFcsUWgDdjO5Rq5xPJB8kRiMkyAgpm6N4DUZEJPVJyFUT1tF/+GoRjrTSLgL2Vqz/FgA7ESWDhOVVr1tQUZEuVhrk9U705Y9i1QipPc8e0sWXyBvRVViV0odvIubv13eCX8yfUz1snV8VbYRr3sO1e51Mh9cj4a3T/e98d3NQ3+0HLzgYEL9kCuPn3E4o9z+kCUQQRYx7l2eHu1dnBycH+9fnR3Ox3GagSpcy7UsDv+dtuCCSXufea+cU42VYsYauwaWYUXdjQ01v0WiYhfLjESmb26wMkfhz0pmAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -2247,11 +2247,11 @@ Cependant, aujourd’hui, les serveurs web n’optimisent pas vraiment la compre
 &lt;h3 id=&quot;case-study-6play-a-white-mark-vod-platform&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#case-study-6play-a-white-mark-vod-platform&quot; aria-label=&quot;case study 6play a white mark vod platform permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Case study: 6play a white mark VOD platform&lt;/h3&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 19.499999999999996%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAAsSAAALEgHS3X78AAAA/0lEQVQI1wH0AAv/AG9vYnl4a4N8dZCOgpmWi3KAh2Jsd3x8gn2AhmdnbGhqbGtoZ2p1h4SbwImVr210ioWNpKiyzJurx4iTrAB7TzN/ZEmGVD/AppO8vqaEhYJ4f4daWVRhX1hkXllKOCRORjc6KkKSjLeSlpuEYlJ6bGewwdOagoeGd3YAu5iJp4l2l3Jh1rOsva2jXl9hiIuKVlFAWU09dGlfiHtxf350Jy9LYXyusrzH0bGkt6mlhZOfpYCCfGBcAOPX2Mm8vrixuti7wb+Kf5qTlZiZj29jTFVLOlQ/NX5nZDc4NiUlLnyHoKK2yaWKd3FlXHJ0eIJua4JoYdl4d4Nl6uJWAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 19.499999999999996%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA/0lEQVQI1wH0AAv/AF5NN3JmUHdeUpmJeKShjHF5eldgbWVmaWhrbVJRU0U/N09GP0NEV4CNt4WOo1dOVWZlb6u3zZies4KElABwRSiBZUp+Tzm9oIy8vqaFh4J2fIZbXFhfXVdjXltFMx9NRDU3KDyOhbKTmKB9XE50ZF6vwNKciZCGdXUAs49+qYhzkmtX1LCnxbasX19gh4uMWFRFVko5dmxihXhshoV5KzFKW3SpsLzI1LSnv62niZmlpIGEgWJdAODT1My+v7Wut9e7wMKLgpaNj5eZknFmTlhOPVM/NYFpZUJDQSAgKnaBmqG3zKiQfndqX25ydoZxb4NnYarZcotRCxcTAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -2320,11 +2320,11 @@ RootMyComponent.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;If you don’t know it, MomentJS (the time most used JS lib) is loading all the locals by default with a dynamic require like you just saw.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 35%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsSAAALEgHS3X78AAABnklEQVQY0yWNXUvbUACG8/OGDHoxZV44dQrFqzKhKwiTORXEjbnB6HCKdluFfpmmbaJNs6Vbu7i2sUlOkpOP0xz7sZgmY+DFfoEphYf36n14CA9mfbMQMjbPp3jGeWBTf1EJiWmr/SWwi75F+la4Rc/Ie0Zuyi3MEIHDBJgd9y78HuP3KgHmRlgaOdJd4Pz/1xvq+bGV98ycCzPhG3LrSnkF0FFAr0I2Roxx49YRXPTdtWuuSf8xq0gXlA4LZd7Dv2/EI9h4o//YB9xLhdsClSVQnAXU43DVyjLhIs5F9dAZ6pWBSvblDO6mUefUbn2CzfeW8C6Uzea+zm+ZjR0h94T68KD88WE5OSNkF4i+TjvqxSA0NRLLWSylkXhitQ5RK2n8mpgyty2zmx36uVTdEMlFPhX5+fURfxppFxaJgVZyQGmkkTeT5hmWPjvi8bRpNF5r/K5Rf6V9e6FU49dMXCkvAWoOUPOgOKfSTwksF1A33wdh8wyJKbt9ZF0lYfPAaL7V63s6v63UNkFtQ6slupcJtRpTmajKrAEmCtln9/WXMxkm4TvUAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 35%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsTAAALEwEAmpwYAAABpklEQVQY0x2NXWvTUACG8/dE3MWYCDJxgqKgF8J0MESnTlDZ1KqUjemY4qDOrsHkJG2aubZLKU0zk3N6cvJ5TpraGJJuF+o/MAoPD+/Nw8tlAT+l4jQU838IeSin9PA01v6k/Zg0QrNyyqScgikFJxTEx+VIL40Grwti4y2XUzlnjYzKWShlRc8OJsxMmPn7JPyVkTHey/z91Kum7l7qVBx1cSjfwPWbhYvNpewood1J8C3xlcQVE0/x7Z6pKy7qZCM9MjbtzrrdfgabK1BdgcI8rM0i/nzhobjAJcHBz7A9cRtjAuJhbQQ/M3M3MHZ8fcvpvvF6JUdbd7Xn9uFDt7ParVwUymfAxjlp42z/y2UusgHDckzEMa4xqyg/BYNtr7/p98uO9pIcrVnNx5bywAB3LWVZr86r2zOtD7Pq+xm9usCNsMCQ8APzkVWJzN3I/EiNd0Qr+b1XjraGW09I6xFW71n1O8fSIvx6CfJzkL9g1eaG4ArH4H5oVmP0/9PYCQZbXq9MtKJ8Ybef2q1VpN5HzWWsLn2vL+H6LQSuIek6AldJ8/ZfuzozkIisW+0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -2355,7 +2355,7 @@ RootMyComponent.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;The common solution you will see in Github issue/StackOverflow will look like this one:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; webpackConfig &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  plugins&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;webpack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ContextReplacementPlugin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token regex&quot;&gt;/moment[/\\]locale$/&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/fr/&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  plugins&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;webpack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ContextReplacementPlugin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token regex&quot;&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-source language-regex&quot;&gt;moment[/\\]locale$&lt;/span&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-source language-regex&quot;&gt;fr&lt;/span&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This simple trick is essential to understand what is coming. Here, we are using a core Webpack plugin that magically reduces our bundle size. But what is it doing ?&lt;/p&gt;
 &lt;p&gt;ContextReplacementPlugin will act like a hook triggered after Webpack failed to resolve modules for all the files in the context. It will just keep in the bundle all the Context files matching the first Regex and the second.&lt;/p&gt;
@@ -2400,9 +2400,9 @@ RootMyComponent.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;result&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt;
 
         &lt;span class=&quot;token comment&quot;&gt;// if the variant exists for the current customer&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token regex&quot;&gt;/customer\/default/&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;resource&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token regex&quot;&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-source language-regex&quot;&gt;customer\/default&lt;/span&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;resource&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
           &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; customerResource &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;resource&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
-            &lt;span class=&quot;token regex&quot;&gt;/\/default\//&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;token regex&quot;&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-source language-regex&quot;&gt;\/default\/&lt;/span&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
             &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;customerName&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
           &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
           &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;fs&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;existsSync&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;customerResource&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -2424,11 +2424,11 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports&lt;s
 &lt;h4 id=&quot;know-your-weakness&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#know-your-weakness&quot; aria-label=&quot;know your weakness permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Know your weakness&lt;/h4&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 568px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 568px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 59.00000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEA//EABYBAQEBAAAAAAAAAAAAAAAAAAMBAv/aAAwDAQACEAMQAAABjsGJXMzN/8QAGxABAAICAwAAAAAAAAAAAAAAAgABAxITFCH/2gAIAQEAAQUCGRRPV+KDETXXFzhM/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAEREv/aAAgBAwEBPwG4bf/EABcRAQADAAAAAAAAAAAAAAAAAAABERP/2gAIAQIBAT8BqWb/xAAeEAACAQMFAAAAAAAAAAAAAAAAEQEhIpExMkFxgf/aAAgBAQAGPwJRp0brRtE+FXk5yf/EABwQAQACAwADAAAAAAAAAAAAAAEAESExYUFxgf/aAAgBAQABPyHfMG2rVKJBYTxHsOQ6D69TCLQMXAekx//aAAwDAQACAAMAAAAQO8//xAAYEQEAAwEAAAAAAAAAAAAAAAABABEhUf/aAAgBAwEBPxAI02V5P//EABgRAQADAQAAAAAAAAAAAAAAAAEAESFR/9oACAECAQE/EFnHJbs//8QAGxABAQADAAMAAAAAAAAAAAAAAREAITFRYaH/2gAIAQEAAT8Q1hcyQetTIUp9NGUbPONjnGir7d49NqqrFG/rgSpEIyOAdCsEZ//Z&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 59.00000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEEA//EABYBAQEBAAAAAAAAAAAAAAAAAAMBAv/aAAwDAQACEAMQAAABjrTJdiczf//EABoQAQADAAMAAAAAAAAAAAAAAAIAAQMSEyH/2gAIAQEAAQUCz0cT4vxQgmukS8zU/8QAFhEBAQEAAAAAAAAAAAAAAAAAABIB/9oACAEDAQE/Aaxb/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAESE//aAAgBAgEBPwGss3//xAAdEAACAgEFAAAAAAAAAAAAAAAAAREhIjEyQaHh/9oACAEBAAY/AqdI3YwTMDSXJp2en//EABwQAQADAQADAQAAAAAAAAAAAAEAETEhQVGBsf/aAAgBAQABPyHEl3aMlM7Iit0t6Lh0cfkFOpo8qYFn1P/aAAwDAQACAAMAAAAQ2w//xAAYEQEAAwEAAAAAAAAAAAAAAAABABEhUf/aAAgBAwEBPxAA02V5P//EABgRAQADAQAAAAAAAAAAAAAAAAEAESFR/9oACAECAQE/EFHHJbs//8QAHRABAAMAAgMBAAAAAAAAAAAAAQARIUFxMVFhkf/aAAgBAQABPxB1bkr4fOpKsqIFMeG63Z1SBfp9ykCwVVLGm/WGgzARVOcymCSW0HPc/9k=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -2463,11 +2463,11 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports&lt;s
 &lt;p&gt;Coupled with &lt;a href=&quot;https://www.npmjs.com/package/webpack-bundle-analyzer&quot;&gt;Webpack Bundle Analyser&lt;/a&gt;, you should be able to reduce your bundle drastically and thus improve your app performances.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 92%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAIAAADUsmlHAAAACXBIWXMAAAsSAAALEgHS3X78AAAB9UlEQVQ4y4VT2ZLTQAzM//8RVcAuC3zEPlBsEtux574Pe2ZMO2HhAbtQTcmyJ61WS8qptdYPIvhEiKRcMKG2wyTjWxDT/O8JadbW53k51dakdCzKs+yMdlIpqbRSJsQUE35Q7md5D36fNMOVU1vbuq400Vf6Gk3wwVtrvffr/wwlnx4PZGATv02jEDKlpK3VxiiYMQi4kOb+ZQcMq7VyKbt+6IcBlRvnUs7eB9Qm5SZEKuND3AeXUvrb9OPn+e3SGeu1diFm40KeC2GcckmYtD4cMoMHtbm72pgS7kD7iHOeQ4zLsuyB22a4mwgdJyKkwisCJCKEwnMhjHU9G5Fin5lQdr5cL9dOaQMuJPIxUsowLmgOOT1PXzGfPc0AM9EPI+TNpfqQlLaQrY3LS9ninD9Oz4dgrNdwG4XUta3YEAQhZanNHWxizk/k5QBcykjI5dr3t5HxTSFlHCnQaqzXA/yFfluOwBNl3XA7X3sulHWBUI7Bcqnumg00fz5krhVNRoeHcQItVhdgDAn8c1nwJc7Q/PQY3g4zpnLtoZrg/xDCphnMlIl35vxMjrpdKsq+dP04UfC4ELDVIaHneil1G1WKL/T7AXPdwKhZYI2xaD5ou20oPLoN5S7GD+OnfWZEMUYfwp9ceZ4fHlfwtdUhDrX9tVrbL1SADcou4wd1AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 92%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAIAAADUsmlHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB90lEQVQ4y4VTB47bMBD0/38UIO1yyTMc4Gw1FpEUe5UysnFBEMvJgpAtUcMpuzqV0i4d9y5NE2ez4EJyoRiXWFyqEPPj8iEtxqVSTrU1axIJ7KI6q51Ui1r0ok3KOeVSav1z1druK+837bRu67ZtNNAzOXvjffDWWu/99r9a1/V0/8EJlLCJED7PMSW1gFsLIbQ2UkohpIIeYw7AKKhg89z1Yz+MeM86B9nOR5iahQROqAWHHoNzLl0/nX++XbvBugA4UjHWp1wp47NYKJfOh2Nwa82HCLchRmQAEuwhE2zhCYLDLlQce0bFGIdxussGDP8hHik47xlj2po3ck0pH3ouIyGXa9/1g3HehQCt0DnPEv1cFmOSe6Hft7bdu/N3YJTPw0QQTG0rHC8G3qO2LgKsrY7uM3l5CiaUQzOasoOdR8Zg3kPOWS1GR/uFvK6760dwKeO0ywYe6aI3nAtMDMTnndnYf8kuZaKsG6e366Ag0jrKxY1fIet35m/bMXOtGIaJMNi+mY34SHwIjItcqzEOgX2iX2+8D2Bomwi9dj2cY+jBuY+jdXyWu2elwQzZTz2D9oL5JFRhiK3bochcW5wllV6CeWU/nqY9EjZSBgz6jFYBe29VuoFVMB+mj8dgjGe81e9baME154yXCthbZYnv0Pdqbf0F/jcOHbyc8NwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -2687,7 +2687,7 @@ alors foncez la voir si pour vous les PWA sont un monde obscure.&lt;/p&gt;
 &lt;h2 id=&quot;la-soirée-à-lhotel-de-ville&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#la-soir%C3%A9e-%C3%A0-lhotel-de-ville&quot; aria-label=&quot;la soirée à lhotel de ville permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;La soirée à l’hotel de ville&lt;/h2&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -2849,7 +2849,7 @@ permis d’insérer du code mais également des images dans leur rapport sans pr
 de TP depuis l’interface de Github Classroom.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -2860,7 +2860,7 @@ de TP depuis l’interface de Github Classroom.&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 80%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAAsSAAALEgHS3X78AAABM0lEQVQoz5WTbY+DIBCE/f+/sr1+OQUFXwsFjnvA1mpO294kkk3YZWZn18J7r5USQkzjGGP82SI+QJpzbj5DCHNmQWSMmabJWkvM3W2FpVhKcT5/XS4XvrIsyUzFPNa2rVJKa62a5ubcmn8p7rpO8oCUtWqnaQzec1mgo65rkSBFJUjq+z6fKUDR9Xqddf5F4XxoSRsG8tAPW9jCZ4X7xdbHWidJ1t6MsfDwRPoeoK94gIIGe12dTifahhypY8awwtq5TTGCuIZZK323TWFcA+Fddg4OenauElX5XeJYlVBiwDzSo1afxYy9afC7ZmBDP2Azmpm5y3hTTAZSmU2bQc+I5owfIG3Ysk9vqXaYm6wbzwhmwZ8WY8yQN4TTGhPykvyDWWawnQwJ5t0f42DOL/G6+BcbfqnRKk/9/AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 80%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAAsTAAALEwEAmpwYAAABL0lEQVQoz5VT7Y6EIBDz/V/SrP5SvgQVQeC4AqenWcneNREncWpLBxrv/SQEIWRd1xjj1x3xANqcc2UNIZTOBpUxRmttrUWNb/sFJ5lS8np1fd93XTcMIzoTGT+TUgohpgkOxL67q/5JVkoSCn+EcQmPYGWyc4wxckApNc+zSq9UwNG2bcXnOxrng0xtS+nD/8IdPjt8Jlsf2aQYJdbuxljwEUF6DsBhrKDBBudpbNsWG4Y4PKwZywXX5G5kGMJnSikiO2PjnEPwx3YuKnt2DjkNw4B1zIB4GWltq79kjJ1z5M0wsCXlnGxj5i7jAxkdsIrRyAwMCKYhHv+AdMLO8/RR6kEZ8TCagAKGa9k+7tkj7VVrrJhqSfgfylmV4uhiSEX5/WJU5nxBuSuPV/IR39vCqbKcwNISAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -2976,7 +2976,7 @@ activer l’authentification,et ainsi facilement configurer des comptes
 pour vos utilisateurs.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -2987,7 +2987,7 @@ pour vos utilisateurs.&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 47.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABXUlEQVQoz2WRyU7DMBRF/XtsWBaJUfAf/AhsoQWJX+iCRQlLhMSOQaRV0ky1Y8f2s52B50SlrWodRTfXz8O7JleT4OLh9WwSnE6Cy8dX1Oeox8HJODgeB6P7l6NdRnezg5vp4e30+mlGpJRaa2cNYgfMRjtr+ylbr3HGLLM8jJPvKCE/8whVWUkulZCK9yitpdKVBqEUfvnaH0BHAmAB0WA0QNM03Wa0cSl/sxK0rmuH92rbttsb1jmy73Zt8/a1iHIahqEQIoqi3a23FjvX9+U2+F4BsGUwxmvju98uGFDGkKSgRcmRfAeBTlrQRZL5WVYiOePIUOzrWUlSrgsBudA9kK81+ikTvJKYYqV8Tni+q51PS4PSwERF5ss0pQx3AmO1MQrzMwasA2vBv5VD8Ldrmo9o9fwZV1JmlOX+Injyima0XHGh8Dnruu18sMbV/yGBQ9ebcybfY7q9+A/YMyn1ab2+zAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 47.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAABQklEQVQoz32R3UrDQBCF9/0fxAuvfATRFgS90BupSFNM27T5z2Z/ZmZ3kzht0lasOHwMhxkWzpwV81U2X+WzKJutJh6j/3hYprcvHzdP73fPC2GsRQTvHDOWd+SnTsG74Nyhn+DhLi/iXbpMUhGtk6/tvtGmNfaMAdAAygLrsf+EVwZQWysQyVoIoRsu1WcK4kKyoy4EROz7frgqH4K4ng59/xptNnkVx7FSaptsQwh/P/bheKC/QM4RoiNuxBppTML/AohEWtalbH9RSFVKlVX1Js2LRk7DhpGVbEfKRopUQqmwUHAEi5POFWS1kkorTohz0paIQvDGogUEQF6J9T7LqqaQLdsDDg+J/ZD3yIbZP1/BmvzQdYt9ff+ZaKOzumELjGBved1UrbL8rz6MwSKn0U35oz9MWWylfUtqbcz58TdPyzi0WEB+zAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -3036,7 +3036,7 @@ avec Rancher par l’intermédiaire d’un outil en ligne de commande
 déployer votre application.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -3047,7 +3047,7 @@ déployer votre application.&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 51.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABYElEQVQoz32QbUscMRDH9zP7vi/OQpF+mL4SqVXftVAo4sNJoRwUZc3tXmaSzEySfdTbZm+9UywKv4T5M/OfmST7fHT+4ehi//jq08n1wdl8dnw5+3q5fzL/eHrzFrNv870vPw8Of2UcQl/HYd1PrB/aMRge3+Vh6Ju+qTKumiGpx3W6fdv/1Q7QWEchVj5E40apAcHaFMeqHq3pDEPb95mR0HZd1XZN20msxAcJccInf4wknn2Y4ljXddtNhLrJ7sGgI3CkLeWlvlXlnSryolwCrqxDEmRBYiDGDbApnsgUWMNPiXw5OlW50gjoLDhntp4t9FI+m1OnHIxCVxgqLI8YUkhgCa0rLWsOzkcnfrdFlip27ZfoNtgRYzWJJm94BNlziH9K+1sBicBrs6MiTdagNCrAew3pe1MdMk+richNvrq4K9l7cP9N3n1Myon33xfqx0LJtjS9i72Il0km/gGH3yRQyaEF5gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 51.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAABX0lEQVQoz1WQy07DMBBF8/9fwY4NUCgrPoBFhZAobdVFhZo2rd3Ej7EdO0nTPBg7EIp0dHU9mquZcXT/trl920zm26fPeLqIH+fx5GM7XSbPq8N05XU0qL6+TB7m8c3r8m62joqy6C9V37eermnqqm/rvruESuMN0gbtmlDsAk13OUfuXPfeovS6rHcMhJSglCvK3Fq0jIs0Y0KCBCirChvbzneX5zoSOndlZYsSAZMrjwVPbpwz1uncautyV5igQyeCxYhwyUExUJmEhKbbA42P5EDpifNUAlcaYdeE5gEMg9ChA9SenPY0JSljUnAArAzhEQae8RlRASK4DNSBScIVERqhXtWRK7+XVCcwmXHKFmAMG8MnqcTvbsSH5ZEJhOI52uCPDHD8DOved+kiyXT+k/8LI5RzknkwjJqFm0WAg9bGrI/ZhvJx+L/w1W04KH9Z7WZfBM1wPCrmr9f+BgFwKpCBdun3AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -3090,7 +3090,7 @@ node2, et j’ai ajouté l’hôte Rancher lui-même self
 (c’est possible mais non recommandé).&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -3101,7 +3101,7 @@ node2, et j’ai ajouté l’hôte Rancher lui-même self
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 63%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAABy0lEQVQoz41Ry27TQBTNJ7CICmJBVyyR+EFIqwiJBR/AniU0AVXlD1ixRBUhiZo0dmN7/BjPjD0vvzhjS0lVFYnRkX3n3Htm7rkzej39fDKZn07n47cXL6Zfx5OLl+8vX324On337enZ7Pn5fDyZnZzNnp3Pn7z58gAjru3vkOXKrvbxOkgjoZf7eBNlROhtnC98Egm1ClKkSGEQo+CAUUbZxx9/Ln/dqrLkopBSMi5yJspSClFwLsAIIRAoqR6s0Y0ffPq5/n69gzLNecoAwYoS8oxx6rY86xmKAspQk1A2YNR1XdO2Xdc2TaONsVVVNw2AqKlrY4y2YFwWZGWt0jrBHT2cWGpToCWtByUWDsG+Z+q6blCDv3XpGp+kv9+Jm6oqpSzdwiFQWa0UfBY9g9KU5iGJSZKSNIuSLOciPdy89YPFxlvd+l5IwiQjKV1u/eXGW+/udiEhWb6Ps+sbb7G92wXEi+LDtU6MMXgxxTx4KUup0H+YsX2as0I6BjPVhmL2vXVlLLo7tg0/WhtYts5PjdK2bXtGwy3GZp3XSkoFSxitNvYoxpPG9x5gCIbcwFAmcl5QLqj7Fni2Y9tMFPdt/AuP1vyv+FH8BeVBwG9QQM+oAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 63%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAABwUlEQVQoz41Ry27UMBTNJ4DULhBCArFnz8dV5SW64SuQWMFMq0r9CdggFgwdBpo0yTTJ5GH72o6dx4TjiTozIJC4OnJyr318z7n2np68PziaPHx1dng8efAS6/TR6/Mnby4en5zj//6Ls4Pj6eGz6b3np3ePPtz5HZ607SzhpW78rLyMspTMIikWN3lG9XUhZmF6I/RVVl3GK2z9AY+EePtx8e7TDyIpSCqlBRHjJKUChCCtNba4EErrujb1XnhhnEw+X51+CUpBJRMlp4IJDppUFUcqCgdChZPCFpBXfIQ3DEO/Xg/DGmGsbdq27bq+723TuNVag5Ir9Fi6tsWZsQHgyLVtJBTVBoSR2TSNU2iM3dyFM13XNe5il45MR+7bFl4UAh/jOhvjjMG91BopE7RMszQvRmy83HYO4uSbH8798DrJllkBJ/MgnvvR9yBCJSnKrGRff4YzPwqWWZiukO7IXOpoxSpSpDTEo3vGKM4Zw8yUVk6NZVJTbeAHBhE72fCDMam6HmcFn/AMAlhInQvrBrHxZMFHZUdmXKwqvn2A8Wf/SSCSCVkJqtwqq1vNG9mC8kps839he+M+/pf8V/wCUxrApLllq8QAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -3136,7 +3136,7 @@ node2, et j’ai ajouté l’hôte Rancher lui-même self
 Dans la logique Rancher, une stack est un ensemble de services.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -3147,7 +3147,7 @@ Dans la logique Rancher, une stack est un ensemble de services.&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 51%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABDUlEQVQoz43OS07DMBAGYJ+ZOyAeOQC3YN1FWnaIBRtoglBBLQlpEW1ejhM/xzFOo0RJihC/voU9Mx4Z3bhPF+7SufOvF76z8K8W3uXcO3f/tjy7fXBmj0iySithjDYGOnpgcu2AUIKhinOltSVhhCsouSSUSQAFJ13QTCrEhGBcCKnqLlrb3SbMyvnrriip7SqAehBT1/ebw2qPkVA2ANA8GEY3U3asBt0eR1G6tisRqSguaUV584UBKsTzLsWUCSknLcsWKecoznHrkOVD32k28z6CfRLn+aTVQ9s4O77E/ZZeSUiS/1Lvoa8U54RkRSMdS3CRnhRb7TB6WYdvQdQIo/XndvM/70G0CqIfId0rn36KyBQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 51%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBklEQVQoz43O3U6DMBQH8L6zz+DHtnfxVo0TLzXxxmSQLJlG2JjJxqAtBUpPT8GOZUuRxfjP76I5pz2nZPTwfv04mzwHYy+YeMHI82+e/Kupf/mX2cXt6/jujYAsUddti33maFjpiqi0kqQGrdFoYwB7lMZSgagkIGocdNFI0ETWylKgm2OMsbPbFS2n8zUvKtvViI2TtmlewmS+YcTutWzafozZX7PB08lJ9zVN8qLiouwWgEsq8L9pXtm98KtlKYCqrsmOcSuhLKHctcnYfRBG2zQ91+0wsqWHx/wwxVUIkbIz9ROScsGEoPle1rfjeTYousgiij+W8cKK4q/VOoz/5bO7/wMl3yvrM8nuNwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -3198,7 +3198,7 @@ ajouter notre service whoami. Pour cela il suffit de cliquer sur
 “Add service” et de le définir comme cela.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -3209,7 +3209,7 @@ ajouter notre service whoami. Pour cela il suffit de cliquer sur
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 51.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABE0lEQVQoz32RS07EMAyGc2POANIw7FlwCA6A0HSWbBGjKRIHADEzfaWtE9tJmmC66wN+fYqs/HFix+r+6fV2d9ju37dZfrfPN9lxk+U3u+M/XD8frh5fHrI35dAMnlOKKQ1T4trmSAwpkCOrejAtGCAGJPa+56AtW6KyM2fdG0SwKNYMS4zkFBIxO3ZecOMqd8QQPhv4+K5JxM6N1gxkVoZoGKSYFKdKY9GSKG5cSE477xVY2wGEEGZHhpHlpZNkKduitMvLF8QWxT8kH6R4tNOapFepaNVC578aUMbatu+rRte6rdu20lpWiQGxBeiNlWCVzliFaKq6uZSVcCrK06WQ4FyUMiRpRmY2A3+HxPLVkv8DCPY3w7YFM+QAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 51.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAABDElEQVQoz3WRy07DMBBF/f/fwD+gthSJLXuEgIYNLCpSKChpGr/Hr5jblEppUkZHdjLXdzITs9uH99nzevm6WRagvFmVi6Kcr8pZz3zCothcP62v7l/uHt9YIJNTyLk7kU6MXofEnEPwxKQ2XGlNTltyIQqK3BA5V+7ER82NJWUspBHmsDqGzaNKTwjR93Qxbbn+bCQR+YMQh/h+hZHhMzGhk9ydxzEDY+pSNwmoznu0rblUKD6SU8+06MAcGMYDKJPOAyeQRXsXzWgWv4lBz/8EzDHFi5Jy/qtVTGlVNc22qr6r+shPDXZC672UXCk8TMGwQmlmyXIhQctF07Zgz0UrBAa5yN+9xKCs/QVZZj614idMjwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -3260,7 +3260,7 @@ Mesos mais pour cet article, je me suis limité à l’utilisation de Cattle.&lt
 disponible.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -3271,7 +3271,7 @@ disponible.&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 43.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAAA1UlEQVQoz63N204CMRAG4L7/A/ggvoIx4IVhwUW4UkGi0C49zKm7y41jV1ETIzEh+TJpZ/5pzTYS5i73vXQ/5P4weD93vQXZRJbuYH28f1gvn54fV2tjQ4pICQmIjxJRAPSAw0hELmeri6vl1uuQXYjIvLM7o5OgCWbJmT9ps0nQRNARimhH2hZZgEX3CpTcGn3mV01MyqlytcX3gH5uhtB/uZDoTMvpo7tPcNLXsvXB+XCsdn+aKzEgMqNJPa7ubqb1qNTJfFH9aTpfjKv6+na2eXl9A7+q8wIdABJZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 43.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA10lEQVQoz62PzU7DQAyE9/3Fe/ASFTcOTQE1K7Y5VYnUiDZNlvXaXpsjDj+iSC1CCOmTD+OZke12Y0pUWBSLnEJFTaQimUVUq3a4vm/7mIm5ezrsx6ntWrePAMSmZS5fECckw1aJWFUXTX91E7aHqCrDs2k8HAdn9cDFEH0pn5g9Io6ACZlE3kU7J89HzWZrL6rumGA8T54gn11NCSyFxM4cf8AqkP8nnD/UmPEXnISjxRLMEy79//3nN/8cruqwrMPKh6UPlQ/rx6YOP+FDc+c3tw++2/WvQ5fyIHUcLhMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -3322,7 +3322,7 @@ distribue la charge entre les instances de whoami. Dans la stack,
 cliquez sur “Add Load Balancer”&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -3333,7 +3333,7 @@ cliquez sur “Add Load Balancer”&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 48%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABcklEQVQoz3WQS27bMBCGeeVeoLsmrQ/RG3RddBGnu6LLLCygKOLGtC1K5PAxQ0rUI44zkpzAmwIfhj9/kjOcEau7zZd1wazui8/r4nZd3NxtPv2fm3Xx8fvDh2+/vv58EOjs2KbzaTg/9y9jdxq685AvjFf6ilPXdCkSotgelKy0rI0CJ7X7V8G+NnJmp7RU+n0rq4tg56CB7wuMDaUmxMSktmVim9OMoxgoxmZyFtrcNflyiqkRxge+VFt/1MDC4YQNVIFTBrTzDmnyiU2U2iobXEDWEFDAvGjra7AhxuULniJ4BB9YXJyYkGhbgTSO05nlsfHoiBT4bWlqHyuHnFtZLC0qh+zUnpjKEWD6o2CnrUXSAfm9cCHsy+rpoB736u/u+HSslfUMt8O5DcZ3AGNpg/bouZEZkXOeVMCAFIhi0/TDMI6D5MoeM8+o77s3+mGKeabtOsHV7TwSjgu1n2b8Y7P7/VgiRe5rmQvMX4UrXgFKuCOQyjheAwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 48%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAABTklEQVQoz32Qy26DMBBF+f8v6rqrSl10FYUoiUpAYPyc8RgwJuljwI36WFQ6QtfjuePLFC+V2LWm7KGUWEo4yCxW9hL2P46Zg8JdZx/Ly/OxLsDaOISPW2Lelvm2zPx9/5dbimPwiFic6rYSsu5Vq22j3akzrC8ZIfPV5TdcaaTutC2QAg0jhoEJ4zRMU5giM8TIV84TjWOuMGNcWW+nyK5CWQAKGn0rNbc6NmwoB72x0rjvoqfegnDIwm4UGtCgVw65lafw+35LYQC1A+7LoTaoVvYoDBDxY+xazTxVg3/tpARSGHrnGdb5mJEYrB8qDSfBvXez8xxY1V1/bvpjI86NaLXrjOOEHEet/i80UmuxteDoHjulGXgM/wl6FkiUluV6vRoaBPgxTjHNMzdtpIVZsp7mVJhtHxAGJi+GY4UQns7dw66isO7S3jf0h0/V6y8EjEHpdwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -3375,7 +3375,7 @@ est scalé, l’hostname devrait changer au refresh.&lt;/p&gt;
 l’infrastructure des machines créées plus tôt.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -3386,7 +3386,7 @@ l’infrastructure des machines créées plus tôt.&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 84%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAAsSAAALEgHS3X78AAACXklEQVQ4y01T2W7bQAzUh/cb+jF9Loo+96koiqRuEkuWrVva+15J6dBCkgKEzeVyuMMhVTAfX19fa2ZC3lwIt35yMfmY+5kvUqd1U8Y1wxxSNj7AwS2ChxXNxBYuvj1ev59uk5AjDtoIpSfGJya0tUyqkXGJoNbjwqTWxrnDisfq9lRdP3/9+enLj3pEukaJRao3Ix/4+SMokYDjxEXRCx1y2vd9W/O6rspYFyKqgmeE5ex9MM7bEKwPyEAw5YwsbV0xCI2et31HxrpucFKmfwSRh0JUd9vgIwI/xHTc+hAJvObsfIQQqKesu5dPeDDECJNKAwkHGUDiyjrnfQSRomUSLthCHmUMCB+0rfNMSiakpj4Sbk9lfWn7d5u5LM7d9Odcn2/dtR+rdiibfhGyvHYPz9WlHy/dULV9M85c6Us7NMNEz5BgCkMpOq5IDx/QmPYe/MHQej8zga5AUuEObCPYEkHqFtG8AkVg0MYcoRIkRe8w5wMiAGUkETZhf8CfS0VSkxwkEIHtBziiP08vA6wI9Q72HpsDCXDQzpMuBxhksFjxvoC4AFnjPSKIh5S4sTlnHH+dXn4/lQ/PZdX05a2DhFgSdZ+HwYQccaZ54HHsI9HeNvwlmqVflBm4BjtEQI2WpOynv9UVY4DVXQ9tF6Gqpnt8uZwwhWtbdwO+FmSjllIahagYeoRgzSJGJuthAQjqS0MbgB2+jQzGlOba6Ps4Ir2PvmgRoAW9PCt7bCLtWM53nxZw3XZE0PNGK7ujysjF8UnQV3H/LdpF0jf4ZlgGek3pj4im4/wG+9/+AeOJxYHnd8zNAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 84%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAAsTAAALEwEAmpwYAAACX0lEQVQ4y01TWY7UQAyti3MBjsMfXAHEB2jE0NNMJ71Mlq5Uat+T5jmRBiSn5Hqx4+dnh4VcH4/HZTLLsihtupGnXKzz/chnpWutQqrhznMpyliAcOqy7MYGIQcxf3lqvzU94sZp1tYh7S5mZBvnp1nCByg2UDtvfdiNHZrLj2Pz4dPXj5+/c6WFNvdZTkrvdpcKJ3C+OZuvAOKKMCasT6Ws67rUAkoatWKy3sOPKadSnfMuRBcjcFDGk3JGX8o6pnxAz2gASfSJdUUaToAhZuQ/VnoLEAh0Qea6vUUBplzIKeOrOWc0hk5KrSmlECJOHyN0yqXikjPVpLI+4AaKjCv4ARFcSOMoeacNB4JBOeojZ0zh0F7P3dC+9WdYN0A/1nTjrz9tQ/execM7Qg/N9fn1DKTthtOt77nAIE6Xt/4+odVRSC611IZN2mrSKNWlak9kQ4zGexABQ58SQFIugye0I4EAohH0yIRxQLW2UMUiL2UckBczRpMxF0e9Q5Sojd37t/Q1EohNSLYO6J4ctrgtWSdKzm4LdSEAkcrgYkAQjPZkoNOsiIkPCCXazg9ceFxjktaVUq79+PPw+nRsnk9naAbDwrAZssaA4jRqGkgB9ZgTMcRsatl2o0B/Ls2I6JT3GghgTX//fTpjSV+a66Ub9hkc29vhdDmczs2tA9LxCWxRZKtRIQQqaefYMKuOz20/jUJh/TEJ5z38yyBuI/4DMxtrt1JYMpygELaFofXUPm6bmABht+CDOy1prYH4Z/i1Lnz7GSYyvfswNs5aGvtuKCWUwfkPMXR9T/jf/gJkVMYwq076tQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -3430,7 +3430,7 @@ intérêt. Voici l’architecture des services de l’un des projets que j’ai
 déployé grâce à lui.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 548px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 548px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -3441,7 +3441,7 @@ déployé grâce à lui.&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 74%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsSAAALEgHS3X78AAAB/ElEQVQoz4WTa4/SQBSG+f9/w/jBxBhdNRphF7kVohRo0V6gHXrvTKdzLYWE+GEPGtcsLtnkfDozb94zz3mnU0t1rSKKA5IFJIcKq5wIcXGhc1Ws1NSxDXPRnRij+Xy8NBEpuGqolM+LKyl34FZWKEjiKMeUpnXFpH7Gmf4uwgU9qI3MXrhfeqmpTm3GaS31n9OrYqY0l03JWUgLREu7RD5JdxRHNYY+mD/4X4orITNGc167OAY9+GvdMqmw4IgWQZUXnJWMXYqBBPCIKb6dzz4PR69ve13DAGai2W+ypDsz3ve/vu3f9abTZehz3Vw6wzwFeIbh2nIty3OdMMhTIkVCySZA9spb257vI4TzJ8YGcSmYPrV32eKl39uqjB11wRjWXP1qP0SzV9t+cahpqyouHonPnFQT1eRsXiWrMgRCcU0w53AK7/+BI4AX17j6m5bOw1ZrKWEZESOAR6p9o49caeiHrIDJ4Q6Qa/RBqObfnqmQUu+BwWD1/eNk+Gk2Ga7mbh4z3RieNbbMm3EfEI5sMyTFec9CPhLDtNs88bfIMp3V0tnFKSI5xNNJ0A7F1uKn74RhnEDUYRZ6kTAq1JlBK95tx130rTkdSsXgqfyod6p84w0HsbU/HWH5T8cTICNWDpP1LHcjjiES0CwE86pkkNjzwk959f+vugfbxSvXfEKQDAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 74%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB+UlEQVQoz4VSyXLaQBTk/z8khxzi2DmknBQYI0jYtFCyQAzakTSMZpXGBhvnkEeoJLZj4qp3maVfv+5+LabqV4sq5cTIDvyx71mBb4fLUjCumqd/WqfAlZR91xqY5mV/YEymhmNmjIi6oW+Cuao3UkabHBckQEmWFAUha07fZj72xkKIe+2J5J3/dVC4+nGXc8rUf5n5oRqhdCFYSMsVLewy8EkWUZyxSioNr/wUGKSWgoM3qFoTJYGnabaHeyUjhhO22UgB9RJMpZKNDnHRmY4+G8aHq05nOJogT2h9k4bt0fCi2/103W2PRnAUjYb/radSwcw1q9zl0rZuLGvueQgVGWQWk3LuI8v0HNub+0G0KXjdvBwb9GDosL+7TCfv0VV2W9GtwpwTLeVen0ffzgKD3ddwBNpXwDHDYJW7ie1yBQrjXyKBPBfUwSFUxgn48kwzPPO6XkuaiQpaNPWdbray1gTS5pjVh75wA+ZBEH+jOvo0Rt61M7nod7+Mv/dmZoDzSqmeZxkz89zodMyx4VopJUdfn+UM6v11skShOXVns0UEG1VhAHtJEIaJNXWXfrRKE/BS1P9sGGQvdk2p2Udk9BJ792NfSIYFrx9uVyI/83vjfLF9fChOrSeWHLG8nTrDYpEJAlJhPGjhkriTOiZGuaTkt09/6ieWYCq8UbSA5gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
@@ -3501,7 +3501,7 @@ chaque nouveau container qu’il crée. Cela a plusieurs avantages:&lt;/p&gt;
 &lt;h3 id=&quot;un-catalogue-qui-senrichit&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#un-catalogue-qui-senrichit&quot; aria-label=&quot;un catalogue qui senrichit permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Un catalogue qui s’enrichit&lt;/h3&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -3512,7 +3512,7 @@ chaque nouveau container qu’il crée. Cela a plusieurs avantages:&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 51.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABxklEQVQoz0VQyW4TQRT0L/MHSAkgckLiIzgQDOQCiDi5EgXJmch2EF5iz3gbd09P78vrWXhjIkVqlUrdVV31Xu/dj+HLb8nZ1eTt9eTs+uH1YPxmMH41GJ9cjk4ux6dXkyN5Pqf49HP0ov/r/fffPW+007xtY9vEJljEtqnaOnRYhdbIp5vnU7dNg0pvdU97uFve2qCND/PZzHrvIWbp1ECwJXc3N76qrTVKlA6itl5T4UPYM05K0VPObxjXLiBJaUeEcYt9gZ+W0vzJ8lIZZe18e5DWYcCWSdQUXFAuenPC+/fZgvANVxfj9ZKKbam+jrJ5nq8o/3i3fCQ8LcR5kq6oQPJltEYLl7JLdgEUkxEgK8RDlgul14X6m+3o4d55JwoMA5xFaeWDRzEh1PlA/ycDgBOyiiCNZ1xBCNJ6oUxd1wHASgMxotorFgG3EWMICKTknRkLnw8fsduO636yWhVyx9XnZJkWKiX8w+10cSjXTH4aLtJCbkp1McpQ09VGc6ntYs9wK1ybLM+PxE5zwnRHZjlBQSFNsuVImDIpU4hPC8MmSogQAkRoxQaHxyEJ3UNXEA50h8SGOKU+VpUHaOoqRiBH8z+MIyKtn5nTGQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 51.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAABy0lEQVQozyVRy67TMBDN//8FKyTggtTbIhb0blggEKJFNGlaKG1J0jzsOH7Ej7GThgnXi/Gx58zMOXb07vvpYXNZxfn7JP+QlqskXybZMrk9xvkizh8P9SLOFrtsPu5msNoXy6R48Xn/9ss+UpIzVo+Dne6DlXwcYJrGAGocPe5TVUyDx9R9nON8ExCMk3fBmagSzaHcKSvAj3+v114bP9zL4tyb3hnrtlsAb50zgjkfDOJOee8rxmvGo5ypY82JNMq4fckaaYS2P3NKJNL013OVUyGN3VzKmqveurTsiDKdkISLaJOR9aH43XRU9k+H23+gn47FPjs3XHxM5xSR/fpY/iGiEWp9RA7nUpJORGAcdP3ofclVmjVCqor3v4qGt6kDoxlK9uC9swol+zDwjgFAKyTFycgmlGljDUDDONrEbpRLCIMFILTDlAVP29Za40NwgGFouZiLP53KN9tLfGtR26vtNb4xBK83l+TWVly+/HbaFbQRPXLQLYKHH9ek6oRSpOOR6DVhXGmjndNdjbu2UGIrjSOhYlQZfEubNloa1xurLKA6+jzZYE5KO0sLntfezsZoS/CHvA+ENg5RGK4cXBjQPq4hhOfif/rbKLbu17QXAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
