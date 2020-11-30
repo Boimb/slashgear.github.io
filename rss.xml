@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 30 Nov 2020 10:40:43 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 30 Nov 2020 12:17:47 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
 You should follow him on Twitter.
 Take a…]]></description><link>https://slashgear.github.io/</link><guid isPermaLink="false">https://slashgear.github.io/</guid><content:encoded>&lt;p&gt;Written by &lt;strong&gt;Antoine Caron&lt;/strong&gt; who lives and works in Lyon (France) building useful things at &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
 You should follow him &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;on Twitter&lt;/a&gt;.
@@ -16,35 +16,35 @@ Beyond the various concerns of using groovy with pipeline syntax 😅, we have t
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a904efd86fbfd29dbd92c458e875c063/ddced/ci.jpg&quot;
+    href=&quot;/static/19010545e7456d3a5201b61a03e8a4ad/ddced/ci.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 194.00000000000003%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAnABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAIDAQX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB96LiNBTPSCwdkOg//8QAFhABAQEAAAAAAAAAAAAAAAAAARAg/9oACAEBAAEFAmuGtZ//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AV//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AV//xAAUEAEAAAAAAAAAAAAAAAAAAAAw/9oACAEBAAY/An//xAAaEAACAgMAAAAAAAAAAAAAAAAQMQABESBR/9oACAEBAAE/IUmQmjFjTg//2gAMAwEAAgADAAAAEKvOPAPP/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPxBf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPxBf/8QAHBABAAICAwEAAAAAAAAAAAAAAQAxEBEhcYFB/9oACAEBAAE/EBpIp7FfVeYUS2N+wrFvcKxZ3Csbzhzs3j//2Q==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 194.00000000000003%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAnABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAIDAQX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB96LzjUUz0gsHYCgf/8QAFhABAQEAAAAAAAAAAAAAAAAAARAg/9oACAEBAAEFAmuGtZ//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AV//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AV//xAAUEAEAAAAAAAAAAAAAAAAAAAAw/9oACAEBAAY/An//xAAYEAACAwAAAAAAAAAAAAAAAAAQMQABEf/aAAgBAQABPyFJoSWWLGmof//aAAwDAQACAAMAAAAQu848c8//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EF//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/EF//xAAcEAEAAgIDAQAAAAAAAAAAAAABADEQESFxgUH/2gAIAQEAAT8QGkinsV9V5hRLepb2FYv7hWLO4VjW4bdm8f/Z&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/a904efd86fbfd29dbd92c458e875c063/ba381/ci.webp 200w,
-/static/a904efd86fbfd29dbd92c458e875c063/7f61c/ci.webp 400w,
-/static/a904efd86fbfd29dbd92c458e875c063/d00b9/ci.webp 800w,
-/static/a904efd86fbfd29dbd92c458e875c063/abb12/ci.webp 1100w&quot;
+          srcset=&quot;/static/19010545e7456d3a5201b61a03e8a4ad/ba381/ci.webp 200w,
+/static/19010545e7456d3a5201b61a03e8a4ad/7f61c/ci.webp 400w,
+/static/19010545e7456d3a5201b61a03e8a4ad/d00b9/ci.webp 800w,
+/static/19010545e7456d3a5201b61a03e8a4ad/abb12/ci.webp 1100w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/a904efd86fbfd29dbd92c458e875c063/e07e9/ci.jpg 200w,
-/static/a904efd86fbfd29dbd92c458e875c063/066f9/ci.jpg 400w,
-/static/a904efd86fbfd29dbd92c458e875c063/4b190/ci.jpg 800w,
-/static/a904efd86fbfd29dbd92c458e875c063/ddced/ci.jpg 1100w&quot;
+          srcset=&quot;/static/19010545e7456d3a5201b61a03e8a4ad/e07e9/ci.jpg 200w,
+/static/19010545e7456d3a5201b61a03e8a4ad/066f9/ci.jpg 400w,
+/static/19010545e7456d3a5201b61a03e8a4ad/4b190/ci.jpg 800w,
+/static/19010545e7456d3a5201b61a03e8a4ad/ddced/ci.jpg 1100w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/jpeg&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/a904efd86fbfd29dbd92c458e875c063/4b190/ci.jpg&quot;
+          src=&quot;/static/19010545e7456d3a5201b61a03e8a4ad/4b190/ci.jpg&quot;
           alt=&quot;example of complex Continous Integration workflow&quot;
           title=&quot;example of complex Continous Integration workflow&quot;
           loading=&quot;lazy&quot;
@@ -111,35 +111,35 @@ Au-delà de la galère liée à l’utilisation de groovy avec la syntaxe de pip
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a904efd86fbfd29dbd92c458e875c063/ddced/ci.jpg&quot;
+    href=&quot;/static/19010545e7456d3a5201b61a03e8a4ad/ddced/ci.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 194.00000000000003%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAnABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAIDAQX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB96LiNBTPSCwdkOg//8QAFhABAQEAAAAAAAAAAAAAAAAAARAg/9oACAEBAAEFAmuGtZ//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AV//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AV//xAAUEAEAAAAAAAAAAAAAAAAAAAAw/9oACAEBAAY/An//xAAaEAACAgMAAAAAAAAAAAAAAAAQMQABESBR/9oACAEBAAE/IUmQmjFjTg//2gAMAwEAAgADAAAAEKvOPAPP/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPxBf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPxBf/8QAHBABAAICAwEAAAAAAAAAAAAAAQAxEBEhcYFB/9oACAEBAAE/EBpIp7FfVeYUS2N+wrFvcKxZ3Csbzhzs3j//2Q==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 194.00000000000003%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAnABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAIDAQX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB96LzjUUz0gsHYCgf/8QAFhABAQEAAAAAAAAAAAAAAAAAARAg/9oACAEBAAEFAmuGtZ//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AV//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AV//xAAUEAEAAAAAAAAAAAAAAAAAAAAw/9oACAEBAAY/An//xAAYEAACAwAAAAAAAAAAAAAAAAAQMQABEf/aAAgBAQABPyFJoSWWLGmof//aAAwDAQACAAMAAAAQu848c8//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EF//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/EF//xAAcEAEAAgIDAQAAAAAAAAAAAAABADEQESFxgUH/2gAIAQEAAT8QGkinsV9V5hRLepb2FYv7hWLO4VjW4bdm8f/Z&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/a904efd86fbfd29dbd92c458e875c063/ba381/ci.webp 200w,
-/static/a904efd86fbfd29dbd92c458e875c063/7f61c/ci.webp 400w,
-/static/a904efd86fbfd29dbd92c458e875c063/d00b9/ci.webp 800w,
-/static/a904efd86fbfd29dbd92c458e875c063/abb12/ci.webp 1100w&quot;
+          srcset=&quot;/static/19010545e7456d3a5201b61a03e8a4ad/ba381/ci.webp 200w,
+/static/19010545e7456d3a5201b61a03e8a4ad/7f61c/ci.webp 400w,
+/static/19010545e7456d3a5201b61a03e8a4ad/d00b9/ci.webp 800w,
+/static/19010545e7456d3a5201b61a03e8a4ad/abb12/ci.webp 1100w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/a904efd86fbfd29dbd92c458e875c063/e07e9/ci.jpg 200w,
-/static/a904efd86fbfd29dbd92c458e875c063/066f9/ci.jpg 400w,
-/static/a904efd86fbfd29dbd92c458e875c063/4b190/ci.jpg 800w,
-/static/a904efd86fbfd29dbd92c458e875c063/ddced/ci.jpg 1100w&quot;
+          srcset=&quot;/static/19010545e7456d3a5201b61a03e8a4ad/e07e9/ci.jpg 200w,
+/static/19010545e7456d3a5201b61a03e8a4ad/066f9/ci.jpg 400w,
+/static/19010545e7456d3a5201b61a03e8a4ad/4b190/ci.jpg 800w,
+/static/19010545e7456d3a5201b61a03e8a4ad/ddced/ci.jpg 1100w&quot;
           sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
           type=&quot;image/jpeg&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/a904efd86fbfd29dbd92c458e875c063/4b190/ci.jpg&quot;
+          src=&quot;/static/19010545e7456d3a5201b61a03e8a4ad/4b190/ci.jpg&quot;
           alt=&quot;exemple de flux de travail complexe d&amp;#39;intégration continue&quot;
           title=&quot;exemple de flux de travail complexe d&amp;#39;intégration continue&quot;
           loading=&quot;lazy&quot;
