@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 29 Nov 2020 22:38:10 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 30 Nov 2020 10:40:43 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
 You should follow him on Twitter.
 Take a…]]></description><link>https://slashgear.github.io/</link><guid isPermaLink="false">https://slashgear.github.io/</guid><content:encoded>&lt;p&gt;Written by &lt;strong&gt;Antoine Caron&lt;/strong&gt; who lives and works in Lyon (France) building useful things at &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
 You should follow him &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;on Twitter&lt;/a&gt;.
@@ -100,7 +100,102 @@ This is an example of a workflow that dynamically launches actions on all the la
       &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; actions/checkout@v2
       &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Run a one&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;line script
         &lt;span class=&quot;token key atrule&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; echo Hello&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; world from &quot;$&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;matrix.label&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&quot;&lt;span class=&quot;token tag&quot;&gt;!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;It’s up to you to adapt it to your needs!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Les conférences que je recommande à mes étudiants]]></title><description><![CDATA[Nous sommes en novembre 2020. Malheureusement, ce n’est vraiment pas l’année des conférences tech et des meetup.
+&lt;p&gt;It’s up to you to adapt it to your needs!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Github Action : Comment gérer dynamiquement des steps pour chaque label de Pull Request ?]]></title><description><![CDATA[Depuis quelque temps, je joue avec les actions github pour voir si je peux facilement reproduire les comportements que j’applique dans mon…]]></description><link>https://slashgear.github.io/fr/comment-parralelliser-un-job-github-action-par-label/</link><guid isPermaLink="false">https://slashgear.github.io/fr/comment-parralelliser-un-job-github-action-par-label/</guid><pubDate>Sun, 29 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Depuis quelque temps, je joue avec les actions github pour voir si je peux facilement reproduire les comportements que j’applique dans mon outil de CI actuel.
+Je voulais mettre en parallèle des jobs en me basant sur les labels associés à une Pull Request.
+Dans cet article, je vais vous montrer une façon possible de le faire ! (N’ayant pas trouvé d’article sur internet expliquant comment le faire)&lt;/p&gt;
+&lt;p&gt;Dans mon travail à &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;, nous utilisons actuellement Jenkins pour gérer l’intégration et le déploiement de nos applications.
+Au-delà de la galère liée à l’utilisation de groovy avec la syntaxe de pipeline 😅, nous devons admettre que nous parvenons à réaliser des workflow assez complexes.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a904efd86fbfd29dbd92c458e875c063/ddced/ci.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 194.00000000000003%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAnABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAIDAQX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB96LiNBTPSCwdkOg//8QAFhABAQEAAAAAAAAAAAAAAAAAARAg/9oACAEBAAEFAmuGtZ//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AV//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AV//xAAUEAEAAAAAAAAAAAAAAAAAAAAw/9oACAEBAAY/An//xAAaEAACAgMAAAAAAAAAAAAAAAAQMQABESBR/9oACAEBAAE/IUmQmjFjTg//2gAMAwEAAgADAAAAEKvOPAPP/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPxBf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPxBf/8QAHBABAAICAwEAAAAAAAAAAAAAAQAxEBEhcYFB/9oACAEBAAE/EBpIp7FfVeYUS2N+wrFvcKxZ3Csbzhzs3j//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/a904efd86fbfd29dbd92c458e875c063/ba381/ci.webp 200w,
+/static/a904efd86fbfd29dbd92c458e875c063/7f61c/ci.webp 400w,
+/static/a904efd86fbfd29dbd92c458e875c063/d00b9/ci.webp 800w,
+/static/a904efd86fbfd29dbd92c458e875c063/abb12/ci.webp 1100w&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/a904efd86fbfd29dbd92c458e875c063/e07e9/ci.jpg 200w,
+/static/a904efd86fbfd29dbd92c458e875c063/066f9/ci.jpg 400w,
+/static/a904efd86fbfd29dbd92c458e875c063/4b190/ci.jpg 800w,
+/static/a904efd86fbfd29dbd92c458e875c063/ddced/ci.jpg 1100w&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/a904efd86fbfd29dbd92c458e875c063/4b190/ci.jpg&quot;
+          alt=&quot;exemple de flux de travail complexe d&amp;#39;intégration continue&quot;
+          title=&quot;exemple de flux de travail complexe d&amp;#39;intégration continue&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Décidant de voir s’il serait facile pour moi de reproduire les étapes de ces pipelines avec les github actions, j’ai décidé d’essayer ses fonctionnalités.
+Entre autres en publiant &lt;a href=&quot;https://github.com/Slashgear/action-check-pr-title&quot;&gt;une Github Action pour vérifier le titre d’un PR selon une regexp.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;une-solution&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#une-solution&quot; aria-label=&quot;une solution permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Une Solution&lt;/h2&gt;
+&lt;p&gt;Vous devez d’abord créer un workflow basé sur des événements &lt;code class=&quot;language-text&quot;&gt;pull_request&lt;/code&gt; et vous pouvez même spécifier les types d’événements.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Example workflow
+&lt;span class=&quot;token key atrule&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;pull_request&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;opened&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; labeled&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; unlabeled&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; synchronize&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ajoutez maintenant un job qui mettra en place une stratégie de parallélisation basée sur les étiquettes de l’événement github.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;strategy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token key atrule&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token key atrule&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; $&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;github.event.pull_request.labels.&lt;span class=&quot;token important&quot;&gt;*.name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;runs-on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; ubuntu&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;latest
+    &lt;span class=&quot;token key atrule&quot;&gt;steps&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; actions/checkout@v2
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Run a one&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;line script
+        &lt;span class=&quot;token key atrule&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; echo Hello&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; world from &quot;$&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;matrix.label&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&quot;&lt;span class=&quot;token tag&quot;&gt;!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Les étapes seront automatiquement exécutées en parallèle sur toutes les labels de chaque PR. 🎉
+Cependant, &lt;code class=&quot;language-text&quot;&gt;strategy.matrix.label&lt;/code&gt; n’accepte pas un tableau vide comme valeur.😢&lt;/p&gt;
+&lt;p&gt;Le job doit donc être conditionné pour n’être exécuté que si &lt;code class=&quot;language-text&quot;&gt;${{github.event.pull_request.labels.*.name}}&lt;/code&gt; n’est pas vide.
+Il y a un paramètre &lt;code class=&quot;language-text&quot;&gt;if&lt;/code&gt; dans les jobs qui permet de faire cela, mais malheureusement il est interprété après avoir vérifié la valeur de &lt;code class=&quot;language-text&quot;&gt;strategy.matrix.label&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La solution que j’ai trouvée est de faire cette vérification dans un job précédent.
+Voici un exemple de workflow qui lance dynamiquement des actions sur toutes les étiquettes de chaque RP.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Example workflow
+
+&lt;span class=&quot;token key atrule&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;pull_request&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;opened&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; labeled&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; unlabeled&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; synchronize&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;token key atrule&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;checkLabels&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;runs-on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; ubuntu&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;latest
+    &lt;span class=&quot;token key atrule&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; $&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;github.event.pull_request.labels.&lt;span class=&quot;token important&quot;&gt;*.name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;steps&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; echo Check labels is not empty
+  &lt;span class=&quot;token key atrule&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;needs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;checkLabels&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;strategy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token key atrule&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token key atrule&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; $&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;github.event.pull_request.labels.&lt;span class=&quot;token important&quot;&gt;*.name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;runs-on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; ubuntu&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;latest
+    &lt;span class=&quot;token key atrule&quot;&gt;steps&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; actions/checkout@v2
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Run a one&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;line script
+        &lt;span class=&quot;token key atrule&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; echo Hello&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; world from &quot;$&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;matrix.label&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&quot;&lt;span class=&quot;token tag&quot;&gt;!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;À vous de l’adapter à vos besoins !&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Les conférences que je recommande à mes étudiants]]></title><description><![CDATA[Nous sommes en novembre 2020. Malheureusement, ce n’est vraiment pas l’année des conférences tech et des meetup.
 Confinement, limite de…]]></description><link>https://slashgear.github.io/fr/les-conferences-tech-a-voir-et-a-revoir/</link><guid isPermaLink="false">https://slashgear.github.io/fr/les-conferences-tech-a-voir-et-a-revoir/</guid><pubDate>Thu, 19 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Nous sommes en novembre 2020. Malheureusement, ce n’est vraiment pas l’année des conférences tech et des meetup.
 Confinement, limite de participants, annulations, la situation est vraiment compliquée pour les organisateurs et bénévoles de conférences tech.&lt;/p&gt;
 &lt;p&gt;J’en suis bien triste, j’avais pris l’habitude de participer tous les ans à quelques conférences de cœur et quelques meetup à Lyon.
