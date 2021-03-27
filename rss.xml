@@ -1,10 +1,651 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 26 Mar 2021 19:07:47 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 27 Mar 2021 18:12:10 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
 You should follow him on Twitter.
 Take a…]]></description><link>https://slashgear.github.io/</link><guid isPermaLink="false">https://slashgear.github.io/</guid><content:encoded>&lt;p&gt;Written by &lt;strong&gt;Antoine Caron&lt;/strong&gt; who lives and works in Lyon (France) building useful things at &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
 You should follow him &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;on Twitter&lt;/a&gt;.
 Take a look at &lt;a href=&quot;/friends-you-should-follow&quot;&gt;my friends websites&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Ecrit par Antoine Caron qui vit et travaille à Lyon et développe des choses utiles à Bedrock.
 Tu devrais le suivre sur Twitter]]></description><link>https://slashgear.github.io/fr/</link><guid isPermaLink="false">https://slashgear.github.io/fr/</guid><content:encoded>&lt;p&gt;Ecrit par &lt;strong&gt;Antoine Caron&lt;/strong&gt; qui vit et travaille à Lyon et développe des choses utiles à &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
-Tu devrais le suivre sur &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[React/Redux : pièges et meilleures pratiques]]></title><description><![CDATA[Après 2 ans d’utilisation de React avec Redux pour la plateforme vidéo 6play, j’ai pu identifier les bonnes pratiques et les pièges à éviter…]]></description><link>https://slashgear.github.io/fr/react-redux-pieges-bonnes-pratiques/</link><guid isPermaLink="false">https://slashgear.github.io/fr/react-redux-pieges-bonnes-pratiques/</guid><pubDate>Tue, 23 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Après 2 ans d’utilisation de React avec Redux pour la plateforme vidéo &lt;a href=&quot;https://6play.fr&quot;&gt;6play&lt;/a&gt;, j’ai pu identifier les bonnes pratiques et les pièges à éviter à tout prix.
+Tu devrais le suivre sur &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Vite, a new webpack killer ?!😮]]></title><description><![CDATA[After having dealt on this blog in several articles about webpack, I have started a new series of articles about new generation bundlers.
+It…]]></description><link>https://slashgear.github.io/vite-webpack-killer/</link><guid isPermaLink="false">https://slashgear.github.io/vite-webpack-killer/</guid><pubDate>Fri, 26 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;After having dealt on this blog &lt;a href=&quot;/en/webpack/&quot;&gt;in several articles about webpack&lt;/a&gt;, I have started a new series of articles about new generation bundlers.
+It seems that we are now entering a new era of web tooling.&lt;/p&gt;
+&lt;p&gt;Having introduced &lt;a href=&quot;../esbuild-bundler-incredibly-fast-and-promising&quot;&gt;esbuild and its interesting features&lt;/a&gt;, it seems logical to me to deal with the &lt;em&gt;“little brothers”&lt;/em&gt; bundlers.
+So let’s start with Vite, a project from the VueJS community and started by &lt;a href=&quot;https://github.com/yyx990803&quot;&gt;Evan You&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;same-starting-point&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#same-starting-point&quot; aria-label=&quot;same starting point permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Same starting point&lt;/h2&gt;
+&lt;p&gt;With &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; we are in the same situation as with &lt;code class=&quot;language-text&quot;&gt;esbuild&lt;/code&gt;.
+Globally the community is happy with the current tools even if they have some performance issues.&lt;/p&gt;
+&lt;p&gt;As I said in my previous article, having a big JS project today often means having a dev and prod environment that is sometimes a bit slow.
+Between the choice of tools that do not sufficiently exploit parallelization or memory optimization, or repetitive operations that exploit caching very little, it is easy to identify culprits for these slowness.&lt;/p&gt;
+&lt;p&gt;NB: I have proposed some solutions to &lt;a href=&quot;/hunting-webpack-performances/&quot;&gt;improve the performance of your webpack build in this article&lt;/a&gt;._&lt;/p&gt;
+&lt;p&gt;Moreover, the &lt;em&gt;second generation&lt;/em&gt; tools (like webpack, Rollup, Parcel) could not handle from the beginning &lt;a href=&quot;https://caniuse.com/?search=es6&quot;&gt;recent features of our browsers like ESmodules&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;what-is-the-idea&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#what-is-the-idea&quot; aria-label=&quot;what is the idea permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What is the idea?&lt;/h2&gt;
+&lt;p&gt;The &lt;em&gt;revolutionary&lt;/em&gt; idea of &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; is to combine two tools for two different needs in order to optimize the build to be as fast as possible.
+The two tools that make up &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; are &lt;code class=&quot;language-text&quot;&gt;esbuild&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;Rollup&lt;/code&gt;, so nothing new.
+But why two bundling tools?
+Basically, for two reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Our dependencies don’t change often, so re-evaluating their module tree at each build is not necessary.
+We can generate the bundle of our &lt;em&gt;vendor&lt;/em&gt; once and for all with an optimized tool like &lt;code class=&quot;language-text&quot;&gt;esbuild&lt;/code&gt;.
+This bundler is very fast and allows a quick start of the server.&lt;/li&gt;
+&lt;li&gt;The modules in our source code are subject to a lot of changes unlike the dependencies.
+So &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; uses another treatment based on ESM that works natively on recent browsers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Feel free to read &lt;a href=&quot;https://vitejs.dev/guide/why.html&quot;&gt;this doc page&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;h2 id=&quot;in-fact-how-does-it-work&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#in-fact-how-does-it-work&quot; aria-label=&quot;in fact how does it work permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;In fact, how does it work?&lt;/h2&gt;
+&lt;p&gt;In order to play a little with the tool, I propose a small presentation through an example project.
+Let’s start by creating an example project.
+I show you here how to create it and put you &lt;a href=&quot;https://github.com/Slashgear/example-vite&quot;&gt;the link of the github repository in which I published it&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;example-vite&quot;&lt;/span&gt;
+&lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;example-vite&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; init
+&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; init -y&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Installing &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; is very easy, you just need a dependency.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; -D vite&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For the purpose of this example, I propose an example with React (there are already many examples with Vue 😉 )&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; react react-dom&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Let’s add 3 usual commands to launch &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; in the &lt;code class=&quot;language-text&quot;&gt;package.json&lt;/code&gt; file&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;package.json&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;scripts&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;dev&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;vite&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;build&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;vite build&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;serve&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;vite preview&quot;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Finally, we need some small source files for &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; to play with.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;index.html&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token doctype&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;!&lt;/span&gt;&lt;span class=&quot;token doctype-tag&quot;&gt;DOCTYPE&lt;/span&gt; &lt;span class=&quot;token name&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;html&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;lang&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;en&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;meta&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;charset&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;UTF-8&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;title&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Example Application with Vite&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;title&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;app&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;module&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;/src/main.jsx&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script&quot;&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;src/main.jsx&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; React &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;react&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; ReactDOM &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;react-dom&apos;&lt;/span&gt;
+
+ReactDOM&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;React.StrictMode&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;h1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;Hello world dear readers ! &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;h1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;React.StrictMode&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;app&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now you just have to start the development server with this command.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;🎉 Normally, within milliseconds &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; has started a server and if you go to &lt;code class=&quot;language-text&quot;&gt;https://localhost:3000&lt;/code&gt; that presents you with this beautiful application.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ecfcfb4ed066b92cd028720b818f6498/a878e/step1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAW0lEQVQ4y+2OMQ4AIQgE/f//DIaGL6jYWOhe4AF3klzpJGS3gAmJiMDMEBHknD1LKZ5zThh7b5ySaq3ovUNVYd2ytYYxBtZaceHXQkTmQjt4m98/jHKFV3iFJzyKDKdDLp42nAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/ecfcfb4ed066b92cd028720b818f6498/ba381/step1.webp 200w,
+/static/ecfcfb4ed066b92cd028720b818f6498/7f61c/step1.webp 400w,
+/static/ecfcfb4ed066b92cd028720b818f6498/d00b9/step1.webp 800w,
+/static/ecfcfb4ed066b92cd028720b818f6498/92f8c/step1.webp 1200w,
+/static/ecfcfb4ed066b92cd028720b818f6498/fad48/step1.webp 1600w,
+/static/ecfcfb4ed066b92cd028720b818f6498/8df42/step1.webp 2048w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/ecfcfb4ed066b92cd028720b818f6498/772e8/step1.png 200w,
+/static/ecfcfb4ed066b92cd028720b818f6498/e17e5/step1.png 400w,
+/static/ecfcfb4ed066b92cd028720b818f6498/5a190/step1.png 800w,
+/static/ecfcfb4ed066b92cd028720b818f6498/c1b63/step1.png 1200w,
+/static/ecfcfb4ed066b92cd028720b818f6498/29007/step1.png 1600w,
+/static/ecfcfb4ed066b92cd028720b818f6498/a878e/step1.png 2048w&quot;
+            sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/ecfcfb4ed066b92cd028720b818f6498/5a190/step1.png&quot;
+            alt=&quot;screenshot&quot;
+            title=&quot;screenshot&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Let’s not lie, it’s a bit sad, let’s see how &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; does if we add some CSS.
+Let’s put a beautiful color &lt;a href=&quot;https://fr.wikipedia.org/wiki/Chartreuse_(liqueur)&quot;&gt;chartreuse&lt;/a&gt; to this title.
+Let’s add the following stylesheet.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;src/index.css&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; chartreuse&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then we just need to add an import to this new file.
+&lt;em&gt;src/main.jsx&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./index.css&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;There, now you have a beautiful color that &lt;a href=&quot;https://webaim.org/articles/contrast/&quot;&gt;clearly lacks contrast to be accessible&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e2aaad3951aca659eb0a22b3c34b502a/a878e/step2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWklEQVQ4y+2OOQ6AMAwE8///gRANNYcQR0GQIEPsB0AsUXq3GBf2yGGgZqJlpqOnUo40yosTScotTThYiGz5dEdmYWRV3rlm4deCRabCxHt//9AaF7rQhSV5ABXdqVcnwLzIAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/e2aaad3951aca659eb0a22b3c34b502a/ba381/step2.webp 200w,
+/static/e2aaad3951aca659eb0a22b3c34b502a/7f61c/step2.webp 400w,
+/static/e2aaad3951aca659eb0a22b3c34b502a/d00b9/step2.webp 800w,
+/static/e2aaad3951aca659eb0a22b3c34b502a/92f8c/step2.webp 1200w,
+/static/e2aaad3951aca659eb0a22b3c34b502a/fad48/step2.webp 1600w,
+/static/e2aaad3951aca659eb0a22b3c34b502a/8df42/step2.webp 2048w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/e2aaad3951aca659eb0a22b3c34b502a/772e8/step2.png 200w,
+/static/e2aaad3951aca659eb0a22b3c34b502a/e17e5/step2.png 400w,
+/static/e2aaad3951aca659eb0a22b3c34b502a/5a190/step2.png 800w,
+/static/e2aaad3951aca659eb0a22b3c34b502a/c1b63/step2.png 1200w,
+/static/e2aaad3951aca659eb0a22b3c34b502a/29007/step2.png 1600w,
+/static/e2aaad3951aca659eb0a22b3c34b502a/a878e/step2.png 2048w&quot;
+            sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/e2aaad3951aca659eb0a22b3c34b502a/5a190/step2.png&quot;
+            alt=&quot;screenshot with colors&quot;
+            title=&quot;screenshot with colors&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If you now try to run the &lt;code class=&quot;language-text&quot;&gt;yarn build&lt;/code&gt; command, you can see that &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; will build you a &lt;code class=&quot;language-text&quot;&gt;dist&lt;/code&gt; folder.
+Without any settings I have these different resources ready to be deployed on a static server.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 506px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/852748a3553e76e77e6a76bfd5bb4f86/29f4e/dist_screenshot.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAABbklEQVQoz4WSy26DMBBF8z3dtIEkEAKYRzDG4ZUmaZu+pC5aqZt+QH/+dsaECCGkLq5sj+H4Xo9nItmiPZ3x8vGJLLegdg7CWGATxvBFRGNEYzwp3hvu83wWxilU2eB4fiWYi0y5tJHAC5Ir9D8NwTMvEBAEFUmKz59f1PcFdHmDqrWQ65WBMnysrh4Pklwc9naDKEEiFeROoTlqir8koEMHBUilhyTbYJuvzTze+qYepf4V1rmNO2Bvd7XxcdItvg7vkMUCVTOHVA6KcmFU729RUo3F7ne1NQ3sF2uKrwqNp4NGTsCyscipe/0510voyjZrSXc9jjwAdvKCiD7M8XxMKZprIpuYmWeaxbH7A2ThjBpzAQ475Kx9cqbx9kAOtU1uyCU5Y2jV3hn1sXnOe3yf7HQUmd0JlIcTikpiX9smEoPUbmlGbkIQiYsiequhqU3cIU245YKA3znUY0CQOd2ZbWKyS47XPYtpDSP/ASXLYOoYdRJDAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/852748a3553e76e77e6a76bfd5bb4f86/ba381/dist_screenshot.webp 200w,
+/static/852748a3553e76e77e6a76bfd5bb4f86/7f61c/dist_screenshot.webp 400w,
+/static/852748a3553e76e77e6a76bfd5bb4f86/6b97b/dist_screenshot.webp 506w&quot;
+              sizes=&quot;(max-width: 506px) 100vw, 506px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/852748a3553e76e77e6a76bfd5bb4f86/772e8/dist_screenshot.png 200w,
+/static/852748a3553e76e77e6a76bfd5bb4f86/e17e5/dist_screenshot.png 400w,
+/static/852748a3553e76e77e6a76bfd5bb4f86/29f4e/dist_screenshot.png 506w&quot;
+            sizes=&quot;(max-width: 506px) 100vw, 506px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/852748a3553e76e77e6a76bfd5bb4f86/29f4e/dist_screenshot.png&quot;
+            alt=&quot;dist directory screenshot&quot;
+            title=&quot;dist directory screenshot&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;We can observe that natively &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; exports 2 javascript bundles (1 for the sources, 1 for the &lt;em&gt;vendors/dependencies&lt;/em&gt;) and a CSS bundle that exports the style that has been imported in your application.
+And this is clearly a big plus of &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; compared to the competition of other tools (although parcel offers some of the same logic).
+The &lt;em&gt;build&lt;/em&gt; is extremely fast and does what you would expect it to do without having to configure it.
+Sorry but I think it’s great!&lt;/p&gt;
+&lt;p&gt;I don’t know if you know &lt;a href=&quot;https://www.npmjs.com/package/react-refresh&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;react-refresh&lt;/code&gt;&lt;/a&gt;, the official React package that allows you to optimize the auto-refresh of a React application.
+This package allows you to update your React components on the fly without them losing their &lt;em&gt;state&lt;/em&gt;.
+&lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; even though it was born out of the VueJS community, is not specifically oriented towards a frontend framework.
+Tools like &lt;code class=&quot;language-text&quot;&gt;react-refresh&lt;/code&gt; are therefore not included by default.
+So you have to define it in the configuration.
+Unfortunately, &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; doesn’t fare any better than the other tools; we are forced to define yet another config file at the root of the project.&lt;/p&gt;
+&lt;p&gt;So let’s install the plugin:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; -D @vitejs/plugin-react-refresh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;vite.config.js&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; defineConfig &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;vite&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; reactRefresh &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;@vitejs/plugin-react-refresh&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;defineConfig&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  plugins&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;reactRefresh&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now I wanted to test some of the more advanced features that you can expect from a quality bundler.
+So I set up a single page application that uses &lt;em&gt;lazy loading&lt;/em&gt;.
+I won’t show you how I did it in this article, it would be too long but you can go directly to &lt;a href=&quot;https://example-vite.netlify.app/&quot;&gt;test it in your browser&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So clearly for &lt;em&gt;lazy loading&lt;/em&gt; it’s easy with &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt;, I’m amazed!
+The tool immediately detects my use of the dynamic import &lt;code class=&quot;language-text&quot;&gt;import()&lt;/code&gt; to generate a separate chunk for the JS but also the CSS.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Content &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; React&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;lazy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;./lazy&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 570px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6eef089760b01de631514fceb06f8bd4/432e7/lazy.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 59.00000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAABjklEQVQoz32S61LCMBCFeSQGFeiFNJfSNm1tYQAdqw6i44zv/wLH3YbWdqz+OGwI5NtzNplJE+PYnJFXFttsAaEk/I1CIBTCSJJ+10B038dr1ow/9g/PqA81ytqDNCFBo1YOMC1u2MGG0FnACxGhPjVo3j6Q2DmBb8jtGl5oyK3u5YWudu6H0JFD3gwIKrTBfpchtUvY8hZx6iHNl72Ke9dIKDGCjoBD20JvcW5q2HzVAhM6zJCclBEwK+4owQoqDgcznnDI8gkYmy3ej69IMx+WIHyYwSyGdk3Y7Y+7P4ERDDm8HF+QF8sWxo4YVFQLmuui3/s3cg/cSBh6Qp9PTRuZD/MM86vDbo68N3Y36dC9vW0i8XVOUJTkMF/2UfMBkC9lGHXCofvBDyNsohjNqUSSrtuYnSOOW+3nbYOicpcUaTE9Q970AgFtM5SPO1StK3oymZuXTiiipGZS0AGubs2vwhfuMl11mmmj6DIMsoNCdVGwdo2qprjWp+h0o2kIpTW0VuD/trVbG3mtP/oGS5qne8O94OAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/6eef089760b01de631514fceb06f8bd4/ba381/lazy.webp 200w,
+/static/6eef089760b01de631514fceb06f8bd4/7f61c/lazy.webp 400w,
+/static/6eef089760b01de631514fceb06f8bd4/048c8/lazy.webp 570w&quot;
+              sizes=&quot;(max-width: 570px) 100vw, 570px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/6eef089760b01de631514fceb06f8bd4/772e8/lazy.png 200w,
+/static/6eef089760b01de631514fceb06f8bd4/e17e5/lazy.png 400w,
+/static/6eef089760b01de631514fceb06f8bd4/432e7/lazy.png 570w&quot;
+            sizes=&quot;(max-width: 570px) 100vw, 570px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/6eef089760b01de631514fceb06f8bd4/432e7/lazy.png&quot;
+            alt=&quot;lazy loading dist screenshot&quot;
+            title=&quot;lazy loading dist screenshot&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;the-strengths-of-vite&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#the-strengths-of-vite&quot; aria-label=&quot;the strengths of vite permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The strengths of Vite&lt;/h2&gt;
+&lt;p&gt;It is clear that &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; has many nice features and advantages.
+Besides its incredible speed, I would like to note that this bundler offers a really well thought out &lt;em&gt;autoconfiguration&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In the demo I gave you earlier, I didn’t show you that &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; handles natively and without configuration &lt;em&gt;static files, Web Workers, WASM binaries&lt;/em&gt;.
+But it doesn’t stop there, we have to admit that this &lt;em&gt;magical&lt;/em&gt; tool also natively supports &lt;strong&gt;JSX and Typescript&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;When it comes to style management, &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; is not to be outdone.
+Without any plugin or configuration, it allows you to manage CSS &lt;code class=&quot;language-text&quot;&gt;@imports&lt;/code&gt;, preprocessors like &lt;strong&gt;SASS and LESS, CSS modules&lt;/strong&gt; and even the postprocessor &lt;em&gt;PostCSS&lt;/em&gt; (if you define a configuration).&lt;/p&gt;
+&lt;p&gt;More anecdotally, &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; knows how to manage your &lt;code class=&quot;language-text&quot;&gt;.env&lt;/code&gt; file to manage your environment variables thanks to &lt;a href=&quot;https://github.com/motdotla/dotenv&quot;&gt;dotenv&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;But the feature that completely blew me away was the rather simple setup of the &lt;a href=&quot;https://tech.bedrockstreaming.com/spa-mode-isomorphism-js/&quot;&gt;SSR&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/0e9e962814ce9f4e10f1810913a40893/surprise.gif&quot; alt=&quot;surprise&quot;&gt;&lt;/p&gt;
+&lt;p&gt;This is the first time I’m talking about a &lt;em&gt;bundler&lt;/em&gt; that natively handles &lt;strong&gt;Server Side Rendering&lt;/strong&gt;.
+I use other tools in production for the different applications I develop.
+Unfortunately, it is still very complicated to set up such an architecture (even with tools like Webpack).&lt;/p&gt;
+&lt;p&gt;So we can see that developers are mainly turning to turnkey solutions like Next and Nuxt to manage these issues for them.
+This is not a bad thing in itself.
+However, I think that it is sometimes necessary in some projects to take control of this functionality for business needs.
+So we can only be happy that tools like &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; have thought about it.
+I invite you to go &lt;a href=&quot;https://vitejs.dev/guide/ssr.html#ssr-externals&quot;&gt;read this page of the documentation of &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt;&lt;/a&gt; to understand how to implement this.&lt;/p&gt;
+&lt;h2 id=&quot;so-we-stop-using-webpack&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#so-we-stop-using-webpack&quot; aria-label=&quot;so we stop using webpack permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;So we stop using webpack?&lt;/h2&gt;
+&lt;p&gt;After this laudatory presentation of this tool, one could ask the question yes.
+However, you should not forget a simple rule.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Everything that a tool tends to do magically for you often becomes much more complicated to customize.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The many choices &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; seems to make to improve the &lt;em&gt;developer experience&lt;/em&gt; worry me a bit.
+I’m a bit afraid that all this default configuration will be complicated to maintain by the &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; teams.&lt;/p&gt;
+&lt;p&gt;Contrary to &lt;code class=&quot;language-text&quot;&gt;esbuild&lt;/code&gt; which has the motto &lt;em&gt;“I want to offer a tool that does few things but does them very well”&lt;/em&gt;, we have here a tool that makes a lot of promises.
+However, we must recognize that &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; also offers to use and define plugins to extend its functionalities without making them native to the main tool.&lt;/p&gt;
+&lt;p&gt;Moreover, it should not be forgotten that &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; is also based on &lt;code class=&quot;language-text&quot;&gt;Rollup&lt;/code&gt;, a second generation bundler that benefits from a rich ecosystem of plugins that are mostly compatible.
+But the Rollup configuration is very complicated to edit and maintain, so I hope you won’t have to touch it if you are tempted to test &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; on your applications.&lt;/p&gt;
+&lt;p&gt;I would like to point out that some tools like VuePress offer today an alternative &lt;a href=&quot;https://vitepress.vuejs.org/&quot;&gt;Vitepress&lt;/a&gt; which uses &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; as a bundler.&lt;/p&gt;
+&lt;p&gt;Before jumping on the &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; solution, I suggest you to test another third generation bundler which is much talked about: &lt;a href=&quot;https://www.snowpack.dev/&quot;&gt;Snowpack&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Stay tuned!&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Vite, le remplaçant à webpack ?!😮]]></title><description><![CDATA[Après avoir traité sur ce blog dans plusieurs articles de webpack, j’ai commencé une nouvelle série d’articles sur les bundlers nouvelles…]]></description><link>https://slashgear.github.io/fr/vitejs-concurrent-performant-webpack-pour-react/</link><guid isPermaLink="false">https://slashgear.github.io/fr/vitejs-concurrent-performant-webpack-pour-react/</guid><pubDate>Fri, 26 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Après avoir traité sur ce blog &lt;a href=&quot;/fr/webpack/&quot;&gt;dans plusieurs articles de webpack&lt;/a&gt;, j’ai commencé une nouvelle série d’articles sur les bundlers nouvelles générations.
+Il semblerait qu’on rentre aujourd’hui dans une nouvelle ère du tooling web.&lt;/p&gt;
+&lt;p&gt;Ayant présenté &lt;a href=&quot;../esbuild-bundler-incroyablement-rapide-et-prometteur&quot;&gt;esbuild et ses features intéressantes&lt;/a&gt;, il me semble logique de traiter les bundler &lt;em&gt;“petits frères”&lt;/em&gt;.
+Commençons donc par Vite, un projet de la communauté VueJS et lancé par &lt;a href=&quot;https://github.com/yyx990803&quot;&gt;Evan You&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;un-même-constat-de-départ&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#un-m%C3%AAme-constat-de-d%C3%A9part&quot; aria-label=&quot;un même constat de départ permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Un même constat de départ&lt;/h2&gt;
+&lt;p&gt;Avec &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; on est dans le même constat qu’avec &lt;code class=&quot;language-text&quot;&gt;esbuild&lt;/code&gt;.
+Globalement la communauté est contente des outils actuels même s’ils accusent quelques soucis de performances.&lt;/p&gt;
+&lt;p&gt;Comme je le disais dans mon précédent article, avoir un gros projet JS aujourd’hui c’est souvent avoir un environnement de dev et de prod parfois un peu lent.
+Entre le choix des outils qui n’exploitent pas suffisamment la parallelization ou l’optimisation mémoire, ou les opérations répétitives qui n’exploitent que très peu le caching, on peut facilement identifier des coupables à ces lenteurs.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;NB: J’ai proposé quelques solutions pour &lt;a href=&quot;/hunting-webpack-performances/&quot;&gt;améliorer les performances de vos build webpack dans cet article&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;De plus, les outils de &lt;em&gt;deuxième génération&lt;/em&gt; (comme Webpack, Rollup, Parcel) n’ont pas pu gérer dès leur début &lt;a href=&quot;https://caniuse.com/?search=es6&quot;&gt;des fonctionnalités récentes de nos navigateurs comme les ESmodules&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;cest-quoi-lidée-&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#cest-quoi-lid%C3%A9e-&quot; aria-label=&quot;cest quoi lidée  permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;C’est quoi l’idée ?&lt;/h2&gt;
+&lt;p&gt;L’idée &lt;em&gt;révolutionnaire&lt;/em&gt; de &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; est d’allier deux outils pour deux besoins différents afin d’optimiser le build pour qu’il soit le plus rapide possible.
+Les deux outils qui composent &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; sont &lt;code class=&quot;language-text&quot;&gt;esbuild&lt;/code&gt; et &lt;code class=&quot;language-text&quot;&gt;Rollup&lt;/code&gt;, rien de bien nouveau donc.
+Mais pourquoi deux outils de bundling ?
+Globalement, pour deux raisons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nos dépendances ne changent pas souvent, réévaluer l’arborescence de leurs modules à chaque build n’est donc pas nécessaire.
+On peut donc générer le bundle de nos &lt;em&gt;vendor&lt;/em&gt; une fois pour tout avec un outil optimisé comme &lt;code class=&quot;language-text&quot;&gt;esbuild&lt;/code&gt;.
+Ce bundler étant hyper rapide, il permet un démarrage rapide du server.&lt;/li&gt;
+&lt;li&gt;Les modules de notre code source sont beaucoup amenés à changer contrairement aux dépendances.
+&lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; utilise donc un autre traitement basé sur les ESM qui fonctionnent nativement sur les navigateurs récents.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;N’hésitez pas à lire &lt;a href=&quot;https://vitejs.dev/guide/why.html&quot;&gt;cette page de la doc&lt;/a&gt; pour plus de détails.&lt;/p&gt;
+&lt;h2 id=&quot;dans-les-faits-comment-ça-marche-&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dans-les-faits-comment-%C3%A7a-marche-&quot; aria-label=&quot;dans les faits comment ça marche  permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dans les faits, comment ça marche ?&lt;/h2&gt;
+&lt;p&gt;Afin de jouer un peu avec l’outil, je vous propose une petite présentation par le biais d’un projet exemple.
+Déjà commençons par init un projet exemple.
+Je vous montre ici comment le créer et vous mets &lt;a href=&quot;https://github.com/Slashgear/example-vite&quot;&gt;le lien du repository github dans lequel je l’ai publié&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;example-vite&quot;&lt;/span&gt;
+&lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;example-vite&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; init
+&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; init -y&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pour installer &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; rien de plus simple, il vous suffit d’une dépendance.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; -D vite&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pour les besoins de cet exemple, je vous propose un exemple avec React (on trouve déjà de nombreux exemples avec Vue 😉)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; react react-dom&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ajoutons 3 commandes usuelles pour lancer &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; dans le fichier &lt;code class=&quot;language-text&quot;&gt;package.json&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;package.json&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;scripts&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;dev&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;vite&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;build&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;vite build&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;serve&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;vite preview&quot;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Il nous faut enfin quelques petits fichiers source pour que &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; ait quelque chose à se mettre sous la dent.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;index.html&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token doctype&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;!&lt;/span&gt;&lt;span class=&quot;token doctype-tag&quot;&gt;DOCTYPE&lt;/span&gt; &lt;span class=&quot;token name&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;html&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;lang&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;en&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;meta&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;charset&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;UTF-8&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;title&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Example Application with Vite&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;title&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;app&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;module&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;/src/main.jsx&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script&quot;&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;src/main.jsx&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; React &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;react&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; ReactDOM &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;react-dom&apos;&lt;/span&gt;
+
+ReactDOM&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;React.StrictMode&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;h1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;Hello world dear readers ! &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;h1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;React.StrictMode&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;app&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Maintenant il ne vous reste qu’à démarrer le server de developement avec cette commande.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;🎉 Normalement, en quelques millisecondes &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; a démarré un server et si vous allez sur &lt;code class=&quot;language-text&quot;&gt;https://localhost:3000&lt;/code&gt; qui vous présente cette magnifique application.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ecfcfb4ed066b92cd028720b818f6498/a878e/step1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAW0lEQVQ4y+2OMQ4AIQgE/f//DIaGL6jYWOhe4AF3klzpJGS3gAmJiMDMEBHknD1LKZ5zThh7b5ySaq3ovUNVYd2ytYYxBtZaceHXQkTmQjt4m98/jHKFV3iFJzyKDKdDLp42nAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/ecfcfb4ed066b92cd028720b818f6498/ba381/step1.webp 200w,
+/static/ecfcfb4ed066b92cd028720b818f6498/7f61c/step1.webp 400w,
+/static/ecfcfb4ed066b92cd028720b818f6498/d00b9/step1.webp 800w,
+/static/ecfcfb4ed066b92cd028720b818f6498/92f8c/step1.webp 1200w,
+/static/ecfcfb4ed066b92cd028720b818f6498/fad48/step1.webp 1600w,
+/static/ecfcfb4ed066b92cd028720b818f6498/8df42/step1.webp 2048w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/ecfcfb4ed066b92cd028720b818f6498/772e8/step1.png 200w,
+/static/ecfcfb4ed066b92cd028720b818f6498/e17e5/step1.png 400w,
+/static/ecfcfb4ed066b92cd028720b818f6498/5a190/step1.png 800w,
+/static/ecfcfb4ed066b92cd028720b818f6498/c1b63/step1.png 1200w,
+/static/ecfcfb4ed066b92cd028720b818f6498/29007/step1.png 1600w,
+/static/ecfcfb4ed066b92cd028720b818f6498/a878e/step1.png 2048w&quot;
+            sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/ecfcfb4ed066b92cd028720b818f6498/5a190/step1.png&quot;
+            alt=&quot;screenshot&quot;
+            title=&quot;screenshot&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;On va pas se mentir c’est un peu triste, voyons voir comment &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; s’en sort si on lui ajoute du CSS.
+On va mettre une magnifique couleur &lt;a href=&quot;https://fr.wikipedia.org/wiki/Chartreuse_(liqueur)&quot;&gt;chartreuse&lt;/a&gt; à ce titre.
+Ajoutons d’abord la feuille de style suivante.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;src/index.css&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; chartreuse&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Il nous suffit ensuite de rajouter un import vers ce nouveau fichier.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;src/main.jsx&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./index.css&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Voilà, maintenant vous avez une magnifique couleur qui &lt;a href=&quot;https://webaim.org/articles/contrast/&quot;&gt;manque clairement de contraste pour être accessible&lt;/a&gt; !&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e2aaad3951aca659eb0a22b3c34b502a/a878e/step2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWklEQVQ4y+2OOQ6AMAwE8///gRANNYcQR0GQIEPsB0AsUXq3GBf2yGGgZqJlpqOnUo40yosTScotTThYiGz5dEdmYWRV3rlm4deCRabCxHt//9AaF7rQhSV5ABXdqVcnwLzIAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/e2aaad3951aca659eb0a22b3c34b502a/ba381/step2.webp 200w,
+/static/e2aaad3951aca659eb0a22b3c34b502a/7f61c/step2.webp 400w,
+/static/e2aaad3951aca659eb0a22b3c34b502a/d00b9/step2.webp 800w,
+/static/e2aaad3951aca659eb0a22b3c34b502a/92f8c/step2.webp 1200w,
+/static/e2aaad3951aca659eb0a22b3c34b502a/fad48/step2.webp 1600w,
+/static/e2aaad3951aca659eb0a22b3c34b502a/8df42/step2.webp 2048w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/e2aaad3951aca659eb0a22b3c34b502a/772e8/step2.png 200w,
+/static/e2aaad3951aca659eb0a22b3c34b502a/e17e5/step2.png 400w,
+/static/e2aaad3951aca659eb0a22b3c34b502a/5a190/step2.png 800w,
+/static/e2aaad3951aca659eb0a22b3c34b502a/c1b63/step2.png 1200w,
+/static/e2aaad3951aca659eb0a22b3c34b502a/29007/step2.png 1600w,
+/static/e2aaad3951aca659eb0a22b3c34b502a/a878e/step2.png 2048w&quot;
+            sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/e2aaad3951aca659eb0a22b3c34b502a/5a190/step2.png&quot;
+            alt=&quot;screenshot avec couleur&quot;
+            title=&quot;screenshot avec couleur&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Si vous tenter maintenant de lancer la commande &lt;code class=&quot;language-text&quot;&gt;yarn build&lt;/code&gt;, vous pouvez observer que &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; va vous construire un dossier &lt;code class=&quot;language-text&quot;&gt;dist&lt;/code&gt;.
+Sans paramétrage j’ai directement ces différentes ressources prêtent à être déployées sur un server statique.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 506px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/852748a3553e76e77e6a76bfd5bb4f86/29f4e/dist_screenshot.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAABbklEQVQoz4WSy26DMBBF8z3dtIEkEAKYRzDG4ZUmaZu+pC5aqZt+QH/+dsaECCGkLq5sj+H4Xo9nItmiPZ3x8vGJLLegdg7CWGATxvBFRGNEYzwp3hvu83wWxilU2eB4fiWYi0y5tJHAC5Ir9D8NwTMvEBAEFUmKz59f1PcFdHmDqrWQ65WBMnysrh4Pklwc9naDKEEiFeROoTlqir8koEMHBUilhyTbYJuvzTze+qYepf4V1rmNO2Bvd7XxcdItvg7vkMUCVTOHVA6KcmFU729RUo3F7ne1NQ3sF2uKrwqNp4NGTsCyscipe/0510voyjZrSXc9jjwAdvKCiD7M8XxMKZprIpuYmWeaxbH7A2ThjBpzAQ475Kx9cqbx9kAOtU1uyCU5Y2jV3hn1sXnOe3yf7HQUmd0JlIcTikpiX9smEoPUbmlGbkIQiYsiequhqU3cIU245YKA3znUY0CQOd2ZbWKyS47XPYtpDSP/ASXLYOoYdRJDAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/852748a3553e76e77e6a76bfd5bb4f86/ba381/dist_screenshot.webp 200w,
+/static/852748a3553e76e77e6a76bfd5bb4f86/7f61c/dist_screenshot.webp 400w,
+/static/852748a3553e76e77e6a76bfd5bb4f86/6b97b/dist_screenshot.webp 506w&quot;
+              sizes=&quot;(max-width: 506px) 100vw, 506px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/852748a3553e76e77e6a76bfd5bb4f86/772e8/dist_screenshot.png 200w,
+/static/852748a3553e76e77e6a76bfd5bb4f86/e17e5/dist_screenshot.png 400w,
+/static/852748a3553e76e77e6a76bfd5bb4f86/29f4e/dist_screenshot.png 506w&quot;
+            sizes=&quot;(max-width: 506px) 100vw, 506px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/852748a3553e76e77e6a76bfd5bb4f86/29f4e/dist_screenshot.png&quot;
+            alt=&quot;dist directory screenshot&quot;
+            title=&quot;dist directory screenshot&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;On peut observer que nativement &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; exporte 2 bundle javascript (1 pour les sources, 1 pour les &lt;em&gt;vendors/dépendances&lt;/em&gt;) et un bundle CSS qui exporte le style qui a été importé dans votre application.
+Et la c’est clairement un gros plus de &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; par rapport à la concurrence des autres outils (quoique parcel propose un peu la même logique).
+Le &lt;em&gt;build&lt;/em&gt; est extrêmement rapide et fait ce qu’on pourrait espérer de lui sans qu’on ait à le configurer.
+Désolé mais je trouve ça génial!&lt;/p&gt;
+&lt;p&gt;Je ne sais pas si vous connaissez &lt;a href=&quot;https://www.npmjs.com/package/react-refresh&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;react-refresh&lt;/code&gt;&lt;/a&gt;, le package officiel de React qui permet d’optimiser le rafraichissent auto d’une application React.
+Ce package vous permet de mettre à jour vos composants React à chaud sans qu’ils perdent leur &lt;em&gt;state&lt;/em&gt;.
+&lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; même étant né de la communauté VueJS, n’est pas spécifiquement orienté vers un framework frontend.
+Les outils comme &lt;code class=&quot;language-text&quot;&gt;react-refresh&lt;/code&gt; ne sont donc pas inclus par défaut.
+Il vous faut donc le définir dans de la configuration.
+Malheureusement, &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; s’en sort pas mieux que les autres outils ; on est forcé de définir un énième fichier de config à la racine du projet.&lt;/p&gt;
+&lt;p&gt;Installons donc le plugin vite nécessaire :&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; -D @vitejs/plugin-react-refresh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;vite.config.js&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; defineConfig &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;vite&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; reactRefresh &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;@vitejs/plugin-react-refresh&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;defineConfig&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  plugins&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;reactRefresh&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Maintenant j’ai voulu tester des features un peu plus avancées qu’on peut espérer avec un bundler de qualité.
+J’ai donc setup une application single page qui utilise du &lt;em&gt;lazy loading&lt;/em&gt;.
+Je ne vous présente pas comment j’ai fait dans cet article, ce serait un peu trop long mais vous pouvez directement aller la &lt;a href=&quot;https://example-vite.netlify.app/&quot;&gt;tester dans votre navigateur&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Alors clairement pour le &lt;em&gt;lazy loading&lt;/em&gt; c’est clairement simple avec &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt;, je suis épaté!
+L’outil détecte immédiatement mon usage de l’import dynamique &lt;code class=&quot;language-text&quot;&gt;import()&lt;/code&gt; pour générer un chunk séparé pour le JS mais aussi le CSS.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Content &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; React&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;lazy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;./lazy&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 570px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6eef089760b01de631514fceb06f8bd4/432e7/lazy.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 59.00000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAABjklEQVQoz32S61LCMBCFeSQGFeiFNJfSNm1tYQAdqw6i44zv/wLH3YbWdqz+OGwI5NtzNplJE+PYnJFXFttsAaEk/I1CIBTCSJJ+10B038dr1ow/9g/PqA81ytqDNCFBo1YOMC1u2MGG0FnACxGhPjVo3j6Q2DmBb8jtGl5oyK3u5YWudu6H0JFD3gwIKrTBfpchtUvY8hZx6iHNl72Ke9dIKDGCjoBD20JvcW5q2HzVAhM6zJCclBEwK+4owQoqDgcznnDI8gkYmy3ej69IMx+WIHyYwSyGdk3Y7Y+7P4ERDDm8HF+QF8sWxo4YVFQLmuui3/s3cg/cSBh6Qp9PTRuZD/MM86vDbo68N3Y36dC9vW0i8XVOUJTkMF/2UfMBkC9lGHXCofvBDyNsohjNqUSSrtuYnSOOW+3nbYOicpcUaTE9Q970AgFtM5SPO1StK3oymZuXTiiipGZS0AGubs2vwhfuMl11mmmj6DIMsoNCdVGwdo2qprjWp+h0o2kIpTW0VuD/trVbG3mtP/oGS5qne8O94OAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/6eef089760b01de631514fceb06f8bd4/ba381/lazy.webp 200w,
+/static/6eef089760b01de631514fceb06f8bd4/7f61c/lazy.webp 400w,
+/static/6eef089760b01de631514fceb06f8bd4/048c8/lazy.webp 570w&quot;
+              sizes=&quot;(max-width: 570px) 100vw, 570px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/6eef089760b01de631514fceb06f8bd4/772e8/lazy.png 200w,
+/static/6eef089760b01de631514fceb06f8bd4/e17e5/lazy.png 400w,
+/static/6eef089760b01de631514fceb06f8bd4/432e7/lazy.png 570w&quot;
+            sizes=&quot;(max-width: 570px) 100vw, 570px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/6eef089760b01de631514fceb06f8bd4/432e7/lazy.png&quot;
+            alt=&quot;lazy loading dist screenshot&quot;
+            title=&quot;lazy loading dist screenshot&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;les-points-forts-de-vite&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#les-points-forts-de-vite&quot; aria-label=&quot;les points forts de vite permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Les points forts de Vite&lt;/h2&gt;
+&lt;p&gt;Il est clair que &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; possède de nombreux avantages et fonctionnalités très sympathiques.
+Outre sa vitesse incroyable, je tiens quand même à noter que ce bundler propose une &lt;em&gt;autoconfiguration&lt;/em&gt; vraiment bien pensée.&lt;/p&gt;
+&lt;p&gt;Dans la démo que je vous proposais précédemment, je ne vous ai pas présenté le fait que &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; gère nativement et sans configuration les &lt;em&gt;fichiers statiques, les Web Workers, les binaires WASM&lt;/em&gt;.
+Mais cela ne s’arrête pas la, force est de constater que cet outil &lt;em&gt;magique&lt;/em&gt; supporte également nativement le &lt;strong&gt;JSX et Typescript&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Coté gestion du Style, &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; n’est pas en reste.
+Sans plugin ni configuration, il vous permet de gérer les &lt;code class=&quot;language-text&quot;&gt;@import&lt;/code&gt; CSS, les préprocesseurs comme &lt;strong&gt;SASS et LESS, les CSS modules&lt;/strong&gt; et même le postprocesseur &lt;em&gt;PostCSS&lt;/em&gt; (si vous définissez une configuration).&lt;/p&gt;
+&lt;p&gt;Plus anecdotique, &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; sait gérer vos fichier &lt;code class=&quot;language-text&quot;&gt;.env&lt;/code&gt; pour gérer vos variables d’environnement grâce à &lt;a href=&quot;https://github.com/motdotla/dotenv&quot;&gt;dotenv&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Mais la fonctionnalité qui m’a complètement scotché, c’est la gestion plutôt simple à setup du &lt;a href=&quot;https://tech.bedrockstreaming.com/spa-mode-isomorphism-js/&quot;&gt;SSR&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/0e9e962814ce9f4e10f1810913a40893/surprise.gif&quot; alt=&quot;surprise&quot;&gt;&lt;/p&gt;
+&lt;p&gt;C’est la première fois que je vous parle d’un &lt;em&gt;bundler&lt;/em&gt; qui gère nativement le &lt;strong&gt;Server Side Rendering&lt;/strong&gt;.
+J’utilise d’autres outils en production pour les différentes applications que je développe.
+Malheureusement, il est encore très compliqué de mettre en place une telle architecture (même avec des outils comme Webpack).&lt;/p&gt;
+&lt;p&gt;On constate donc que les développeurs se tournent principalement vers des solutions clés en main comme Next et Nuxt pour gérer ces problématiques à leur place.
+Ce n’est pas une mauvaise chose en soit.
+Je pense cependant qu’il est parfois nécessaire dans certains projets de prendre la main sur cette fonctionnalité pour des besoins business.
+On ne peut donc que se réjouir que des outils comme &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; y ait pensé.
+Je vous invite à aller &lt;a href=&quot;https://vitejs.dev/guide/ssr.html#ssr-externals&quot;&gt;lire cette page de la documentation de &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt;&lt;/a&gt; pour comprendre comment mettre en place cela.&lt;/p&gt;
+&lt;h2 id=&quot;du-coup-on-arrête-webpack-&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#du-coup-on-arr%C3%AAte-webpack-&quot; aria-label=&quot;du coup on arrête webpack  permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Du coup on arrête webpack ?&lt;/h2&gt;
+&lt;p&gt;Après cette présentation élogieuse de cet outil on pourrait se poser la question oui.
+Cependant, il ne faut pas oublier une règle assez simple.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Tout ce qu’un outil à tendance à faire magiquement à votre place devient souvent bien plus compliqué à customier.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Les nombreux choix que &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; semble faire pour améliorer la &lt;em&gt;developpeur experience&lt;/em&gt; m’inquiètent un peu.
+J’ai un peu peur que toute cette configuration par défaut ne fissent par être compliqué à maintenir par les équipes de &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Contrairement à &lt;code class=&quot;language-text&quot;&gt;esbuild&lt;/code&gt; qui a le leitmotiv &lt;em&gt;“je souhaite proposer un outil qui fait peu de choses mais qui le fait très bien”&lt;/em&gt;, on a ici un outil qui fait beaucoup de promesses.
+Il faut cependant reconnaitre que &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; propose également d’utiliser et de définir des plugins pour étendre ses fonctionnalités sans pour autant les rendre native à l’outil principal.&lt;/p&gt;
+&lt;p&gt;De plus, il ne faut pas oublier que &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; est également basé sur &lt;code class=&quot;language-text&quot;&gt;Rollup&lt;/code&gt;, un bundler deuxième génération qui profite lui d’un riche écosystem de plugin qui sont pour la plupart compatible.
+Seulement la configuration de Rollup est à mes yeux très compliqué à éditer et maintenir, j’espère donc pour vous que vous n’aurez pas à y toucher si vous êtes tentés de tester &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; sur vos applications.&lt;/p&gt;
+&lt;p&gt;Je tiens quand même à souligner que quelques outils comme VuePress proposent aujourd’hui une alternative &lt;a href=&quot;https://vitepress.vuejs.org/&quot;&gt;Vitepress&lt;/a&gt; qui utilise &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; comme bundler.&lt;/p&gt;
+&lt;p&gt;Avant de sauter sur la solution &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt;, je vous propose de tester un autre bundler de troisième génération qui fait beaucoup parler: &lt;a href=&quot;https://www.snowpack.dev/&quot;&gt;Snowpack&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Stay tuned!&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[React/Redux : pièges et meilleures pratiques]]></title><description><![CDATA[Après 2 ans d’utilisation de React avec Redux pour la plateforme vidéo 6play, j’ai pu identifier les bonnes pratiques et les pièges à éviter…]]></description><link>https://slashgear.github.io/fr/react-redux-pieges-bonnes-pratiques/</link><guid isPermaLink="false">https://slashgear.github.io/fr/react-redux-pieges-bonnes-pratiques/</guid><pubDate>Tue, 23 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Après 2 ans d’utilisation de React avec Redux pour la plateforme vidéo &lt;a href=&quot;https://6play.fr&quot;&gt;6play&lt;/a&gt;, j’ai pu identifier les bonnes pratiques et les pièges à éviter à tout prix.
 L’équipe de &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt; (à laquelle j’appartiens actuellement) a maintenu la pile technique du projet à jour pour profiter des nouvelles fonctionnalités de &lt;code class=&quot;language-text&quot;&gt;react&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;react-redux&lt;/code&gt; et &lt;code class=&quot;language-text&quot;&gt;redux&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Voici donc mes conseils pour maintenir et utiliser React et Redux dans votre application sans devenir fou.&lt;/p&gt;
 &lt;p&gt;Cet article n’est pas une introduction à React ou Redux. Je vous recommande &lt;a href=&quot;https://redux.js.org/basics/usage-with-react&quot;&gt;cette documentation&lt;/a&gt; si vous voulez voir comment les mettre en œuvre dans vos applications.&lt;/p&gt;
