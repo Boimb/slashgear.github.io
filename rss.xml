@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 27 Mar 2021 18:12:10 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 29 Mar 2021 21:08:14 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
 You should follow him on Twitter.
 Take a…]]></description><link>https://slashgear.github.io/</link><guid isPermaLink="false">https://slashgear.github.io/</guid><content:encoded>&lt;p&gt;Written by &lt;strong&gt;Antoine Caron&lt;/strong&gt; who lives and works in Lyon (France) building useful things at &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
 You should follow him &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;on Twitter&lt;/a&gt;.
@@ -633,7 +633,7 @@ Je vous invite à aller &lt;a href=&quot;https://vitejs.dev/guide/ssr.html#ssr-e
 &lt;p&gt;Après cette présentation élogieuse de cet outil on pourrait se poser la question oui.
 Cependant, il ne faut pas oublier une règle assez simple.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Tout ce qu’un outil à tendance à faire magiquement à votre place devient souvent bien plus compliqué à customier.&lt;/p&gt;
+&lt;p&gt;Tout ce qu’un outil à tendance à faire magiquement à votre place devient souvent bien plus compliqué à customiser.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Les nombreux choix que &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt; semble faire pour améliorer la &lt;em&gt;developpeur experience&lt;/em&gt; m’inquiètent un peu.
 J’ai un peu peur que toute cette configuration par défaut ne fissent par être compliqué à maintenir par les équipes de &lt;code class=&quot;language-text&quot;&gt;Vite&lt;/code&gt;.&lt;/p&gt;
