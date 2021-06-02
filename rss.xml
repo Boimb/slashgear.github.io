@@ -1,10 +1,229 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 02 Apr 2021 17:33:21 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 02 Jun 2021 19:53:13 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
 You should follow him on Twitter.
 Take a…]]></description><link>https://slashgear.github.io/</link><guid isPermaLink="false">https://slashgear.github.io/</guid><content:encoded>&lt;p&gt;Written by &lt;strong&gt;Antoine Caron&lt;/strong&gt; who lives and works in Lyon (France) building useful things at &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
 You should follow him &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;on Twitter&lt;/a&gt;.
 Take a look at &lt;a href=&quot;/friends-you-should-follow&quot;&gt;my friends websites&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Ecrit par Antoine Caron qui vit et travaille à Lyon et développe des choses utiles à Bedrock.
 Tu devrais le suivre sur Twitter]]></description><link>https://slashgear.github.io/fr/</link><guid isPermaLink="false">https://slashgear.github.io/fr/</guid><content:encoded>&lt;p&gt;Ecrit par &lt;strong&gt;Antoine Caron&lt;/strong&gt; qui vit et travaille à Lyon et développe des choses utiles à &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
-Tu devrais le suivre sur &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Vite, a new webpack killer ?!😮]]></title><description><![CDATA[After having dealt on this blog in several articles about webpack, I have started a new series of articles about new generation bundlers.
+Tu devrais le suivre sur &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[🗻 Snowpack 🗻 le remplaçant de webpack ?️]]></title><description><![CDATA[Après webpack, esbuild et vitejs, prenons le temps d’étudier le cas de snowpack.
+Ce dernier semble se faire un petit nom dans l’écosystème…]]></description><link>https://slashgear.github.io/fr/que-vaut-snowpack/</link><guid isPermaLink="false">https://slashgear.github.io/fr/que-vaut-snowpack/</guid><pubDate>Wed, 02 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Après &lt;a href=&quot;/fr/webpack&quot;&gt;webpack&lt;/a&gt;, &lt;a href=&quot;/fr/esbuild&quot;&gt;esbuild&lt;/a&gt; et &lt;a href=&quot;/fr/vitjs&quot;&gt;vitejs&lt;/a&gt;, prenons le temps d’étudier le cas de &lt;a href=&quot;/fr/snowpack&quot;&gt;snowpack&lt;/a&gt;.
+Ce dernier semble se faire un petit nom dans l’écosystème des bundlers depuis quelques années maintenant.
+Je vous propose donc qu’on étudie ses fonctionnalités, ses points forts mais également ses points faibles.&lt;/p&gt;
+&lt;h2 id=&quot;snowpack&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#snowpack&quot; aria-label=&quot;snowpack permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Snowpack&lt;/h2&gt;
+&lt;p&gt;Snowpack c’est quoi ? C’est un packager d’application web qui propose :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;une expérience de développement riche et performante&lt;/li&gt;
+&lt;li&gt;un mode &lt;em&gt;production&lt;/em&gt; qui propose les features nécessaires à l’optimisation des assets du site.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# npm:&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; --save-dev snowpack
+&lt;span class=&quot;token comment&quot;&gt;# yarn:&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; --dev snowpack&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;esmodule-dans-le-navigateur&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#esmodule-dans-le-navigateur&quot; aria-label=&quot;esmodule dans le navigateur permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ESModule dans le navigateur&lt;/h3&gt;
+&lt;p&gt;Les packagers comme webpack et rollup se reposent sur la construction d’un arbre de dépendances qui sont analysées et packagées à chaque modification.
+L’étape de build des fichiers modifiés reste nécessaire, cependant l’opération de packaging (fusion des différents modules sous la forme de bundle qu’on envoie au navigateur) n’est plus nécessaire.
+&lt;a href=&quot;https://caniuse.com/?search=esmodule&quot;&gt;Nos navigateurs savent maintenant gérer les ESModules&lt;/a&gt;, il n’est donc plus nécessaire de packager nos modules sources pour les fusionner.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;C’est la même idée qu’Evan You a repris dans &lt;a href=&quot;/fr/vitejs-concurrent-performant-webpack-pour-react&quot;&gt;Vite&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Avec ce principe, la modification d’un fichier ne déclenche que le build de ce fichier, et ce fichier uniquement.
+Vous pourrez avoir un projet avec des milliers de modules javascript, le temps de build à chaque modification ne se retrouvera pas affecté.
+Pour les dépendances (&lt;em&gt;vendors&lt;/em&gt;), Snowpack les build une fois pour toutes et les mets en cache pour ne le refaire que si celles-ci ont changées.&lt;/p&gt;
+&lt;p&gt;Voici un schéma présent dans la doc de Snowpack montrant bien l’intérêt d’éviter le packaging en dev.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b06ee5f06a63858b913ddade78afcaba/24def/snowpack-unbundled.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.49999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB2klEQVQoz61R227aQBDN//9N3ypFbQipBIh7wNi1MTYYTH2pC6yxsfdyOrs0bR7z0JGOdm46e2bmAWSMMSRJgqIocCG/qmukWWZwOp2g8DFTSuFBO3mWwvN9bKMdjnGMIs8RUOx7Hva7HXjTQIgWrRRo29bEJke+MDG9vDWkhrCuGZ7DFea7NTiR5MMh0vEYh34fxXgCGQbw4gCfrBFi3wObzqjWw6bTwa7bxZl6bsnxH+H1ekZ3Y2EeumhcD6VlIRmNEBEhWywgSGWQ7vEU2kijLbjr4kw9+8EA2YTIbAe3NL4TqraCZD9I5skkJG1MvtuakBJcCCiCTkvaU0u+zgnyNTj1SKnrf3ZY3264XC5gZYmqqlCWV0Jp0NCuPmrqbeSfeQaHZAcbH1EUIaIRLRrJsW1kaUIfS7N0KfXbGNU6NurpbTk3R/urkLECvb2HVbxBn94FYbpfY7D9jlnkousvYR98fNvamBO+rJfwjgGeNks6pIuv6wWW1Kc1GsIT+4XP9hQjKnTcOYZE0PMtvFA8ClaUe8XqsMajPcEsdPDozIgwRIfqr/TpC/U49KEhVLyGKHM01dnIv0OPIAx0fPf5/RC6po/wlqcV6IMoDT2ykhyqKQF+w/+w37AaQrgrYaxZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/b06ee5f06a63858b913ddade78afcaba/ba381/snowpack-unbundled.webp 200w,
+/static/b06ee5f06a63858b913ddade78afcaba/7f61c/snowpack-unbundled.webp 400w,
+/static/b06ee5f06a63858b913ddade78afcaba/d00b9/snowpack-unbundled.webp 800w,
+/static/b06ee5f06a63858b913ddade78afcaba/92f8c/snowpack-unbundled.webp 1200w,
+/static/b06ee5f06a63858b913ddade78afcaba/fad48/snowpack-unbundled.webp 1600w,
+/static/b06ee5f06a63858b913ddade78afcaba/e3ca4/snowpack-unbundled.webp 1812w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/b06ee5f06a63858b913ddade78afcaba/772e8/snowpack-unbundled.png 200w,
+/static/b06ee5f06a63858b913ddade78afcaba/e17e5/snowpack-unbundled.png 400w,
+/static/b06ee5f06a63858b913ddade78afcaba/5a190/snowpack-unbundled.png 800w,
+/static/b06ee5f06a63858b913ddade78afcaba/c1b63/snowpack-unbundled.png 1200w,
+/static/b06ee5f06a63858b913ddade78afcaba/29007/snowpack-unbundled.png 1600w,
+/static/b06ee5f06a63858b913ddade78afcaba/24def/snowpack-unbundled.png 1812w&quot;
+            sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/b06ee5f06a63858b913ddade78afcaba/5a190/snowpack-unbundled.png&quot;
+            alt=&quot;explication du mode de fonctionnement de snowpack qui se consentre sur le build uniquement&quot;
+            title=&quot;explication du mode de fonctionnement de snowpack qui se consentre sur le build uniquement&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Si vous utilisez un projet &lt;em&gt;Create React App&lt;/em&gt;, il vous suffit d’ajouter Snowpack en dépendance, vous n’avez rien à changer si vous n’avez pas étendu la config de webpack.
+Je vous invite à tester snowpack grâce aux générateurs de templates:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;npx create-snowpack-app react-snowpack --template @snowpack/app-template-react&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Rassurez vous! Snowpack n’est pas compatible qu’avec React, vous pouvez utiliser Vue, Svelte ou bien juste du javascript.&lt;/p&gt;
+&lt;h3 id=&quot;une-config-riche-trop&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#une-config-riche-trop&quot; aria-label=&quot;une config riche trop permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Une config riche (trop)&lt;/h3&gt;
+&lt;p&gt;À la manière de webpack, snowpack propose de configurer son utilisation par un objet.
+Je dois vous avouer qu’&lt;a href=&quot;/fr/vitejs-concurrent-performant-webpack-pour-react/&quot;&gt;après avoir joué avec vite&lt;/a&gt;, je suis un peu déçu.
+Je vois une maigre &lt;a href=&quot;https://www.snowpack.dev/reference/configuration&quot;&gt;page de documentation&lt;/a&gt; qui semble pourtant décrire de nombreuses clés paramètrables.&lt;/p&gt;
+&lt;p&gt;Si vous venez de webpack, vous ne serez pas perdu, c’est très ressemblant sans pour autant être exactement la même chose.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Eviter de toucher la configuration par défaut peut être une excellente idée.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;une-belle-collection-de-plugin&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#une-belle-collection-de-plugin&quot; aria-label=&quot;une belle collection de plugin permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Une belle collection de plugin&lt;/h3&gt;
+&lt;p&gt;Snowpack n’est pas si récent que ça.
+Une communauté a su se construire pour mettre en place &lt;a href=&quot;https://www.snowpack.dev/plugins&quot;&gt;un écosystème de plugin riche&lt;/a&gt;.
+Certains de ces plugins semblent “core” car sous le scope &lt;em&gt;@snowpack&lt;/em&gt; mais de nombreux packages sont portés par quelques personnes indépendantes du projet.
+C’est rassurant sans l’être, j’ai personnellement connu des mises à jour de webpack bloquées/retardées en attendant la compatibilité de certains plugins qui n’étaient plus maintenus.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/dc98a59b3f3f71b4953ae1ed9d1f2503/fbf76/plugins.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 142.00000000000003%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAcCAYAAABh2p9gAAAACXBIWXMAABYlAAAWJQFJUiTwAAAEpklEQVRIx5VVXW8TRxTdf9hf0P/Rt0qVeOcFHkhSiRYeIhWV8lCkAoGUQBJSSCInDvG3YzuJ93t39tvrPT131jY0KlQd6ejOjMcz59577l2j3W5je3sb4/EYh4eHaLVaGAwGkP1+v49Ot6vnL7a2cHJyovfkTKfTxYcPH3B2doZGo4EuzyVJAmM0GuHx48d48uQ3PHv2Bx4+fIgHD37G3Tt3sHbvHtbW1vD06e/Y2dnBo0e/4NatW9jc3MTBwQF+un8fG+vr2NjYwO3bt/XFhh+luLACjeHUw7UXY2j66F66mDgKYzvU65EVYjD10ZlYmHCvf+Xg/GLK3wMsx3w+h5GkKRzHhecHGq7rwQ9CWLYD3/fheZ62rutq68uZMILlK6g4xawsNUpeNq8qGKZp6ticNZuacpO22TxF45Tr8x5OW4zhYIRmu6/xsTtEozvB2PRQzErcHIZSasVEIEwEwtZ0fNiuT8v9QGlmgYrpgUKeZShnBdcRnu428Ov2IfZOe/WFy4uWVkIQiJsO3eaeY9uIoggVXaromtjZbEY+FSwvxLc//IhvvruL79efwJBAzuclf5IYzPWhPM9gWibjaGFqTuG4DkxtbVxPryHKECLy34IXR0mm45kVMxg6mPMKWTJDFn9ConKkUVEjLhCHGZHTzQpfG4avEoymLlpHIxy96eD03QDHtIev2zjZ7+PsPZOwx+Qc9LnXgXnlIk5ihKFaQeIdxUmd5RkzlWQ5JpdXOG930O0NWB19dPsDfGyxWgbDxV4PbVbD8GKEj+dt9PpDBJSXv5Ca0jEmwyXVJI35iuLrCmkWI8sT7oos5tpKEvK8QFnOteYkMTeHhM7IihwxJUCCZAmMJ8BoXLGeK84r7lVk9enP4pZcJrZO6OfghT5ZXdhXOD4OsP3nFG/e2oSDt8T+O7E29vY92LaHlFUl49/YLR8z5FZxQcWMReAgiDzKIEAYsxJKBhoZjxY6Rmma1ezmn2GxXrI2Cqq9KPgHN0foZAhsQQrfTPVa9t3rGFqiXxnLi40w8nFpDtE6HuN4l1KhPBr7PUqojeb7Aedd7ncxHk5ZcoHObKjLNdBQLD2x80WiKOwSwtIPpWYtOL6r547vUE4Rs6+060HIbuQFtfbkQpEMH5BQyF7JjqMvnFEGAj7Cl0AGtaW09DyOOXfxn2MZ21WlvDsI8GrbxdZLGy9fuXj+wmbWmeVdB8+eW2QX667kuNKVfO262DzPlzfWSRGh5izqULHT0E3Xs+keu03o8HCELBOERKpd0zGkXboqCV0xrGVTizJUlUZEFxlnzsGKAYQAvz3Q3epL7tYE60+AFrZ1jYO/Erqo6G6osfVScR1Q5CHdD3BE4Ut5SlaXTUHmERnEbAxSlrqWc2Y4ShNcXk5Y8D2W2VDXtIrYQaJQQymK3nNWjUCD8fMXcZQwJEmqma6ag8jC8Vy6GmoZzcoc/3foLOdFhjRP2ZHBblxDmsRoDLKu11+STV1+nxrDPyrl8CjAzhsTrwU7lsbevk3ZWDg59egWP1j81gicBW42iVWWZ6XIRlx26liF1Frg6irJ85hIdEcWqdSINapFK1tCGP4Nb6JCFBIi+usAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/dc98a59b3f3f71b4953ae1ed9d1f2503/ba381/plugins.webp 200w,
+/static/dc98a59b3f3f71b4953ae1ed9d1f2503/7f61c/plugins.webp 400w,
+/static/dc98a59b3f3f71b4953ae1ed9d1f2503/d00b9/plugins.webp 800w,
+/static/dc98a59b3f3f71b4953ae1ed9d1f2503/92f8c/plugins.webp 1200w,
+/static/dc98a59b3f3f71b4953ae1ed9d1f2503/5733b/plugins.webp 1252w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/dc98a59b3f3f71b4953ae1ed9d1f2503/772e8/plugins.png 200w,
+/static/dc98a59b3f3f71b4953ae1ed9d1f2503/e17e5/plugins.png 400w,
+/static/dc98a59b3f3f71b4953ae1ed9d1f2503/5a190/plugins.png 800w,
+/static/dc98a59b3f3f71b4953ae1ed9d1f2503/c1b63/plugins.png 1200w,
+/static/dc98a59b3f3f71b4953ae1ed9d1f2503/fbf76/plugins.png 1252w&quot;
+            sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/dc98a59b3f3f71b4953ae1ed9d1f2503/5a190/plugins.png&quot;
+            alt=&quot;plugins list page screenshot&quot;
+            title=&quot;plugins list page screenshot&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Méfiez-vous des plugins que vous utilisez!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Contrairement à Vite qui propose nativement plein de fonctionnalités assez sympathiques, snowpack fonctionne lui comme webpack en se basant sur les plugins pour enrichir l’API.
+C’est un pari, il peut être compliqué de garder cet écosystème de plugin à jour et performant pour continuer de garantir l’intérêt d’une migration sur snowpack.&lt;/p&gt;
+&lt;h3 id=&quot;du-server-side-rendering&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#du-server-side-rendering&quot; aria-label=&quot;du server side rendering permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Du Server Side Rendering&lt;/h3&gt;
+&lt;p&gt;Snowpack propose une solution pour implémenter vos applications avec du server-side rendering.
+Force est de constater que le besoin du SSR se fait encore ressentir sur nos applications frontend pour des raisons SEO ou bien de performance de rendu.
+Malheureusement, coté packager d’application, cela reste encore compliqué et il reste souvent nécessaire de faire deux builds:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;un build pour le client aka le Navigateur&lt;/li&gt;
+&lt;li&gt;un build pour le server Node&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Double build, double peine !&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;La &lt;a href=&quot;https://www.snowpack.dev/guides/server-side-render#option-3%3A-server-side-rendering-(ssr)&quot;&gt;technique proposée par Snowpack&lt;/a&gt; reste limitée mais ça reste correct.
+Je vous propose une légère amélioration de l’implémentation en ajoutant les mécaniques de rendu server bufferisé.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;readFileSync&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;fs&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;startServer&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;snowpack&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; server &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;startServer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; runtime &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; server&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getServerRuntime&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;use&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;req&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; res&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; importedComponent &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; runtime&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;importModule&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/dist/MyReactComponent.js&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; MyReactComponent &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; importedComponent&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;default&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; html &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ReactDOMServer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;renderToNodeStream&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;React&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;MyReactComponent&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// Directly write the head of page&lt;/span&gt;
+  res&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;
+    &amp;lt;html&gt;
+    &amp;lt;head&gt;
+      &amp;lt;title&gt;Hello 👋&amp;lt;/title&gt;
+    &amp;lt;/head&gt;
+    &amp;lt;body&gt;
+    &amp;lt;div id=&quot;app&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// Render bufferized version of App&lt;/span&gt;
+  html&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;res&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; end&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// When buffer end, we add the closing tags of page&lt;/span&gt;
+  html&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;end&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    res&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;
+      &amp;lt;/div&gt;
+      &amp;lt;/body&gt;
+      &amp;lt;/html&gt;
+    &lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    res&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;webpack-esbuild-vite-snowpack-on-part-sur-quoi-&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#webpack-esbuild-vite-snowpack-on-part-sur-quoi-&quot; aria-label=&quot;webpack esbuild vite snowpack on part sur quoi  permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Webpack, esbuild, vite, snowpack, on part sur quoi ?&lt;/h2&gt;
+&lt;p&gt;Clairement après cette série d’article où j’ai essayé d’étudier cette nouvelle génération d’outils pour bundler les applications, je dois avouer que je suis très surpris.
+On voit clairement que le support des ES Modules dans le navigateur marque l’entrée dans une nouvelle ère.
+Comme le rappelle Sindre Sorhus dans &lt;a href=&quot;https://blog.sindresorhus.com/hello-modules-d1010b4e777b&quot;&gt;son dernier article&lt;/a&gt;, avec la fin du support de Node 10 et les capacitées de nos navigateurs actuels, il n’est maintenant plus nécessaire de cibler du CJS.&lt;/p&gt;
+&lt;p&gt;Les stratégies de cache et l’usage des modules CJS semblent aujourd’hui bien dépassées pour nos besoins en environnement de développement.
+On voit bien que Vite et Snowpack proposent cette nouvelle mécanique qui semble être vraiment performante.
+Faire un build &lt;em&gt;once for all&lt;/em&gt; des librairies et de chaque fichier source est une super idée pour ne pas souffrir d’un temps de démarrage trop lent de nos grosses applications web.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Gardons à l’oeil Esbuild&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Cependant, la performance de ces nouveaux outils repose aussi essentiellement sur Esbuild.
+L’idée d’utiliser une stack plus optimisée pour lire, parser, combiner des modules JS ou TS avec des langages qui permettent une gestion IO et mémoire plus fine est vraiment la clé de voute de cette nouvelle génération d’outils.
+Avant même de choisir s’il faut rester sur webpack, ou utiliser Vite et Snowpack, il est certain qu’il faudra suivre de près Esbuild.
+Cette lib n’a pas fini de nous surprendre.
+Il faut également s’intéresser à un outil comme &lt;a href=&quot;https://swc.rs/&quot;&gt;SWC&lt;/a&gt; qui est un concurrent direct d’Esbuild.
+Il y a certainement d’autres outils en cours de création dans le même genre.&lt;/p&gt;
+&lt;h3 id=&quot;jutilise-webpack-et-je-lai-beaucoup-configuré&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#jutilise-webpack-et-je-lai-beaucoup-configur%C3%A9&quot; aria-label=&quot;jutilise webpack et je lai beaucoup configuré permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;J’utilise webpack et je l’ai beaucoup configuré&lt;/h3&gt;
+&lt;p&gt;Si vous êtes dans cette situation, vous pouvez malheureusement être contraint de conserver webpack.
+Ce n’est pas une mauvaise nouvelle, c’est un très bon outil qui est loin d’être obsolète.
+Il y a fort à parier que la team de webpack va nous proposer encore de nouvelles améliorations de performances qui passeront peut-être par l’usage des ESModules.&lt;/p&gt;
+&lt;p&gt;Vous pouvez également tenter d’utiliser snowpack en environnement de développement.
+Il existe d’ailleurs &lt;a href=&quot;https://www.npmjs.com/package/@snowpack/plugin-webpack&quot;&gt;un plugin pour utiliser webpack dans le build de prod de snowpack&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;je-souhaite-vraiment-réduire-la-configuration-du-build-de-mon-application&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#je-souhaite-vraiment-r%C3%A9duire-la-configuration-du-build-de-mon-application&quot; aria-label=&quot;je souhaite vraiment réduire la configuration du build de mon application permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Je souhaite vraiment réduire la configuration du build de mon application&lt;/h3&gt;
+&lt;p&gt;Si vous ne souhaitez plus conserver vos fichiers de configuration webpack qui peuvent être parfois difficilement maintenable, l’alternative proposée par Vite peut être une super option.
+Gardez seulement à l’esprit que cette solution reste jeune.&lt;/p&gt;
+&lt;p&gt;Quitte à utiliser Vite, je vous conseille de minimiser la configuration que vous pourriez lui apporter.
+Cela vous permettra plus facilement de suivre les nouvelles versions qui risquent d’arriver dans les mois qui viennent.&lt;/p&gt;
+&lt;h3 id=&quot;jutilise-un-cli-qui-gère-ma-configuration-de-build-pour-moi&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#jutilise-un-cli-qui-g%C3%A8re-ma-configuration-de-build-pour-moi&quot; aria-label=&quot;jutilise un cli qui gère ma configuration de build pour moi permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;J’utilise un CLI qui gère ma configuration de build pour moi&lt;/h3&gt;
+&lt;p&gt;Vous utilisez VueCLI, CRA, ou autre et vous n’avez pas éjecté votre configuration.
+Vous n’aimez pas trop toucher à la configuration de build de votre application car les outils sont complexes et vous ne souhaitez pas passer un temps monstre à les configurer.
+Je vous recommande donc de rester un maximum avec la configuration par défaut de votre projet tant que les performances de celle-ci ne vous gènent pas.&lt;/p&gt;
+&lt;p&gt;Cependant, rien ne vous interdit de tester les outils comme Vite qui marchent directement sans configuration avec vos projets déjà générés.
+Si le temps de démarrage de votre environnement de développement devient trop important, cela peut vraiment être une solution intéressante pour vous.&lt;/p&gt;
+&lt;h2 id=&quot;et-cest-déjà-la-fin-&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#et-cest-d%C3%A9j%C3%A0-la-fin-&quot; aria-label=&quot;et cest déjà la fin  permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Et c’est déjà la fin ?&lt;/h2&gt;
+&lt;p&gt;Je pense avoir fait le tour des nouveaux outils proposés par la communauté pour packager nos applications web.
+Si vous avez d’autres outils qu’il serait intéressant d’examiner, n’hésitez pas à me le proposer sur un réseau social comme Twitter.
+À bientôt pour de nouvelles &lt;em&gt;pérégrinations javascriptesques&lt;/em&gt; !👋&lt;/p&gt;
+&lt;p&gt;Merci à Jérémie pour la review 🤗&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Vite, a new webpack killer ?!😮]]></title><description><![CDATA[After having dealt on this blog in several articles about webpack, I have started a new series of articles about new generation bundlers.
 It…]]></description><link>https://slashgear.github.io/vite-webpack-killer/</link><guid isPermaLink="false">https://slashgear.github.io/vite-webpack-killer/</guid><pubDate>Fri, 26 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;After having dealt on this blog &lt;a href=&quot;/en/webpack/&quot;&gt;in several articles about webpack&lt;/a&gt;, I have started a new series of articles about new generation bundlers.
 It seems that we are now entering a new era of web tooling.&lt;/p&gt;
 &lt;p&gt;Having introduced &lt;a href=&quot;../esbuild-bundler-incredibly-fast-and-promising&quot;&gt;esbuild and its interesting features&lt;/a&gt;, it seems logical to me to deal with the &lt;em&gt;“little brothers”&lt;/em&gt; bundlers.
