@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 03 Jun 2021 21:02:39 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 04 Jun 2021 13:05:10 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
 You should follow him on Twitter.
 Take a…]]></description><link>https://slashgear.github.io/</link><guid isPermaLink="false">https://slashgear.github.io/</guid><content:encoded>&lt;p&gt;Written by &lt;strong&gt;Antoine Caron&lt;/strong&gt; who lives and works in Lyon (France) building useful things at &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
 You should follow him &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;on Twitter&lt;/a&gt;.
@@ -29,7 +29,53 @@ Our browsers now know how to manage ESModules](&lt;a href=&quot;https://caniuse.
 You can have a project with thousands of javascript modules, the build time for each modification will not be affected.
 For dependencies (&lt;em&gt;vendors&lt;/em&gt;), Snowpack builds them once and caches them to do it again only if they have changed.&lt;/p&gt;
 &lt;p&gt;Here is a diagram in the Snowpack doc showing the interest to avoid packaging in dev.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../en/que-vaut-snowpack/snowpack-unbundled.png&quot; alt=&quot;explanation of the way snowpack works, which is based on the build only&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b06ee5f06a63858b913ddade78afcaba/24def/snowpack-unbundled.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.49999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB2klEQVQoz61R227aQBDN//9N3ypFbQipBIh7wNi1MTYYTH2pC6yxsfdyOrs0bR7z0JGOdm46e2bmAWSMMSRJgqIocCG/qmukWWZwOp2g8DFTSuFBO3mWwvN9bKMdjnGMIs8RUOx7Hva7HXjTQIgWrRRo29bEJke+MDG9vDWkhrCuGZ7DFea7NTiR5MMh0vEYh34fxXgCGQbw4gCfrBFi3wObzqjWw6bTwa7bxZl6bsnxH+H1ekZ3Y2EeumhcD6VlIRmNEBEhWywgSGWQ7vEU2kijLbjr4kw9+8EA2YTIbAe3NL4TqraCZD9I5skkJG1MvtuakBJcCCiCTkvaU0u+zgnyNTj1SKnrf3ZY3264XC5gZYmqqlCWV0Jp0NCuPmrqbeSfeQaHZAcbH1EUIaIRLRrJsW1kaUIfS7N0KfXbGNU6NurpbTk3R/urkLECvb2HVbxBn94FYbpfY7D9jlnkousvYR98fNvamBO+rJfwjgGeNks6pIuv6wWW1Kc1GsIT+4XP9hQjKnTcOYZE0PMtvFA8ClaUe8XqsMajPcEsdPDozIgwRIfqr/TpC/U49KEhVLyGKHM01dnIv0OPIAx0fPf5/RC6po/wlqcV6IMoDT2ykhyqKQF+w/+w37AaQrgrYaxZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/b06ee5f06a63858b913ddade78afcaba/ba381/snowpack-unbundled.webp 200w,
+/static/b06ee5f06a63858b913ddade78afcaba/7f61c/snowpack-unbundled.webp 400w,
+/static/b06ee5f06a63858b913ddade78afcaba/d00b9/snowpack-unbundled.webp 800w,
+/static/b06ee5f06a63858b913ddade78afcaba/92f8c/snowpack-unbundled.webp 1200w,
+/static/b06ee5f06a63858b913ddade78afcaba/fad48/snowpack-unbundled.webp 1600w,
+/static/b06ee5f06a63858b913ddade78afcaba/e3ca4/snowpack-unbundled.webp 1812w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/b06ee5f06a63858b913ddade78afcaba/772e8/snowpack-unbundled.png 200w,
+/static/b06ee5f06a63858b913ddade78afcaba/e17e5/snowpack-unbundled.png 400w,
+/static/b06ee5f06a63858b913ddade78afcaba/5a190/snowpack-unbundled.png 800w,
+/static/b06ee5f06a63858b913ddade78afcaba/c1b63/snowpack-unbundled.png 1200w,
+/static/b06ee5f06a63858b913ddade78afcaba/29007/snowpack-unbundled.png 1600w,
+/static/b06ee5f06a63858b913ddade78afcaba/24def/snowpack-unbundled.png 1812w&quot;
+            sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/b06ee5f06a63858b913ddade78afcaba/5a190/snowpack-unbundled.png&quot;
+            alt=&quot;explanation of the way snowpack works, which is based on the build only&quot;
+            title=&quot;explanation of the way snowpack works, which is based on the build only&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;If you use a &lt;em&gt;Create React App&lt;/em&gt; project, you just have to add Snowpack as a dependency, you don’t have to change anything if you didn’t extend the webpack config.
 I invite you to test snowpack with the template generators:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;npx create-snowpack-app react-snowpack --template @snowpack/app-template-react&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
