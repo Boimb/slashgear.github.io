@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Your Site's RSS Feed]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 13 Aug 2021 20:52:11 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Your Site's RSS Feed]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 15 Aug 2021 20:05:55 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
 You should follow him on Twitter.
 Take a…]]></description><link>https://slashgear.github.io/</link><guid isPermaLink="false">https://slashgear.github.io/</guid><content:encoded>&lt;p&gt;Written by &lt;strong&gt;Antoine Caron&lt;/strong&gt; who lives and works in Lyon (France) building useful things at &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
 You should follow him &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;on Twitter&lt;/a&gt;.
@@ -9,10 +9,290 @@ Tu devrais le suivre sur Twitter.
 N’hésites…]]></description><link>https://slashgear.github.io/fr/</link><guid isPermaLink="false">https://slashgear.github.io/fr/</guid><content:encoded>&lt;p&gt;Ecrit par &lt;strong&gt;Antoine Caron&lt;/strong&gt; qui vit et travaille à Lyon et développe des choses utiles à &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
 Tu devrais le suivre sur &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;Twitter&lt;/a&gt;.
 N’hésites pas à aller voir &lt;a href=&quot;/conferences&quot;&gt;ses conférences sur la page dédiée&lt;/a&gt;.
-Si vous voulez voir mon parcours pro, &lt;a href=&quot;/resume&quot;&gt;mon CV est disponible ici en 🇬🇧&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to setup end to end tests with WebdriverIo on Github action ?]]></title><description><![CDATA[I recently set up an end-to-end testing stack to make sure I wasn’t going to introduce any functional regressions to my blog.
+Si vous voulez voir mon parcours pro, &lt;a href=&quot;/resume&quot;&gt;mon CV est disponible ici en 🇬🇧&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Comment mettre en place des tests bout en bout avec WebdriverIo ?]]></title><description><![CDATA[J’ai récemment mis en place une pile de tests de bout en bout pour m’assurer que je n’allais pas introduire de régressions fonctionnelles…]]></description><link>https://slashgear.github.io/fr/comment-mettre-en-place-des-tests-bout-en-bout-avec-webdriverio/</link><guid isPermaLink="false">https://slashgear.github.io/fr/comment-mettre-en-place-des-tests-bout-en-bout-avec-webdriverio/</guid><pubDate>Mon, 16 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;J’ai récemment mis en place une pile de tests de bout en bout pour m’assurer que je n’allais pas introduire de régressions fonctionnelles sur mon blog.
+Avec plusieurs années d’expérience dans l’utilisation des technologies de test E2E (End to End), j’ai tout de même rencontré quelques difficultés dans sa mise en place.&lt;/p&gt;
+&lt;p&gt;Afin de vous faire gagner du temps, je vous propose un tutoriel pas à pas de l’installation des outils nécessaires pour avoir une pile de test efficace en quelques minutes.&lt;/p&gt;
+&lt;h2 id=&quot;on-le-fait-tourner-dabord-localement&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#on-le-fait-tourner-dabord-localement&quot; aria-label=&quot;on le fait tourner dabord localement permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;On le fait tourner d’abord localement&lt;/h2&gt;
+&lt;p&gt;Vous devez d’abord installer quelques dépendances à votre projet.
+Pour moi le projet était un site Gatsby assez simple, mais vous pouvez l’installer sur n’importe quel site web que vous développez qui a un fichier &lt;code class=&quot;language-text&quot;&gt;package.json&lt;/code&gt;.
+Dans ce cas, je vais commencer par un paquet &lt;code class=&quot;language-text&quot;&gt;npm&lt;/code&gt; qui vient d’être initialisé.
+&lt;strong&gt;Assurez-vous que vous avez un navigateur Chromium ou Chrome installé localement.&lt;/strong&gt;
+Nous avons beaucoup de chance car les équipes de &lt;a href=&quot;https://webdriver.io/&quot;&gt;WebdriverIo&lt;/a&gt; ont développé un sujet CLI qui fait ce travail pour vous.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; -D @wdio/cli&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Il ne vous reste plus qu’à déclencher l’initialisation d’une nouvelle configuration.
+Le CLI vous proposera un genre de formulaire que vous devrez suivre.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; wdio config&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/98f39f6c4c1dabf691434adfc56a6ff9/setup.gif&quot; alt=&quot;exemple screen captured of the CLI output&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Voici ce que vous devez faire pour chaque question :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Sélectionnez d’abord “Sur ma machine locale”.&lt;/li&gt;
+&lt;li&gt;Vous devez absolument utiliser &lt;code class=&quot;language-text&quot;&gt;cucumber&lt;/code&gt;, le langage Gherkin est tellement génial pour [déclarer des comportements d’utilisateurs humainement lisibles] (&lt;a href=&quot;https://en.wikipedia.org/wiki/Behavior-driven_development&quot;&gt;https://en.wikipedia.org/wiki/Behavior-driven_development&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Choisissez le compilateur dont vous avez besoin, j’utilise personnellement &lt;code class=&quot;language-text&quot;&gt;No&lt;/code&gt;. Vous pouvez décider si vous voulez utiliser Babel ou Typescript en fonction de vos habitudes.&lt;/li&gt;
+&lt;li&gt;Pour la question “Où sont situés vos fichiers de fonctionnalités ?”, j’aime utiliser la valeur par défaut.&lt;/li&gt;
+&lt;li&gt;Même chose pour les définitions d’étapes, utilisez la valeur par défaut.&lt;/li&gt;
+&lt;li&gt;Voyons quels tests WebdriverIo va générer automatiquement.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Voulez-vous utiliser les objets de la page ?&lt;/code&gt; Je ne l’utiliserais pas si c’est la première fois que vous configurez ce genre de pile de tests, dites &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Vous devriez sélectionner le rapporteur &lt;code class=&quot;language-text&quot;&gt;spec&lt;/code&gt; ici.&lt;/li&gt;
+&lt;li&gt;Veuillez sélectionner le service &lt;code class=&quot;language-text&quot;&gt;chromedriver&lt;/code&gt; uniquement.&lt;/li&gt;
+&lt;li&gt;Remplacez l’url de base par votre contexte local (par exemple, ajoutez le port sur lequel vous exposez votre application localement).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Normalement, le CLI génère quelques fichiers pour vous et ajoute les dépendances manquantes dont vous avez besoin.&lt;/p&gt;
+&lt;p&gt;Voici mon `package.json’.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;example-wdio&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;version&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;1.0.0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;main&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;index.js&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;license&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;MIT&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;devDependencies&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;@wdio/cli&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;^7.9.1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;@wdio/cucumber-framework&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;^7.9.1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;@wdio/local-runner&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;^7.9.1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;@wdio/spec-reporter&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;^7.9.0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;chromedriver&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;^92.0.1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;wdio-chromedriver-service&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;^7.2.0&quot;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Vous devriez voir un fichier &lt;code class=&quot;language-text&quot;&gt;login.feature&lt;/code&gt; dans le dossier &lt;code class=&quot;language-text&quot;&gt;./features/&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;gherkin&quot;&gt;&lt;pre class=&quot;language-gherkin&quot;&gt;&lt;code class=&quot;language-gherkin&quot;&gt;&lt;span class=&quot;token feature&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;Feature:&lt;/span&gt;&lt;span class=&quot;token important&quot;&gt; The Internet Guinea Pig Website&lt;/span&gt;
+&lt;/span&gt;
+  &lt;span class=&quot;token scenario&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;Scenario Outline:&lt;/span&gt;&lt;span class=&quot;token important&quot;&gt; As a user, I can log into the secure area&lt;/span&gt;&lt;/span&gt;
+
+    &lt;span class=&quot;token atrule&quot;&gt;Given&lt;/span&gt; &lt;span class=&quot;token atrule&quot;&gt;I&lt;/span&gt; am on the login page
+    &lt;span class=&quot;token atrule&quot;&gt;When&lt;/span&gt; &lt;span class=&quot;token atrule&quot;&gt;I&lt;/span&gt; login with &lt;span class=&quot;token outline variable&quot;&gt;&amp;lt;username&gt;&lt;/span&gt; and &lt;span class=&quot;token outline variable&quot;&gt;&amp;lt;password&gt;&lt;/span&gt;
+    &lt;span class=&quot;token atrule&quot;&gt;Then&lt;/span&gt; &lt;span class=&quot;token atrule&quot;&gt;I&lt;/span&gt; should see a flash message saying &lt;span class=&quot;token outline variable&quot;&gt;&amp;lt;message&gt;&lt;/span&gt;
+
+    &lt;span class=&quot;token scenario&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;Examples:&lt;/span&gt;&lt;span class=&quot;token important&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token table-head&quot;&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token th variable&quot;&gt; username &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token th variable&quot;&gt; password             &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token th variable&quot;&gt; message                        &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token table-body&quot;&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token td string&quot;&gt; tomsmith &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token td string&quot;&gt; SuperSecretPassword! &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token td string&quot;&gt; You logged into a secure area! &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token td string&quot;&gt; foobar   &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token td string&quot;&gt; barfoo               &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token td string&quot;&gt; Your username is invalid!      &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Avec les définitions des &lt;em&gt;steps&lt;/em&gt; dans &lt;code class=&quot;language-text&quot;&gt;./step-definitions/steps.js&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; Given&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; When&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Then &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;@cucumber/cucumber&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;Given&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token regex&quot;&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-source language-regex&quot;&gt;^I am on the (\w+) page$&lt;/span&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; browser&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;https://the-internet.herokuapp.com/&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;page&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;When&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token regex&quot;&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-source language-regex&quot;&gt;^I login with (\w+) and (.+)$&lt;/span&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;username&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; password&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;#username&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setValue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;username&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;#password&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setValue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;password&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;button[type=&quot;submit&quot;]&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;Then&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token regex&quot;&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-source language-regex&quot;&gt;^I should see a flash message saying (.*)$&lt;/span&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;expect&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;#flash&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toBeExisting&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;expect&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;#flash&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toHaveTextContaining&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;message&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Voyons ce que font ces exemples de tests par défaut !
+Pour cela, il vous suffit de lancer ceci dans votre terminal et tada 🎉&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; wdio run wdio.conf.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/91922b6797f633320658a98c56f955cf/test-run.gif&quot; alt=&quot;Voici un gif de ce qui s&amp;#x27;est passé dans mon navigateur Chrome&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Voici le log qu’il va générer grâce au rapporteur &lt;code class=&quot;language-text&quot;&gt;spec&lt;/code&gt; !&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;------------------------------------------------------------------
+[chrome 92.0.4515.131 mac os x #0-0] Running: chrome (v92.0.4515.131) on mac os x
+[chrome 92.0.4515.131 mac os x #0-0] Session ID: edd73da800a210e7c677c69cd064004f
+[chrome 92.0.4515.131 mac os x #0-0]
+[chrome 92.0.4515.131 mac os x #0-0] » /features/login.feature
+[chrome 92.0.4515.131 mac os x #0-0] The Internet Guinea Pig Website
+[chrome 92.0.4515.131 mac os x #0-0] As a user, I can log into the secure area
+[chrome 92.0.4515.131 mac os x #0-0]    ✓ Given I am on the login page
+[chrome 92.0.4515.131 mac os x #0-0]    ✓ When I login with tomsmith and SuperSecretPassword!
+[chrome 92.0.4515.131 mac os x #0-0]    ✓ Then I should see a flash message saying You logged into a secure area!
+[chrome 92.0.4515.131 mac os x #0-0]
+[chrome 92.0.4515.131 mac os x #0-0] As a user, I can log into the secure area
+[chrome 92.0.4515.131 mac os x #0-0]    ✓ Given I am on the login page
+[chrome 92.0.4515.131 mac os x #0-0]    ✓ When I login with foobar and barfoo
+[chrome 92.0.4515.131 mac os x #0-0]    ✓ Then I should see a flash message saying Your username is invalid!
+[chrome 92.0.4515.131 mac os x #0-0]
+[chrome 92.0.4515.131 mac os x #0-0] 6 passing (3s)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pour l’instant, les tests ne testent pas du tout votre application.
+Vous trouverez de nombreuses ressources sur la façon d’utiliser [Cucumber JS] (&lt;a href=&quot;https://cucumber.io/docs/installation/javascript/&quot;&gt;https://cucumber.io/docs/installation/javascript/&lt;/a&gt;) pour écrire de bons tests pour décrire et tester les fonctionnalités de votre application.&lt;/p&gt;
+&lt;h2 id=&quot;configurer-le-workflow-daction-github&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#configurer-le-workflow-daction-github&quot; aria-label=&quot;configurer le workflow daction github permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Configurer le workflow d’action Github&lt;/h2&gt;
+&lt;p&gt;Maintenant que nous avons réussi à faire tourner les tests E2E sur notre machine, il nous reste à mettre en place un workflow d’intégration continue qui vérifiera automatiquement sur votre Pull Request et sur votre branche &lt;code class=&quot;language-text&quot;&gt;main&lt;/code&gt; que tous les tests sont ok.&lt;/p&gt;
+&lt;p&gt;J’utilise pour la plupart de mes projets Github Action et j’en suis satisfait, donc l’exemple suivant utilisera cet outil.
+Cependant, le principe fonctionne aussi avec un pipeline Gitlab, Jenkins ou autre.&lt;/p&gt;
+&lt;p&gt;Avec Github Action vous devez configurer un fichier Yaml pour décrire votre workflow.
+Créons le fichier &lt;code class=&quot;language-text&quot;&gt;./.github/workflows/continuous-integration.yml&lt;/code&gt; dans votre projet !&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Continuous Integration
+
+&lt;span class=&quot;token key atrule&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;branches&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;**&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token key atrule&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;runs-on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; ubuntu&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;latest
+    &lt;span class=&quot;token key atrule&quot;&gt;steps&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;# D&apos;abord on install un chromium dans le runner&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Install Chromium
+        &lt;span class=&quot;token key atrule&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; sudo apt&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;get install chromium&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;browser
+
+      &lt;span class=&quot;token comment&quot;&gt;# fetch du repo&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; actions/checkout@v2
+
+      &lt;span class=&quot;token comment&quot;&gt;# Usage de NodeJS &gt; 14.x&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Use Node.js
+        &lt;span class=&quot;token key atrule&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; actions/setup&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;node@v1
+        &lt;span class=&quot;token key atrule&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+          &lt;span class=&quot;token key atrule&quot;&gt;node-version&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 16.x
+
+      &lt;span class=&quot;token comment&quot;&gt;# Installer ses dépendances&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; yarn install
+        &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Install dependencies
+
+      &lt;span class=&quot;token comment&quot;&gt;# C&apos;est ici que vous devez _build_ votre application&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;# Vous pouvez vous inspiré de ce que j&apos;ai fait sur mon blog https://github.com/Slashgear/slashgear.github.io/blob/source/.github/workflows/continuous-integration.yml&lt;/span&gt;
+
+      &lt;span class=&quot;token comment&quot;&gt;# On lance les tests avec la même commande que locallement&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; yarn wdio run wdio.conf.js
+        &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Running E2E tests&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Essayons cela ! 🚀&lt;/p&gt;
+&lt;p&gt;😭 Malheureusement, vous devriez être confronté à une erreur très courante lors des tests E2E avec chrome.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[0-0] 2021-08-12T20:34:12.293Z ERROR webdriver: Request failed with status 500 due to unknown error: unknown error: Chrome failed to start: exited abnormally.
+[0-0]   (unknown error: DevToolsActivePort file doesn&apos;t exist)
+[0-0]   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+[0-0] 2021-08-12T20:34:12.293Z ERROR webdriver: #0 0x5631c488ba63 &amp;lt;unknown&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;DevToolsActivePort file doesn&apos;t exist&lt;/code&gt; signifie essentiellement que votre navigateur n’a pas réussi à démarrer.
+La raison principale de ce problème est le fait que vous demandez à WebdriverIo de démarrer le navigateur Chrome avec une interface utilisateur graphique sur un runner ubuntu qui n’a pas d’écran du tout 😅.&lt;/p&gt;
+&lt;p&gt;Nous devons créer une nouvelle configuration de Webdriver spécifique à l’action github qui étend notre configuration de base.
+Créons &lt;code class=&quot;language-text&quot;&gt;wdio-github.conf.js&lt;/code&gt; à côté de &lt;code class=&quot;language-text&quot;&gt;wdio.conf.js&lt;/code&gt; !&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; basicConfig &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;./wdio.conf&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+exports&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;config &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;basicConfig&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;config&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// We only need to override the Chrome configuration of capabilities&lt;/span&gt;
+  capabilities&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      maxInstances&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      browserName&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;chrome&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      acceptInsecureCerts&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// We need to extends some Chrome flags in order to tell Chrome to run headless&lt;/span&gt;
+      &lt;span class=&quot;token string&quot;&gt;&apos;goog:chromeOptions&apos;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        args&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;--headless&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;--disable-gpu&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;--disable-dev-shm-usage&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Il ne nous reste plus qu’à modifier la commande &lt;code class=&quot;language-text&quot;&gt;yarn wdio run&lt;/code&gt; dans notre fichier YAML de Workflow Github.
+Vous n’avez plus qu’à le pousser et Github le lancera pour vous !&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5b407649e807a878c10363ae2818db27/29007/action.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 63.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAABaUlEQVQ4y52Sy27CMBBFs2shie34bceB8AhQJEQR//9tt/KgUAqool1cjbzI0Z0zKdrdFrv9GbvDGcvtAZv9CeuPI4b9J1K/QZitEboV4nxA6rc0hW5RCYu6cQ8pZEywoYdPS5jQw8bvSNdB2gSuAoSOUK6jmT+shCHofYp2viHYlGmU3Nzk8p4yhX61hfYJk0qgZAoVVyiZpPd9Cmm7p9XHZLB2Ccq24Mqh0R5COYK+l/wROBxP8GkN5WfQoYcO82uUnxOwEhq+7SFNRC003qbsaTsCNi6Rl+yJq3GG67tkGqyxiN0SjQlQrqV2GZob3qfInp7JHZOdscYQUGhPLrMCaQImdfOwdvGbP3JIDQ18WlDDnGndUMsMeBk4/mdjw9AtIG28HEe6H5Bb6AvAS8M4WxHMxhnN7HA8zujvj8AlXTn7uziMEMr/b+W8YuoHGN9RamHApaX5dyDXdAQmLf2PFdfXdZ+t/AXUlTvvvwbd7QAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/5b407649e807a878c10363ae2818db27/f13a9/action.avif 200w,
+/static/5b407649e807a878c10363ae2818db27/af71e/action.avif 400w,
+/static/5b407649e807a878c10363ae2818db27/c9875/action.avif 800w,
+/static/5b407649e807a878c10363ae2818db27/07e28/action.avif 1200w,
+/static/5b407649e807a878c10363ae2818db27/2babf/action.avif 1600w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/5b407649e807a878c10363ae2818db27/ba381/action.webp 200w,
+/static/5b407649e807a878c10363ae2818db27/7f61c/action.webp 400w,
+/static/5b407649e807a878c10363ae2818db27/d00b9/action.webp 800w,
+/static/5b407649e807a878c10363ae2818db27/92f8c/action.webp 1200w,
+/static/5b407649e807a878c10363ae2818db27/fad48/action.webp 1600w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/5b407649e807a878c10363ae2818db27/772e8/action.png 200w,
+/static/5b407649e807a878c10363ae2818db27/e17e5/action.png 400w,
+/static/5b407649e807a878c10363ae2818db27/5a190/action.png 800w,
+/static/5b407649e807a878c10363ae2818db27/c1b63/action.png 1200w,
+/static/5b407649e807a878c10363ae2818db27/29007/action.png 1600w&quot;
+            sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/5b407649e807a878c10363ae2818db27/5a190/action.png&quot;
+            alt=&quot;Champagne !&quot;
+            title=&quot;Champagne !&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;configurer-le-multi-navigateur-&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#configurer-le-multi-navigateur-&quot; aria-label=&quot;configurer le multi navigateur  permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Configurer le multi navigateur !&lt;/h2&gt;
+&lt;p&gt;Chrome n’est pas le seul navigateur, et j’espère qu’il ne le sera jamais !&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WebdriverIo est une excellente solution pour exécuter des tests sur plusieurs navigateurs&lt;/strong&gt;.
+Et je ne vous montrerai pas ici les excellentes fonctionnalités que vous pourriez utiliser avec des solutions d’exécution à distance comme &lt;a href=&quot;https://www.browserstack.com/&quot;&gt;BrowserStack&lt;/a&gt; ou &lt;a href=&quot;https://saucelabs.com/&quot;&gt;Saucelabs&lt;/a&gt; directement avec WebdriverIo.&lt;/p&gt;
+&lt;p&gt;Configurons un Firefox en local !&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Assurez-vous d’installer un Java JDK 8 sur votre machine.
+Petite astuce pour les utilisateurs de Macos comme moi : lancez &lt;code class=&quot;language-text&quot;&gt;brew install adoptopenjdk/openjdk/adoptopenjdk8&lt;/code&gt; fait le travail !&lt;/li&gt;
+&lt;li&gt;Lancez &lt;code class=&quot;language-text&quot;&gt;yarn add -D @wdio/selenium-standalone-service&lt;/code&gt; pour installer les services selenium fonctionnant avec WebdriverIo.&lt;/li&gt;
+&lt;li&gt;Assurez-vous que vous avez Firefox installé localement.&lt;/li&gt;
+&lt;li&gt;Maintenant, la dernière chose que nous devons faire est de mettre à jour notre configuration pour ajouter les capacités de Firefox.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Dans &lt;code class=&quot;language-text&quot;&gt;wdio.conf.js&lt;/code&gt;, remplacez simplement les tableaux &lt;em&gt;capabilities&lt;/em&gt; et &lt;em&gt;services&lt;/em&gt; par ceci.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  capabilites: &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        maxInstances: &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;,
+        browserName: &lt;span class=&quot;token string&quot;&gt;&apos;chrome&apos;&lt;/span&gt;,
+        acceptInsecureCerts: true,
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        maxInstances: &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;,
+        browserName: &lt;span class=&quot;token string&quot;&gt;&apos;firefox&apos;&lt;/span&gt;,
+        acceptInsecureCerts: true,
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;,
+  services: &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;chromedriver&apos;&lt;/span&gt;, &lt;span class=&quot;token string&quot;&gt;&apos;selenium-standalone&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;,
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Si vous exécutez la commande &lt;code class=&quot;language-text&quot;&gt;yarn wdio run wdio.conf.js&lt;/code&gt; maintenant, cela va déclencher les deux tests sur Firefox et Chrome et c’est complètement génial !&lt;/p&gt;
+&lt;p&gt;La dernière chose que nous devons faire est de mettre à jour notre configuration spécifique à Github afin qu’elle fonctionne également dans votre intégration continue.
+Vous devez aussi mettre à jour les &lt;em&gt;capabilites&lt;/em&gt;, afin d’ajouter Firefox et de le faire démarrer &lt;em&gt;Headless&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Dans &lt;code class=&quot;language-text&quot;&gt;wdio-github.conf.js&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; basicConfig &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;./wdio.conf&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+exports&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;config &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;basicConfig&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;config&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  capabilities&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      maxInstances&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      browserName&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;chrome&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      acceptInsecureCerts&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token string&quot;&gt;&apos;goog:chromeOptions&apos;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        args&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;--headless&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;--disable-gpu&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;--disable-dev-shm-usage&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      maxInstances&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      browserName&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;firefox&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      acceptInsecureCerts&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token string&quot;&gt;&apos;moz:firefoxOptions&apos;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        args&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;-headless&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Et c’est tout !&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Amusez-vous bien à couvrir votre application avec des tests E2E !
+N’hésitez pas à me @ sur twitter si ce &lt;em&gt;How to&lt;/em&gt; vous a aidé.&lt;/p&gt;
+&lt;p&gt;Si vous voulez voir l’exemple d’application que j’ai utilisé dans ce tutoriel, jetez un coup d’oeil à &lt;a href=&quot;https://github.com/Slashgear/example-wdio&quot;&gt;cet exemple de dépôt Github&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to setup end to end tests with WebdriverIo on Github action ?]]></title><description><![CDATA[I recently set up an end-to-end testing stack to make sure I wasn’t going to introduce any functional regressions to my blog.
 With several…]]></description><link>https://slashgear.github.io/how-to-setup-e2e-tests-with-webdriverio/</link><guid isPermaLink="false">https://slashgear.github.io/how-to-setup-e2e-tests-with-webdriverio/</guid><pubDate>Fri, 13 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I recently set up an end-to-end testing stack to make sure I wasn’t going to introduce any functional regressions to my blog.
 With several years of experience using E2E (End to End) testing technologies, I still encountered some difficulties in setting it up.&lt;/p&gt;
-&lt;p&gt;In order to save you time I give you a step by step tuto for the installation of the tools necessary to have an efficient test stack in a few minutes.&lt;/p&gt;
+&lt;p&gt;In order to save you time I give you a step by step tutorial for the installation of the tools necessary to have an efficient test stack in a few minutes.&lt;/p&gt;
 &lt;h2 id=&quot;make-it-run-locally-first&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#make-it-run-locally-first&quot; aria-label=&quot;make it run locally first permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Make it run locally first&lt;/h2&gt;
 &lt;p&gt;You need to install some dependencies to your project first.
 For me the project was a quite simple Gatsby site, but you could settle it on whatever website you develop that have a &lt;code class=&quot;language-text&quot;&gt;package.json&lt;/code&gt; file.
@@ -23,7 +303,7 @@ We are really lucky because &lt;a href=&quot;https://webdriver.io/&quot;&gt;Webd
 &lt;p&gt;Then all you need is to trigger the initialisation of a new configuration.
 The CLI will show you a prompt you should follow.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; wdio config&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;/98f39f6c4c1dabf691434adfc56a6ff9/setup.gif&quot; alt=&quot;exemple screen captured of the CLI output&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/98f39f6c4c1dabf691434adfc56a6ff9/setup.gif&quot; alt=&quot;Exemple de capture d&amp;#x27;écran de la sortie CLI&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Here is what you should do for each question:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Select first &lt;code class=&quot;language-text&quot;&gt;On my local machine&lt;/code&gt;.&lt;/li&gt;
