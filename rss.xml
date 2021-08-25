@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Your Site's RSS Feed]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 25 Aug 2021 11:12:44 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Your Site's RSS Feed]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 25 Aug 2021 12:39:05 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
 You should follow him on Twitter.
 Take a…]]></description><link>https://slashgear.github.io/</link><guid isPermaLink="false">https://slashgear.github.io/</guid><content:encoded>&lt;p&gt;Written by &lt;strong&gt;Antoine Caron&lt;/strong&gt; who lives and works in Lyon (France) building useful things at &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
 You should follow him &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;on Twitter&lt;/a&gt;.
@@ -9,7 +9,764 @@ Tu devrais le suivre sur Twitter.
 N’hésites…]]></description><link>https://slashgear.github.io/fr/</link><guid isPermaLink="false">https://slashgear.github.io/fr/</guid><content:encoded>&lt;p&gt;Ecrit par &lt;strong&gt;Antoine Caron&lt;/strong&gt; qui vit et travaille à Lyon et développe des choses utiles à &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
 Tu devrais le suivre sur &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;Twitter&lt;/a&gt;.
 N’hésites pas à aller voir &lt;a href=&quot;/conferences&quot;&gt;ses conférences sur la page dédiée&lt;/a&gt;.
-Si vous voulez voir mon parcours pro, &lt;a href=&quot;/resume&quot;&gt;mon CV est disponible ici en 🇬🇧&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Comment mettre en place des tests bout en bout avec WebdriverIo ?]]></title><description><![CDATA[J’ai récemment mis en place une pile de tests de bout en bout pour m’assurer que je n’allais pas introduire de régressions fonctionnelles…]]></description><link>https://slashgear.github.io/fr/comment-mettre-en-place-des-tests-bout-en-bout-avec-webdriverio/</link><guid isPermaLink="false">https://slashgear.github.io/fr/comment-mettre-en-place-des-tests-bout-en-bout-avec-webdriverio/</guid><pubDate>Mon, 16 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;J’ai récemment mis en place une pile de tests de bout en bout pour m’assurer que je n’allais pas introduire de régressions fonctionnelles sur mon blog.
+Si vous voulez voir mon parcours pro, &lt;a href=&quot;/resume&quot;&gt;mon CV est disponible ici en 🇬🇧&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Bonnes pratiques pour la maintenance d'une application web]]></title><description><![CDATA[Comment ne pas jeter son application tous les deux ans ? Retour d’expérience basé sur les bonnes pratiques appliquées à la plateforme web…]]></description><link>https://slashgear.github.io/fr/comment-ne-pas-jeter-son-application-au-bout-de-deux-ans/</link><guid isPermaLink="false">https://slashgear.github.io/fr/comment-ne-pas-jeter-son-application-au-bout-de-deux-ans/</guid><pubDate>Wed, 25 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;Comment ne pas jeter son application tous les deux ans ?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;Retour d’expérience basé sur les bonnes pratiques appliquées à la plateforme web développée chez &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock Streaming&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;un-peu-de-contexte&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#un-peu-de-contexte&quot; aria-label=&quot;un peu de contexte permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Un peu de contexte&lt;/h2&gt;
+&lt;p&gt;Chez Bedrock Streaming de nombreuses équipes développent et maintiennent des applications &lt;em&gt;frontend&lt;/em&gt; pour nos clients et utilisateurs.
+Certaines ne sont pas toute jeune.
+En effet, l’application sur laquelle je travaille principalement est un site web dont les développements ont commencé en 2014.
+Je l’ai d’ailleurs déjà évoquée dans différents articles de &lt;a href=&quot;https://slashgear.github.io/&quot;&gt;ce blog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 294px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/57c6ca4dcd6d3e2b9db0b2d28a14cd48/04a86/commit-count.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 29.500000000000004%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAABB0lEQVQY03WRXU/CMBiF9/9/gtFE8QI1cd6AF0CiLCZzOCbLQjbAuEXiSNCpfIM6HvNuKVlIvHj6tqftaU+rTdYw+4bpBr5W2wzRVH+fz6WQ7si1dLdPk+b1fUaczDNTMZcFUuc/+UFSZbz4zVltYZnmyJxUdSFtOJ5wYzpYnYAgjCmd6dyabZqmw8FxmavrBiflS8I4oReN8AYvPHh9On5I92nI/aNPy+0xnqwzUy1OFtjegDvbIxp9UKk10St1qg2Do9ML9Gqdw9I5/nOM7fUxLDfDdLq4QYTRcqkZVrZXbquJq8RVkUV8m26y2BJPaSpS8QkUoql316TZ/5TigiL/fZboyvAPSmTAPpMq1MsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/57c6ca4dcd6d3e2b9db0b2d28a14cd48/f13a9/commit-count.avif 200w,
+/static/57c6ca4dcd6d3e2b9db0b2d28a14cd48/6d0e0/commit-count.avif 294w&quot;
+              sizes=&quot;(max-width: 294px) 100vw, 294px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/57c6ca4dcd6d3e2b9db0b2d28a14cd48/ba381/commit-count.webp 200w,
+/static/57c6ca4dcd6d3e2b9db0b2d28a14cd48/456a1/commit-count.webp 294w&quot;
+              sizes=&quot;(max-width: 294px) 100vw, 294px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/57c6ca4dcd6d3e2b9db0b2d28a14cd48/772e8/commit-count.png 200w,
+/static/57c6ca4dcd6d3e2b9db0b2d28a14cd48/04a86/commit-count.png 294w&quot;
+            sizes=&quot;(max-width: 294px) 100vw, 294px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/57c6ca4dcd6d3e2b9db0b2d28a14cd48/04a86/commit-count.png&quot;
+            alt=&quot;impression d&amp;#39;écran du nombre de commit sur master de notre projet 15668&quot;
+            title=&quot;impression d&amp;#39;écran du nombre de commit sur master de notre projet 15668&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Vous pourriez vous dire: &lt;em&gt;“Oh les pauvres maintenir une application vieille de presque 10 ans ça doit être un enfer !”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Rassurez-vous, ce n’est pas le cas !
+J’ai travaillé sur des projets bien moins vieux mais sur lesquels le développement de nouvelles fonctionnalités était bien plus pénible.&lt;/p&gt;
+&lt;p&gt;Aujourd’hui le projet reste à jour techniquement, on doit être sur la dernière version de React alors que celui-ci avait commencé sur une version &lt;em&gt;0.x.x&lt;/em&gt;.
+Dans ce monde des technologies web souvent décrié (ex: les nombreux articles sur la &lt;em&gt;Javascript Fatigue&lt;/em&gt;) dont les outils et les pratiques évoluent constamment, conserver un projet “à jour” reste un vrai challenge.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 350px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/87ea590416839a8413c9d4905c0fa4b6/13ae7/releases.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 32.49999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAAA1klEQVQoz52RUUsCQRSF/fNC4JME/QARtQwNg6BX01xWZ3c2tNBCEOl5X3ScGdn9YheyTd0MD5x7hwvncOfcAkAcx2czq09Q+H5kkSc8hqxpapgUYyxKqXRgrM0Vam3QxmK3WzbapD1rtjP0ZEDxokT9ukn58opKtcbNbStltdagfddhtVYMheTp2eH+4ZFGs8Xb9P3wy0kJw5Dx5BVfBgjPZ+C4jISH50tGwkcGL6iNZvYxx3EFvYFLt++wWH7+L8PcvE7kuNswGURR9Cf3L/r7YD8bfgGItBhXwYwvkwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/87ea590416839a8413c9d4905c0fa4b6/f13a9/releases.avif 200w,
+/static/87ea590416839a8413c9d4905c0fa4b6/7bd34/releases.avif 350w&quot;
+              sizes=&quot;(max-width: 350px) 100vw, 350px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/87ea590416839a8413c9d4905c0fa4b6/ba381/releases.webp 200w,
+/static/87ea590416839a8413c9d4905c0fa4b6/a3432/releases.webp 350w&quot;
+              sizes=&quot;(max-width: 350px) 100vw, 350px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/87ea590416839a8413c9d4905c0fa4b6/772e8/releases.png 200w,
+/static/87ea590416839a8413c9d4905c0fa4b6/13ae7/releases.png 350w&quot;
+            sizes=&quot;(max-width: 350px) 100vw, 350px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/87ea590416839a8413c9d4905c0fa4b6/13ae7/releases.png&quot;
+            alt=&quot;nombre de versions de l&amp;#39;application 1445&quot;
+            title=&quot;nombre de versions de l&amp;#39;application 1445&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;De plus, dans le contexte de ce projet, en presque 10 ans, nous avons connu une centaine de contributeurs.
+Certains ne sont restés que quelques mois/années.
+Comment garder au maximum la connaissance sur “Comment on fait les choses et comment ça marche ?” dans un contexte humain si mouvant ?&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/333e464600eaed01c177c248b9aac0eb/1e043/contributors.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 53%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABxklEQVQoz5WSTWsTURSG55+5K4ILwZ3iopZ20Z1LXQmCX6BuVLB0BKlELAyFImprG0IpamqlpTrJtIn5mGQyITGT1KSZz9x5ZJJCk0I1Hjjcc7nwnuec+0qMEWEYMm5I7U4HNZVG0/bZ2d1DTWv8UFPUanVy+SIFvUSkJ8KQngj74qdzuKnkeR4Vs0rZqGAYZYxykXy+wFG3i142sKzmP8mHTykIAnRdB9HDaDh8L7n9R1VVCUPBdkrj884eDTvgXe43vohIxYAW6LruKKFpmsjyPKtr68SUFW7emSO+8Yn79+6S3PrKxJXLTExdY2F5jfOTs2yraYxWm9qRTU5Nsbm0RMe2TwijInuQoVjQOey0MKtZDlttXsVi9HohicQqG5txmvUGb148x2pafToBlLI/+fJhBcfzTgQtw2Lmwg0Wnq3z5ONjpp9Okzn4xq3JS8zJMsvv3/Lw0QN83x/LCVK9anHx3HUUOcHr5Etm5qfIZHa5PXuVRUUhuRVHWZSxHbe/UyHE6C8f30dGHvbZYJiR1v/lRynak97w2Tddir880oaLZjpUWn6fKDwWOm2RMwUjw7q+wPEFbiCwvUF6gTjTvH8T/AMwFjMwDY8xawAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/333e464600eaed01c177c248b9aac0eb/f13a9/contributors.avif 200w,
+/static/333e464600eaed01c177c248b9aac0eb/af71e/contributors.avif 400w,
+/static/333e464600eaed01c177c248b9aac0eb/679d2/contributors.avif 690w&quot;
+              sizes=&quot;(max-width: 690px) 100vw, 690px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/333e464600eaed01c177c248b9aac0eb/ba381/contributors.webp 200w,
+/static/333e464600eaed01c177c248b9aac0eb/7f61c/contributors.webp 400w,
+/static/333e464600eaed01c177c248b9aac0eb/8efd0/contributors.webp 690w&quot;
+              sizes=&quot;(max-width: 690px) 100vw, 690px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/333e464600eaed01c177c248b9aac0eb/772e8/contributors.png 200w,
+/static/333e464600eaed01c177c248b9aac0eb/e17e5/contributors.png 400w,
+/static/333e464600eaed01c177c248b9aac0eb/1e043/contributors.png 690w&quot;
+            sizes=&quot;(max-width: 690px) 100vw, 690px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/333e464600eaed01c177c248b9aac0eb/1e043/contributors.png&quot;
+            alt=&quot;liste des 100 contributeurs du projet&quot;
+            title=&quot;liste des 100 contributeurs du projet&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;C’est ce que je vous propose de vous présenter.&lt;/p&gt;
+&lt;p&gt;Avec l’aide de mes collègues, j’ai rassemblé la liste des bonnes pratiques qui nous permettent encore aujourd’hui de maintenir ce projet en état.
+Avec &lt;a href=&quot;https://twitter.com/fooragnak&quot;&gt;Florent Dubost&lt;/a&gt;, on s’est souvent dit qu’il serait intéressant de la publier.
+Nous espèrons que cela vous sera utile.&lt;/p&gt;
+&lt;h2 id=&quot;simposer-des-règles-et-les-automatiser&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#simposer-des-r%C3%A8gles-et-les-automatiser&quot; aria-label=&quot;simposer des règles et les automatiser permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;S’imposer des règles et les automatiser&lt;/h2&gt;
+&lt;p&gt;Un projet qui résiste au temps c’est tout d’abord un ensemble de connaissances qu’on empile les unes sur les autres.
+C’est en quelque sorte la tour de Kapla que vous assembliez petit en essayant d’aller le plus haut possible.
+Une base solide sur laquelle on espère pouvoir ajouter le plus possible avant une potentielle chute.&lt;/p&gt;
+&lt;p&gt;Dès le début d’un projet on est donc amené à prendre des décisions importantes sur “Comment on souhaite faire les choses ?“.
+On pense par exemple à “Quel format pour nos fichiers ? Comment on nomme telle ou telle chose ?”
+Écrire une documentation précise de “Comment on fait les choses” pourrait paraitre une bonne idée.&lt;/p&gt;
+&lt;p&gt;Cependant la documentation c’est cool, mais ça a tendance à périmer très vite.
+Nos décisions évoluent mais pas la documentation.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Les temps changent mais pas les README.”&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/omansour&quot;&gt;&lt;em&gt;Olivier Mansour (deputy CTO à Bedrock)&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Automatiser la vérification de chacune des règles qu’on s’impose (sur notre codebase ou nos process) est bien plus pérenne.
+Pour faire simple, on évite dans la mesure du possible de dire “On devrait faire les choses comme cela”, et on préfère “on va coder un truc qui nous le vérifie à notre place”.
+En plus de ça, coté JS on est vraiment bien équipé avec des outils comme &lt;a href=&quot;https://eslint.org/&quot;&gt;Eslint&lt;/a&gt; qui nous permettent d’implémenter nos propres règles.&lt;/p&gt;
+&lt;p&gt;Le réflexe qu’on essaie donc d’adopter est donc le suivant:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;“On devrait essayer de faire comme cela à présent !”&lt;/li&gt;
+&lt;li&gt;“Ok c’est intéressant, mais comment peut-on s’assurer qu’on fasse comme cela automatiquement avec notre CI (Intégration continue) ?”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;L’intégration continue d’un projet est la solution parfaite pour ne rien louper sur chacune des &lt;em&gt;Pull Request&lt;/em&gt; que nous proposons.
+Les reviews n’en sont que plus simples car vous n’avez plus à vous soucier de l’ensemble des règles qui sont déjà automatisées.
+Dans ce modèle, la review sert donc plus au partage de connaissance qu’au flicage de typo et autre non respect des conventions du projet.&lt;/p&gt;
+&lt;p&gt;Dans ce principe, il faut donc essayer de bannir les règles orales.
+Le temps des druides est terminé, s’il faut transmettre oralement toutes les bonnes pratiques d’un projet, l’accompagnement de nouveaux développeurs dans votre équipe n’en sera que plus long.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/c822e03ae4384a98d62f2bbf5cca0be9/panoramix.gif&quot; alt=&quot;la recette de la potion magique de panoramix est perdue car secrète&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Un projet n’est pas figé. Ces règles évoluent donc avec le temps.
+On préfèrera alors l’ajout de règles qui possèdent un script qui &lt;em&gt;autofixera&lt;/em&gt; toute la codebase intelligemment.
+De nombreuses règles Eslint le proposent, et cela est vraiment un critère de sélection très important dans nos choix de nouvelles conventions.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;eslint --fix&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Une règle très stricte qui vous obligera à modifier votre code manuellement avant chaque push est pénible à la longue et énervera vos équipes.
+Alors qu’une règle (même très stricte) qui peut s’autofixer automatiquement au moment du commit ne sera pas perçue comme gênante.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Comment décider d’ajouter de nouvelles règles ?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Cette question peut paraitre épineuse, prenons par exemple le cas des &lt;code class=&quot;language-text&quot;&gt;&amp;lt;tab&gt;&lt;/code&gt; / &lt;code class=&quot;language-text&quot;&gt;&amp;lt;space&gt;&lt;/code&gt; dans les fichiers.
+Pour cela, on essaie d’éviter les débats sempiternels et on se plie à la tendance et aux règles de la communauté.
+Par exemple, &lt;a href=&quot;https://github.com/M6Web/eslint-tools&quot;&gt;notre base de configuration Eslint&lt;/a&gt;) est basée sur celle d’Airbnb qui semble avoir un certain succès dans la communauté JS.
+Mais si la règle qu’on souhaite s’imposer n’est pas disponible dans Eslint ou d’autres outils, il nous arrive de préférer ne pas suivre la règle plutôt que de se dire “On le fait sans CI qui vérifie”.&lt;/p&gt;
+&lt;h3 id=&quot;la-liste-presque-exhaustive-🤞&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#la-liste-presque-exhaustive-%F0%9F%A4%9E&quot; aria-label=&quot;la liste presque exhaustive 🤞 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;La liste &lt;em&gt;presque&lt;/em&gt; exhaustive 🤞&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 768px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/70d19ce71dc58f01820a31e0fee0aae5/e5715/ci-workflow.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 116.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAACXBIWXMAABYlAAAWJQFJUiTwAAADRUlEQVQ4y41VaW/cNhT0//85RYCiH9q4KNDEbhw7ttfHrvbSipJ4U7e0OqbgW9txEWdrAoRICZw3fDPv6WSaJvR9j+cxDfjPGLoJ0/R933cjxuHwoigKsCihWTc1vTsZhgFpkqBpWlRNiUf2BU3boG1atG2Du/AMeeno+77rMWdfoVyCru3QtXss4xuEfIFhP4JzjhPP0DmHqqzp4Fx8QlWXkEIi5SmuNn8g4REYY4h2DJerjwjCGa2V0JhtPyNg36CEgZQSJ/jJKMsSXddh6Efs93sKmmUZcleiKEoYY1DXNaqqRlM3KMvicGXP8PUcx5E++MNaK1xEH8AVgxQKSZIgSWJim6YJZGpwE53ikZ1DphrD0B8YTk9ZfwY9JDx/Ecvn2VpLLK3OkbkczlkKkCYp5U4IQWd/uPIzYJ7lpOJKf0FW+Pwo5K5A6K6hi5gYF1mFpJhDlltktvjO8C1AD+Yjz8JPSDiDVhqMxXgIL7AK5+Apxy5kuA3Ocbe8JOscZ5jnL/nEBBijSYAJPYZxIFGsdSjrnFzh1z41PwX0osRxjGC5IBE8Wy0tzlcfsIxvyTKSG1yHH3EfnZEo4zgcZ+it43Pjr+8Z0VNlKPLqKSCjIB6c8/T4lclzRY578SdcocjozmQI9Gdwt4XgkkTZ2CvE2RzOvEMUb411fA+lJZx1MNrgcX2NmO/gXIZdGGG+mSHY3COJ3yFK27aoBotu30IpdaiQIqUS9apb42BLgbwysMYeF8UDaq1xtvwFqTzYJo05Lta/YScWUNKLonET/oWH6B8S6Kgo/sq+hjEAfX+oFGsNxj0wDqC9V96qDFY7CPmOStFG45L9CqFjCCFhlMMdP8VOemMLEmKhzrDVNzDyf3zoLdM0DaRJUNUHm/i5DgNILZBlOdXxNlpjx7ZQUmGaxiOARUl5lNUGeZmRwn7GNoByKdnIaIslmyESK7r2UYb+WVUVieAKja7bwyiLb5tT7HhAYL6p+ipZsCta+1J9s8FOr34i49Pvxkf3vrTGV0pJaykF7QlcqbcBXzN86QwAdW9vk9v0d4TiESKVcDrHA/8bK3kFIzNqGkcZvm64vtlmLsM2WkEbRS7w1eEFYfHupcH+C0jx45Z0wbNIAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/70d19ce71dc58f01820a31e0fee0aae5/f13a9/ci-workflow.avif 200w,
+/static/70d19ce71dc58f01820a31e0fee0aae5/af71e/ci-workflow.avif 400w,
+/static/70d19ce71dc58f01820a31e0fee0aae5/0bbb0/ci-workflow.avif 768w&quot;
+              sizes=&quot;(max-width: 768px) 100vw, 768px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/70d19ce71dc58f01820a31e0fee0aae5/ba381/ci-workflow.webp 200w,
+/static/70d19ce71dc58f01820a31e0fee0aae5/7f61c/ci-workflow.webp 400w,
+/static/70d19ce71dc58f01820a31e0fee0aae5/8b983/ci-workflow.webp 768w&quot;
+              sizes=&quot;(max-width: 768px) 100vw, 768px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/70d19ce71dc58f01820a31e0fee0aae5/772e8/ci-workflow.png 200w,
+/static/70d19ce71dc58f01820a31e0fee0aae5/e17e5/ci-workflow.png 400w,
+/static/70d19ce71dc58f01820a31e0fee0aae5/e5715/ci-workflow.png 768w&quot;
+            sizes=&quot;(max-width: 768px) 100vw, 768px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/70d19ce71dc58f01820a31e0fee0aae5/e5715/ci-workflow.png&quot;
+            alt=&quot;Notre workflow d&amp;#39;intégration continue&quot;
+            title=&quot;Notre workflow d&amp;#39;intégration continue&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Le format des fichiers est suivi géré par &lt;a href=&quot;https://editorconfig.org/&quot;&gt;Editorconfig&lt;/a&gt;, &lt;a href=&quot;https://prettier.io/&quot;&gt;prettier&lt;/a&gt; et &lt;a href=&quot;https://eslint.org/&quot;&gt;Eslint&lt;/a&gt;.
+Nous avons opensourcé &lt;a href=&quot;https://github.com/M6Web/eslint-tools&quot;&gt;notre propre configuration&lt;/a&gt;, si jamais celle-ci peut vous être utile.&lt;/li&gt;
+&lt;li&gt;Nous utilisons un &lt;a href=&quot;https://www.conventionalcommits.org/en/v1.0.0/&quot;&gt;nommage de commit bien spécifique&lt;/a&gt; pour générer nos changelog.
+Pour s’assurer que les devs le respectent, une simple étape de notre CI le vérifie.&lt;/li&gt;
+&lt;li&gt;On ne souhaite pas qu’un dev fasse grossir énormément nos bundles JS en production, c’est pourquoi nous suivons et mesurons leur taille dans la CI.
+On utilise un outil maison mais on peut vous recommander l’outil &lt;a href=&quot;https://buildtracker.dev/&quot;&gt;BuildTracker&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;La couverture de tests n’est pas un indicateur pour l’équipe, toutes les lignes n’ont pas la même nécessité pour nous d’être testées.
+Certaines équipes à Bedrock suivent cependant cet indicateur qui a au moins l’intérêt de donner une tendance.&lt;/li&gt;
+&lt;li&gt;Nos tests unitaires tournent bien évidemment sur la CI, ceux-ci doivent passer.&lt;/li&gt;
+&lt;li&gt;Nos tests fonctionnels (End to end: E2E) tournent sur Chrome Headless, ils doivent être au vert.&lt;/li&gt;
+&lt;li&gt;Les logs de nos tests E2E sont récupérés et parsés afin d’éviter l’introduction d’erreur ou de React warning (Le script de parsing est cependant compliqué à maintenir)&lt;/li&gt;
+&lt;li&gt;Les tests fonctionnels fonctionnent dans une &lt;em&gt;sandbox&lt;/em&gt; où tout le réseau est proxyfié.
+Nous surveillons que nos tests ne dépendent pas d’une API non mockée qui pourrait ralentir leur exécution.&lt;/li&gt;
+&lt;li&gt;Durant les tests E2E nous vérifions qu’aucune requête d’image n’a généré une 404.&lt;/li&gt;
+&lt;li&gt;On réalise quelques &lt;a href=&quot;https://www.deque.com/axe/&quot;&gt;vérifications d’accessibilité avec Axe&lt;/a&gt; durant nos tests E2E.&lt;/li&gt;
+&lt;li&gt;On vérifie quelques règles sur le CSS avec &lt;a href=&quot;https://stylelint.io/&quot;&gt;Stylelint&lt;/a&gt; et &lt;a href=&quot;https://github.com/M6Web/bemlinter&quot;&gt;bemlinter&lt;/a&gt; (on n’utilise plus BEM aujourd’hui mais il reste encore un peu de style géré en SCSS qu’on migre petit à petit en StyledComponent)&lt;/li&gt;
+&lt;li&gt;Le projet est un monorepo sur lequel nous essayons de maintenir les mêmes versions de dépendances pour chaque package.
+Pour cela nous avons développé un outil qui permet de faire cette vérification &lt;em&gt;&lt;a href=&quot;https://www.npmjs.com/package/monorepo-dependencies-check&quot;&gt;monorepo-dependencies-check&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;On vérifie que notre fichier &lt;code class=&quot;language-text&quot;&gt;yarn.lock&lt;/code&gt; n’a pas été modifié par inadvertance ou bien qu’il a été mis à jour par rapport aux modifications du &lt;code class=&quot;language-text&quot;&gt;package.json&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.terraform.io/&quot;&gt;Terraform&lt;/a&gt; est utilisé pour la gestion de nos ressources cloud, nous vérifions que le format des fichiers est correct.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;tester-tester-tester&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tester-tester-tester&quot; aria-label=&quot;tester tester tester permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tester, tester, tester&lt;/h2&gt;
+&lt;p&gt;J’espère qu’en 2021 il n’est plus nécessaire d’expliquer pourquoi tester automatiquement son application est indispensable pour la rendre pérenne.
+En JS on est plutôt bien équipé en terme d’outils pour tester aujourd’hui.
+Il reste cependant l’éternelle question:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Qu’est-ce qu’on veut tester ?”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Globalement si on recherche sur internet cette question, on voit que des besoins différents font émerger des pratiques et des outils de testing bien différents.
+Ce serait très présomptueux de penser qu’il y a une bonne manière de tester automatiquement son application.
+C’est pourquoi il est préférable de définir une ou plusieurs stratégies de test qui répondent à des besoins définis et limités.&lt;/p&gt;
+&lt;p&gt;Nos stratégies de tests reposent sur deux volontés bien distinctes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Automatiser la vérification des fonctionnalités proposées aux utilisateurs en se mettant à sa place.&lt;/li&gt;
+&lt;li&gt;Nous fournir des solutions efficaces pour specifier la manière dont nous implémentons nos solutions techniques pour nous permettre de les faire évoluer plus facilement.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pour cela, nous réalisons deux “types de tests” que je propose de vous présenter ici.&lt;/p&gt;
+&lt;h3 id=&quot;nos-tests-e2e&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#nos-tests-e2e&quot; aria-label=&quot;nos tests e2e permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Nos tests E2E&lt;/h3&gt;
+&lt;p&gt;On les appelle “tests fonctionels”, ce sont des tests End-to-end (E2E) sur une stack technique très efficace composée de &lt;a href=&quot;https://cucumber.io/docs/installation/javascript/&quot;&gt;CucumberJS&lt;/a&gt;, &lt;a href=&quot;https://webdriver.io/&quot;&gt;WebdriverIO&lt;/a&gt; avec &lt;a href=&quot;https://developers.google.com/web/updates/2017/04/headless-chrome&quot;&gt;ChromeHeadless&lt;/a&gt;
+Il s’agit d’une stack technique mise en place au début du projet (à l’époque avec &lt;a href=&quot;https://phantomjs.org/&quot;&gt;PhantomJS&lt;/a&gt; pour les plus anciens d’entre-vous)&lt;/p&gt;
+&lt;p&gt;Cette stack nous permet d’automatiser le pilotage de tests qui contrôlent un navigateur.
+Ce navigateur va réaliser des actions qui se rapprochent le plus de celles que nos vrais utilisateurs peuvent faire tout en vérifiant comment le site réagit.&lt;/p&gt;
+&lt;p&gt;Il y a quelques années, cette stack technique était plutôt compliquée à mettre en place, mais aujourd’hui il est plutôt simple de le faire.
+&lt;a href=&quot;https://github.com/Slashgear/slashgear.github.io&quot;&gt;Le site qui héberge cet article de blog&lt;/a&gt; en est lui-même la preuve.
+Il ne m’a fallu qu’une dizaine de minutes pour mettre en place cette stack avec &lt;a href=&quot;https://webdriver.io/docs/gettingstarted&quot;&gt;le WebdriverIo CLI&lt;/a&gt; pour vérifier que mon blog fonctionne comme prévu.&lt;/p&gt;
+&lt;p&gt;J’ai d’ailleurs récemment publié &lt;a href=&quot;https://slashgear.github.io/how-to-setup-e2e-tests-with-webdriverio/&quot;&gt;un article présentant la mise en place de cette stack&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Voici donc un exemple de fichier de test E2E pour vous donner une idée:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;gherkin&quot;&gt;&lt;pre class=&quot;language-gherkin&quot;&gt;&lt;code class=&quot;language-gherkin&quot;&gt;&lt;span class=&quot;token feature&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;Feature:&lt;/span&gt;&lt;span class=&quot;token important&quot;&gt; Playground&lt;/span&gt;
+&lt;/span&gt;
+  &lt;span class=&quot;token scenario&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;Background:&lt;/span&gt;&lt;span class=&quot;token important&quot;&gt; Playground context&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token atrule&quot;&gt;Given&lt;/span&gt; &lt;span class=&quot;token atrule&quot;&gt;I&lt;/span&gt; use &lt;span class=&quot;token string&quot;&gt;&quot;playground&quot;&lt;/span&gt; test context
+
+  &lt;span class=&quot;token scenario&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;Scenario:&lt;/span&gt;&lt;span class=&quot;token important&quot;&gt; Check if playground is reachable&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token atrule&quot;&gt;When&lt;/span&gt; As user &lt;span class=&quot;token string&quot;&gt;&quot;toto@toto.fr&quot;&lt;/span&gt; I visit the &lt;span class=&quot;token string&quot;&gt;&quot;playground&quot;&lt;/span&gt; page
+    &lt;span class=&quot;token atrule&quot;&gt;And&lt;/span&gt; &lt;span class=&quot;token atrule&quot;&gt;I&lt;/span&gt; click on &lt;span class=&quot;token string&quot;&gt;&quot;playground trigger&quot;&lt;/span&gt;
+    &lt;span class=&quot;token atrule&quot;&gt;Then&lt;/span&gt; &lt;span class=&quot;token atrule&quot;&gt;I&lt;/span&gt; should see a &lt;span class=&quot;token string&quot;&gt;&quot;visible playground&quot;&lt;/span&gt;
+    &lt;span class=&quot;token atrule&quot;&gt;And&lt;/span&gt; &lt;span class=&quot;token atrule&quot;&gt;I&lt;/span&gt; should see 4 &lt;span class=&quot;token string&quot;&gt;&quot;playground tab&quot;&lt;/span&gt; in &lt;span class=&quot;token string&quot;&gt;&quot;playground&quot;&lt;/span&gt;
+
+    &lt;span class=&quot;token atrule&quot;&gt;When&lt;/span&gt; &lt;span class=&quot;token atrule&quot;&gt;I&lt;/span&gt; click on &lt;span class=&quot;token string&quot;&gt;&quot;playground trigger&quot;&lt;/span&gt;
+    &lt;span class=&quot;token atrule&quot;&gt;Then&lt;/span&gt; &lt;span class=&quot;token atrule&quot;&gt;I&lt;/span&gt; should not see a &lt;span class=&quot;token string&quot;&gt;&quot;visible playground&quot;&lt;/span&gt;
+
+    &lt;span class=&quot;token comment&quot;&gt;# ...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Et ça donne ça en local avec mon navigateur Chrome !&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/32bbadf844172a03f1f0a39a3cee3faa/e2e-example.gif&quot; alt=&quot;Exemple d&amp;#x27;exécution de test fonctionnel&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Voilà un schéma qui explique comment cette stack fonctionne:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8de3947494607606cd09c4b4a110bef5/ac307/e2e-archi.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 84.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAAsTAAALEwEAmpwYAAABuUlEQVQ4y32T65KbMAyFef+nbH/ttiTEAV9lyacjgbPQ9cYzGrCxPh8fiQmD0VqzJzEhUoKLT9zDA0t0iBQRSoLIdX+P6R2wHMBHdJj9HTe/INcM5yNCFKTMEGmXnLdAfUrbpTzTChY+vu3fmRtykUveNIL09yoVqWa7+pY9Si22JiI4tqCQwIeKxZEdML0AJ1AfemWFqbqP5x/zUueJUpcBqmJRq4wVaoJLq831uQS3Fyat8CWYSuL6OpQOUB9TU/lHySpXM90nbyrUs+7hTz6rh+fCTOw9NMrnJ/I8o9xmgAiS0rAtzjEEaqIQoToHmmeD61xK2RO1olbY7x7rCJEHVz4WOEYD1W0Dh3Cc2hV+qS1FkLPAR8a8FKxbNS9j4r0ollAzmhAkJ3DwaJSPNb54ptdLWVC5Yb4XA94ftLdP7EAKaEwQfwMvv8CP35Dk0EgV+299qjANhffQHlTlO5CrARUs6Wlgydu+JvXa8AMfz2MaGd2a2HVVpeR12DI/xTTa0FVLuEHi8nWI/ssnT0dipv9PtXdtaLtyMSBvf03pa/1o9rfAq/GyA7QofgavH5CymZ+69g74D+B9PfA/sptVAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/8de3947494607606cd09c4b4a110bef5/f13a9/e2e-archi.avif 200w,
+/static/8de3947494607606cd09c4b4a110bef5/af71e/e2e-archi.avif 400w,
+/static/8de3947494607606cd09c4b4a110bef5/c9875/e2e-archi.avif 800w,
+/static/8de3947494607606cd09c4b4a110bef5/07e28/e2e-archi.avif 1200w,
+/static/8de3947494607606cd09c4b4a110bef5/2babf/e2e-archi.avif 1600w,
+/static/8de3947494607606cd09c4b4a110bef5/5f214/e2e-archi.avif 2058w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/8de3947494607606cd09c4b4a110bef5/ba381/e2e-archi.webp 200w,
+/static/8de3947494607606cd09c4b4a110bef5/7f61c/e2e-archi.webp 400w,
+/static/8de3947494607606cd09c4b4a110bef5/d00b9/e2e-archi.webp 800w,
+/static/8de3947494607606cd09c4b4a110bef5/92f8c/e2e-archi.webp 1200w,
+/static/8de3947494607606cd09c4b4a110bef5/fad48/e2e-archi.webp 1600w,
+/static/8de3947494607606cd09c4b4a110bef5/b8ebc/e2e-archi.webp 2058w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/8de3947494607606cd09c4b4a110bef5/772e8/e2e-archi.png 200w,
+/static/8de3947494607606cd09c4b4a110bef5/e17e5/e2e-archi.png 400w,
+/static/8de3947494607606cd09c4b4a110bef5/5a190/e2e-archi.png 800w,
+/static/8de3947494607606cd09c4b4a110bef5/c1b63/e2e-archi.png 1200w,
+/static/8de3947494607606cd09c4b4a110bef5/29007/e2e-archi.png 1600w,
+/static/8de3947494607606cd09c4b4a110bef5/ac307/e2e-archi.png 2058w&quot;
+            sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/8de3947494607606cd09c4b4a110bef5/5a190/e2e-archi.png&quot;
+            alt=&quot;schéma qui explique le fonctionnement de notre stack&quot;
+            title=&quot;schéma qui explique le fonctionnement de notre stack&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Aujourd’hui, l’application web de Bedrock possède plus de 800 scénarios de tests E2E qui tournent sur chacune de nos &lt;em&gt;Pull Request&lt;/em&gt; et sur la branche &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt;.
+Ils nous assurent que nous n’introduisons pas de régression fonctionnelle et c’est juste génial !&lt;/p&gt;
+&lt;p&gt;👍 Les points positifs&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;WebdriverIO nous permet également de lancer de manière journalière ces mêmes tests sur des vrais devices en passant par le service payant SAAS &lt;a href=&quot;https://www.browserstack.com/&quot;&gt;Browserstack&lt;/a&gt;.
+On a donc tous les jours un &lt;em&gt;job&lt;/em&gt; qui s’assure que notre site fonctionne correctement sur un Chrome dernière version sur Windows 10 et Safari sur MacOs.&lt;/li&gt;
+&lt;li&gt;Ces tests nous permettent de facilement documenter les fonctionnalités de l’application grâce au langage Gherkin.&lt;/li&gt;
+&lt;li&gt;Ils nous permettent de reproduire des cas qui sont loin d’être nominaux.
+Dans une logique &lt;em&gt;TDD&lt;/em&gt;, ils permettent d’avancer sur le développement sans avoir à cliquer pendant des heures.&lt;/li&gt;
+&lt;li&gt;Ces tests nous ont permis de ne pas casser l’ancienne version du site qui est toujours en production pour quelques clients alors que nos efforts se concentrent sur la nouvelle.&lt;/li&gt;
+&lt;li&gt;Ils nous apportent une vraie confiance.&lt;/li&gt;
+&lt;li&gt;Grâce notre librairie &lt;a href=&quot;https://www.npmjs.com/package/superagent-mock&quot;&gt;&lt;em&gt;superagent-mock&lt;/em&gt;&lt;/a&gt;, nous pouvons &lt;em&gt;fixturer&lt;/em&gt; (bouchonner, mocker) toutes les API dont on dépend et ainsi même vérifier les cas d’erreurs.
+De plus, mocker la couche XHR du navigateur permet une amélioration significative du temps d’exécution des tests. 🚀&lt;/li&gt;
+&lt;li&gt;Ils nous donne accès à des usages étendus comme :
+&lt;ul&gt;
+&lt;li&gt;vérification de règles d’accessibilité&lt;/li&gt;
+&lt;li&gt;check les logs de la console navigateur (pour ne pas introduire d’erreur ou de React Warning par exemple)&lt;/li&gt;
+&lt;li&gt;surveiller tous les appels réseaux du site grâce à un proxy&lt;/li&gt;
+&lt;li&gt;et j’en passe…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👎 Les complications&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Maintenir cette stack est compliqué et coûteux.
+Étant donné que peu de ressources sont publiées sur ce domaine, on se retrouve parfois à devoir creuser pendant plusieurs jours pour les réparer 😅.
+Il nous arrive de nous sentir parfois bien seul à avoir ces soucis.&lt;/li&gt;
+&lt;li&gt;Il est très facile de coder un test E2E dit &lt;em&gt;flaky&lt;/em&gt; (ie: un test qui peut échouer aléatoirement).
+Ils nous font croire que quelque chose est cassé.
+Ils nous prennent parfois du temps à les stabiliser.
+Il reste cependant &lt;strong&gt;bien meilleur de supprimer un test qui ne vous donnera pas un résultat stable.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Faire tourner tous les tests prend un temps important sur notre intégration continue.
+Il faut régulièrement travailler sur leur optimisation pour que le feedback qu’ils vous apportent soit le plus rapide possible.
+Ces temps importants coutent également de l’argent, il faut en effet bien faire tourner ces tests sur des machines.
+Pour information, l’infrastructure du site web (à lui seul, juste l’hébergement de nos servers Node + fichiers statiques + CDN) coutent bien moins cher que notre intégration continue.
+Cela fait bien évidemment sourire nos Ops ! 😊&lt;/li&gt;
+&lt;li&gt;Les nouvelles recrues de nos équipes n’ont souvent jamais réalisé ce genre de tests, il y a donc une phase &lt;del&gt;de galère&lt;/del&gt; d’apprentissage..&lt;/li&gt;
+&lt;li&gt;Certaines fonctionnalités sont parfois trop compliquées à tester avec notre stack E2E (par exemple, les parcours de paiement qui dépendent de tiers).
+Il nous arrive alors de nous rabattre sur d’autres techniques avec Jest notamment en ayant un scope moins unitaire.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;nos-tests-unitaires&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#nos-tests-unitaires&quot; aria-label=&quot;nos tests unitaires permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Nos tests “unitaires”&lt;/h3&gt;
+&lt;p&gt;Pour compléter nos tests fonctionnels nous avons également une stack de tests écrits avec &lt;a href=&quot;https://jestjs.io/fr/&quot;&gt;Jest&lt;/a&gt;.
+On qualifie ces tests d’unitaires car nous avons comme principe d’essayer de toujours tester nos modules JS en indépendance des autres.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Ne débattons pas ici sur “Est-ce que ce sont des vrais tests unitaires ?”, suffisamment d’articles sur internet traitent de ce sujet.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;On utilise ces tests pour différentes raisons qui couvrent des besoins que nos tests fonctionnels ne couvrent pas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;nous aider à développer nos modules JS avec des pratiques TDD.&lt;/li&gt;
+&lt;li&gt;documenter et décrire comment fonctionne un module JS.&lt;/li&gt;
+&lt;li&gt;tester des cas limites très/trop compliqués à tester avec nos tests E2E.&lt;/li&gt;
+&lt;li&gt;faciliter le refactoring de notre application en nous montrant les impacts techniques de nos modifications.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Avec ces tests, on se met au niveau d’une fonction utilitaire, d’une action Redux, d’un reducer, d’un composant React.
+On se base essentiellement sur &lt;a href=&quot;https://slashgear.github.io/discover-jest-hidden-feature-automock/&quot;&gt;la fonctionnalité d’&lt;code class=&quot;language-text&quot;&gt;automock&lt;/code&gt; de Jest&lt;/a&gt; qui nous propose d’isoler nos modules JS lorsqu’on teste.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8c790d7bb84694543ba87dcb7a7e76ae/0f98f/mocked-modules.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.49999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB3IA2RJ//xAAYEAADAQEAAAAAAAAAAAAAAAAAARIQE//aAAgBAQABBQI6ZTKZTP/EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAEDAQE/ASf/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAYEAACAwAAAAAAAAAAAAAAAAAAAiAzkf/aAAgBAQAGPwIrbI//xAAZEAADAQEBAAAAAAAAAAAAAAAAASFhoRH/2gAIAQEAAT8hPQlUozTgoXhof//aAAwDAQACAAMAAAAQKw//xAAXEQEAAwAAAAAAAAAAAAAAAAABEBEx/9oACAEDAQE/EEGlx//EABYRAAMAAAAAAAAAAAAAAAAAAAEQEf/aAAgBAgEBPxA1f//EABwQAAEFAQEBAAAAAAAAAAAAAAEAESExUUFhwf/aAAgBAQABPxACa54mDawxKYUQOHZhCGKsLhKwox8Bf//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/8c790d7bb84694543ba87dcb7a7e76ae/f13a9/mocked-modules.avif 200w,
+/static/8c790d7bb84694543ba87dcb7a7e76ae/af71e/mocked-modules.avif 400w,
+/static/8c790d7bb84694543ba87dcb7a7e76ae/c9875/mocked-modules.avif 800w,
+/static/8c790d7bb84694543ba87dcb7a7e76ae/07e28/mocked-modules.avif 1200w,
+/static/8c790d7bb84694543ba87dcb7a7e76ae/2babf/mocked-modules.avif 1600w,
+/static/8c790d7bb84694543ba87dcb7a7e76ae/f696c/mocked-modules.avif 1920w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/8c790d7bb84694543ba87dcb7a7e76ae/ba381/mocked-modules.webp 200w,
+/static/8c790d7bb84694543ba87dcb7a7e76ae/7f61c/mocked-modules.webp 400w,
+/static/8c790d7bb84694543ba87dcb7a7e76ae/d00b9/mocked-modules.webp 800w,
+/static/8c790d7bb84694543ba87dcb7a7e76ae/92f8c/mocked-modules.webp 1200w,
+/static/8c790d7bb84694543ba87dcb7a7e76ae/fad48/mocked-modules.webp 1600w,
+/static/8c790d7bb84694543ba87dcb7a7e76ae/882b9/mocked-modules.webp 1920w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/8c790d7bb84694543ba87dcb7a7e76ae/e07e9/mocked-modules.jpg 200w,
+/static/8c790d7bb84694543ba87dcb7a7e76ae/066f9/mocked-modules.jpg 400w,
+/static/8c790d7bb84694543ba87dcb7a7e76ae/4b190/mocked-modules.jpg 800w,
+/static/8c790d7bb84694543ba87dcb7a7e76ae/e5166/mocked-modules.jpg 1200w,
+/static/8c790d7bb84694543ba87dcb7a7e76ae/b17f8/mocked-modules.jpg 1600w,
+/static/8c790d7bb84694543ba87dcb7a7e76ae/0f98f/mocked-modules.jpg 1920w&quot;
+            sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/8c790d7bb84694543ba87dcb7a7e76ae/4b190/mocked-modules.jpg&quot;
+            alt=&quot;représentation visuelle de l&amp;#39;automock&quot;
+            title=&quot;représentation visuelle de l&amp;#39;automock&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;L’image précédente représente la métaphore qui nous permet d’expliquer notre stratégie de tests unitaires aux nouveaux arrivant.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Il faut s’imaginer que l’application est un mur composé de briques unitaires (nos modules ecmascript), nos tests unitaires doivent tester une à une les briques en indépendance totale des autres.
+Nos tests fonctionnels sont là pour tester le ciment entre les briques.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Pour résumer, on pourrait dire que nos tests E2E testent &lt;em&gt;ce que notre application doit faire&lt;/em&gt;, et nos tests unitaires s’assurent eux de vérifier &lt;em&gt;comment ça marche.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Aujourd’hui ce sont plus de 6000 tests unitaires qui couvrent l’application et permettent de limiter les régressions.&lt;/p&gt;
+&lt;p&gt;👍&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://jestjs.io/fr/&quot;&gt;Jest&lt;/a&gt; est vraiment une librairie géniale, rapide, complète, bien documentée.&lt;/li&gt;
+&lt;li&gt;Les tests unitaires nous aident beaucoup à comprendre &lt;em&gt;plusieurs années après&lt;/em&gt; comment tout cela fonctionne.&lt;/li&gt;
+&lt;li&gt;On arrive toujours à tester unitairement notre code, et cela complète bien nos tests E2E.&lt;/li&gt;
+&lt;li&gt;L’&lt;code class=&quot;language-text&quot;&gt;automock&lt;/code&gt; est vraiment pratique pour le découpage de tests par modules.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👎&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Parfois, nous nous sommes trouvés limités par notre stack de tests E2E et nous ne pouvions pas uniquement nous baser sur les tests unitaires.
+Il nous manquait quelque chose pour pouvoir s’assurer que le &lt;em&gt;ciment entre les briques&lt;/em&gt; fonctionnait comme on le souhaitait.
+Pour cela, il a été mis en place une deuxième stack de tests &lt;a href=&quot;https://jestjs.io/fr/&quot;&gt;Jest&lt;/a&gt; nommé “test d’intégration” ou l’&lt;code class=&quot;language-text&quot;&gt;automock&lt;/code&gt; est désactivé.&lt;/li&gt;
+&lt;li&gt;L’abus de &lt;a href=&quot;https://jestjs.io/docs/snapshot-testing&quot;&gt;&lt;em&gt;Snapshot&lt;/em&gt;&lt;/a&gt; est dangereux pour la santé.
+L’usage du &lt;em&gt;“Snapshot testing”&lt;/em&gt; peut faire gagner du temps sur l’implémentation de vos tests mais peuvent en réduire la qualité.
+Avoir à review un object de 50 lignes en &lt;em&gt;Snapshot&lt;/em&gt; est ni facile, ni pertinent.&lt;/li&gt;
+&lt;li&gt;Avec la dépréciation d’&lt;a href=&quot;https://enzymejs.github.io/enzyme/&quot;&gt;EnzymeJS&lt;/a&gt;, nous sommes contraints de migrer sur &lt;a href=&quot;https://testing-library.com/docs/react-testing-library/intro/&quot;&gt;React Testing Library&lt;/a&gt;.
+Il est bien évidemment possible de tester unitairement des composants avec cette nouvelle librairie.
+Malheureusement, ce n’est pas vraiment l’esprit et la façon de faire.
+&lt;a href=&quot;https://testing-library.com/docs/react-testing-library/intro/&quot;&gt;React Testing Library&lt;/a&gt; nous pousse &lt;a href=&quot;https://kentcdodds.com/blog/why-i-never-use-shallow-rendering&quot;&gt;à ne pas jouer avec le &lt;em&gt;shallow rendering&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;nos-principes&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#nos-principes&quot; aria-label=&quot;nos principes permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Nos principes&lt;/h3&gt;
+&lt;p&gt;Nous essayons de toujours respecter les règles suivantes lorsqu’on se pose la question “Dois-je ajouter des tests ?“.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Si notre &lt;em&gt;Pull Request&lt;/em&gt; introduit des nouvelles fonctionnalités utilisateurs, il faut intégrer des scenarios de test E2E.
+Des tests unitaires avec Jest peuvent les compléter / remplacer en fonction.&lt;/li&gt;
+&lt;li&gt;Si notre &lt;em&gt;Pull Request&lt;/em&gt; a pour but de corriger un bug, cela signifie qu’il nous manque un cas de test.
+On doit donc essayer de rajouter un test E2E ou à défaut un test unitaire.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;C’est en écrivant ces lignes que je me dis que ces principes pourraient très bien faire l’objet d’une automatisation.&lt;/em&gt; 🤣&lt;/p&gt;
+&lt;h2 id=&quot;le-projet-reste-les-fonctionnalités-non&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#le-projet-reste-les-fonctionnalit%C3%A9s-non&quot; aria-label=&quot;le projet reste les fonctionnalités non permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Le projet reste, les fonctionnalités non&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“La seconde évolution d’une fonctionnalité est très souvent sa suppression.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Par principe, nous souhaitons faire en sorte que chaque nouvelle fonctionnalité de l’application ne base pas son activation sur le simple fait d’être dans la codebase.
+Classiquement, le cycle de vie d’une “feature” dans un projet peut être le suivant (dans un &lt;a href=&quot;https://guides.github.com/introduction/flow/&quot;&gt;Github Flow&lt;/a&gt;):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;une personne implémente sur une branche&lt;/li&gt;
+&lt;li&gt;la fonctionnalité est &lt;em&gt;mergée&lt;/em&gt; sur master&lt;/li&gt;
+&lt;li&gt;elle est déployée en production&lt;/li&gt;
+&lt;li&gt;vis sa vie de fonctionnalité (avec parfois des bugs et des correctifs)&lt;/li&gt;
+&lt;li&gt;la fonctionnalité n’est plus nécessaire&lt;/li&gt;
+&lt;li&gt;une personne détricote le code et l’enlève&lt;/li&gt;
+&lt;li&gt;nouveau déploiement&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pour simplifier certaines étapes, il a été mis en place du &lt;em&gt;feature flipping&lt;/em&gt; sur le projet.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Comment ça marche ?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Dans notre config il y a une &lt;em&gt;map&lt;/em&gt; clé/valeur qui liste toutes les fonctionnalités de l’application associées à leur statut d’activation.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; featureFlipping &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  myAwesomeFeature&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  anotherOne&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Dans notre code, nous avons donc implémenté des traitements conditionnels qui disent “Si cette feature est activée alors…“.
+Cela peut changer le rendu d’un composant, changer l’implémentation d’une action Redux ou bien désactiver une route de notre &lt;em&gt;react-router&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mais à quoi ça sert ?&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;On peut développer des nouvelles évolutions progressivement en les cachant derrière une clé de configuration.
+On livre des fonctionnalités en production sans les activer.&lt;/li&gt;
+&lt;li&gt;En environnement de test, on peut surcharger cette config pour tester des features qui ne sont pas encore activées en production.&lt;/li&gt;
+&lt;li&gt;Dans le cas d’un site en marque blanche, on peut proposer ces fonctionnalités à nos clients comme des options possibles.&lt;/li&gt;
+&lt;li&gt;Avant de supprimer le code d’une feature, on la désactive puis on fait le ménage sans risque.&lt;/li&gt;
+&lt;li&gt;Grâce à un outil maison nommé l’&lt;em&gt;Applaunch&lt;/em&gt;, cette config de feature flipping est surchargeable dans une interface graphique à chaud sans déploiement.
+Cela nous permet d’activer des fonctionnalités sans faire de mise en production du code.
+En cas d’incident, on peut désactiver des fonctionnalités qui sont dégradées.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pour vous donner un exemple plus concret, entre 2018 et 2020 nous avons complètement refondu l’interface de l’application.
+Cette évolution graphique n’était qu’une clé de featureFlipping.
+La refonte graphique n’a donc pas été la remise à zéro du projet, on continue encore aujourd’hui de vivre avec les deux versions (tant que la bascule de tous nos clients n’est pas terminée).&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1148bec58444fa4ccea56315b956b236/0f98f/compare-v4-v5.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 29.000000000000004%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAGABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/9oADAMBAAIQAxAAAAGScbMaP//EABkQAAIDAQAAAAAAAAAAAAAAAAABAxESIf/aAAgBAQABBQK+uRm2f//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPwGMf//EABYQAQEBAAAAAAAAAAAAAAAAAAECEP/aAAgBAQAGPwKZQ3//xAAcEAEAAQQDAAAAAAAAAAAAAAABABEhMUFRcbH/2gAIAQEAAT8hreRRD2YgFtzon//aAAwDAQACAAMAAAAQA9//xAAXEQADAQAAAAAAAAAAAAAAAAAAAREx/9oACAEDAQE/EGrpEf/EABcRAQEBAQAAAAAAAAAAAAAAAAEAESH/2gAIAQIBAT8QA8bF/8QAGxAAAQUBAQAAAAAAAAAAAAAAAQARITGRUWH/2gAIAQEAAT8QoVAtYyI9VSOyxkeOV//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/1148bec58444fa4ccea56315b956b236/f13a9/compare-v4-v5.avif 200w,
+/static/1148bec58444fa4ccea56315b956b236/af71e/compare-v4-v5.avif 400w,
+/static/1148bec58444fa4ccea56315b956b236/c9875/compare-v4-v5.avif 800w,
+/static/1148bec58444fa4ccea56315b956b236/07e28/compare-v4-v5.avif 1200w,
+/static/1148bec58444fa4ccea56315b956b236/2babf/compare-v4-v5.avif 1600w,
+/static/1148bec58444fa4ccea56315b956b236/f696c/compare-v4-v5.avif 1920w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/1148bec58444fa4ccea56315b956b236/ba381/compare-v4-v5.webp 200w,
+/static/1148bec58444fa4ccea56315b956b236/7f61c/compare-v4-v5.webp 400w,
+/static/1148bec58444fa4ccea56315b956b236/d00b9/compare-v4-v5.webp 800w,
+/static/1148bec58444fa4ccea56315b956b236/92f8c/compare-v4-v5.webp 1200w,
+/static/1148bec58444fa4ccea56315b956b236/fad48/compare-v4-v5.webp 1600w,
+/static/1148bec58444fa4ccea56315b956b236/882b9/compare-v4-v5.webp 1920w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/1148bec58444fa4ccea56315b956b236/e07e9/compare-v4-v5.jpg 200w,
+/static/1148bec58444fa4ccea56315b956b236/066f9/compare-v4-v5.jpg 400w,
+/static/1148bec58444fa4ccea56315b956b236/4b190/compare-v4-v5.jpg 800w,
+/static/1148bec58444fa4ccea56315b956b236/e5166/compare-v4-v5.jpg 1200w,
+/static/1148bec58444fa4ccea56315b956b236/b17f8/compare-v4-v5.jpg 1600w,
+/static/1148bec58444fa4ccea56315b956b236/0f98f/compare-v4-v5.jpg 1920w&quot;
+            sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/1148bec58444fa4ccea56315b956b236/4b190/compare-v4-v5.jpg&quot;
+            alt=&quot;screenshot comparatif v4 / v5 sur 6play&quot;
+            title=&quot;screenshot comparatif v4 / v5 sur 6play&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;lab-testing&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#lab-testing&quot; aria-label=&quot;lab testing permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;L’A/B testing&lt;/h3&gt;
+&lt;p&gt;Grâce au super travail des équipes backend et data, on a pu même étendre l’usage du &lt;em&gt;feature flipping&lt;/em&gt; en rendant cette configuration modifiable pour des sous groupes d’utilisateurs.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;?&quot;&gt;&lt;pre class=&quot;language-?&quot;&gt;&lt;code class=&quot;language-?&quot;&gt;Cela permet de déployer des nouvelles fonctionnalités sur une portion plus réduite des utilisateurs afin de comparer nos [KPI].
+
+Prise de décision, amélioration des performances techniques ou produit, expérimentations, les possibilités sont nombreuses et nous les exploitons de plus en plus.
+
+### Le _futur flipping_
+
+&amp;gt; Sur une idée originale de [Florent Lepretre](https://twitter.com/SuperFlaw).
+
+Nous avions régulièrement le besoin d&amp;#39;activer des feature à des heures ~~très~~ trop matinales dans le futur.
+Pour cela nous devions être connecté à une heure précise sur notre poste pour modifier la configuration à chaud.
+
+Afin d&amp;#39;éviter d&amp;#39;oublier de le faire, ou de le faire en retard, nous avons fait en sorte qu&amp;#39;une clé de configuration puisse être activée à partir d&amp;#39;une certaine date.
+Pour cela, nous avons fait évoluer notre _selector redux_ qui indiquait si une feature était activée pour qu&amp;#39;il puisse gérer des formats de date et les comparer à l&amp;#39;heure courante.
+
+```js
+const featureFlipping = {
+  myAwesomeFeature: {
+    offDate: &amp;#39;2021-07-12 20:30:00&amp;#39;,
+    onDate: &amp;#39;2021-07-12 19:30:00&amp;#39;,
+  },
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;De nombreux cafés ☕️ à 9h ont été sauvés grâce au &lt;em&gt;futur flipping&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;monitorer-mesurer-alerter&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#monitorer-mesurer-alerter&quot; aria-label=&quot;monitorer mesurer alerter permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Monitorer, Mesurer, Alerter&lt;/h2&gt;
+&lt;p&gt;Pour maintenir un projet aussi longtemps que l’application web de bedrock, des tests, de la documentation et de la rigueur ne suffisent pas.
+Il faut également de la visibilité sur ce qui marche en production.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Comment sais-tu que l’application que tu as en production en ce moment même fonctionne comme prévu ?”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;On part du principe qu’aucune fonctionnalité ne marche tant qu’elle n’est pas monitorée.
+Aujourd’hui le monitoring à Bedrock coté Frontend se matérialise par différents outils et différentes stacks.
+Je pourrais vous citer &lt;a href=&quot;https://newrelic.com/&quot;&gt;NewRelic&lt;/a&gt;, un &lt;a href=&quot;https://github.com/statsd/statsd&quot;&gt;Statsd&lt;/a&gt;, une stack &lt;a href=&quot;https://www.elastic.co/fr/what-is/elk-stack&quot;&gt;ELK&lt;/a&gt; ou bien encore &lt;a href=&quot;https://youbora.nicepeopleatwork.com/&quot;&gt;Youbora&lt;/a&gt; pour la vidéo.&lt;/p&gt;
+&lt;p&gt;Pour vous donner un exemple, à chaque fois qu’un utilisateur commence une session de navigation on envoie un &lt;em&gt;Hit&lt;/em&gt; de monitoring anonyme pour incrémenter un compteur dans Statsd.
+On a alors plus qu’à définir un dashboard qui affiche dans un graphique l’évolution de ce nombre.
+Si on observe une variation trop importante, cela peut nous permettre de détecter un incident.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5da9f76c5fa5325b394418fa229d9204/0b894/grafana-monitoring-example.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 52.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABv0lEQVQoz3WSW0/bQBCF8xMCSW2v7fXu2iYhgrQPFIOhKsQJsROHSyuhhlZV+1DKrbT//+lUM06E06gPn9aeOT5zZuWGL2Mo3YUMIghXw7I8eDKCJQyazVfY2LSx2XL4rNPcsNBqCzgigO1IOK5ij4bjBiBsN4DwNISn4MkQwjewheSeH0RY6hgyEZKxHJ9Z9hqur0GQEZ2e1NxwF+/13hLS+Mqs1dcMvcDgoDiANOGauP6R6WyxTrj/M5SamyqOMbsvsJP0YduS6yvplYHtBOjt7bIu3O7w+iuGJKZiu+VhZ7+Pq98lknFSGdbMSGPZEu22h/2zBB/+zNBP38CyloPVIqHU2Or3sHv4GuNvQ1w8TjD4dLKYqvi+yCjsdbGXveX0+fcRLn9NkZYpJ15JSHdB8Zm7HOVtjuntmNchMf0SptvB2dcMV89lpflZQQGkDjk9b0qGF09TnD8UL6b3BU9///EdJ6T0kx9jkK68y2vDC1w+T5HkCafztakMhzcDZPMBhsTNgvkAo88ZjmdHOL0+wehLhmx++tL/h+PzI6STlNM2TLQNPwjhy7A6awQmhlTRWp1+9Pqz1BGUiXntv+9bR90JzYdyAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/5da9f76c5fa5325b394418fa229d9204/f13a9/grafana-monitoring-example.avif 200w,
+/static/5da9f76c5fa5325b394418fa229d9204/af71e/grafana-monitoring-example.avif 400w,
+/static/5da9f76c5fa5325b394418fa229d9204/c9875/grafana-monitoring-example.avif 800w,
+/static/5da9f76c5fa5325b394418fa229d9204/07e28/grafana-monitoring-example.avif 1200w,
+/static/5da9f76c5fa5325b394418fa229d9204/2babf/grafana-monitoring-example.avif 1600w,
+/static/5da9f76c5fa5325b394418fa229d9204/8d64d/grafana-monitoring-example.avif 3702w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/5da9f76c5fa5325b394418fa229d9204/ba381/grafana-monitoring-example.webp 200w,
+/static/5da9f76c5fa5325b394418fa229d9204/7f61c/grafana-monitoring-example.webp 400w,
+/static/5da9f76c5fa5325b394418fa229d9204/d00b9/grafana-monitoring-example.webp 800w,
+/static/5da9f76c5fa5325b394418fa229d9204/92f8c/grafana-monitoring-example.webp 1200w,
+/static/5da9f76c5fa5325b394418fa229d9204/fad48/grafana-monitoring-example.webp 1600w,
+/static/5da9f76c5fa5325b394418fa229d9204/20a05/grafana-monitoring-example.webp 3702w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/5da9f76c5fa5325b394418fa229d9204/772e8/grafana-monitoring-example.png 200w,
+/static/5da9f76c5fa5325b394418fa229d9204/e17e5/grafana-monitoring-example.png 400w,
+/static/5da9f76c5fa5325b394418fa229d9204/5a190/grafana-monitoring-example.png 800w,
+/static/5da9f76c5fa5325b394418fa229d9204/c1b63/grafana-monitoring-example.png 1200w,
+/static/5da9f76c5fa5325b394418fa229d9204/29007/grafana-monitoring-example.png 1600w,
+/static/5da9f76c5fa5325b394418fa229d9204/0b894/grafana-monitoring-example.png 3702w&quot;
+            sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/5da9f76c5fa5325b394418fa229d9204/5a190/grafana-monitoring-example.png&quot;
+            alt=&quot;exemple de dashboard de suivi&quot;
+            title=&quot;exemple de dashboard de suivi&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Le monitoring nous offre aussi des solutions pour comprendre et analyser un bug qui s’est produit dans le passé.
+Comprendre un incident, l’expliquer, en trouver sa &lt;em&gt;root cause&lt;/em&gt; sont les possibilités qui s’offrent à vous si vous monitorez votre application.
+Le monitoring peut également permettre de mieux communiquer avec les clients sur les impacts d’un incident et également d’estimer le nombre d’utilisateurs impactés.&lt;/p&gt;
+&lt;p&gt;Avec la multiplication de nos clients, bien monitorer nos plateformes n’est plus suffisant.
+Trop de données, trop de dashboards à surveiller, il devient très facile de louper quelque chose.
+Nous avons donc commencé à compléter notre suivi des mesures par de l’&lt;em&gt;alerting&lt;/em&gt; automatique.
+Une fois que les mesures nous apportent suffisamment de confiance, on peut facilement mettre en place des alertes qui vont nous prévenir en cas de valeur incohérente.&lt;/p&gt;
+&lt;p&gt;Nous essayons cependant de toujours déclencher des alertes uniquement quand celle-ci est actionnable.
+Dans d’autres termes, si une alerte sonne, nous avons quelque chose à faire.
+Faire sonner des alertes qui ne nécessitent aucune action immédiate humaine génèrent du bruit et de la perte de temps.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/c625b00a7bffa65b2f54cbae9c8ef14e/alerte-taxi.gif&quot; alt=&quot;alerte générale&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;limiter-surveiller-et-mettre-à-jour-ses-dépendances&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#limiter-surveiller-et-mettre-%C3%A0-jour-ses-d%C3%A9pendances&quot; aria-label=&quot;limiter surveiller et mettre à jour ses dépendances permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Limiter, surveiller et mettre à jour ses dépendances&lt;/h2&gt;
+&lt;p&gt;Ce qui périme plus vite que votre ombre dans un projet web basé sur des technologies javascript, ce sont vos dépendances.
+L’écosystème évolue rapidement et vos dépendances peuvent vite se retrouver non maintenues, plus à la mode ou bien complètement refondues avec de gros &lt;em&gt;breaking changes&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;On essaye donc dans la mesure du possible de limiter nos dépendances et d’éviter d’en ajouter inutilement.
+Une dépendance, c’est souvent très facile à ajouter mais elle peut devenir un vrai casse-tête à enlever.&lt;/p&gt;
+&lt;p&gt;Les librairies de composants graphiques (exemple React bootstrap, Material Design) sont un bel exemple de dépendance que nous tenons à ne pas introduire.
+Elles peuvent faciliter l’intégration dans un premier temps mais celles-ci bloquent souvent la version de votre librairie de composant par la suite.
+Vous ne voulez pas figer la version de React dans votre application pour deux composants de formulaires.&lt;/p&gt;
+&lt;p&gt;La surveillance fait aussi partie de nos routines de gestion de nos dépendances.
+Depuis l’ajout du &lt;a href=&quot;https://docs.npmjs.com/auditing-package-dependencies-for-security-vulnerabilities&quot;&gt;signalement de failles de sécurité dans un package NPM&lt;/a&gt;, il est possible de savoir si un projet intègre une dépendance qui contient une faille de sécurité connue par une simple commande.
+Nous avons donc des jobs journaliers sur nos projets qui lancent la commande &lt;code class=&quot;language-text&quot;&gt;yarn audit&lt;/code&gt; afin de nous forcer à appliquer les correctifs.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;La maintenance de dépendances est grandement facilité par notre stack de tests E2E qui sonnent direcement si la montée de version génère une regression.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Aujourd’hui, hors failles de sécurité, nous mettons à jour nos dépendances “quand on a le temps”, souvent en fin de &lt;em&gt;sprint&lt;/em&gt;.
+Cela ne nous satisfait pas car certaines dépendances peuvent se retrouver oubliées.
+J’ai personnellement l’habitude d’utiliser des outils comme &lt;a href=&quot;https://classic.yarnpkg.com/en/docs/cli/outdated/&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;yarn outdated&lt;/code&gt;&lt;/a&gt; et &lt;a href=&quot;https://dependabot.com/&quot;&gt;Dependabot&lt;/a&gt; sur mes projets personels pour automatiser la mise à jour de mes dépendances.&lt;/p&gt;
+&lt;h2 id=&quot;accepter-sa-dette-technique&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#accepter-sa-dette-technique&quot; aria-label=&quot;accepter sa dette technique permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Accepter sa dette technique&lt;/h2&gt;
+&lt;p&gt;Un projet accumulera toujours de la dette technique.
+&lt;strong&gt;C’est un fait.&lt;/strong&gt;
+Que ce soit de la dette volontaire ou involontaire, un projet qui résiste aux années va forcément accumuler de la dette.
+D’autant plus, si pendant toutes ces années vous continuez d’ajouter des fonctionnalités.&lt;/p&gt;
+&lt;p&gt;Depuis 2014, nos bonnes pratiques, nos façons de faire ont bien évolué.
+Parfois nous avons décidé ces changements mais parfois nous les avons subi (un exemple, l’arrivée des composants fonctionnels avec React et l’api des Hooks).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Notre projet n’est pas complètement &lt;em&gt;“state of art”&lt;/em&gt; et on l’assume.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/c80d0cd308b5657d54f976a32fe2c811/leak.gif&quot; alt=&quot;ça tiendra !&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Nous essayons de prioriser nos sujets de &lt;em&gt;refactoring&lt;/em&gt; sur les parties de l’application sur lequel on a le plus de souci, le plus de peine.
+On considère qu’une partie de l’application qui ne nous plaît pas mais sur laquelle on n’a pas besoin de travailler (apporter des évolutions) ne mérite pas qu’on la refactorise.&lt;/p&gt;
+&lt;p&gt;Je pourrais vous citer de nombreuses fonctionnalités de notre application qui n’ont pas évolué fonctionnellement depuis plusieurs années.
+Mais comme nous avons couvert ces fonctionnalités de tests E2E depuis le début, nous n’avons pas vraiment eu à y retoucher.&lt;/p&gt;
+&lt;p&gt;Comme dit plus haut, la prochaine évolution d’une feature de code est parfois sa désactivation.
+Alors pourquoi passez son temps à ré-écrire toute l’application ?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Le code devient dans tous les cas du “legacy”.&lt;/li&gt;
+&lt;li&gt;Tant que les fonctionnalités sont testées, rien ne nous oblige à tout refactorer en permanence pour que toute notre codebase soit &lt;em&gt;state of art&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;On se focalise sur nos &lt;em&gt;pain points&lt;/em&gt;, on re-factorise ce qu’on a vraiment besoin de faire évoluer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;pour-résumer&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#pour-r%C3%A9sumer&quot; aria-label=&quot;pour résumer permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Pour résumer&lt;/h2&gt;
+&lt;p&gt;Les bonnes pratiques présentées ici restent bien évidemment subjectives et ne s’appliqueront pas parfaitement/directement dans vos contextes.
+Je suis cependant convaincu qu’elles peuvent probablement vous aider à identifier ce qui peut faire passer votre projet de fun à périmé.
+À Bedrock nous avons mis en place d’autres pratiques que je n’ai pas listées ici mais ce sera l’occasion de faire un nouvel article un jour.&lt;/p&gt;
+&lt;p&gt;Enfin, si vous souhaitez que je revienne plus en détail sur certains chapitres présentés ici, n’hésitez pas à me le dire, je pourrais essayer d’y dédier un article spécifique.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Comment mettre en place des tests bout en bout avec WebdriverIo ?]]></title><description><![CDATA[J’ai récemment mis en place une pile de tests de bout en bout pour m’assurer que je n’allais pas introduire de régressions fonctionnelles…]]></description><link>https://slashgear.github.io/fr/comment-mettre-en-place-des-tests-bout-en-bout-avec-webdriverio/</link><guid isPermaLink="false">https://slashgear.github.io/fr/comment-mettre-en-place-des-tests-bout-en-bout-avec-webdriverio/</guid><pubDate>Mon, 16 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;J’ai récemment mis en place une pile de tests de bout en bout pour m’assurer que je n’allais pas introduire de régressions fonctionnelles sur mon blog.
 Avec plusieurs années d’expérience dans l’utilisation des technologies de test E2E (End to End), j’ai tout de même rencontré quelques difficultés dans sa mise en place.&lt;/p&gt;
 &lt;p&gt;Afin de vous faire gagner du temps, je vous propose un tutoriel pas à pas de l’installation des outils nécessaires pour avoir une pile de test efficace en quelques minutes.&lt;/p&gt;
 &lt;h2 id=&quot;on-le-fait-tourner-dabord-localement&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#on-le-fait-tourner-dabord-localement&quot; aria-label=&quot;on le fait tourner dabord localement permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;On le fait tourner d’abord localement&lt;/h2&gt;
