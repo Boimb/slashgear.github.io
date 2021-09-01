@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Your Site's RSS Feed]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 01 Sep 2021 18:31:26 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Your Site's RSS Feed]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 01 Sep 2021 18:57:28 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
 You should follow him on Twitter.
 Take a…]]></description><link>https://slashgear.github.io/</link><guid isPermaLink="false">https://slashgear.github.io/</guid><content:encoded>&lt;p&gt;Written by &lt;strong&gt;Antoine Caron&lt;/strong&gt; who lives and works in Lyon (France) building useful things at &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
 You should follow him &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;on Twitter&lt;/a&gt;.
@@ -9,22 +9,7 @@ Tu devrais le suivre sur Twitter.
 N’hésites…]]></description><link>https://slashgear.github.io/fr/</link><guid isPermaLink="false">https://slashgear.github.io/fr/</guid><content:encoded>&lt;p&gt;Ecrit par &lt;strong&gt;Antoine Caron&lt;/strong&gt; qui vit et travaille à Lyon et développe des choses utiles à &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
 Tu devrais le suivre sur &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;Twitter&lt;/a&gt;.
 N’hésites pas à aller voir &lt;a href=&quot;/conferences&quot;&gt;ses conférences sur la page dédiée&lt;/a&gt;.
-Si vous voulez voir mon parcours pro, &lt;a href=&quot;/resume&quot;&gt;mon CV est disponible ici en 🇬🇧&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[:w---
-title: “Bonnes pratiques pour la maintenance d’une application web”
-description: “Comment ne pas jeter son projet au bout de 2 ans…]]></description><link>https://slashgear.github.io/fr/comment-ne-pas-jeter-son-application-au-bout-de-deux-ans/</link><guid isPermaLink="false">https://slashgear.github.io/fr/comment-ne-pas-jeter-son-application-au-bout-de-deux-ans/</guid><content:encoded>&lt;p&gt;:w---
-title: “Bonnes pratiques pour la maintenance d’une application web”
-description: “Comment ne pas jeter son projet au bout de 2 ans ? Retour d’expérience basé sur les bonnes pratiques appliquées à la plateforme web développée chez Bedrock Streaming.”
-date: 2021-08-25
-hero: ./bedrock.jpg
-language: fr
-tags:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;web&lt;/li&gt;
-&lt;li&gt;javascript&lt;/li&gt;
-&lt;li&gt;bedrock&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
+Si vous voulez voir mon parcours pro, &lt;a href=&quot;/resume&quot;&gt;mon CV est disponible ici en 🇬🇧&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Bonnes pratiques pour la maintenance d'une application web]]></title><description><![CDATA[Comment ne pas jeter son application tous les deux ans ? Retour d’expérience basé sur les bonnes pratiques appliquées à la plateforme web…]]></description><link>https://slashgear.github.io/fr/comment-ne-pas-jeter-son-application-au-bout-de-deux-ans/</link><guid isPermaLink="false">https://slashgear.github.io/fr/comment-ne-pas-jeter-son-application-au-bout-de-deux-ans/</guid><pubDate>Wed, 25 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;Comment ne pas jeter son application tous les deux ans ?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;em&gt;Retour d’expérience basé sur les bonnes pratiques appliquées à la plateforme web développée chez &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock Streaming&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
