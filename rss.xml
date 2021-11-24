@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Your Site's RSS Feed]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 Oct 2021 09:30:20 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Your Site's RSS Feed]]></title><description><![CDATA[Antoine Caron personal blog where you can read news about his open-source courses, packages.]]></description><link>https://slashgear.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 24 Nov 2021 11:10:29 GMT</lastBuildDate><item><title><![CDATA[Antoine Caron]]></title><description><![CDATA[Written by Antoine Caron who lives and works in Lyon (France) building useful things at Bedrock.
 You should follow him on Twitter.
 Take a…]]></description><link>https://slashgear.github.io/</link><guid isPermaLink="false">https://slashgear.github.io/</guid><content:encoded>&lt;p&gt;Written by &lt;strong&gt;Antoine Caron&lt;/strong&gt; who lives and works in Lyon (France) building useful things at &lt;a href=&quot;https://www.bedrockstreaming.com/&quot;&gt;Bedrock&lt;/a&gt;.
 You should follow him &lt;a href=&quot;https://twitter.com/Slashgear_&quot;&gt;on Twitter&lt;/a&gt;.
@@ -35,11 +35,6 @@ I have already mentioned it in different articles of &lt;a href=&quot;https://sl
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/57c6ca4dcd6d3e2b9db0b2d28a14cd48/f13a9/commit-count.avif 200w,
-/static/57c6ca4dcd6d3e2b9db0b2d28a14cd48/6d0e0/commit-count.avif 294w&quot;
-              sizes=&quot;(max-width: 294px) 100vw, 294px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/57c6ca4dcd6d3e2b9db0b2d28a14cd48/ba381/commit-count.webp 200w,
 /static/57c6ca4dcd6d3e2b9db0b2d28a14cd48/456a1/commit-count.webp 294w&quot;
               sizes=&quot;(max-width: 294px) 100vw, 294px&quot;
@@ -85,11 +80,6 @@ In this world of web technologies often criticized (eg: the many articles on the
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/87ea590416839a8413c9d4905c0fa4b6/f13a9/releases.avif 200w,
-/static/87ea590416839a8413c9d4905c0fa4b6/7bd34/releases.avif 350w&quot;
-              sizes=&quot;(max-width: 350px) 100vw, 350px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/87ea590416839a8413c9d4905c0fa4b6/ba381/releases.webp 200w,
 /static/87ea590416839a8413c9d4905c0fa4b6/a3432/releases.webp 350w&quot;
               sizes=&quot;(max-width: 350px) 100vw, 350px&quot;
@@ -133,12 +123,6 @@ How can we keep the maximum knowledge on “How we do things and how it works?�
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/333e464600eaed01c177c248b9aac0eb/f13a9/contributors.avif 200w,
-/static/333e464600eaed01c177c248b9aac0eb/af71e/contributors.avif 400w,
-/static/333e464600eaed01c177c248b9aac0eb/679d2/contributors.avif 690w&quot;
-              sizes=&quot;(max-width: 690px) 100vw, 690px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/333e464600eaed01c177c248b9aac0eb/ba381/contributors.webp 200w,
 /static/333e464600eaed01c177c248b9aac0eb/7f61c/contributors.webp 400w,
 /static/333e464600eaed01c177c248b9aac0eb/8efd0/contributors.webp 690w&quot;
@@ -224,12 +208,6 @@ But if the rule we want to impose on ourselves is not available in Eslint or oth
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/70d19ce71dc58f01820a31e0fee0aae5/f13a9/ci-workflow.avif 200w,
-/static/70d19ce71dc58f01820a31e0fee0aae5/af71e/ci-workflow.avif 400w,
-/static/70d19ce71dc58f01820a31e0fee0aae5/0bbb0/ci-workflow.avif 768w&quot;
-              sizes=&quot;(max-width: 768px) 100vw, 768px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/70d19ce71dc58f01820a31e0fee0aae5/ba381/ci-workflow.webp 200w,
 /static/70d19ce71dc58f01820a31e0fee0aae5/7f61c/ci-workflow.webp 400w,
 /static/70d19ce71dc58f01820a31e0fee0aae5/8b983/ci-workflow.webp 768w&quot;
@@ -338,15 +316,6 @@ It only took me about ten minutes to set up this stack with &lt;a href=&quot;htt
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/8de3947494607606cd09c4b4a110bef5/f13a9/e2e-archi.avif 200w,
-/static/8de3947494607606cd09c4b4a110bef5/af71e/e2e-archi.avif 400w,
-/static/8de3947494607606cd09c4b4a110bef5/c9875/e2e-archi.avif 800w,
-/static/8de3947494607606cd09c4b4a110bef5/07e28/e2e-archi.avif 1200w,
-/static/8de3947494607606cd09c4b4a110bef5/2babf/e2e-archi.avif 1600w,
-/static/8de3947494607606cd09c4b4a110bef5/5f214/e2e-archi.avif 2058w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/8de3947494607606cd09c4b4a110bef5/ba381/e2e-archi.webp 200w,
 /static/8de3947494607606cd09c4b4a110bef5/7f61c/e2e-archi.webp 400w,
 /static/8de3947494607606cd09c4b4a110bef5/d00b9/e2e-archi.webp 800w,
@@ -448,15 +417,6 @@ We rely mainly on &lt;a href=&quot;https://slashgear.github.io/discover-jest-hid
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/8c790d7bb84694543ba87dcb7a7e76ae/f13a9/mocked-modules.avif 200w,
-/static/8c790d7bb84694543ba87dcb7a7e76ae/af71e/mocked-modules.avif 400w,
-/static/8c790d7bb84694543ba87dcb7a7e76ae/c9875/mocked-modules.avif 800w,
-/static/8c790d7bb84694543ba87dcb7a7e76ae/07e28/mocked-modules.avif 1200w,
-/static/8c790d7bb84694543ba87dcb7a7e76ae/2babf/mocked-modules.avif 1600w,
-/static/8c790d7bb84694543ba87dcb7a7e76ae/f696c/mocked-modules.avif 1920w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/8c790d7bb84694543ba87dcb7a7e76ae/ba381/mocked-modules.webp 200w,
 /static/8c790d7bb84694543ba87dcb7a7e76ae/7f61c/mocked-modules.webp 400w,
 /static/8c790d7bb84694543ba87dcb7a7e76ae/d00b9/mocked-modules.webp 800w,
@@ -579,15 +539,6 @@ The graphical redesign was not a reset of the project, we still live with both v
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/1148bec58444fa4ccea56315b956b236/f13a9/compare-v4-v5.avif 200w,
-/static/1148bec58444fa4ccea56315b956b236/af71e/compare-v4-v5.avif 400w,
-/static/1148bec58444fa4ccea56315b956b236/c9875/compare-v4-v5.avif 800w,
-/static/1148bec58444fa4ccea56315b956b236/07e28/compare-v4-v5.avif 1200w,
-/static/1148bec58444fa4ccea56315b956b236/2babf/compare-v4-v5.avif 1600w,
-/static/1148bec58444fa4ccea56315b956b236/f696c/compare-v4-v5.avif 1920w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/1148bec58444fa4ccea56315b956b236/ba381/compare-v4-v5.webp 200w,
 /static/1148bec58444fa4ccea56315b956b236/7f61c/compare-v4-v5.webp 400w,
 /static/1148bec58444fa4ccea56315b956b236/d00b9/compare-v4-v5.webp 800w,
@@ -669,15 +620,6 @@ If we observe a too important variation, it can allow us to detect an incident.&
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/5da9f76c5fa5325b394418fa229d9204/f13a9/grafana-monitoring-example.avif 200w,
-/static/5da9f76c5fa5325b394418fa229d9204/af71e/grafana-monitoring-example.avif 400w,
-/static/5da9f76c5fa5325b394418fa229d9204/c9875/grafana-monitoring-example.avif 800w,
-/static/5da9f76c5fa5325b394418fa229d9204/07e28/grafana-monitoring-example.avif 1200w,
-/static/5da9f76c5fa5325b394418fa229d9204/2babf/grafana-monitoring-example.avif 1600w,
-/static/5da9f76c5fa5325b394418fa229d9204/8d64d/grafana-monitoring-example.avif 3702w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/5da9f76c5fa5325b394418fa229d9204/ba381/grafana-monitoring-example.webp 200w,
 /static/5da9f76c5fa5325b394418fa229d9204/7f61c/grafana-monitoring-example.webp 400w,
 /static/5da9f76c5fa5325b394418fa229d9204/d00b9/grafana-monitoring-example.webp 800w,
@@ -787,11 +729,6 @@ Je l’ai d’ailleurs déjà évoquée dans différents articles de &lt;a href=
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/57c6ca4dcd6d3e2b9db0b2d28a14cd48/f13a9/commit-count.avif 200w,
-/static/57c6ca4dcd6d3e2b9db0b2d28a14cd48/6d0e0/commit-count.avif 294w&quot;
-              sizes=&quot;(max-width: 294px) 100vw, 294px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/57c6ca4dcd6d3e2b9db0b2d28a14cd48/ba381/commit-count.webp 200w,
 /static/57c6ca4dcd6d3e2b9db0b2d28a14cd48/456a1/commit-count.webp 294w&quot;
               sizes=&quot;(max-width: 294px) 100vw, 294px&quot;
@@ -837,11 +774,6 @@ Dans ce monde des technologies web souvent décrié (ex: les nombreux articles s
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/87ea590416839a8413c9d4905c0fa4b6/f13a9/releases.avif 200w,
-/static/87ea590416839a8413c9d4905c0fa4b6/7bd34/releases.avif 350w&quot;
-              sizes=&quot;(max-width: 350px) 100vw, 350px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/87ea590416839a8413c9d4905c0fa4b6/ba381/releases.webp 200w,
 /static/87ea590416839a8413c9d4905c0fa4b6/a3432/releases.webp 350w&quot;
               sizes=&quot;(max-width: 350px) 100vw, 350px&quot;
@@ -885,12 +817,6 @@ Comment garder au maximum la connaissance sur “Comment on fait les choses et c
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/333e464600eaed01c177c248b9aac0eb/f13a9/contributors.avif 200w,
-/static/333e464600eaed01c177c248b9aac0eb/af71e/contributors.avif 400w,
-/static/333e464600eaed01c177c248b9aac0eb/679d2/contributors.avif 690w&quot;
-              sizes=&quot;(max-width: 690px) 100vw, 690px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/333e464600eaed01c177c248b9aac0eb/ba381/contributors.webp 200w,
 /static/333e464600eaed01c177c248b9aac0eb/7f61c/contributors.webp 400w,
 /static/333e464600eaed01c177c248b9aac0eb/8efd0/contributors.webp 690w&quot;
@@ -976,12 +902,6 @@ Mais si la règle qu’on souhaite s’imposer n’est pas disponible dans Eslin
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/70d19ce71dc58f01820a31e0fee0aae5/f13a9/ci-workflow.avif 200w,
-/static/70d19ce71dc58f01820a31e0fee0aae5/af71e/ci-workflow.avif 400w,
-/static/70d19ce71dc58f01820a31e0fee0aae5/0bbb0/ci-workflow.avif 768w&quot;
-              sizes=&quot;(max-width: 768px) 100vw, 768px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/70d19ce71dc58f01820a31e0fee0aae5/ba381/ci-workflow.webp 200w,
 /static/70d19ce71dc58f01820a31e0fee0aae5/7f61c/ci-workflow.webp 400w,
 /static/70d19ce71dc58f01820a31e0fee0aae5/8b983/ci-workflow.webp 768w&quot;
@@ -1090,15 +1010,6 @@ Il ne m’a fallu qu’une dizaine de minutes pour mettre en place cette stack a
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/8de3947494607606cd09c4b4a110bef5/f13a9/e2e-archi.avif 200w,
-/static/8de3947494607606cd09c4b4a110bef5/af71e/e2e-archi.avif 400w,
-/static/8de3947494607606cd09c4b4a110bef5/c9875/e2e-archi.avif 800w,
-/static/8de3947494607606cd09c4b4a110bef5/07e28/e2e-archi.avif 1200w,
-/static/8de3947494607606cd09c4b4a110bef5/2babf/e2e-archi.avif 1600w,
-/static/8de3947494607606cd09c4b4a110bef5/5f214/e2e-archi.avif 2058w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/8de3947494607606cd09c4b4a110bef5/ba381/e2e-archi.webp 200w,
 /static/8de3947494607606cd09c4b4a110bef5/7f61c/e2e-archi.webp 400w,
 /static/8de3947494607606cd09c4b4a110bef5/d00b9/e2e-archi.webp 800w,
@@ -1200,15 +1111,6 @@ On se base essentiellement sur &lt;a href=&quot;https://slashgear.github.io/disc
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/8c790d7bb84694543ba87dcb7a7e76ae/f13a9/mocked-modules.avif 200w,
-/static/8c790d7bb84694543ba87dcb7a7e76ae/af71e/mocked-modules.avif 400w,
-/static/8c790d7bb84694543ba87dcb7a7e76ae/c9875/mocked-modules.avif 800w,
-/static/8c790d7bb84694543ba87dcb7a7e76ae/07e28/mocked-modules.avif 1200w,
-/static/8c790d7bb84694543ba87dcb7a7e76ae/2babf/mocked-modules.avif 1600w,
-/static/8c790d7bb84694543ba87dcb7a7e76ae/f696c/mocked-modules.avif 1920w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/8c790d7bb84694543ba87dcb7a7e76ae/ba381/mocked-modules.webp 200w,
 /static/8c790d7bb84694543ba87dcb7a7e76ae/7f61c/mocked-modules.webp 400w,
 /static/8c790d7bb84694543ba87dcb7a7e76ae/d00b9/mocked-modules.webp 800w,
@@ -1331,15 +1233,6 @@ La refonte graphique n’a donc pas été la remise à zéro du projet, on conti
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/1148bec58444fa4ccea56315b956b236/f13a9/compare-v4-v5.avif 200w,
-/static/1148bec58444fa4ccea56315b956b236/af71e/compare-v4-v5.avif 400w,
-/static/1148bec58444fa4ccea56315b956b236/c9875/compare-v4-v5.avif 800w,
-/static/1148bec58444fa4ccea56315b956b236/07e28/compare-v4-v5.avif 1200w,
-/static/1148bec58444fa4ccea56315b956b236/2babf/compare-v4-v5.avif 1600w,
-/static/1148bec58444fa4ccea56315b956b236/f696c/compare-v4-v5.avif 1920w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/1148bec58444fa4ccea56315b956b236/ba381/compare-v4-v5.webp 200w,
 /static/1148bec58444fa4ccea56315b956b236/7f61c/compare-v4-v5.webp 400w,
 /static/1148bec58444fa4ccea56315b956b236/d00b9/compare-v4-v5.webp 800w,
@@ -1421,15 +1314,6 @@ Si on observe une variation trop importante, cela peut nous permettre de détect
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/5da9f76c5fa5325b394418fa229d9204/f13a9/grafana-monitoring-example.avif 200w,
-/static/5da9f76c5fa5325b394418fa229d9204/af71e/grafana-monitoring-example.avif 400w,
-/static/5da9f76c5fa5325b394418fa229d9204/c9875/grafana-monitoring-example.avif 800w,
-/static/5da9f76c5fa5325b394418fa229d9204/07e28/grafana-monitoring-example.avif 1200w,
-/static/5da9f76c5fa5325b394418fa229d9204/2babf/grafana-monitoring-example.avif 1600w,
-/static/5da9f76c5fa5325b394418fa229d9204/8d64d/grafana-monitoring-example.avif 3702w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/5da9f76c5fa5325b394418fa229d9204/ba381/grafana-monitoring-example.webp 200w,
 /static/5da9f76c5fa5325b394418fa229d9204/7f61c/grafana-monitoring-example.webp 400w,
 /static/5da9f76c5fa5325b394418fa229d9204/d00b9/grafana-monitoring-example.webp 800w,
@@ -1696,14 +1580,6 @@ Vous n’avez plus qu’à le pousser et Github le lancera pour vous !&lt;/p&gt;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/5b407649e807a878c10363ae2818db27/f13a9/action.avif 200w,
-/static/5b407649e807a878c10363ae2818db27/af71e/action.avif 400w,
-/static/5b407649e807a878c10363ae2818db27/c9875/action.avif 800w,
-/static/5b407649e807a878c10363ae2818db27/07e28/action.avif 1200w,
-/static/5b407649e807a878c10363ae2818db27/2babf/action.avif 1600w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/5b407649e807a878c10363ae2818db27/ba381/action.webp 200w,
 /static/5b407649e807a878c10363ae2818db27/7f61c/action.webp 400w,
 /static/5b407649e807a878c10363ae2818db27/d00b9/action.webp 800w,
@@ -1977,14 +1853,6 @@ You just need to push it and github will start it for you !&lt;/p&gt;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/5b407649e807a878c10363ae2818db27/f13a9/action.avif 200w,
-/static/5b407649e807a878c10363ae2818db27/af71e/action.avif 400w,
-/static/5b407649e807a878c10363ae2818db27/c9875/action.avif 800w,
-/static/5b407649e807a878c10363ae2818db27/07e28/action.avif 1200w,
-/static/5b407649e807a878c10363ae2818db27/2babf/action.avif 1600w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/5b407649e807a878c10363ae2818db27/ba381/action.webp 200w,
 /static/5b407649e807a878c10363ae2818db27/7f61c/action.webp 400w,
 /static/5b407649e807a878c10363ae2818db27/d00b9/action.webp 800w,
@@ -2118,15 +1986,6 @@ For dependencies (&lt;em&gt;vendors&lt;/em&gt;), Snowpack builds them once and c
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/b06ee5f06a63858b913ddade78afcaba/f13a9/snowpack-unbundled.avif 200w,
-/static/b06ee5f06a63858b913ddade78afcaba/af71e/snowpack-unbundled.avif 400w,
-/static/b06ee5f06a63858b913ddade78afcaba/c9875/snowpack-unbundled.avif 800w,
-/static/b06ee5f06a63858b913ddade78afcaba/07e28/snowpack-unbundled.avif 1200w,
-/static/b06ee5f06a63858b913ddade78afcaba/2babf/snowpack-unbundled.avif 1600w,
-/static/b06ee5f06a63858b913ddade78afcaba/b2a15/snowpack-unbundled.avif 1812w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/b06ee5f06a63858b913ddade78afcaba/ba381/snowpack-unbundled.webp 200w,
 /static/b06ee5f06a63858b913ddade78afcaba/7f61c/snowpack-unbundled.webp 400w,
 /static/b06ee5f06a63858b913ddade78afcaba/d00b9/snowpack-unbundled.webp 800w,
@@ -2192,14 +2051,6 @@ It’s reassuring without being reassuring, I’ve personally experienced webpac
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/dc98a59b3f3f71b4953ae1ed9d1f2503/f13a9/plugins.avif 200w,
-/static/dc98a59b3f3f71b4953ae1ed9d1f2503/af71e/plugins.avif 400w,
-/static/dc98a59b3f3f71b4953ae1ed9d1f2503/c9875/plugins.avif 800w,
-/static/dc98a59b3f3f71b4953ae1ed9d1f2503/07e28/plugins.avif 1200w,
-/static/dc98a59b3f3f71b4953ae1ed9d1f2503/ceb0a/plugins.avif 1252w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/dc98a59b3f3f71b4953ae1ed9d1f2503/ba381/plugins.webp 200w,
 /static/dc98a59b3f3f71b4953ae1ed9d1f2503/7f61c/plugins.webp 400w,
 /static/dc98a59b3f3f71b4953ae1ed9d1f2503/d00b9/plugins.webp 800w,
@@ -2356,15 +2207,6 @@ Pour les dépendances (&lt;em&gt;vendors&lt;/em&gt;), Snowpack les build une foi
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/b06ee5f06a63858b913ddade78afcaba/f13a9/snowpack-unbundled.avif 200w,
-/static/b06ee5f06a63858b913ddade78afcaba/af71e/snowpack-unbundled.avif 400w,
-/static/b06ee5f06a63858b913ddade78afcaba/c9875/snowpack-unbundled.avif 800w,
-/static/b06ee5f06a63858b913ddade78afcaba/07e28/snowpack-unbundled.avif 1200w,
-/static/b06ee5f06a63858b913ddade78afcaba/2babf/snowpack-unbundled.avif 1600w,
-/static/b06ee5f06a63858b913ddade78afcaba/b2a15/snowpack-unbundled.avif 1812w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/b06ee5f06a63858b913ddade78afcaba/ba381/snowpack-unbundled.webp 200w,
 /static/b06ee5f06a63858b913ddade78afcaba/7f61c/snowpack-unbundled.webp 400w,
 /static/b06ee5f06a63858b913ddade78afcaba/d00b9/snowpack-unbundled.webp 800w,
@@ -2430,14 +2272,6 @@ C’est rassurant sans l’être, j’ai personnellement connu des mises à jour
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/dc98a59b3f3f71b4953ae1ed9d1f2503/f13a9/plugins.avif 200w,
-/static/dc98a59b3f3f71b4953ae1ed9d1f2503/af71e/plugins.avif 400w,
-/static/dc98a59b3f3f71b4953ae1ed9d1f2503/c9875/plugins.avif 800w,
-/static/dc98a59b3f3f71b4953ae1ed9d1f2503/07e28/plugins.avif 1200w,
-/static/dc98a59b3f3f71b4953ae1ed9d1f2503/ceb0a/plugins.avif 1252w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/dc98a59b3f3f71b4953ae1ed9d1f2503/ba381/plugins.webp 200w,
 /static/dc98a59b3f3f71b4953ae1ed9d1f2503/7f61c/plugins.webp 400w,
 /static/dc98a59b3f3f71b4953ae1ed9d1f2503/d00b9/plugins.webp 800w,
@@ -2646,15 +2480,6 @@ ReactDOM&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/ecfcfb4ed066b92cd028720b818f6498/f13a9/step1.avif 200w,
-/static/ecfcfb4ed066b92cd028720b818f6498/af71e/step1.avif 400w,
-/static/ecfcfb4ed066b92cd028720b818f6498/c9875/step1.avif 800w,
-/static/ecfcfb4ed066b92cd028720b818f6498/07e28/step1.avif 1200w,
-/static/ecfcfb4ed066b92cd028720b818f6498/2babf/step1.avif 1600w,
-/static/ecfcfb4ed066b92cd028720b818f6498/95b77/step1.avif 2048w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/ecfcfb4ed066b92cd028720b818f6498/ba381/step1.webp 200w,
 /static/ecfcfb4ed066b92cd028720b818f6498/7f61c/step1.webp 400w,
 /static/ecfcfb4ed066b92cd028720b818f6498/d00b9/step1.webp 800w,
@@ -2714,15 +2539,6 @@ Let’s add the following stylesheet.&lt;/p&gt;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/e2aaad3951aca659eb0a22b3c34b502a/f13a9/step2.avif 200w,
-/static/e2aaad3951aca659eb0a22b3c34b502a/af71e/step2.avif 400w,
-/static/e2aaad3951aca659eb0a22b3c34b502a/c9875/step2.avif 800w,
-/static/e2aaad3951aca659eb0a22b3c34b502a/07e28/step2.avif 1200w,
-/static/e2aaad3951aca659eb0a22b3c34b502a/2babf/step2.avif 1600w,
-/static/e2aaad3951aca659eb0a22b3c34b502a/95b77/step2.avif 2048w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/e2aaad3951aca659eb0a22b3c34b502a/ba381/step2.webp 200w,
 /static/e2aaad3951aca659eb0a22b3c34b502a/7f61c/step2.webp 400w,
 /static/e2aaad3951aca659eb0a22b3c34b502a/d00b9/step2.webp 800w,
@@ -2773,12 +2589,6 @@ Without any settings I have these different resources ready to be deployed on a 
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/852748a3553e76e77e6a76bfd5bb4f86/f13a9/dist_screenshot.avif 200w,
-/static/852748a3553e76e77e6a76bfd5bb4f86/af71e/dist_screenshot.avif 400w,
-/static/852748a3553e76e77e6a76bfd5bb4f86/e4aef/dist_screenshot.avif 506w&quot;
-              sizes=&quot;(max-width: 506px) 100vw, 506px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/852748a3553e76e77e6a76bfd5bb4f86/ba381/dist_screenshot.webp 200w,
 /static/852748a3553e76e77e6a76bfd5bb4f86/7f61c/dist_screenshot.webp 400w,
 /static/852748a3553e76e77e6a76bfd5bb4f86/6b97b/dist_screenshot.webp 506w&quot;
@@ -2846,12 +2656,6 @@ The tool immediately detects my use of the dynamic import &lt;code class=&quot;l
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/6eef089760b01de631514fceb06f8bd4/f13a9/lazy.avif 200w,
-/static/6eef089760b01de631514fceb06f8bd4/af71e/lazy.avif 400w,
-/static/6eef089760b01de631514fceb06f8bd4/05723/lazy.avif 570w&quot;
-              sizes=&quot;(max-width: 570px) 100vw, 570px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/6eef089760b01de631514fceb06f8bd4/ba381/lazy.webp 200w,
 /static/6eef089760b01de631514fceb06f8bd4/7f61c/lazy.webp 400w,
 /static/6eef089760b01de631514fceb06f8bd4/048c8/lazy.webp 570w&quot;
@@ -3004,15 +2808,6 @@ ReactDOM&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/ecfcfb4ed066b92cd028720b818f6498/f13a9/step1.avif 200w,
-/static/ecfcfb4ed066b92cd028720b818f6498/af71e/step1.avif 400w,
-/static/ecfcfb4ed066b92cd028720b818f6498/c9875/step1.avif 800w,
-/static/ecfcfb4ed066b92cd028720b818f6498/07e28/step1.avif 1200w,
-/static/ecfcfb4ed066b92cd028720b818f6498/2babf/step1.avif 1600w,
-/static/ecfcfb4ed066b92cd028720b818f6498/95b77/step1.avif 2048w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/ecfcfb4ed066b92cd028720b818f6498/ba381/step1.webp 200w,
 /static/ecfcfb4ed066b92cd028720b818f6498/7f61c/step1.webp 400w,
 /static/ecfcfb4ed066b92cd028720b818f6498/d00b9/step1.webp 800w,
@@ -3072,15 +2867,6 @@ Ajoutons d’abord la feuille de style suivante.&lt;/p&gt;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/e2aaad3951aca659eb0a22b3c34b502a/f13a9/step2.avif 200w,
-/static/e2aaad3951aca659eb0a22b3c34b502a/af71e/step2.avif 400w,
-/static/e2aaad3951aca659eb0a22b3c34b502a/c9875/step2.avif 800w,
-/static/e2aaad3951aca659eb0a22b3c34b502a/07e28/step2.avif 1200w,
-/static/e2aaad3951aca659eb0a22b3c34b502a/2babf/step2.avif 1600w,
-/static/e2aaad3951aca659eb0a22b3c34b502a/95b77/step2.avif 2048w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/e2aaad3951aca659eb0a22b3c34b502a/ba381/step2.webp 200w,
 /static/e2aaad3951aca659eb0a22b3c34b502a/7f61c/step2.webp 400w,
 /static/e2aaad3951aca659eb0a22b3c34b502a/d00b9/step2.webp 800w,
@@ -3131,12 +2917,6 @@ Sans paramétrage j’ai directement ces différentes ressources prêtent à êt
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/852748a3553e76e77e6a76bfd5bb4f86/f13a9/dist_screenshot.avif 200w,
-/static/852748a3553e76e77e6a76bfd5bb4f86/af71e/dist_screenshot.avif 400w,
-/static/852748a3553e76e77e6a76bfd5bb4f86/e4aef/dist_screenshot.avif 506w&quot;
-              sizes=&quot;(max-width: 506px) 100vw, 506px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/852748a3553e76e77e6a76bfd5bb4f86/ba381/dist_screenshot.webp 200w,
 /static/852748a3553e76e77e6a76bfd5bb4f86/7f61c/dist_screenshot.webp 400w,
 /static/852748a3553e76e77e6a76bfd5bb4f86/6b97b/dist_screenshot.webp 506w&quot;
@@ -3204,12 +2984,6 @@ L’outil détecte immédiatement mon usage de l’import dynamique &lt;code cla
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/6eef089760b01de631514fceb06f8bd4/f13a9/lazy.avif 200w,
-/static/6eef089760b01de631514fceb06f8bd4/af71e/lazy.avif 400w,
-/static/6eef089760b01de631514fceb06f8bd4/05723/lazy.avif 570w&quot;
-              sizes=&quot;(max-width: 570px) 100vw, 570px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/6eef089760b01de631514fceb06f8bd4/ba381/lazy.webp 200w,
 /static/6eef089760b01de631514fceb06f8bd4/7f61c/lazy.webp 400w,
 /static/6eef089760b01de631514fceb06f8bd4/048c8/lazy.webp 570w&quot;
@@ -3381,15 +3155,6 @@ Un grand avantage de cette règle de nommage est que vous pouvez facilement filt
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/6ddc87a11f1bc6add7fb7ee327893e94/f13a9/redux-devtools.avif 200w,
-/static/6ddc87a11f1bc6add7fb7ee327893e94/af71e/redux-devtools.avif 400w,
-/static/6ddc87a11f1bc6add7fb7ee327893e94/c9875/redux-devtools.avif 800w,
-/static/6ddc87a11f1bc6add7fb7ee327893e94/07e28/redux-devtools.avif 1200w,
-/static/6ddc87a11f1bc6add7fb7ee327893e94/2babf/redux-devtools.avif 1600w,
-/static/6ddc87a11f1bc6add7fb7ee327893e94/1ca2f/redux-devtools.avif 2726w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/6ddc87a11f1bc6add7fb7ee327893e94/ba381/redux-devtools.webp 200w,
 /static/6ddc87a11f1bc6add7fb7ee327893e94/7f61c/redux-devtools.webp 400w,
 /static/6ddc87a11f1bc6add7fb7ee327893e94/d00b9/redux-devtools.webp 800w,
@@ -3530,12 +3295,6 @@ Ceci doit être évité.&lt;/p&gt;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/847fbba6812318a026c231349b6a15c2/f13a9/combineReducer.avif 200w,
-/static/847fbba6812318a026c231349b6a15c2/af71e/combineReducer.avif 400w,
-/static/847fbba6812318a026c231349b6a15c2/81a67/combineReducer.avif 721w&quot;
-              sizes=&quot;(max-width: 721px) 100vw, 721px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/847fbba6812318a026c231349b6a15c2/ba381/combineReducer.webp 200w,
 /static/847fbba6812318a026c231349b6a15c2/7f61c/combineReducer.webp 400w,
 /static/847fbba6812318a026c231349b6a15c2/c71bf/combineReducer.webp 721w&quot;
@@ -3806,14 +3565,6 @@ I invite you to read &lt;a href=&quot;https://esbuild.github.io/faq/#why-is-esbu
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/111dc8e0d4f60fb0fc3210264a258423/f13a9/build-pipeline.avif 200w,
-/static/111dc8e0d4f60fb0fc3210264a258423/af71e/build-pipeline.avif 400w,
-/static/111dc8e0d4f60fb0fc3210264a258423/c9875/build-pipeline.avif 800w,
-/static/111dc8e0d4f60fb0fc3210264a258423/07e28/build-pipeline.avif 1200w,
-/static/111dc8e0d4f60fb0fc3210264a258423/b5df0/build-pipeline.avif 1504w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/111dc8e0d4f60fb0fc3210264a258423/ba381/build-pipeline.webp 200w,
 /static/111dc8e0d4f60fb0fc3210264a258423/7f61c/build-pipeline.webp 400w,
 /static/111dc8e0d4f60fb0fc3210264a258423/d00b9/build-pipeline.webp 800w,
@@ -3984,14 +3735,6 @@ Je vous invite à lire &lt;a href=&quot;https://esbuild.github.io/faq/#why-is-es
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/111dc8e0d4f60fb0fc3210264a258423/f13a9/build-pipeline.avif 200w,
-/static/111dc8e0d4f60fb0fc3210264a258423/af71e/build-pipeline.avif 400w,
-/static/111dc8e0d4f60fb0fc3210264a258423/c9875/build-pipeline.avif 800w,
-/static/111dc8e0d4f60fb0fc3210264a258423/07e28/build-pipeline.avif 1200w,
-/static/111dc8e0d4f60fb0fc3210264a258423/b5df0/build-pipeline.avif 1504w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/111dc8e0d4f60fb0fc3210264a258423/ba381/build-pipeline.webp 200w,
 /static/111dc8e0d4f60fb0fc3210264a258423/7f61c/build-pipeline.webp 400w,
 /static/111dc8e0d4f60fb0fc3210264a258423/d00b9/build-pipeline.webp 800w,
@@ -4199,13 +3942,6 @@ Beyond the various concerns of using groovy with pipeline syntax 😅, we have t
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/19010545e7456d3a5201b61a03e8a4ad/f13a9/ci.avif 200w,
-/static/19010545e7456d3a5201b61a03e8a4ad/af71e/ci.avif 400w,
-/static/19010545e7456d3a5201b61a03e8a4ad/c9875/ci.avif 800w,
-/static/19010545e7456d3a5201b61a03e8a4ad/e449d/ci.avif 1100w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/19010545e7456d3a5201b61a03e8a4ad/ba381/ci.webp 200w,
 /static/19010545e7456d3a5201b61a03e8a4ad/7f61c/ci.webp 400w,
 /static/19010545e7456d3a5201b61a03e8a4ad/d00b9/ci.webp 800w,
@@ -4302,13 +4038,6 @@ Au-delà de la galère liée à l’utilisation de groovy avec la syntaxe de pip
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/19010545e7456d3a5201b61a03e8a4ad/f13a9/ci.avif 200w,
-/static/19010545e7456d3a5201b61a03e8a4ad/af71e/ci.avif 400w,
-/static/19010545e7456d3a5201b61a03e8a4ad/c9875/ci.avif 800w,
-/static/19010545e7456d3a5201b61a03e8a4ad/e449d/ci.avif 1100w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/19010545e7456d3a5201b61a03e8a4ad/ba381/ci.webp 200w,
 /static/19010545e7456d3a5201b61a03e8a4ad/7f61c/ci.webp 400w,
 /static/19010545e7456d3a5201b61a03e8a4ad/d00b9/ci.webp 800w,
@@ -4558,15 +4287,6 @@ Here is a tutorial of how to publish Gatsby website with travis.&lt;/p&gt;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/9c3684fc2f51e0bbd36557ef7fe363e9/f13a9/project-options.avif 200w,
-/static/9c3684fc2f51e0bbd36557ef7fe363e9/af71e/project-options.avif 400w,
-/static/9c3684fc2f51e0bbd36557ef7fe363e9/c9875/project-options.avif 800w,
-/static/9c3684fc2f51e0bbd36557ef7fe363e9/07e28/project-options.avif 1200w,
-/static/9c3684fc2f51e0bbd36557ef7fe363e9/2babf/project-options.avif 1600w,
-/static/9c3684fc2f51e0bbd36557ef7fe363e9/a5563/project-options.avif 3840w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/9c3684fc2f51e0bbd36557ef7fe363e9/ba381/project-options.webp 200w,
 /static/9c3684fc2f51e0bbd36557ef7fe363e9/7f61c/project-options.webp 400w,
 /static/9c3684fc2f51e0bbd36557ef7fe363e9/d00b9/project-options.webp 800w,
@@ -4618,15 +4338,6 @@ Then on your project travis page, go to &lt;code class=&quot;language-text&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/9c3684fc2f51e0bbd36557ef7fe363e9/f13a9/project-options.avif 200w,
-/static/9c3684fc2f51e0bbd36557ef7fe363e9/af71e/project-options.avif 400w,
-/static/9c3684fc2f51e0bbd36557ef7fe363e9/c9875/project-options.avif 800w,
-/static/9c3684fc2f51e0bbd36557ef7fe363e9/07e28/project-options.avif 1200w,
-/static/9c3684fc2f51e0bbd36557ef7fe363e9/2babf/project-options.avif 1600w,
-/static/9c3684fc2f51e0bbd36557ef7fe363e9/a5563/project-options.avif 3840w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/9c3684fc2f51e0bbd36557ef7fe363e9/ba381/project-options.webp 200w,
 /static/9c3684fc2f51e0bbd36557ef7fe363e9/7f61c/project-options.webp 400w,
 /static/9c3684fc2f51e0bbd36557ef7fe363e9/d00b9/project-options.webp 800w,
@@ -4676,15 +4387,6 @@ Then on your project travis page, go to &lt;code class=&quot;language-text&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/15ad6376a91e61cc3be5a0d08bf78ab7/f13a9/env-var.avif 200w,
-/static/15ad6376a91e61cc3be5a0d08bf78ab7/af71e/env-var.avif 400w,
-/static/15ad6376a91e61cc3be5a0d08bf78ab7/c9875/env-var.avif 800w,
-/static/15ad6376a91e61cc3be5a0d08bf78ab7/07e28/env-var.avif 1200w,
-/static/15ad6376a91e61cc3be5a0d08bf78ab7/2babf/env-var.avif 1600w,
-/static/15ad6376a91e61cc3be5a0d08bf78ab7/c1ea8/env-var.avif 3080w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/15ad6376a91e61cc3be5a0d08bf78ab7/ba381/env-var.webp 200w,
 /static/15ad6376a91e61cc3be5a0d08bf78ab7/7f61c/env-var.webp 400w,
 /static/15ad6376a91e61cc3be5a0d08bf78ab7/d00b9/env-var.webp 800w,
@@ -4735,15 +4437,6 @@ Then on your project travis page, go to &lt;code class=&quot;language-text&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/6084de328e926a428de53162c2a73880/f13a9/github-pages.avif 200w,
-/static/6084de328e926a428de53162c2a73880/af71e/github-pages.avif 400w,
-/static/6084de328e926a428de53162c2a73880/c9875/github-pages.avif 800w,
-/static/6084de328e926a428de53162c2a73880/07e28/github-pages.avif 1200w,
-/static/6084de328e926a428de53162c2a73880/2babf/github-pages.avif 1600w,
-/static/6084de328e926a428de53162c2a73880/b191b/github-pages.avif 1626w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/6084de328e926a428de53162c2a73880/ba381/github-pages.webp 200w,
 /static/6084de328e926a428de53162c2a73880/7f61c/github-pages.webp 400w,
 /static/6084de328e926a428de53162c2a73880/d00b9/github-pages.webp 800w,
@@ -4836,15 +4529,6 @@ Voici un tutoriel sur la façon de publier le site web Gatsby avec travis.&lt;/p
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/9c3684fc2f51e0bbd36557ef7fe363e9/f13a9/project-options.avif 200w,
-/static/9c3684fc2f51e0bbd36557ef7fe363e9/af71e/project-options.avif 400w,
-/static/9c3684fc2f51e0bbd36557ef7fe363e9/c9875/project-options.avif 800w,
-/static/9c3684fc2f51e0bbd36557ef7fe363e9/07e28/project-options.avif 1200w,
-/static/9c3684fc2f51e0bbd36557ef7fe363e9/2babf/project-options.avif 1600w,
-/static/9c3684fc2f51e0bbd36557ef7fe363e9/a5563/project-options.avif 3840w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/9c3684fc2f51e0bbd36557ef7fe363e9/ba381/project-options.webp 200w,
 /static/9c3684fc2f51e0bbd36557ef7fe363e9/7f61c/project-options.webp 400w,
 /static/9c3684fc2f51e0bbd36557ef7fe363e9/d00b9/project-options.webp 800w,
@@ -4896,15 +4580,6 @@ Ensuite, sur la page travis de ton projet, va sur “Plus d’options &gt; Param
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/9c3684fc2f51e0bbd36557ef7fe363e9/f13a9/project-options.avif 200w,
-/static/9c3684fc2f51e0bbd36557ef7fe363e9/af71e/project-options.avif 400w,
-/static/9c3684fc2f51e0bbd36557ef7fe363e9/c9875/project-options.avif 800w,
-/static/9c3684fc2f51e0bbd36557ef7fe363e9/07e28/project-options.avif 1200w,
-/static/9c3684fc2f51e0bbd36557ef7fe363e9/2babf/project-options.avif 1600w,
-/static/9c3684fc2f51e0bbd36557ef7fe363e9/a5563/project-options.avif 3840w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/9c3684fc2f51e0bbd36557ef7fe363e9/ba381/project-options.webp 200w,
 /static/9c3684fc2f51e0bbd36557ef7fe363e9/7f61c/project-options.webp 400w,
 /static/9c3684fc2f51e0bbd36557ef7fe363e9/d00b9/project-options.webp 800w,
@@ -4954,15 +4629,6 @@ Ensuite, sur la page travis de ton projet, va sur “Plus d’options &gt; Param
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/15ad6376a91e61cc3be5a0d08bf78ab7/f13a9/env-var.avif 200w,
-/static/15ad6376a91e61cc3be5a0d08bf78ab7/af71e/env-var.avif 400w,
-/static/15ad6376a91e61cc3be5a0d08bf78ab7/c9875/env-var.avif 800w,
-/static/15ad6376a91e61cc3be5a0d08bf78ab7/07e28/env-var.avif 1200w,
-/static/15ad6376a91e61cc3be5a0d08bf78ab7/2babf/env-var.avif 1600w,
-/static/15ad6376a91e61cc3be5a0d08bf78ab7/c1ea8/env-var.avif 3080w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/15ad6376a91e61cc3be5a0d08bf78ab7/ba381/env-var.webp 200w,
 /static/15ad6376a91e61cc3be5a0d08bf78ab7/7f61c/env-var.webp 400w,
 /static/15ad6376a91e61cc3be5a0d08bf78ab7/d00b9/env-var.webp 800w,
@@ -5013,15 +4679,6 @@ Ensuite, sur la page travis de ton projet, va sur “Plus d’options &gt; Param
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/6084de328e926a428de53162c2a73880/f13a9/github-pages.avif 200w,
-/static/6084de328e926a428de53162c2a73880/af71e/github-pages.avif 400w,
-/static/6084de328e926a428de53162c2a73880/c9875/github-pages.avif 800w,
-/static/6084de328e926a428de53162c2a73880/07e28/github-pages.avif 1200w,
-/static/6084de328e926a428de53162c2a73880/2babf/github-pages.avif 1600w,
-/static/6084de328e926a428de53162c2a73880/b191b/github-pages.avif 1626w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/6084de328e926a428de53162c2a73880/ba381/github-pages.webp 200w,
 /static/6084de328e926a428de53162c2a73880/7f61c/github-pages.webp 400w,
 /static/6084de328e926a428de53162c2a73880/d00b9/github-pages.webp 800w,
@@ -5105,15 +4762,6 @@ The moving elements make it difficult to capture all the information you want to
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/f13a9/prefersReduceMotion-support-05-2020.avif 200w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/af71e/prefersReduceMotion-support-05-2020.avif 400w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/c9875/prefersReduceMotion-support-05-2020.avif 800w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/07e28/prefersReduceMotion-support-05-2020.avif 1200w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/2babf/prefersReduceMotion-support-05-2020.avif 1600w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/eb9e9/prefersReduceMotion-support-05-2020.avif 2528w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/ba381/prefersReduceMotion-support-05-2020.webp 200w,
 /static/109310f0f5f4ab72be7c1e83a6ea85db/7f61c/prefersReduceMotion-support-05-2020.webp 400w,
 /static/109310f0f5f4ab72be7c1e83a6ea85db/d00b9/prefersReduceMotion-support-05-2020.webp 800w,
@@ -5225,15 +4873,6 @@ Les éléments en mouvements amènent des difficultés à saisir l’intégralit
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/f13a9/prefersReduceMotion-support-05-2020.avif 200w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/af71e/prefersReduceMotion-support-05-2020.avif 400w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/c9875/prefersReduceMotion-support-05-2020.avif 800w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/07e28/prefersReduceMotion-support-05-2020.avif 1200w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/2babf/prefersReduceMotion-support-05-2020.avif 1600w,
-/static/109310f0f5f4ab72be7c1e83a6ea85db/eb9e9/prefersReduceMotion-support-05-2020.avif 2528w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/109310f0f5f4ab72be7c1e83a6ea85db/ba381/prefersReduceMotion-support-05-2020.webp 200w,
 /static/109310f0f5f4ab72be7c1e83a6ea85db/7f61c/prefersReduceMotion-support-05-2020.webp 400w,
 /static/109310f0f5f4ab72be7c1e83a6ea85db/d00b9/prefersReduceMotion-support-05-2020.webp 800w,
@@ -5468,15 +5107,6 @@ A big advantage of this naming rule is that you can easily filter the action in 
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/6ddc87a11f1bc6add7fb7ee327893e94/f13a9/redux-devtools.avif 200w,
-/static/6ddc87a11f1bc6add7fb7ee327893e94/af71e/redux-devtools.avif 400w,
-/static/6ddc87a11f1bc6add7fb7ee327893e94/c9875/redux-devtools.avif 800w,
-/static/6ddc87a11f1bc6add7fb7ee327893e94/07e28/redux-devtools.avif 1200w,
-/static/6ddc87a11f1bc6add7fb7ee327893e94/2babf/redux-devtools.avif 1600w,
-/static/6ddc87a11f1bc6add7fb7ee327893e94/1ca2f/redux-devtools.avif 2726w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/6ddc87a11f1bc6add7fb7ee327893e94/ba381/redux-devtools.webp 200w,
 /static/6ddc87a11f1bc6add7fb7ee327893e94/7f61c/redux-devtools.webp 400w,
 /static/6ddc87a11f1bc6add7fb7ee327893e94/d00b9/redux-devtools.webp 800w,
@@ -5617,12 +5247,6 @@ This should be avoided.&lt;/p&gt;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/847fbba6812318a026c231349b6a15c2/f13a9/combineReducer.avif 200w,
-/static/847fbba6812318a026c231349b6a15c2/af71e/combineReducer.avif 400w,
-/static/847fbba6812318a026c231349b6a15c2/81a67/combineReducer.avif 721w&quot;
-              sizes=&quot;(max-width: 721px) 100vw, 721px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/847fbba6812318a026c231349b6a15c2/ba381/combineReducer.webp 200w,
 /static/847fbba6812318a026c231349b6a15c2/7f61c/combineReducer.webp 400w,
 /static/847fbba6812318a026c231349b6a15c2/c71bf/combineReducer.webp 721w&quot;
@@ -5817,15 +5441,6 @@ The application exists since 2015 and it has evolved a lot since then (&lt;a hre
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/92aa0670116677da859844a5c9ec387a/f13a9/6play.avif 200w,
-/static/92aa0670116677da859844a5c9ec387a/af71e/6play.avif 400w,
-/static/92aa0670116677da859844a5c9ec387a/c9875/6play.avif 800w,
-/static/92aa0670116677da859844a5c9ec387a/07e28/6play.avif 1200w,
-/static/92aa0670116677da859844a5c9ec387a/2babf/6play.avif 1600w,
-/static/92aa0670116677da859844a5c9ec387a/95b77/6play.avif 2048w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/92aa0670116677da859844a5c9ec387a/ba381/6play.webp 200w,
 /static/92aa0670116677da859844a5c9ec387a/7f61c/6play.webp 400w,
 /static/92aa0670116677da859844a5c9ec387a/d00b9/6play.webp 800w,
@@ -6004,15 +5619,6 @@ I could have lost whole days on futile modifications if I had not measured preci
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/5e332fb09af3fd8001ac2612fd3221b2/f13a9/babel-doc.avif 200w,
-/static/5e332fb09af3fd8001ac2612fd3221b2/af71e/babel-doc.avif 400w,
-/static/5e332fb09af3fd8001ac2612fd3221b2/c9875/babel-doc.avif 800w,
-/static/5e332fb09af3fd8001ac2612fd3221b2/07e28/babel-doc.avif 1200w,
-/static/5e332fb09af3fd8001ac2612fd3221b2/2babf/babel-doc.avif 1600w,
-/static/5e332fb09af3fd8001ac2612fd3221b2/b977c/babel-doc.avif 2370w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/5e332fb09af3fd8001ac2612fd3221b2/ba381/babel-doc.webp 200w,
 /static/5e332fb09af3fd8001ac2612fd3221b2/7f61c/babel-doc.webp 400w,
 /static/5e332fb09af3fd8001ac2612fd3221b2/d00b9/babel-doc.webp 800w,
@@ -6357,14 +5963,6 @@ That is exactly what &lt;a href=&quot;https://developer.mozilla.org/fr/docs/Web/
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/e853e350b0c155f78b0c301d079c9239/f13a9/intersection-observer-caniuse.avif 200w,
-/static/e853e350b0c155f78b0c301d079c9239/af71e/intersection-observer-caniuse.avif 400w,
-/static/e853e350b0c155f78b0c301d079c9239/c9875/intersection-observer-caniuse.avif 800w,
-/static/e853e350b0c155f78b0c301d079c9239/07e28/intersection-observer-caniuse.avif 1200w,
-/static/e853e350b0c155f78b0c301d079c9239/2babf/intersection-observer-caniuse.avif 1600w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/e853e350b0c155f78b0c301d079c9239/ba381/intersection-observer-caniuse.webp 200w,
 /static/e853e350b0c155f78b0c301d079c9239/7f61c/intersection-observer-caniuse.webp 400w,
 /static/e853e350b0c155f78b0c301d079c9239/d00b9/intersection-observer-caniuse.webp 800w,
@@ -6583,12 +6181,6 @@ Every website performance analyser will tell you to do it. Here is a size compar
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/f13a9/vue-cli-vanilla-size.avif 200w,
-/static/15d620b40e592ba0943d30e7a40c5dc2/af71e/vue-cli-vanilla-size.avif 400w,
-/static/15d620b40e592ba0943d30e7a40c5dc2/56a33/vue-cli-vanilla-size.avif 600w&quot;
-              sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/ba381/vue-cli-vanilla-size.webp 200w,
 /static/15d620b40e592ba0943d30e7a40c5dc2/7f61c/vue-cli-vanilla-size.webp 400w,
 /static/15d620b40e592ba0943d30e7a40c5dc2/e88ff/vue-cli-vanilla-size.webp 600w&quot;
@@ -6663,13 +6255,6 @@ There is still some difficult parts with brotli (not available on Node &amp;#x3C
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/0d631442de390a6737ca967f30f3263d/f13a9/vue-cli-complete-size.avif 200w,
-/static/0d631442de390a6737ca967f30f3263d/af71e/vue-cli-complete-size.avif 400w,
-/static/0d631442de390a6737ca967f30f3263d/c9875/vue-cli-complete-size.avif 800w,
-/static/0d631442de390a6737ca967f30f3263d/960ed/vue-cli-complete-size.avif 930w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/0d631442de390a6737ca967f30f3263d/ba381/vue-cli-complete-size.webp 200w,
 /static/0d631442de390a6737ca967f30f3263d/7f61c/vue-cli-complete-size.webp 400w,
 /static/0d631442de390a6737ca967f30f3263d/d00b9/vue-cli-complete-size.webp 800w,
@@ -6729,12 +6314,6 @@ Voici une comparaison de la taille d’un site web sur la vanille &lt;a href=&qu
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/f13a9/vue-cli-vanilla-size.avif 200w,
-/static/15d620b40e592ba0943d30e7a40c5dc2/af71e/vue-cli-vanilla-size.avif 400w,
-/static/15d620b40e592ba0943d30e7a40c5dc2/56a33/vue-cli-vanilla-size.avif 600w&quot;
-              sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/15d620b40e592ba0943d30e7a40c5dc2/ba381/vue-cli-vanilla-size.webp 200w,
 /static/15d620b40e592ba0943d30e7a40c5dc2/7f61c/vue-cli-vanilla-size.webp 400w,
 /static/15d620b40e592ba0943d30e7a40c5dc2/e88ff/vue-cli-vanilla-size.webp 600w&quot;
@@ -6808,13 +6387,6 @@ Il y a encore quelques parties difficiles avec brotli (non disponible sur Node &
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/0d631442de390a6737ca967f30f3263d/f13a9/vue-cli-complete-size.avif 200w,
-/static/0d631442de390a6737ca967f30f3263d/af71e/vue-cli-complete-size.avif 400w,
-/static/0d631442de390a6737ca967f30f3263d/c9875/vue-cli-complete-size.avif 800w,
-/static/0d631442de390a6737ca967f30f3263d/960ed/vue-cli-complete-size.avif 930w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/0d631442de390a6737ca967f30f3263d/ba381/vue-cli-complete-size.webp 200w,
 /static/0d631442de390a6737ca967f30f3263d/7f61c/vue-cli-complete-size.webp 400w,
 /static/0d631442de390a6737ca967f30f3263d/d00b9/vue-cli-complete-size.webp 800w,
@@ -6947,13 +6519,6 @@ Cependant, aujourd’hui, les serveurs web n’optimisent pas vraiment la compre
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/63ff4d88c94d08dd3e12a0879be33dc8/f13a9/6play.avif 200w,
-/static/63ff4d88c94d08dd3e12a0879be33dc8/af71e/6play.avif 400w,
-/static/63ff4d88c94d08dd3e12a0879be33dc8/c9875/6play.avif 800w,
-/static/63ff4d88c94d08dd3e12a0879be33dc8/e3723/6play.avif 1024w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/63ff4d88c94d08dd3e12a0879be33dc8/ba381/6play.webp 200w,
 /static/63ff4d88c94d08dd3e12a0879be33dc8/7f61c/6play.webp 400w,
 /static/63ff4d88c94d08dd3e12a0879be33dc8/d00b9/6play.webp 800w,
@@ -7028,13 +6593,6 @@ RootMyComponent.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/54cd04b849073398ea42e804fff6e833/f13a9/great-moment.avif 200w,
-/static/54cd04b849073398ea42e804fff6e833/af71e/great-moment.avif 400w,
-/static/54cd04b849073398ea42e804fff6e833/c9875/great-moment.avif 800w,
-/static/54cd04b849073398ea42e804fff6e833/e3723/great-moment.avif 1024w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/54cd04b849073398ea42e804fff6e833/ba381/great-moment.webp 200w,
 /static/54cd04b849073398ea42e804fff6e833/7f61c/great-moment.webp 400w,
 /static/54cd04b849073398ea42e804fff6e833/d00b9/great-moment.webp 800w,
@@ -7143,12 +6701,6 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports&lt;s
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/b5f835a6fc15e0ecb1dc17dcd908d8a5/f13a9/one-does-not-simply.avif 200w,
-/static/b5f835a6fc15e0ecb1dc17dcd908d8a5/af71e/one-does-not-simply.avif 400w,
-/static/b5f835a6fc15e0ecb1dc17dcd908d8a5/4fd21/one-does-not-simply.avif 568w&quot;
-              sizes=&quot;(max-width: 568px) 100vw, 568px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/b5f835a6fc15e0ecb1dc17dcd908d8a5/ba381/one-does-not-simply.webp 200w,
 /static/b5f835a6fc15e0ecb1dc17dcd908d8a5/7f61c/one-does-not-simply.webp 400w,
 /static/b5f835a6fc15e0ecb1dc17dcd908d8a5/bebff/one-does-not-simply.webp 568w&quot;
@@ -7189,13 +6741,6 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports&lt;s
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/bdd390b261c101672ff9a1f5b572ab7b/f13a9/bundle-bot.avif 200w,
-/static/bdd390b261c101672ff9a1f5b572ab7b/af71e/bundle-bot.avif 400w,
-/static/bdd390b261c101672ff9a1f5b572ab7b/c9875/bundle-bot.avif 800w,
-/static/bdd390b261c101672ff9a1f5b572ab7b/1824e/bundle-bot.avif 813w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/bdd390b261c101672ff9a1f5b572ab7b/ba381/bundle-bot.webp 200w,
 /static/bdd390b261c101672ff9a1f5b572ab7b/7f61c/bundle-bot.webp 400w,
 /static/bdd390b261c101672ff9a1f5b572ab7b/d00b9/bundle-bot.webp 800w,
@@ -7428,15 +6973,6 @@ alors foncez la voir si pour vous les PWA sont un monde obscure.&lt;/p&gt;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/d6edc5de54a1f67276084c6fd18b7779/f13a9/soiree.avif 200w,
-/static/d6edc5de54a1f67276084c6fd18b7779/af71e/soiree.avif 400w,
-/static/d6edc5de54a1f67276084c6fd18b7779/c9875/soiree.avif 800w,
-/static/d6edc5de54a1f67276084c6fd18b7779/07e28/soiree.avif 1200w,
-/static/d6edc5de54a1f67276084c6fd18b7779/2babf/soiree.avif 1600w,
-/static/d6edc5de54a1f67276084c6fd18b7779/8d91f/soiree.avif 4160w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/d6edc5de54a1f67276084c6fd18b7779/ba381/soiree.webp 200w,
 /static/d6edc5de54a1f67276084c6fd18b7779/7f61c/soiree.webp 400w,
 /static/d6edc5de54a1f67276084c6fd18b7779/d00b9/soiree.webp 800w,
@@ -7614,15 +7150,6 @@ de TP depuis l’interface de Github Classroom.&lt;/p&gt;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/038e52072fd39b5c797e3ffef7dc7148/f13a9/create-assignement.avif 200w,
-/static/038e52072fd39b5c797e3ffef7dc7148/af71e/create-assignement.avif 400w,
-/static/038e52072fd39b5c797e3ffef7dc7148/c9875/create-assignement.avif 800w,
-/static/038e52072fd39b5c797e3ffef7dc7148/07e28/create-assignement.avif 1200w,
-/static/038e52072fd39b5c797e3ffef7dc7148/2babf/create-assignement.avif 1600w,
-/static/038e52072fd39b5c797e3ffef7dc7148/caa88/create-assignement.avif 1962w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/038e52072fd39b5c797e3ffef7dc7148/ba381/create-assignement.webp 200w,
 /static/038e52072fd39b5c797e3ffef7dc7148/7f61c/create-assignement.webp 400w,
 /static/038e52072fd39b5c797e3ffef7dc7148/d00b9/create-assignement.webp 800w,
@@ -7751,14 +7278,6 @@ pour vos utilisateurs.&lt;/p&gt;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/7044fcf8b2240abbf24b959028a4f610/f13a9/environnement.avif 200w,
-/static/7044fcf8b2240abbf24b959028a4f610/af71e/environnement.avif 400w,
-/static/7044fcf8b2240abbf24b959028a4f610/c9875/environnement.avif 800w,
-/static/7044fcf8b2240abbf24b959028a4f610/07e28/environnement.avif 1200w,
-/static/7044fcf8b2240abbf24b959028a4f610/d3378/environnement.avif 1353w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/7044fcf8b2240abbf24b959028a4f610/ba381/environnement.webp 200w,
 /static/7044fcf8b2240abbf24b959028a4f610/7f61c/environnement.webp 400w,
 /static/7044fcf8b2240abbf24b959028a4f610/d00b9/environnement.webp 800w,
@@ -7820,15 +7339,6 @@ déployer votre application.&lt;/p&gt;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/09dee4224d527f5831843599f577d8b3/f13a9/machine.avif 200w,
-/static/09dee4224d527f5831843599f577d8b3/af71e/machine.avif 400w,
-/static/09dee4224d527f5831843599f577d8b3/c9875/machine.avif 800w,
-/static/09dee4224d527f5831843599f577d8b3/07e28/machine.avif 1200w,
-/static/09dee4224d527f5831843599f577d8b3/2babf/machine.avif 1600w,
-/static/09dee4224d527f5831843599f577d8b3/ea0c4/machine.avif 1908w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/09dee4224d527f5831843599f577d8b3/ba381/machine.webp 200w,
 /static/09dee4224d527f5831843599f577d8b3/7f61c/machine.webp 400w,
 /static/09dee4224d527f5831843599f577d8b3/d00b9/machine.webp 800w,
@@ -7884,13 +7394,6 @@ node2, et j’ai ajouté l’hôte Rancher lui-même self
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/bcd00c6977b0abb9aa112407e39372d8/f13a9/host.avif 200w,
-/static/bcd00c6977b0abb9aa112407e39372d8/af71e/host.avif 400w,
-/static/bcd00c6977b0abb9aa112407e39372d8/c9875/host.avif 800w,
-/static/bcd00c6977b0abb9aa112407e39372d8/c82bd/host.avif 946w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/bcd00c6977b0abb9aa112407e39372d8/ba381/host.webp 200w,
 /static/bcd00c6977b0abb9aa112407e39372d8/7f61c/host.webp 400w,
 /static/bcd00c6977b0abb9aa112407e39372d8/d00b9/host.webp 800w,
@@ -7938,15 +7441,6 @@ Dans la logique Rancher, une stack est un ensemble de services.&lt;/p&gt;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/c862fa4069b40c90035b4b3a02c9addd/f13a9/stack.avif 200w,
-/static/c862fa4069b40c90035b4b3a02c9addd/af71e/stack.avif 400w,
-/static/c862fa4069b40c90035b4b3a02c9addd/c9875/stack.avif 800w,
-/static/c862fa4069b40c90035b4b3a02c9addd/07e28/stack.avif 1200w,
-/static/c862fa4069b40c90035b4b3a02c9addd/2babf/stack.avif 1600w,
-/static/c862fa4069b40c90035b4b3a02c9addd/fa881/stack.avif 1923w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/c862fa4069b40c90035b4b3a02c9addd/ba381/stack.webp 200w,
 /static/c862fa4069b40c90035b4b3a02c9addd/7f61c/stack.webp 400w,
 /static/c862fa4069b40c90035b4b3a02c9addd/d00b9/stack.webp 800w,
@@ -8010,15 +7504,6 @@ ajouter notre service whoami. Pour cela il suffit de cliquer sur
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/48d761834dc232cc35b22955f7da9c22/f13a9/whoami.avif 200w,
-/static/48d761834dc232cc35b22955f7da9c22/af71e/whoami.avif 400w,
-/static/48d761834dc232cc35b22955f7da9c22/c9875/whoami.avif 800w,
-/static/48d761834dc232cc35b22955f7da9c22/07e28/whoami.avif 1200w,
-/static/48d761834dc232cc35b22955f7da9c22/2babf/whoami.avif 1600w,
-/static/48d761834dc232cc35b22955f7da9c22/ec507/whoami.avif 1907w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/48d761834dc232cc35b22955f7da9c22/ba381/whoami.webp 200w,
 /static/48d761834dc232cc35b22955f7da9c22/7f61c/whoami.webp 400w,
 /static/48d761834dc232cc35b22955f7da9c22/d00b9/whoami.webp 800w,
@@ -8082,14 +7567,6 @@ disponible.&lt;/p&gt;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/f13a9/start.avif 200w,
-/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/af71e/start.avif 400w,
-/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/c9875/start.avif 800w,
-/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/07e28/start.avif 1200w,
-/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/ba0bd/start.avif 1372w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/ba381/start.webp 200w,
 /static/e8e9c7193ddbbf5ec9e4e6d47167aa26/7f61c/start.webp 400w,
 /static/e8e9c7193ddbbf5ec9e4e6d47167aa26/d00b9/start.webp 800w,
@@ -8153,15 +7630,6 @@ cliquez sur “Add Load Balancer”&lt;/p&gt;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/36278add82f22f1e306be60a799b6681/f13a9/loadb.avif 200w,
-/static/36278add82f22f1e306be60a799b6681/af71e/loadb.avif 400w,
-/static/36278add82f22f1e306be60a799b6681/c9875/loadb.avif 800w,
-/static/36278add82f22f1e306be60a799b6681/07e28/loadb.avif 1200w,
-/static/36278add82f22f1e306be60a799b6681/2babf/loadb.avif 1600w,
-/static/36278add82f22f1e306be60a799b6681/95611/loadb.avif 1905w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/36278add82f22f1e306be60a799b6681/ba381/loadb.webp 200w,
 /static/36278add82f22f1e306be60a799b6681/7f61c/loadb.webp 400w,
 /static/36278add82f22f1e306be60a799b6681/d00b9/loadb.webp 800w,
@@ -8216,13 +7684,6 @@ l’infrastructure des machines créées plus tôt.&lt;/p&gt;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/5ac8774826df26dbe266ef830d1b3ff8/f13a9/host2.avif 200w,
-/static/5ac8774826df26dbe266ef830d1b3ff8/af71e/host2.avif 400w,
-/static/5ac8774826df26dbe266ef830d1b3ff8/c9875/host2.avif 800w,
-/static/5ac8774826df26dbe266ef830d1b3ff8/f73a5/host2.avif 836w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/5ac8774826df26dbe266ef830d1b3ff8/ba381/host2.webp 200w,
 /static/5ac8774826df26dbe266ef830d1b3ff8/7f61c/host2.webp 400w,
 /static/5ac8774826df26dbe266ef830d1b3ff8/d00b9/host2.webp 800w,
@@ -8279,12 +7740,6 @@ déployé grâce à lui.&lt;/p&gt;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/39e646d632a82cd4ad26d901963a1c11/f13a9/microservices.avif 200w,
-/static/39e646d632a82cd4ad26d901963a1c11/af71e/microservices.avif 400w,
-/static/39e646d632a82cd4ad26d901963a1c11/b49ed/microservices.avif 548w&quot;
-              sizes=&quot;(max-width: 548px) 100vw, 548px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/39e646d632a82cd4ad26d901963a1c11/ba381/microservices.webp 200w,
 /static/39e646d632a82cd4ad26d901963a1c11/7f61c/microservices.webp 400w,
 /static/39e646d632a82cd4ad26d901963a1c11/01940/microservices.webp 548w&quot;
@@ -8357,15 +7812,6 @@ chaque nouveau container qu’il crée. Cela a plusieurs avantages:&lt;/p&gt;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/ccd638ac43343c2b2dfbacfbdd0cd99f/f13a9/catalogue.avif 200w,
-/static/ccd638ac43343c2b2dfbacfbdd0cd99f/af71e/catalogue.avif 400w,
-/static/ccd638ac43343c2b2dfbacfbdd0cd99f/c9875/catalogue.avif 800w,
-/static/ccd638ac43343c2b2dfbacfbdd0cd99f/07e28/catalogue.avif 1200w,
-/static/ccd638ac43343c2b2dfbacfbdd0cd99f/2babf/catalogue.avif 1600w,
-/static/ccd638ac43343c2b2dfbacfbdd0cd99f/b2ac6/catalogue.avif 1903w&quot;
-              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
               srcset=&quot;/static/ccd638ac43343c2b2dfbacfbdd0cd99f/ba381/catalogue.webp 200w,
 /static/ccd638ac43343c2b2dfbacfbdd0cd99f/7f61c/catalogue.webp 400w,
 /static/ccd638ac43343c2b2dfbacfbdd0cd99f/d00b9/catalogue.webp 800w,
