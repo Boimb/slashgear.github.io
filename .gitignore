@@ -1,9 +1,3 @@
 node_modules/
-public
-.gatsby-context.js
 .DS_Store
-.intermediate-representation/
-.cache/
-yarn.lock
-schema.graphql
 wdio-local.conf.js
