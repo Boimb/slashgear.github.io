@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/react': ^18.0.33
   '@wdio/browserstack-service': ^7.25.4
   '@wdio/cli': ^7.25.4
   '@wdio/cucumber-framework': ^7.25.4
@@ -24,6 +25,7 @@ dependencies:
   react-dom: registry.npmjs.org/react-dom/18.2.0_react@18.2.0
 
 devDependencies:
+  '@types/react': registry.npmjs.org/@types/react/18.0.33
   '@wdio/browserstack-service': registry.npmjs.org/@wdio/browserstack-service/7.30.3_52felqgizkowd4vpddcec23l4u
   '@wdio/cli': registry.npmjs.org/@wdio/cli/7.30.2_typescript@5.0.3
   '@wdio/cucumber-framework': registry.npmjs.org/@wdio/cucumber-framework/7.30.2_52felqgizkowd4vpddcec23l4u
@@ -677,6 +679,22 @@ packages:
     version: 1.8.1
     dev: true
 
+  registry.npmjs.org/@types/prop-types/15.7.5:
+    resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.5.tgz}
+    name: '@types/prop-types'
+    version: 15.7.5
+    dev: true
+
+  registry.npmjs.org/@types/react/18.0.33:
+    resolution: {integrity: sha512-sHxzVxeanvQyQ1lr8NSHaj0kDzcNiGpILEVt69g9S31/7PfMvNCKLKcsHw4lYKjs3cGNJjXSP4mYzX43QlnjNA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@types/react/-/react-18.0.33.tgz}
+    name: '@types/react'
+    version: 18.0.33
+    dependencies:
+      '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.5
+      '@types/scheduler': registry.npmjs.org/@types/scheduler/0.16.3
+      csstype: registry.npmjs.org/csstype/3.1.2
+    dev: true
+
   registry.npmjs.org/@types/recursive-readdir/2.2.1:
     resolution: {integrity: sha512-Xd+Ptc4/F2ueInqy5yK2FI5FxtwwbX2+VZpcg+9oYsFJVen8qQKGapCr+Bi5wQtHU1cTXT8s+07lo/nKPgu8Gg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@types/recursive-readdir/-/recursive-readdir-2.2.1.tgz}
     name: '@types/recursive-readdir'
@@ -691,6 +709,12 @@ packages:
     version: 1.0.0
     dependencies:
       '@types/node': registry.npmjs.org/@types/node/18.15.11
+    dev: true
+
+  registry.npmjs.org/@types/scheduler/0.16.3:
+    resolution: {integrity: sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.3.tgz}
+    name: '@types/scheduler'
+    version: 0.16.3
     dev: true
 
   registry.npmjs.org/@types/selenium-standalone/7.0.1:
@@ -1896,6 +1920,12 @@ packages:
     resolution: {integrity: sha512-FUV3xaJ63buRLgHrLQVlVgQnQdR4yqdLGaDu7g8CQcWjInDfM9plBTPI9FRfpahju1UBSaMckeb2/46ApS/V1Q==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/css-value/-/css-value-0.0.1.tgz}
     name: css-value
     version: 0.0.1
+    dev: true
+
+  registry.npmjs.org/csstype/3.1.2:
+    resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/csstype/-/csstype-3.1.2.tgz}
+    name: csstype
+    version: 3.1.2
     dev: true
 
   registry.npmjs.org/d/1.0.1:
